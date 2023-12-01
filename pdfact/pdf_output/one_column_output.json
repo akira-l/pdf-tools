@@ -1,0 +1,2923 @@
+{"paragraphs": [
+  {"paragraph": {
+    "role": "title",
+    "positions": [{
+      "minY": 607,
+      "minX": 72,
+      "maxY": 644.3,
+      "maxX": 485.6,
+      "page": 1
+    }],
+    "text": "Entanglement entropy and negativity of disjoint intervals in CFT: Some numerical extrapolations"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 554.3,
+      "minX": 143.7,
+      "maxY": 565,
+      "maxX": 442.1,
+      "page": 1
+    }],
+    "text": "Cristiano De Nobili, Andrea Coser and Erik Tonni"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 538.6,
+      "minX": 143.7,
+      "maxY": 547.8,
+      "maxX": 392.6,
+      "page": 1
+    }],
+    "text": "SISSA and INFN, via Bonomea 265, 34136 Trieste, Italy."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 370.5,
+      "minX": 143.7,
+      "maxY": 496.1,
+      "maxX": 525.5,
+      "page": 1
+    }],
+    "text": "Abstract. The entanglement entropy and the logarithmic negativity can be computed in quantum field theory through a method based on the replica limit. Performing these analytic continuations in some cases is beyond our current knowledge, even for simple models. We employ a numerical method based on rational interpolations to extrapolate the entanglement entropy of two disjoint intervals for the conformal field theories given by the free compact boson and the Ising model. The case of three disjoint intervals is studied for the Ising model and the non compact free massless boson. For the latter model, the logarithmic negativity of two disjoint intervals has been also considered. Some of our findings have been checked against existing numerical results obtained from the corresponding lattice models."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 2
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 2"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 711.9,
+      "minX": 72,
+      "maxY": 720.3,
+      "maxX": 162.5,
+      "page": 2
+    }],
+    "text": "1. Introduction"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 490.4,
+        "minX": 72,
+        "maxY": 692.6,
+        "maxX": 525.5,
+        "page": 2
+      },
+      {
+        "minY": 460.8,
+        "minX": 214.7,
+        "maxY": 480.2,
+        "maxX": 525.5,
+        "page": 2
+      },
+      {
+        "minY": 434.6,
+        "minX": 72,
+        "maxY": 449.9,
+        "maxX": 398.1,
+        "page": 2
+      },
+      {
+        "minY": 399.4,
+        "minX": 251.4,
+        "maxY": 424.8,
+        "maxX": 525.5,
+        "page": 2
+      },
+      {
+        "minY": 329.6,
+        "minX": 72,
+        "maxY": 388.8,
+        "maxX": 525.5,
+        "page": 2
+      }
+    ],
+    "text": "Entanglement measures have been the focus of an intense research activity in condensed matter theory, quantum information, quantum field theory and quantum gravity during the last decade. The most celebrated one among them is the entanglement entropy, which measures the entanglement between two complementary parts when the whole system is in a pure state [1]. Considering a quantum system in its ground state |Ψ〉, or in any other pure state, and assuming that its Hilbert space is factorized as H = HA ⊗ HB, the A's reduced density matrix is defined as ρA ≡ TrBρ, being ρ = |Ψ〉〈Ψ| the density matrix of the whole system. The reduced density matrix ρA, which characterizes a mixed state, is normalized by requiring that TrAρA = 1. The entanglement entropy SA is the Von Neumann entropy associated to ρA. Analogously, one can introduce SB and, since ρ corresponds to a pure quantum state, we have that SB = SA. In quantum field theory, the entanglement entropy is usually computed by employing the replica limit, namely SA ≡ − Tr(ρA log ρA) = nli→m1 SA(n) , (1.1) where SA(n) are the Rényi entropies, which are defined as follows SA(n) ≡ log1T−r(nρnA) . (1.2) From this expression and the normalization condition for ρA, it is straightforward to find that SA = −∂nTr(ρnA)|n=1. Typically, SA(n) is known for positive integers n and therefore it must be analytically continued to real values of n in order to perform the replica limit (1.1)."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 202.1,
+      "minX": 72,
+      "maxY": 325.1,
+      "maxX": 525.5,
+      "page": 2
+    }],
+    "text": "In quantum field theory, the entanglement entropy is a divergent quantity when a → 0, being a the UV cutoff. In many cases the coefficient of the leading divergence is proportional to the area of ∂A and this property is known as the area law for the entanglement entropy. This rule has some important exceptions and the main one is a generic two dimensional conformal field theory (CFT) at zero temperature. Considering an infinite line and an interval of length as the subsystem A, we have that ∂A is made by the two endpoints of the interval and it is well known that SA = (c/3) log( /a) + const, where c is the central charge of the model [2, 3] (see also [4] for a review)."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 155,
+        "minX": 72,
+        "maxY": 197.7,
+        "maxX": 525.5,
+        "page": 2
+      },
+      {
+        "minY": 87.6,
+        "minX": 72,
+        "maxY": 114.4,
+        "maxX": 525.5,
+        "page": 2
+      }
+    ],
+    "text": "An important configuration to study is when the subsystem A = A1 ∪ A2 is made by two disjoint spatial regions A1 and A2 (see Fig. 1, top panel, for one spatial dimension). In this case, it is convenient to introduce the mutual information, which is defined as where in the last step we have emphasized that IA1,A2 can be found as the replica limit of the following combination of Rényi entropies"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 125.2,
+      "minX": 191.5,
+      "maxY": 144.6,
+      "maxX": 525.5,
+      "page": 2
+    }],
+    "text": "IA1,A2 ≡ SA1 + SA2 − SA1∪A2 = nli→m1 IA(n1),A2 , (1.3)"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 48.4,
+      "minX": 101.1,
+      "maxY": 77.9,
+      "maxX": 525.5,
+      "page": 2
+    }],
+    "text": "IA(n1),A2 ≡ SA(n1) + SA(n2) − SA(n1)∪A2 = n −1 1 log R2,n , R2,n ≡ TTrρrAnρ1AnT1∪rAρ2An2 . (1.4)"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 3
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 3"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 695,
+      "minX": 162.1,
+      "maxY": 708.3,
+      "maxX": 235.4,
+      "page": 3
+    }],
+    "text": "B u1 A1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 695,
+      "minX": 256.6,
+      "maxY": 705.7,
+      "maxX": 315.9,
+      "page": 3
+    }],
+    "text": "v1 B u2"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 671.3,
+      "minX": 186.5,
+      "maxY": 681.5,
+      "maxX": 198.8,
+      "page": 3
+    }],
+    "text": "Tn"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 671.3,
+      "minX": 254.6,
+      "maxY": 683,
+      "maxX": 316.2,
+      "page": 3
+    }],
+    "text": "T̄n Tn"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 695,
+      "minX": 356.1,
+      "maxY": 707.9,
+      "maxX": 454.7,
+      "page": 3
+    }],
+    "text": "A2 v2 B"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 671.4,
+      "minX": 414.4,
+      "maxY": 683,
+      "maxX": 426.7,
+      "page": 3
+    }],
+    "text": "T̄n"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 632.3,
+      "minX": 132,
+      "maxY": 646.2,
+      "maxX": 224.5,
+      "page": 3
+    }],
+    "text": "B u1 A1 v1"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 632.3,
+      "minX": 237.1,
+      "maxY": 645.7,
+      "maxX": 317.8,
+      "page": 3
+    }],
+    "text": "B u2 A2 v2"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 632.3,
+      "minX": 334.8,
+      "maxY": 643.1,
+      "maxX": 372.1,
+      "page": 3
+    }],
+    "text": "B u3"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 607.6,
+      "minX": 156,
+      "maxY": 617.8,
+      "maxX": 168.2,
+      "page": 3
+    }],
+    "text": "Tn"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 607.7,
+      "minX": 211.7,
+      "maxY": 619.4,
+      "maxX": 223.9,
+      "page": 3
+    }],
+    "text": "T̄n"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 607.6,
+      "minX": 260.5,
+      "maxY": 617.8,
+      "maxX": 272.8,
+      "page": 3
+    }],
+    "text": "Tn"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 607.7,
+      "minX": 305.4,
+      "maxY": 619.4,
+      "maxX": 317.7,
+      "page": 3
+    }],
+    "text": "T̄n"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 607.6,
+      "minX": 361.2,
+      "maxY": 617.8,
+      "maxX": 373.4,
+      "page": 3
+    }],
+    "text": "Tn"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 632.3,
+      "minX": 397,
+      "maxY": 646,
+      "maxX": 473.4,
+      "page": 3
+    }],
+    "text": "A3 v3 B"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 607.7,
+      "minX": 434.6,
+      "maxY": 619.4,
+      "maxX": 446.9,
+      "page": 3
+    }],
+    "text": "T̄n"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 569.2,
+      "minX": 162.1,
+      "maxY": 582.6,
+      "maxX": 235.4,
+      "page": 3
+    }],
+    "text": "B u1 A1"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 569.2,
+      "minX": 256.6,
+      "maxY": 579.9,
+      "maxX": 315.9,
+      "page": 3
+    }],
+    "text": "v1 B u2"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 545,
+      "minX": 186.5,
+      "maxY": 556.8,
+      "maxX": 316.2,
+      "page": 3
+    }],
+    "text": "Tn T̄n T̄n"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 569.2,
+      "minX": 356.1,
+      "maxY": 582.1,
+      "maxX": 454.7,
+      "page": 3
+    }],
+    "text": "A2 v2 B"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 545,
+      "minX": 414.4,
+      "maxY": 555.2,
+      "maxX": 426.7,
+      "page": 3
+    }],
+    "text": "Tn"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 420.8,
+      "minX": 143.7,
+      "maxY": 520.4,
+      "maxX": 525.5,
+      "page": 3
+    }],
+    "text": "Figure 1. The configurations of intervals considered. Top and middle: the entanglement between a subsystem A made by either two (top) or three (middle) disjoint intervals and the remainder B. Bottom: the entanglement between two disjoint intervals A1 and A2 embedded in a larger system in its ground state made by A1 ∪ A2 and the reminder B. In CFT correlation functions of branch-point twist fields Tn and T̄n placed at the endpoints of the intervals must be computed to get either the entanglement entropy (top and middle panels) or logarithmic negativity (bottom panel) through the proper replica limit."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 270.3,
+      "minX": 72,
+      "maxY": 393.3,
+      "maxX": 525.5,
+      "page": 3
+    }],
+    "text": "The subadditivity of the entanglement entropy guarantees that IA1,A2 > 0 and the leading divergence of the different terms cancels in the combination (1.3) when the area law holds. Moreover, the mutual information (1.3) could contain more physical information with respect to the entanglement entropy of a single region. For instance, in two dimensional CFTs, while SA of a single interval depends only on the central charge, the mutual information IA1,A2 encodes all the CFT data of the model (conformal dimensions of the primaries and OPE coefficients) [5, 6, 7, 8, 9, 10, 11]. The mutual information has been studied also through the holographic approach [12, 13]."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 158.7,
+      "minX": 72,
+      "maxY": 266.3,
+      "maxX": 525.5,
+      "page": 3
+    }],
+    "text": "Taking the limit n → 1 in (1.1) and (1.3) in many interesting cases is highly non trivial. For instance, the analytic continuation of the Rényi entropies of a single interval for the excited states given by the primaries [14, 15] has been studied in [16]. For the excited states given by the descendants a closed expression for all the Rényi entropies is still not known [17]. Interesting features have been observed by considering the Rényi entropies of a single interval in critical one dimensional models for real n but no singularities have been found [18]."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 63.6,
+        "minX": 72,
+        "maxY": 154.2,
+        "maxX": 525.5,
+        "page": 3
+      },
+      {
+        "minY": 693,
+        "minX": 72,
+        "maxY": 720.4,
+        "maxX": 525.5,
+        "page": 4
+      }
+    ],
+    "text": "In this paper we address the case of disjoint intervals for some models in one spatial dimension. The Rényi entropies for a subsystem A made by N disjoint intervals (see Fig. 1, middle panel for N = 3) are given by the partition function of the model on a Riemann surface of genus g = (N − 1)(n − 1). These partition functions can be computed for some simple CFTs like the massless compact boson and the Ising model [7, 8, 19] but finding the corresponding analytic continuations in the most generic case is still beyond our knowledge. For two spatial dimensions, already the simple case of the entanglement entropy of a disk could lead to a difficult replica limit [20]."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 4
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 4"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 580.1,
+        "minX": 72,
+        "maxY": 688.6,
+        "maxX": 525.5,
+        "page": 4
+      },
+      {
+        "minY": 528.2,
+        "minX": 72,
+        "maxY": 539,
+        "maxX": 297.4,
+        "page": 4
+      },
+      {
+        "minY": 500.2,
+        "minX": 250,
+        "maxY": 515.1,
+        "maxX": 525.5,
+        "page": 4
+      },
+      {
+        "minY": 411.6,
+        "minX": 72,
+        "maxY": 489,
+        "maxX": 525.5,
+        "page": 4
+      },
+      {
+        "minY": 380.3,
+        "minX": 232.2,
+        "maxY": 399.1,
+        "maxX": 525.5,
+        "page": 4
+      },
+      {
+        "minY": 226.8,
+        "minX": 72,
+        "maxY": 367.9,
+        "maxX": 525.5,
+        "page": 4
+      }
+    ],
+    "text": "Another interesting quantity to consider is the logarithmic negativity, which is a measure of entanglement for bipartite mixed states [21]. Let us consider a pure or mixed state characterized by the density matrix ρ acting on a bipartite Hilbert space H = H1⊗H2 and the arbitrary bases |ei(1)〉 and |ej(2)〉 for H1 and H2 respectively. The important object to introduce is the partial transpose of ρA1∪A2 with respect to one of the two parts. Considering e.g. the partial transposition with respect to the second part, the matrix element of ρAT21∪A2 is defined as follows Then, the logarithmic negativity is given by E ≡ log Tr|ρAT21∪A2 | , (1.6) where Tr|ρAT21∪A2 | is the trace norm of the hermitean matrix ρAT21∪A2 , which is the sum of the absolute values of its eigenvalues. Taking into account the traces Tr(ρAT21∪A2 )n of integer powers of ρAT21∪A2 , it is not difficult to observe that a parity effect occurs. In particular, considering the sequence of the odd powers n = no and the one of the even powers n = ne, the logarithmic negativity (1.6) can be found through the following replica limit [22, 23] E = nlei→m1 log Tr(ρAT21∪A2 )ne . (1.7) Notice that for no → 1 one simply recovers the normalization condition TrρAT21∪A2 = 1. For a bipartite pure state a relation occurs between Tr(ρAT21∪A2 )n and the Renyi entropies which tells us that the logarithmic negativity reduces to the Rényi entropy of order n = 1/2. However, we are interested in the logarithmic negativity of mixed states and the reduced density matrix is an important example. Thus, given a quantum system in a pure state and considering the reduced density matrix ρA1∪A2 of two adjacent or disjoint spatial regions, while SA1∪A2 measures the entanglement between A1 ∪ A2 and the complementary region B, the logarithmic negativity in (1.6) measures the entanglement between A1 and A2 (see Fig. 1, bottom panel, for one spatial dimension)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 552.1,
+      "minX": 172.2,
+      "maxY": 568.9,
+      "maxX": 525.5,
+      "page": 4
+    }],
+    "text": "〈e(i1)ej(2)|ρTA21∪A2 |e(k1)el(2)〉 = 〈ei(1)el(2)|ρA1∪A2 |e(k1)ej(2)〉 . (1.5)"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 115.7,
+      "minX": 72,
+      "maxY": 222.8,
+      "maxX": 525.5,
+      "page": 4
+    }],
+    "text": "In two dimensional CFTs, the logarithmic negativity has been studied in [22, 23] for zero temperature, at finite temperature [24] and also out of equilibrium (the time evolution after a global quench [25] and after a local quench [26] have been considered). For two disjoint intervals at zero temperature Tr(ρAT21∪A2 )n must be computed case by case because it encodes all the CFT data. The replica limit (1.7) for these expressions turns out to be difficult to compute, like for the mutual information. Indeed, analytic results have not been found for all the possible configurations of intervals."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 52.1,
+        "minX": 72,
+        "maxY": 110.5,
+        "maxX": 525.5,
+        "page": 4
+      },
+      {
+        "minY": 566.2,
+        "minX": 72,
+        "maxY": 720.4,
+        "maxX": 525.5,
+        "page": 5
+      }
+    ],
+    "text": "In this paper we numerically extrapolate the entanglement entropy and the logarithmic negativity through their replica limits, which are respectively (1.1) and (1.7), for simple two dimensional CFT models and for configurations of intervals whose analytic continuations for SA and E are not known. In particular, for the free massless boson, both compactified and in the decompactification regime, and for the Ising model, TrρAn are known analytically for a generic number N of disjoint intervals [7, 8, 19], while Tr(ρAT21∪A2 )n is known analytically for two disjoint intervals [22, 23, 27, 28]. We consider some of these models for two or three disjoint intervals (only some configurations in the latter case) and employ a numerical method based on rational interpolations to get the corresponding entanglement entropy or logarithmic negativity. This extrapolating method has been first suggested in this context by [20] (see [29] for other numerical methods). We checked our extrapolations against numerical results found through the corresponding lattice models whenever they are available in the literature, finding very good agreement; otherwise the method provides numerical predictions that could be useful benchmarks for future studies."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 5
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 5"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 406.6,
+      "minX": 72,
+      "maxY": 561,
+      "maxX": 525.5,
+      "page": 5
+    }],
+    "text": "The paper is organized as follows. In § we extrapolate the mutual information for the compact boson and for the Ising model comparing the results with the corresponding ones found for the XXZ spin chain [6] and the critical Ising chain [9]. In § the entanglement entropy of three disjoint intervals is considered for the non compact boson and for the Ising model. While the extrapolations for the former model can be checked against exact results for the periodic harmonic chain, there are no results in the literature about the entanglement entropy of three disjoint intervals for the critical Ising chain to compare with. In § we focus on the logarithmic negativity of two disjoint intervals for the non compact boson. The appendix § contains a discussion about the rational interpolation method that has been employed throughout the paper."
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 393.1,
+      "minX": 72,
+      "maxY": 401.5,
+      "maxX": 204.6,
+      "page": 5
+    }],
+    "text": "2. Mutual information"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 360.6,
+        "minX": 95.4,
+        "maxY": 377.5,
+        "maxX": 525.5,
+        "page": 5
+      },
+      {
+        "minY": 342.7,
+        "minX": 72,
+        "maxY": 359.6,
+        "maxX": 525.5,
+        "page": 5
+      },
+      {
+        "minY": 295.3,
+        "minX": 72,
+        "maxY": 341.7,
+        "maxX": 525.5,
+        "page": 5
+      }
+    ],
+    "text": "In this section, after a quick review of the computation of IA(n1),A2 in CFT, we focus on the compactified boson and on the Ising model because IA(n1),A2 is known analytically in these cases. The numerical extrapolation of the analytic expressions for IA(n1),A2 to n → 1 leads to the mutual information, which can be compared with the corresponding numerical results found from the XXZ spin chain and the Ising chain in a transverse field."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 183.7,
+      "minX": 72,
+      "maxY": 290.2,
+      "maxX": 525.5,
+      "page": 5
+    }],
+    "text": "Let us consider a two dimensional CFT with central charge c at zero temperature. As first discussed in [3], TrρAn for a subsystem A made by N disjoint intervals can be computed as the 2N-point correlation function of branch-point twist fields Tn and T̄n placed at the endpoints of the intervals in an alternate sequence (see [30] for integrable quantum field theories). These fields have been largely studied in the early days of string theory [31] and their crucial role for the entanglement computations has been exploited during the last decade."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 151.2,
+        "minX": 72,
+        "maxY": 179.2,
+        "maxX": 525.5,
+        "page": 5
+      },
+      {
+        "minY": 109.6,
+        "minX": 145.1,
+        "maxY": 138.3,
+        "maxX": 525.5,
+        "page": 5
+      },
+      {
+        "minY": 52.5,
+        "minX": 72,
+        "maxY": 96.9,
+        "maxX": 525.5,
+        "page": 5
+      },
+      {
+        "minY": 709,
+        "minX": 72,
+        "maxY": 720.9,
+        "maxX": 106.5,
+        "page": 6
+      },
+      {
+        "minY": 686.3,
+        "minX": 242.5,
+        "maxY": 708.1,
+        "maxX": 525.5,
+        "page": 6
+      },
+      {
+        "minY": 652.7,
+        "minX": 72,
+        "maxY": 679.5,
+        "maxX": 525.5,
+        "page": 6
+      }
+    ],
+    "text": "When the subsystem A is a single interval A = [u, v] with length = |u − v| on the infinite line, TrρAn is given by the two-point function of branch-point twist fields [3] TrρAn = 〈Tn(u)T̄n(v)〉 = |u −cvn|2∆n , ∆n = 1c2 (n − n1 ) , (2.1) where ∆n are the scaling dimensions of the twist fields Tn and T̄n, being cn a non universal constant such that c1 = 1. Taking the replica limit (1.1) of (2.1) is straightforward and one gets the well known result for the entanglement entropy of an interval in the infinite line [2] SA = 3c log( /a) + c1\u2032 , (2.2) where a is a UV cutoff. Thus, the entanglement entropy and the Rényi entropies for a single interval depend only on the central charge c of the model."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 6
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 6"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 588.4,
+        "minX": 72,
+        "maxY": 648.2,
+        "maxX": 525.5,
+        "page": 6
+      },
+      {
+        "minY": 566.8,
+        "minX": 143.7,
+        "maxY": 579.9,
+        "maxX": 525.5,
+        "page": 6
+      },
+      {
+        "minY": 528.8,
+        "minX": 172,
+        "maxY": 560.1,
+        "maxX": 525.5,
+        "page": 6
+      },
+      {
+        "minY": 511.6,
+        "minX": 72,
+        "maxY": 522.3,
+        "maxX": 235.6,
+        "page": 6
+      },
+      {
+        "minY": 471.2,
+        "minX": 238.3,
+        "maxY": 499.4,
+        "maxX": 525.5,
+        "page": 6
+      },
+      {
+        "minY": 415.2,
+        "minX": 72,
+        "maxY": 459.1,
+        "maxX": 525.5,
+        "page": 6
+      },
+      {
+        "minY": 377.6,
+        "minX": 103.7,
+        "maxY": 403.1,
+        "maxX": 305.1,
+        "page": 6
+      },
+      {
+        "minY": 337.4,
+        "minX": 72,
+        "maxY": 364.7,
+        "maxX": 525.5,
+        "page": 6
+      },
+      {
+        "minY": 248.6,
+        "minX": 72,
+        "maxY": 292.4,
+        "maxX": 525.5,
+        "page": 6
+      },
+      {
+        "minY": 219.1,
+        "minX": 98.8,
+        "maxY": 235.8,
+        "maxX": 525.5,
+        "page": 6
+      },
+      {
+        "minY": 122.1,
+        "minX": 72,
+        "maxY": 196.7,
+        "maxX": 525.5,
+        "page": 6
+      },
+      {
+        "minY": 94.4,
+        "minX": 212.1,
+        "maxY": 108.1,
+        "maxX": 525.5,
+        "page": 6
+      },
+      {
+        "minY": 52,
+        "minX": 72,
+        "maxY": 80,
+        "maxX": 525.5,
+        "page": 6
+      },
+      {
+        "minY": 677.6,
+        "minX": 72,
+        "maxY": 720.9,
+        "maxX": 525.8,
+        "page": 7
+      }
+    ],
+    "text": "When the subsystem A = A1 ∪ A2 is made by two disjoint intervals A1 = [u1, v1] and A2 = [u2, v2] (with the endpoints ordered as u1 < v1 < u2 < v2), the Rényi entropies encode the full data of the CFT because TrρAn is obtained as a four-point function of twist fields [7, 8]. By global conformal invariance we have that TrρAn = 〈Tn(u1)T̄n(v1)Tn(u2)T̄n(v2)〉 (2.3) = cn2 [ (v1 − u1)((uv22 −− uu21))((uv22 −− vv11))(v2 − u1) ]2∆n F2,n(x) (2.4) where the four-point ratio reads x = ((uu11 −− vu12))((uv21 −− vv22)) , (2.5) and x ∈ (0, 1). Since TrρA = 1 holds, F2,1(x) = 1 identically. The function F2,n(x) depends on the details of the model and therefore it must be computed case by case. From (2.1) and (2.3), one gets that (1.4) for a CFT is given by IA(n1),A2 = − (n +6n1)c log(1 − x) + Ĩn(x) , Since the mutual information IA1,A2 is the limit n → 1 of (2.6), as stated in (1.3), it is the function of x given by The explicit expression of F2,n(x) is known for some simple models like the free compact boson and the Ising model. In these cases F2,n(x) is written in terms of the Riemann theta function, which is defined as follows [32] Θ[e](z|Ω) ≡ ∑ exp [ i(m + ε)t · Ω · (m + ε) + 2πi(m + ε)t · (z + δ)] , (2.8) where Ω is a p × p symmetric complex matrix with positive immaginary part and z ∈ Cp/(Zp + ΩZp) is a complex p dimensional vector. The vector et ≡ (εt, δt) is the characteristic of the Riemann theta function (2.8), being ε and δ two p dimensional vectors whose elements are either 0 or 1/2. The characteristic provides the parity of (2.8) as function of z, which is the same one of the integer number 4εt · δ, indeed Θ[e](−z|Ω) = (−1)4ε·δ Θ[e](z|Ω) . (2.9) It is not difficult to realize that there are 2p−1(2p + 1) even characteristics and 2p−1(2p − 1) odd ones. Since in this paper we always deal with z = 0, we find it convenient to lighten the formulas by introducing the notation Θ[e](Ω) ≡ Θ[e](0|Ω) and Θ(Ω) ≡ Θ[0](Ω). The Riemann theta functions throughout this paper have been evaluated by using Mathematica through the built-in function SiegelTheta."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 377.7,
+      "minX": 332,
+      "maxY": 402.1,
+      "maxX": 525.5,
+      "page": 6
+    }],
+    "text": "Ĩn(x) ≡ n −1 1 log[F2,n(x)] . (2.6)"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 304.3,
+      "minX": 145,
+      "maxY": 326.1,
+      "maxX": 525.5,
+      "page": 6
+    }],
+    "text": "IA1,A2 = − 3c log(1 − x) + Ĩ1(x) , Ĩ1(x) ≡ ∂nF2,n(x)∣∣n=1 . (2.7)"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 209.9,
+      "minX": 165,
+      "maxY": 215.9,
+      "maxX": 193.4,
+      "page": 6
+    }],
+    "text": "m ∈ Zp"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 7
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 7"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 644.9,
+        "minX": 72,
+        "maxY": 672.7,
+        "maxX": 525.5,
+        "page": 7
+      },
+      {
+        "minY": 603.6,
+        "minX": 230.6,
+        "maxY": 631.9,
+        "maxX": 525.5,
+        "page": 7
+      },
+      {
+        "minY": 562.3,
+        "minX": 72,
+        "maxY": 590.9,
+        "maxX": 526.1,
+        "page": 7
+      },
+      {
+        "minY": 513.9,
+        "minX": 153.1,
+        "maxY": 548.3,
+        "maxX": 525.5,
+        "page": 7
+      },
+      {
+        "minY": 392.7,
+        "minX": 72,
+        "maxY": 499.8,
+        "maxX": 525.5,
+        "page": 7
+      }
+    ],
+    "text": "As a first example, we consider the free boson compactified on a circle of radius r, which has c = 1. The corresponding F2,n(x) for any integer n > 2 is given by [7] F2,n(x) = Θ(ητΘ2)(τΘ2)(τ22/η) , (2.10) where η ∝ r2 and τ2 = τ2(x) is the (n − 1) × (n − 1) purely imaginary period matrix of the Riemann surface which underlies the computation of TrρAn, whose elements read (τ2)ij ≡ i n2 ∑nk=−11 sin(πk/n) FkF/nk(/1n(−x)x) cos[2π(i − j)k/n] , (2.11) where Fs(x) ≡ 2F1(s, 1 − s; 1; x), being 2F1 the hypergeometric function. Notice that F2,n(0) = 1. Moreover, F2,n(x) is invariant under η → 1/η and x → 1 − x separately. The latter symmetry is related to the well known property SA = SB of the entanglement entropy for pure states in the case of A made by two disjoint intervals. It is worth remarking that (2.10) holds for x ∈ (0, 1). Indeed, when x ∈ C and x ∈/ (0, 1) the corresponding expression is slightly more complicated [23] and it enters in the computation of the logarithmic negativity for the compact boson."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 312.5,
+      "minX": 72,
+      "maxY": 387.7,
+      "maxX": 525.5,
+      "page": 7
+    }],
+    "text": "In order to find the analytic expression of the mutual information for the compact boson, one has to compute Ĩ1(x) in (2.7) with F2,n(x) given by (2.10). Since performing this analytic computation is still an open problem, we employ the numerical extrapolation method suggested by [20] (see §) to get a result that can be compared with the numerical data found in [6] from the XXZ spin chain."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 248.7,
+        "minX": 72,
+        "maxY": 308,
+        "maxX": 525.5,
+        "page": 7
+      },
+      {
+        "minY": 206.1,
+        "minX": 82.1,
+        "maxY": 235.8,
+        "maxX": 515.4,
+        "page": 7
+      }
+    ],
+    "text": "Before entering in the numerical analysis, it is worth discussing the decompactification regime, which can be addressed analytically. The non compact boson corresponds to the regime η 1 (or η 1 because of the symmetry η ↔ 1/η) in the above expressions. In [7] it has been found that, for η 1, the terms Ĩ1(x) in (2.7) becomes Ĩ1(x)∣∣η 1 = − 21 log η + D(x) + D2(1 − x) , D(x) ≡ − ∫−ii∞∞ diz sinπ(zπz) log[Fz(x)] ."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 176.8,
+        "minX": 95.4,
+        "maxY": 204.7,
+        "maxX": 525.5,
+        "page": 7
+      },
+      {
+        "minY": 53.5,
+        "minX": 72,
+        "maxY": 112.7,
+        "maxX": 525.5,
+        "page": 7
+      },
+      {
+        "minY": 287.6,
+        "minX": 72,
+        "maxY": 379.2,
+        "maxX": 525.5,
+        "page": 8
+      }
+    ],
+    "text": "(2.12) The Hamiltonian of the periodic XXZ spin 1/2 chain in a magnetic field h reads [33] where Sja = σja/2, being σja the standard Pauli matrices acting on the spin at the j-th site. The chain has L sites and ∆ is the anisotropy. The mutual information for this lattice model has been computed in [6] by direct diagonalization for L 6 30. When h = 0 and −1 < ∆ 6 1 the model in the continuum is described by the c = 1 compact boson with η = 1 − (1/π) arccos ∆, while for h = 0 an explicit formula providing η does not exist and therefore it must be found numerically. The CFT formulas reviewed above can be applied also to the case of a finite system of length L with periodic boundary conditions by employing a conformal mapping from the cylinder to the plane. As final result, the CFT formulas for this case are obtained by considering the expressions for the infinite line and replacing any length i with the corresponding chord length (L/π) sin(π i/L) [3]."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 157.2,
+      "minX": 206.6,
+      "maxY": 162.6,
+      "maxX": 412.4,
+      "page": 7
+    }],
+    "text": "L L"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 126.8,
+      "minX": 159.5,
+      "maxY": 153.6,
+      "maxX": 525.5,
+      "page": 7
+    }],
+    "text": "HXXZ ≡ ∑ (SjxSjx+1 + SjySjy+1 + ∆ SjzSjz+1) − h ∑ Sjz , (2.13) j=1 j=1"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 8
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 8"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 406,
+      "minX": 143.7,
+      "maxY": 490.9,
+      "maxX": 525.5,
+      "page": 8
+    }],
+    "text": "Figure 2. Mutual information for the XXZ model. The data points are extracted from [6] and the coloured curves are obtained from the rational interpolations of the analytic expressions (2.6) and (2.10) for the compact boson with the values of (p, q) indicated in the left panel. The dashed grey lines correspond to the decompactification regime, where the analytic continuation (2.12) is known. Left: Ĩ1, defined in (2.7), as function of x for various values of η. Right: the mutual information IA1,A2 as function of η for two fixed values of x."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 97,
+      "minX": 72,
+      "maxY": 283.1,
+      "maxX": 525.5,
+      "page": 8
+    }],
+    "text": "Let us consider the mutual information of the compactified boson as first example of our extrapolation method. For any fixed value of x, we have that IA(n1),A2 are given analytically by (2.6) and (2.10) for any positive integer n > 2, while the corresponding analytic continuation to n = 1 is estimated by performing a numerical extrapolation of the known data through a rational function. The latter one is characterized by two positive integer parameters p and q, which are the degrees of the numerator and of the denominator respectively. As explained in §, to perform a rational interpolation characterized by the pair (p, q) we need at least p + q + 1 known data. An important technical difficulty that one encounters is the evaluation of the Riemann theta functions for large genus period matrices, i.e. for high values of n. Given the computational resources at our disposal, we were able to compute Riemann theta functions containing matrices whose size is at most 12. For the compactified boson this corresponds to nmax = 11 and therefore p + q + 1 6 10."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 64.4,
+        "minX": 72,
+        "maxY": 92.3,
+        "maxX": 525.5,
+        "page": 8
+      },
+      {
+        "minY": 454.3,
+        "minX": 72,
+        "maxY": 722.9,
+        "maxX": 525.5,
+        "page": 9
+      }
+    ],
+    "text": "In Fig. 2 we compared our numerical extrapolations of the analytic expressions of [7] with the numerical data for the XXZ spin chain computed in [6] by exact diagonalization, finding a very good agreement. In the left panel Ĩ1 is shown as function of the four-point ratio x for different values of the parameter η, while in the right panel the mutual information IA1,A2 is shown as function of η for the two fixed configurations of intervals given by 1 = 2 = d1 = d2 = L/4 (x = 0.5) and 2 1 = 2 2 = d1 = d2 = L/3 (x = 0.25), being L the total length of the periodic system. All the rational interpolations in the figure exhibit a good agreement with the numerical data, despite the low values of p and q. Increasing these parameters, a better approximation is expected but the result is already stable for these values and we provided two rational interpolations for each curve as a check. Some rational interpolations may display some spurious bahaviour in some regimes of x. As discussed in detail in §, this possibility increases with q. These results have been discarded and we showed only rational interpolations which are well-behaved in the whole domain x ∈ (0, 1). Notice that rational interpolations that are well-behaved for some η and x could display some bad behaviour changing them. Thus, the values of (p, q) must be chosen case by case. In Fig. 2 the dashed grey lines are obtained from the analytic continuation (2.12) found in [7], which corresponds to the decompactification regime and therefore it reproduces the numerical data from the XXZ chain and from the rational interpolations only for small η, as expected."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 9
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 9"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 406.6,
+        "minX": 72,
+        "maxY": 449.5,
+        "maxX": 525.5,
+        "page": 9
+      },
+      {
+        "minY": 254.6,
+        "minX": 72,
+        "maxY": 342.7,
+        "maxX": 525.5,
+        "page": 9
+      }
+    ],
+    "text": "Another important case where the Rényi entropies of two disjoint intervals have been found analytically is the Ising model [8]. The Hamiltonian of the one dimensional spin chain defining the Ising model in a transverse field is where periodic boundary conditions are imposed. This model has a quantum critical point at h = 1 and in the continuum it is a free Majorana fermion with central charge c = 1/2. The Rényi entropies for two disjoint intervals on the spin chain (2.14) have been studied in [9] through a Tree Tensor Network algorithm [34] and in [10] through the exact solution of the model in terms of free Majorana fermions. The former method allowed to find also the mutual information."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 387.2,
+      "minX": 278.6,
+      "maxY": 392.6,
+      "maxX": 284.3,
+      "page": 9
+    }],
+    "text": "L"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 366.8,
+      "minX": 220,
+      "maxY": 383.6,
+      "maxX": 525.5,
+      "page": 9
+    }],
+    "text": "HIsing ≡ − ∑ (σjxσjx+1 + h σjz) , (2.14)"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 356.8,
+      "minX": 274,
+      "maxY": 363.7,
+      "maxX": 288.8,
+      "page": 9
+    }],
+    "text": "j=1"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 170.9,
+        "minX": 72,
+        "maxY": 247.3,
+        "maxX": 526.1,
+        "page": 9
+      },
+      {
+        "minY": 129.6,
+        "minX": 235,
+        "maxY": 157.9,
+        "maxX": 525.5,
+        "page": 9
+      },
+      {
+        "minY": 55.4,
+        "minX": 72,
+        "maxY": 116.6,
+        "maxX": 525.5,
+        "page": 9
+      },
+      {
+        "minY": 297.4,
+        "minX": 72,
+        "maxY": 342.7,
+        "maxX": 525.5,
+        "page": 10
+      }
+    ],
+    "text": "As for the Rényi entropies for two disjoint intervals in corresponding CFT, by employing known results about bosonization on higher genus Riemann surfaces for c = 1 models [31], the expression of F2,n(x) for the Ising model can be written in terms of Riemann theta functions (2.8) evaluated for the period matrix τ2 in (2.11). In particular, TrρAn1∪A2 for the Ising model is given by (2.4) with c = 1/2 and [8] F2,n(x) = ∑2ne−|1Θ|Θ[e(](ττ22))|| , (2.15) where the sum is performed over all the possible characteristics et ≡ (εt, δt), being ε and δ two n − 1 dimensional vectors whose elements are either 0 or 1/2. Let us remark that in the sum (2.15) only the 2n−2(2n−1 + 1) even characteristics occur. Thus, the mutual information for the Ising model is (2.7) with F2,n(x) given by (2.15). Similarly to the case of the compact boson, also for the Ising model we are not able to compute Ĩ1(x) analytically and therefore we perform a numerical extrapolation through the rational interpolation method described in §."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 10
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 10"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 367.6,
+      "minX": 143.7,
+      "maxY": 405.2,
+      "maxX": 525.5,
+      "page": 10
+    }],
+    "text": "Figure 3. Extrapolations for −Ĩ1, defined in (2.7), as function of x for the Ising model. The data points are extracted from [9] while the coloured curves are obtained through the rational interpolations with (p, q) indicated."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 105.6,
+      "minX": 72,
+      "maxY": 294.9,
+      "maxX": 525.5,
+      "page": 10
+    }],
+    "text": "In Fig. 3 we show −Ĩ1(x) as function of x ∈ (0, 1), which can be found by considering two disjoint intervals of equal length, and compare the numerical data obtained in [9] with the curve found through the numerical extrapolation of the corresponding formula containing (2.15) through rational interpolations. Since (2.15) contains Riemann theta functions, we cannot consider high values for n, like for the compact boson. Moreover, in this case one faces an additional complication with respect to the compact boson because in (2.15) the sum over all the even characteristics occurs and the number of terms in the sum grows exponentially with n. Given our computational power, we have computed the Rényi entropies up to n = 7 and in Fig. 3 we show the rational interpolations found by choosing three different pairs (p, q) which are well-behaved among the available ones. Since the curves coincide, the final result is quite stable and, moreover, the agreement with the numerical data found in [9] through the Tree Tensor Network is very good."
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 90.3,
+      "minX": 72,
+      "maxY": 101,
+      "maxX": 225,
+      "page": 10
+    }],
+    "text": "3. Three disjoint intervals"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 62.4,
+        "minX": 95.4,
+        "maxY": 73.3,
+        "maxX": 525.5,
+        "page": 10
+      },
+      {
+        "minY": 677.6,
+        "minX": 72,
+        "maxY": 720.5,
+        "maxX": 525.5,
+        "page": 11
+      }
+    ],
+    "text": "In this section we partially extend the analysis done in § by considering the case of three disjoint intervals. After a brief review of the analytic results known for a generic number N of disjoint intervals, we focus on N = 3 and perform some numerical extrapolations for the non compact boson and for the Ising model."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 11
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 11"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 645.2,
+        "minX": 72,
+        "maxY": 673.9,
+        "maxX": 525.5,
+        "page": 11
+      },
+      {
+        "minY": 563.7,
+        "minX": 72,
+        "maxY": 591.1,
+        "maxX": 525.2,
+        "page": 11
+      },
+      {
+        "minY": 484.9,
+        "minX": 72,
+        "maxY": 528.2,
+        "maxX": 525.5,
+        "page": 11
+      },
+      {
+        "minY": 428.4,
+        "minX": 72,
+        "maxY": 440,
+        "maxX": 390.8,
+        "page": 11
+      }
+    ],
+    "text": "Given a the spatial subsystem A = ∪Ni=1Ai made by the union of the N disjoint intervals A1 = [u1, v1], . . . , AN = [uN, vN], a generalization of (1.4) to N > 2 reads [19] where σN,p denotes the union of a generic choice of 1 6 p 6 N intervals among the N ones. It is straightforward to observe that the analytic continuation n → 1 of (3.1), i.e. provides a natural generalization to N > 2 of the mutual information (1.3). We find it useful to normalise the quantities introduced in (3.1) and (3.2) by themselves evaluated for some fixed configuration of intervals, namely where we have adopted the shorthand notation IN ≡ IA1,...,AN ."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 607.7,
+      "minX": 130.2,
+      "maxY": 636.4,
+      "maxX": 525.5,
+      "page": 11
+    }],
+    "text": "IA(n1),··· ,AN ≡ (n−−1)1N log RN,n , RN,n ≡ ∏N ∏ (TrρσnN,p )(−1)N−p , (3.1)"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 599.8,
+      "minX": 338.5,
+      "maxY": 607.6,
+      "maxX": 372.9,
+      "page": 11
+    }],
+    "text": "p=1 σN,p"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 536.9,
+      "minX": 237.1,
+      "maxY": 556.2,
+      "maxX": 525.5,
+      "page": 11
+    }],
+    "text": "IA1,...,AN ≡ nli→m1 IA(n1),...,AN , (3.2)"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 447.5,
+      "minX": 157.9,
+      "maxY": 477.4,
+      "maxX": 525.5,
+      "page": 11
+    }],
+    "text": "RNno,rnm ≡ RNR,nN∣∣,finxed , INsub ≡ IN − IN∣∣fixed = nli→m1 RNno,rnm , (3.3)"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 365.5,
+        "minX": 72,
+        "maxY": 424.2,
+        "maxX": 525.5,
+        "page": 11
+      },
+      {
+        "minY": 349.7,
+        "minX": 72,
+        "maxY": 357.3,
+        "maxX": 94.1,
+        "page": 11
+      },
+      {
+        "minY": 320.4,
+        "minX": 224.7,
+        "maxY": 348.7,
+        "maxX": 525.5,
+        "page": 11
+      },
+      {
+        "minY": 271.6,
+        "minX": 72,
+        "maxY": 315.2,
+        "maxX": 525.5,
+        "page": 11
+      },
+      {
+        "minY": 224.3,
+        "minX": 72,
+        "maxY": 267.1,
+        "maxX": 525.5,
+        "page": 11
+      },
+      {
+        "minY": 95.1,
+        "minX": 72,
+        "maxY": 170.8,
+        "maxX": 525.5,
+        "page": 11
+      },
+      {
+        "minY": 692.7,
+        "minX": 72,
+        "maxY": 720.4,
+        "maxX": 525.5,
+        "page": 12
+      }
+    ],
+    "text": "In two dimensional CFTs, the expression of TrρAn for N disjoint intervals can be written as a 2N-point function of twist fields [3, 4]. Similarly to the two intervals case, the global conformal invariance cannot fix the dependence on ui and vi. In particular, given the endpoints u1 < v1 < · · · < uN < vN, one can employ the following conformal map wN(z) = ((uu11 −− zu)N()u(Nz −− vvNN)) , (3.4) which sends u1 → 0, uN → 1 and vN → ∞. The remaining endpoints are mapped into the 2N − 3 four-point ratios x1 = wN(v1), x2 = wN(u2), x3 = wN(v2), . . . , x2N−3 = wN(vN−1) which are invariant under SL(2, C). Notice that xj ∈ R and the order is preserved, namely 0 < x1 < x2 < · · · < x2N−3 < 1. The global conformal invariance allows us to write TrρAn for N disjoint intervals as follows [4] where i, j = 1, . . . , N, the scaling dimension ∆n is given in (2.1) and x is the vector whose elements are the 2N − 3 four-point ratios introduced above. It is worth remarking that FN,n(x) encodes the full operator content of the model and therefore its computation depends on the features of the model. From (3.1) and (3.5), one finds that RN,n and RNno,rnm in CFT become respectively [19] where xσN,p is the vector made by the 2p − 3 four-point ratios obtained with the endpoints of the p intervals selected by σN,p."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 178.2,
+      "minX": 125,
+      "maxY": 216.9,
+      "maxX": 525.5,
+      "page": 11
+    }],
+    "text": "TrρAn = 〈∏i=N1 Tn(ui)T̄n(vi)〉 = cnN ∣∣∣∣∣ ∏i<j∏(uij,j−(vjui−)(uvji)− vi) ∣∣∣∣∣2∆n FN,n(x) , (3.5)"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 49.6,
+      "minX": 121.9,
+      "maxY": 86.3,
+      "maxX": 525.5,
+      "page": 11
+    }],
+    "text": "RN,n(x) = p∏N=2 σ∏N,p [Fp,n(xσN,p )](−1)N−p , RNno,rnm(x) = RRN,Nn(,nx(xfix)ed) , (3.6)"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 12
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 12"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 581.1,
+        "minX": 72,
+        "maxY": 689,
+        "maxX": 525.5,
+        "page": 12
+      },
+      {
+        "minY": 532.3,
+        "minX": 176.2,
+        "maxY": 568.1,
+        "maxX": 525.5,
+        "page": 12
+      },
+      {
+        "minY": 492.1,
+        "minX": 72,
+        "maxY": 519.4,
+        "maxX": 525.5,
+        "page": 12
+      }
+    ],
+    "text": "The function FN,n(x) for the compactified boson has been studied in [19] by generalizing the construction of [7] and, again, it is written in terms of the Riemann theta function (2.8). For N > 2 disjoint intervals the Riemann surface occurring in the computation of TrρAn has genus g = (N − 1)(n − 1). The corresponding g × g period matrix τN = R + i I, which is symmetric and complex with positive imaginary part, is complicated and, since we do not find instructive to report it here, we refer to [19] for any detail about it. The expression of FN,n(x) for the compactified boson reads [31, 19] FN,n(x) = |ΘΘ((τTNη))|2 , Tη ≡ ( i RηI i IR/η ) , (3.7) where η is the parameter containing the compactification radius introduced in §. Notice that (3.7) is invariant under η ↔ 1/η."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 460.2,
+        "minX": 72,
+        "maxY": 487.7,
+        "maxX": 525.5,
+        "page": 12
+      },
+      {
+        "minY": 295.2,
+        "minX": 72,
+        "maxY": 402.4,
+        "maxX": 525.5,
+        "page": 12
+      },
+      {
+        "minY": 151.7,
+        "minX": 72,
+        "maxY": 227.4,
+        "maxX": 525.5,
+        "page": 12
+      },
+      {
+        "minY": 110.5,
+        "minX": 231.3,
+        "maxY": 138.8,
+        "maxX": 525.5,
+        "page": 12
+      },
+      {
+        "minY": 54.3,
+        "minX": 72,
+        "maxY": 97.6,
+        "maxX": 525.5,
+        "page": 12
+      },
+      {
+        "minY": 661.7,
+        "minX": 72,
+        "maxY": 721.6,
+        "maxX": 525.5,
+        "page": 13
+      }
+    ],
+    "text": "As done in § for the two intervals case, also for N disjoint intervals it is interesting to consider the decompactification regime. When η 1 the expression in (3.7) becomes For computational purposes, it is important to observe that in (3.8) the Riemann theta function is evaluated for τN, which is g × g, while for finite η, when (3.7) holds, the matrix occurring in the Riemann theta function is 2g × 2g. This implies that for the non compact boson we can reach higher values of n and therefore the corresponding numerical extrapolation is more precise. In the decompactification regime we can also appreciate the convenience of considering the normalization (3.3). Indeed, plugging (3.8) into (3.6) one obtains an expression which is η independent As for the Ising model, since the results of [31] about the bosonization on higher genus Riemann surfaces for c = 1 models hold for a generic genus, we can straightforwardly write the generalization to N > 2 of the N = 2 formula (2.15). Indeed, given the period matrix τN employed for the compact boson in (3.7), we have that TrρAn for the Ising model is (3.5) with c = 1/2 and [31, 19] FN,n(x) = ∑2eg||ΘΘ[(eτ]N(τ)N|)| . (3.10) The Riemann theta functions in this formula are evaluated for the g × g period matrix and a sum over all the characteristics occurs. It is worth remarking that the Riemann theta functions in (3.10) with odd characteristics vanish and therefore the sum contains 2g−1(2g + 1) terms. In [19] the formula (3.10) has been checked numerically on the lattice for n = 2, various N and different configurations of intervals by employing the Matrix Product States. To our knowledge, numerical results for IN with N > 3 are not available in the literature for the critical Ising chain in transverse field."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 415.3,
+      "minX": 179,
+      "maxY": 447.3,
+      "maxX": 525.5,
+      "page": 12
+    }],
+    "text": "FNη→,n∞(x) = √det(Iη)g/|2Θ(τN)|2 ≡ ηg/2 F̂N,n(x) . (3.8)"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 241.6,
+      "minX": 151.7,
+      "maxY": 282.5,
+      "maxX": 525.5,
+      "page": 12
+    }],
+    "text": "R̂Nno,rnm(x) ≡ RRNη→,Nηn→∞,n∞(x(xfix)ed) = p∏N=2 σ∏N,p [ F̂F̂pp,,nn((xxfiσσxNNe,,dpp )) ](−1)N−p . (3.9)"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 13
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 13"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 613.9,
+        "minX": 72,
+        "maxY": 656.6,
+        "maxX": 525.5,
+        "page": 13
+      },
+      {
+        "minY": 550.2,
+        "minX": 72,
+        "maxY": 567.1,
+        "maxX": 513.8,
+        "page": 13
+      },
+      {
+        "minY": 525,
+        "minX": 139,
+        "maxY": 537.3,
+        "maxX": 184.3,
+        "page": 13
+      },
+      {
+        "minY": 511.9,
+        "minX": 147.9,
+        "maxY": 520,
+        "maxX": 175.4,
+        "page": 13
+      },
+      {
+        "minY": 489.6,
+        "minX": 72,
+        "maxY": 498.1,
+        "maxX": 94.8,
+        "page": 13
+      },
+      {
+        "minY": 421.8,
+        "minX": 72,
+        "maxY": 449.7,
+        "maxX": 525.5,
+        "page": 13
+      },
+      {
+        "minY": 350.1,
+        "minX": 72,
+        "maxY": 362.4,
+        "maxX": 452.5,
+        "page": 13
+      }
+    ],
+    "text": "In this paper, for simplicity, we consider only N = 3 disjoint intervals and therefore let us specify some of the formulas given above to this case. The generalization of the mutual information to the case of three disjoint intervals is given by where IA(n1),A2,A3 can be written by specifying the expressions in (3.1) to N = 3, namely log(R3,n) 1 − n with Considering CFTs, when N = 3 the vector x = (x1, x2, x3) is made by three four-point ratios and (3.6) becomes where F3,n(x) is (3.5) for N = 3 and F2,n(x) has been introduced in (2.4)."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 581.1,
+      "minX": 78,
+      "maxY": 600.5,
+      "maxX": 525.5,
+      "page": 13
+    }],
+    "text": "IA1,A2,A3 ≡ SA1 +SA2 +SA3 −SA1∪A2 −SA1∪A3 −SA2∪A3 +SA1∪A2∪A3 = nli→m1 IA(n1),A2,A3 , (3.11)"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 515.4,
+      "minX": 78,
+      "maxY": 532.3,
+      "maxX": 132.4,
+      "page": 13
+    }],
+    "text": "IA(n1),A2,A3 ≡"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 515.7,
+      "minX": 190.8,
+      "maxY": 532.3,
+      "maxX": 525.5,
+      "page": 13
+    }],
+    "text": "= SA(n1) +SA(n2) +SA(n3) −SA(n1)∪A2 −SA(n1)∪A3 −SA(n2)∪A3 +SA(n1)∪A2∪A3 , (3.12)"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 457.1,
+      "minX": 196.7,
+      "maxY": 488.8,
+      "maxX": 525.5,
+      "page": 13
+    }],
+    "text": "R3,n ≡ TrTρnArρ1∪nAA1∪2∪AA23T(rTρrnAρ1An∪1AT3TrρrnAρ2nAT2∪rAρ3An3) . (3.13)"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 375.4,
+      "minX": 180.9,
+      "maxY": 408.9,
+      "maxX": 525.5,
+      "page": 13
+    }],
+    "text": "R3,n(x) = F2,n( xx21((xx33−−Fxx321,))n)(Fx12,,nx(2x,1x)3F)2,n( x13−−xx22 ) , (3.14)"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 303.2,
+        "minX": 72,
+        "maxY": 345.9,
+        "maxX": 525.5,
+        "page": 13
+      },
+      {
+        "minY": 53.5,
+        "minX": 72,
+        "maxY": 240.9,
+        "maxX": 525.5,
+        "page": 13
+      },
+      {
+        "minY": 243.6,
+        "minX": 72,
+        "maxY": 318.7,
+        "maxX": 525.5,
+        "page": 14
+      }
+    ],
+    "text": "The non compact boson is the CFT describing the massless harmonic chain in the continuum. The Hamiltonian of the harmonic chain with L lattice sites and with nearest neighbour interaction reads where periodic boundary conditions are imposed. Rewriting (3.15) in terms of a ≡ √M/K and ω through a canonical transformation, one can observe that it provides the lattice discretization of the free boson with mass ω and lattice spacing a. Thus, the continuum limit of the ω = 0 case is the decompactified boson discussed above. The method to compute Rényi entropies for the lattice model (3.15) is well known [35] and TrρAn can be found from the correlators 〈qrqs〉 and 〈prps〉. Let us recall that setting ω to zero leads to a divergent expression for 〈qrqs〉 because of the zero mode occurring for periodic boundary conditions. In [19] the method discussed in [35] has been applied to perform various checks of the CFT formulas for the non compact boson at fixed n. Moreover, also INsub has been found from the harmonic chain data, but a comparison with the analytic results has not been done because the analytic continuation of the corresponding Rényi entropies is not known yet. Indeed, the Riemann theta function occurs in (3.8) and its analytic continuation in n is still an open problem. As for the values of ω, in [19] it has been checked that ωL = 10−5 is small enough to capture the CFT regime through the periodic harmonic chain. The numerical data for the periodic harmonic chain have been found by setting M = K = 1 and ωL = 10−5 in (3.15). The same quantities evaluated for ωL = 10−3 turned out to be indistinguishable."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 254.8,
+      "minX": 175.8,
+      "maxY": 289.1,
+      "maxX": 525.5,
+      "page": 13
+    }],
+    "text": "H = ∑Ln=−01 ( 2M1 pn2 + M2ω2 qn2 + K2 (qn+1 − qn)2) , (3.15)"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 14
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 14"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 345.6,
+      "minX": 143.7,
+      "maxY": 420.7,
+      "maxX": 525.5,
+      "page": 14
+    }],
+    "text": "Figure 4. Extrapolations of I3sub (see (3.3) with N = 3) as function of the four-point ratio x2 for the non compact boson. The points are the data obtained in [19] from the periodic harmonic chain (3.15) with L = 5000 and ωL = 10−5. The configuration chosen here is made by equal intervals separated by equal distances, while the fixed configuration normalizing I3sub is given in the text. The coloured lines correspond to two different extrapolations obtained through rational interpolations with (p, q) indicated."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 179.8,
+      "minX": 72,
+      "maxY": 238.5,
+      "maxX": 525.5,
+      "page": 14
+    }],
+    "text": "In the remaining part of this section we focus on the case of three disjoint intervals and perform some numerical extrapolations of the analytic results reviewed above to n = 1 through rational interpolations, comparing them with the corresponding numerical data from the lattice models, whenever they are available."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 51.7,
+      "minX": 72,
+      "maxY": 175.3,
+      "maxX": 525.5,
+      "page": 14
+    }],
+    "text": "In Figs. 4 and 5 we consider I3sub (see (3.3)) for the decompactified boson, comparing the results obtained for the periodic harmonic chain with the numerical extrapolations found for the corresponding configurations of intervals obtained through the rational interpolation (see §). The dots are numerical data obtained in [19] from the periodic harmonic chain given by (3.15) with L = 5000 and different sets of data correspond to different configurations of the three intervals. In particular, referring to the inset of Fig. 4 for the notation, the configuration considered in Fig. 4 is the one where all intervals are equal 1 = 2 = 3 and they are placed at the same distance d1 = d2 = d3 = L/3 − ."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 15
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 15"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 388.5,
+      "minX": 143.7,
+      "maxY": 424.7,
+      "maxX": 525.5,
+      "page": 15
+    }],
+    "text": "Figure 5. Extrapolations of I3sub for the non compact boson. The harmonic chain is the same one of Fig. 4 while the configurations of intervals are given by (3.16). The data for the periodic harmonic chain have been extracted from [19]."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 320.5,
+        "minX": 72,
+        "maxY": 363.3,
+        "maxX": 525.5,
+        "page": 15
+      },
+      {
+        "minY": 265.5,
+        "minX": 95.4,
+        "maxY": 309.4,
+        "maxX": 111,
+        "page": 15
+      },
+      {
+        "minY": 281.7,
+        "minX": 135.8,
+        "maxY": 311.5,
+        "maxX": 525.5,
+        "page": 15
+      },
+      {
+        "minY": 265,
+        "minX": 135.8,
+        "maxY": 279.6,
+        "maxX": 472.3,
+        "page": 15
+      },
+      {
+        "minY": 51.4,
+        "minX": 72,
+        "maxY": 254.7,
+        "maxX": 526.1,
+        "page": 15
+      },
+      {
+        "minY": 344.5,
+        "minX": 72,
+        "maxY": 433.3,
+        "maxX": 525.5,
+        "page": 16
+      }
+    ],
+    "text": "Varying the length of the intervals, one finds the result, which is plotted as function of the four-point ratio x2. In Fig. 5, the data are labeled according to the following configurations of the three intervals: (a) (b) (c) i = λi , di = (L − ∑i3=1 i)/3 with λ1 = 1, λ2 = 2, λ3 = 8; with λ1 = 1, λ2 = 11, λ3 = 11; (3.16) i = γi , di = γid, d = L/(∑i3=1 γi) − with γ1 = 1, γ2 = 3, γ3 = 6; where the parameter is varied and the results are plotted as functions of x2 ∈ (0, 1). As for the fixed configuration normalizing I3sub in (3.3) we have chosen 1 = 2 = 3 = d1 = d2 = int(L/6), where int(. . . ) denotes the integer part. The coloured curves in Figs. 4 and 5 are the numerical extrapolations of the CFT formulas for the non compact boson (3.8) and (3.9) through the rational interpolation method. For each set of data, we show two different rational interpolations which are well-behaved in order to check the stability of the result. The differences between different well-behaved rational interpolations are very small and the agreement with the numerical data from the harmonic chain is very good, supporting the validity of the extrapolating method. In Figs. 4 and 5 we have employed 2 6 n 6 6. It is worth remarking at this point that the Riemann theta functions occurring in the CFT expression (3.14) for the non compact boson contain at most g × g matrices (g = 2(n − 1) for N = 3) while for the compact boson their size is at most 2g × 2g (see (3.7)). From the computational viewpoint, this is an important difference because the higher is n that can be addressed, the higher is the number of different (p, q) that can be considered in the rational interpolations. Thus, the maximum n that we can deal with is related to the maximum size of the matrices in the Riemann theta functions occurring in the model. Nevertheless, from Figs. 4 and 5 we observe that, for this case, rational interpolations with low values of (p, q) are enough to capture the result expected from the lattice data."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 16
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 16"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 458.8,
+      "minX": 143.7,
+      "maxY": 533.9,
+      "maxX": 525.5,
+      "page": 16
+    }],
+    "text": "Figure 6. Extrapolations of IA1,A2,A3 , defined in (3.11), for the Ising model. Two configurations of intervals have been considered, namely (3.17) with α = 0.25 (left) and α = 2 (right). The dots correspond to IA(n1),A2,A3 in (3.12) with n ∈ {2, 3, 4} while the lines are the extrapolations obtained through the rational interpolation method with the values of (p, q) indicated. The dot-dashed line is the extrapolation to n = 2 performed as a check of the method, while the remaining lines correspond to IA1,A2,A3 ."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 293.8,
+        "minX": 72,
+        "maxY": 337.6,
+        "maxX": 526.1,
+        "page": 16
+      },
+      {
+        "minY": 268,
+        "minX": 175.6,
+        "maxY": 280.2,
+        "maxX": 525.5,
+        "page": 16
+      },
+      {
+        "minY": 52,
+        "minX": 72,
+        "maxY": 254.7,
+        "maxX": 525.5,
+        "page": 16
+      },
+      {
+        "minY": 613.3,
+        "minX": 72,
+        "maxY": 720.2,
+        "maxX": 525.5,
+        "page": 17
+      }
+    ],
+    "text": "In Fig. 6 we show IA1,A2,A3 , defined in (3.11), for the Ising model. We have considered the following configurations of three intervals specified by a parameter α (see the inset of Fig. 4 for the notation) (d) i = , d1 = d2 = α , d3 = L − (3 + 2α) . (3.17) In particular, the results in Fig. 6 correspond to α = 0.25 (left panel) and α = 2 (right panel), where the dots denote the values of IA(n1),A2,A3 for n ∈ {2, 3, 4}. Unfortunately, with the computational resources at our disposal, we could not compute Rényi entropies for higher values of n. Indeed, besides the problem of computing the Riemann theta function numerically for large period matrices, the additional obstacle occurring for the Ising model is that the number of elements in the sum (3.10) grows exponentially with n. Given the few n's available, only few rational interpolations can be employed to approximate the analytic continuation to n = 1 and they are depicted in Fig. 6 through solid and dashed lines (in general we never use (p, q) = (0, 1) because is often not well-behaved). It is interesting to observe that the three different rational interpolations provide the same extrapolation to n = 1 for a large range of x2 (they differ when x2 is close to 1). Since, to our knowledge, numerical results about IA1,A2,A3 for the Ising model are not available in the literature, the curves in Fig. 6 are predictions that would be interesting to test through other methods. In order to check the reliability of the numerical method, we have performed rational interpolations considering only n ∈ {3, 4} to extrapolate the value at n = 2, which is known analytically. Since only two points are available, only the rational interpolation with (p, q) = (1, 0) can be done, which is given by the dot-dashed curve in Fig. 6. Despite the roughness of the extrapolation due to the few input points, the agreement with the expected values computed with the analytic expression (black dots) is very good."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 17
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 17"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 598,
+      "minX": 72,
+      "maxY": 608.7,
+      "maxX": 375.7,
+      "page": 17
+    }],
+    "text": "4. Entanglement negativity of two disjoint intervals"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 554.2,
+      "minX": 72,
+      "maxY": 581,
+      "maxX": 525.5,
+      "page": 17
+    }],
+    "text": "In this section we consider the logarithmic negativity of two disjoint intervals for the non compact massless free boson, whose analytic formula is not known."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 346.4,
+      "minX": 72,
+      "maxY": 549.1,
+      "maxX": 525.5,
+      "page": 17
+    }],
+    "text": "The method to compute the logarithmic negativity E in quantum field theory and in conformal field theory has been described in [22, 23] (see [24] for the finite temperature case) and we refer to these papers for all the details and the discussion of further cases. In order to briefly mention the main idea, let us consider a subsystem A = ∪Ni=1Ai made by N disjoint intervals Ai = [ui, vi]. The traces TrρAn in CFT are given by the correlators of twist fields in (3.5). Denoting by A0 A a set of N0 < N disjoint intervals among the ones in A and by ρAT0 the partial transpose of ρA with respect to A0, we have that Tr(ρAT0 )n in CFT is the correlation function of twist fields obtained by placing Tn in ui and T̄n in vi when Ai ∈ A \\ A0, and T̄n in ui and Tn in vi when Ai ∈ A0. The corresponding logarithmic negativity E, which measures the entanglement between A0 and A \\ A0, can be computed by considering the sequence of the even integers ne and taking the replica limit (1.7). Configurations containing adjacent intervals are obtained as limiting cases and the fields Tn2 and T̄n2 occur."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 298.6,
+        "minX": 72,
+        "maxY": 342,
+        "maxX": 525.5,
+        "page": 17
+      },
+      {
+        "minY": 276.4,
+        "minX": 143.7,
+        "maxY": 290.3,
+        "maxX": 525.5,
+        "page": 17
+      },
+      {
+        "minY": 238.4,
+        "minX": 189.4,
+        "maxY": 269.7,
+        "maxX": 525.5,
+        "page": 17
+      },
+      {
+        "minY": 187.3,
+        "minX": 72,
+        "maxY": 231.4,
+        "maxX": 525.5,
+        "page": 17
+      },
+      {
+        "minY": 158.5,
+        "minX": 206.1,
+        "maxY": 173.3,
+        "maxX": 525.5,
+        "page": 17
+      },
+      {
+        "minY": 100.5,
+        "minX": 72,
+        "maxY": 143.8,
+        "maxX": 525.5,
+        "page": 17
+      },
+      {
+        "minY": 66.8,
+        "minX": 169.3,
+        "maxY": 85.2,
+        "maxX": 525.5,
+        "page": 17
+      },
+      {
+        "minY": 679.9,
+        "minX": 72,
+        "maxY": 720.4,
+        "maxX": 525.5,
+        "page": 18
+      },
+      {
+        "minY": 597.3,
+        "minX": 72,
+        "maxY": 641.2,
+        "maxX": 525.5,
+        "page": 18
+      },
+      {
+        "minY": 564.5,
+        "minX": 238.1,
+        "maxY": 584.4,
+        "maxX": 525.5,
+        "page": 18
+      },
+      {
+        "minY": 536.7,
+        "minX": 72,
+        "maxY": 550.8,
+        "maxX": 525,
+        "page": 18
+      }
+    ],
+    "text": "In the simplest example, starting from two disjoint intervals A = A1 ∪ A2, whose endpoints are ordered as u1 < v1 < u2 < v2 like in §, one considers e.g. the partial transpose with respect to A2. In this case we have that [22, 23] Tr(ρAT2 )n = 〈Tn(u1)T̄n(v1)T̄n(u2)Tn(v2)〉 (4.1) = cn2 [ (v1 − u1)((uv22 −− uu21))((uv22 −− vv11))(v2 − u1) ]2∆n Gn(x) , (4.2) where x ∈ (0, 1) is the four-point ratio (2.5) and ∆n has been introduced in (2.1). Since (4.1) is obtained from (2.3) by exchanging Tn ↔ T̄n for the endpoints of A2, the function Gn in (4.2) is related to the function F2,n in (2.4) as follows Gn(x) ≡ (1 − x)4∆n F2,n(x/(x − 1)) , (4.3) where we remark that x/(x − 1) ∈ (−∞, 0). Plugging (4.3) into (4.2) and taking the replica limit (1.7) of the resulting expression, since ∆1 = 0 and c1 = 1, we find that the logarithmic negativity of two disjoint intervals in CFT is given by E(x) = nlei→m1 log Gne (x) = nlei→m1 log F2,ne (x/(x − 1)) , (4.4) telling us that the logarithmic negativity is scale invariant, being a function of the ratio x only. In order to get rid of the prefactor in (4.2), it is convenient to consider the following ratio where (4.3) has been employed in the last step. Since F2,1(x) = 1 for x ∈ (0, 1) because of the normalization of ρA, the logarithmic negativity can be found also by taking the replica limit of (4.5), namely E(x) = log nlei→m1 R̃ne (x) , (4.6) Notice that, since for n = 2 we have that T2 = T̄2, one concludes that R̃2 = 1 identically."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 18
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 18"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 648.5,
+      "minX": 154.3,
+      "maxY": 679.1,
+      "maxX": 525.5,
+      "page": 18
+    }],
+    "text": "R̃n ≡ TTrr((ρρTAA2))nn = FG2n,n((xx)) = (1 − x)4∆n F2,n(Fx2/,n((xx−) 1)) , (4.5)"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 488.3,
+        "minX": 72,
+        "maxY": 533.8,
+        "maxX": 525.5,
+        "page": 18
+      },
+      {
+        "minY": 379.7,
+        "minX": 72,
+        "maxY": 424.4,
+        "maxX": 525.5,
+        "page": 18
+      }
+    ],
+    "text": "The simplest model we can deal with for which analytic expressions for Tr(ρAT2 )n are available in the literature is the non compact free massless boson. For this model it has been found that [22, 23] When n = ne is even, it could be convenient to isolate the term k/n = 1/2 in the product in order to get rid of the square root in the remaining part of the product because of the symmetry k ↔ n − k in Fk/n. Notice that when n = 2 we have that R̃2(x) = 1 identically."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 437,
+      "minX": 142.4,
+      "maxY": 475.7,
+      "maxX": 525.5,
+      "page": 18
+    }],
+    "text": "R̃n(x) = (1 − x)(n−1/n)/3 [ ∏nk∏=−11kn=R−11eF(Fk/kn/(nx()xF−x1k/)nF̄(k1/n−(1x−1)x )) ]1/2 . (4.7)"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 237.1,
+      "minX": 72,
+      "maxY": 379.2,
+      "maxX": 526.1,
+      "page": 18
+    }],
+    "text": "In Fig. 7 we compare the CFT result (4.7) for R̃n(x) with the corresponding quantity computed for the periodic harmonic chain (3.15), where Tr(ρAT2 )n is computed through the correlators 〈qrqs〉 and 〈prps〉 as explained in [35]. Notice that we have improved this check with respect to [23], indeed the data in Fig. 7 correspond to chains whose total length L is significantly larger than the ones considered in [23], where L 6 300. All the data reported in the figure have ωL = 10−5. We have considered also harmonic chains with ωL = 10−3 and L = 10000, finding the same results reported in Fig. 7 for L = 10000. For n = 3 the agreement is very good, while it gets worse as n increases. This is expected because of the unusual corrections to the scaling [36]."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 205.2,
+        "minX": 72,
+        "maxY": 233.1,
+        "maxX": 525.5,
+        "page": 18
+      },
+      {
+        "minY": 161,
+        "minX": 78,
+        "maxY": 191.4,
+        "maxX": 525.5,
+        "page": 18
+      },
+      {
+        "minY": 133.2,
+        "minX": 72,
+        "maxY": 141.6,
+        "maxX": 101.9,
+        "page": 18
+      },
+      {
+        "minY": 92,
+        "minX": 79.9,
+        "maxY": 120.6,
+        "maxX": 525.5,
+        "page": 18
+      },
+      {
+        "minY": 51.4,
+        "minX": 72,
+        "maxY": 79.3,
+        "maxX": 525.5,
+        "page": 18
+      },
+      {
+        "minY": 284.8,
+        "minX": 72,
+        "maxY": 328.7,
+        "maxX": 525.5,
+        "page": 19
+      }
+    ],
+    "text": "It is more convenient to consider (4.4) than (4.6) for the computation of the replica limit, and for the logarithmic negativity of the non compact boson we have that [23] E(x) = − 21 log [K(x)K(1 − x)] − 83 log(1 − x) + log(π/2) − nlei→m1 ne∑/2−1 log Gk/ne (x) , (4.8) where Gβ(x) ≡ 2F1(β, β, 1; x) [ ΓΓ((11 −− 2ββ)2) (1 − x)β 2F1(β, β, 2β; 1 − x) − (β ↔ 1 − β)] , (4.9) being K(x) the elliptic integral of the first kind. The sum in (4.8) is defined for ne > 4 and for ne = 2 that term is zero. The analytic continuation in (4.8) is not known for the entire range x ∈ (0, 1). In [23] the analytic continuation has been found for the regime x → 1−, obtaining an expression that surprisingly works down to x ∼ 0.3 (see the dashed red curve in Fig. 8)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 155.3,
+      "minX": 405.7,
+      "maxY": 160.9,
+      "maxX": 421.2,
+      "page": 18
+    }],
+    "text": "k=1"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 19
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 19"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 355.6,
+      "minX": 143.7,
+      "maxY": 393.7,
+      "maxX": 525.5,
+      "page": 19
+    }],
+    "text": "Figure 7. The ratio R̃n(x) in (4.5) for the non compact boson. The data points come from the periodic harmonic chain with ωL = 10−5, while the curves are given by CFT formula (4.7)."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 172.9,
+      "minX": 72,
+      "maxY": 280.9,
+      "maxX": 525.5,
+      "page": 19
+    }],
+    "text": "Here we numerically extrapolate E(x) through the formula (4.8) by using the rational interpolation method, which has been discussed in § and employed in the previous sections for the entanglement entropy of disjoint intervals. It is worth remarking that, since the replica limit (1.7) for E(x) involves only even n's, to perform a rational interpolation characterized by some (p, q) we need higher values of n with respect to the ones employed for the entanglement entropy in the previous sections. In particular, for the logarithmic negativity p + q + 1 6 ne,max/2."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 62.2,
+        "minX": 72,
+        "maxY": 169.3,
+        "maxX": 525.5,
+        "page": 19
+      },
+      {
+        "minY": 106.9,
+        "minX": 72,
+        "maxY": 262.3,
+        "maxX": 525.5,
+        "page": 20
+      }
+    ],
+    "text": "In Fig. 8 we report the extrapolations found for some values of (p, q). Since the numerical data from the harmonic chain are accurate enough to provide the curve in the continuum limit that should be found through the analytic continuation (4.8), we can check the reliability of our numerical extrapolations against them. For the non compact boson the expression (4.9) is not difficult to evaluate numerically. Thus, we can deal with high values of n and therefore we have many possibilities for (p, q). It turns out that an accurate extrapolation for the logarithmic negativity requires high values of p and q, in particular for the regime of small intervals x ∼ 0 (see Fig. 11 in § for extrapolations having low p and q). As already remarked in [22, 23], the behaviour of E(x) when x ∼ 0 is not power-like. We observed, as a general behaviour, that increasing q leads to extrapolations which are closer to the numerical data, but spurious fluctuations or even singularities in some regimes of x can occur (see the black and magenta curves in the inset of Fig. 8, and the dashed magenta and cyan curves in Fig. 11). This happens whenever one of the q poles of the rational function is close to the range (1, nmax) of the interpolated data and not too far from n = 1 (it may be real or have a small imaginary part). More details are reported in §. Taking low q's, one usually gets smooth curves but even high values of p's are not sufficient to capture the behaviour of E(x) when x ∼ 0."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 20
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 20"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 289.2,
+      "minX": 143.7,
+      "maxY": 388.8,
+      "maxX": 525.5,
+      "page": 20
+    }],
+    "text": "Figure 8. Logarithmic negativity of two disjoint intervals for the non compact boson (4.8) as function of the four-point ratio x. The dots are numerical data obtained for the periodic harmonic chains with ωL = 10−5 and increasing total lengths. All data collapse on the same curve, which corresponds to the continuum limit. The red dashed curve is the analytic continuation found in [23] in the regime x → 1−. The remaining curves are extrapolations obtained from different rational interpolations having (p, q) indicated. In the inset we show the same plot in logarithmic scale in order to highlight the behaviour of the different extrapolated curves when x ∼ 0."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 59.6,
+        "minX": 72,
+        "maxY": 102.3,
+        "maxX": 525.5,
+        "page": 20
+      },
+      {
+        "minY": 613.9,
+        "minX": 72,
+        "maxY": 720.4,
+        "maxX": 525.5,
+        "page": 21
+      }
+    ],
+    "text": "Thus, the logarithmic negativity is more difficult to find through the rational interpolation method than the entanglement entropy. Indeed, while for the latter one few Rényi entropies are enough to capture the expected result in a stable way, for the logarithmic negativity more input data are needed to reproduce the regime of distant intervals. Maybe other numerical methods are more efficient. It is worth remarking that the fact that high values of n's in Tr(ρAT2 )n are required to perform accurate extrapolations of the logarithmic negativity leads to a computational obstacle whenever Gn(x) in (4.2) is written in terms of Riemann theta functions, like for the compact boson [23] and for the Ising model [27, 28]. Given our computational resources, we have not been able to deal with those analytic expressions for n high enough to guarantee convincing extrapolations."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 21
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 21"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 600.2,
+      "minX": 72,
+      "maxY": 608.7,
+      "maxX": 158.1,
+      "page": 21
+    }],
+    "text": "5. Conclusions"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 488.5,
+      "minX": 72,
+      "maxY": 581,
+      "maxX": 525.5,
+      "page": 21
+    }],
+    "text": "The analytic continuations leading to analytic expressions for the entanglement entropy and the logarithmic negativity of disjoint regions can be very difficult to perform, even for simple CFTs. In this paper we studied this problem numerically for the CFTs given by the free massless boson (compactified or in the decompactification regime) or by the Ising model, where TrρAn for a generic number of disjoint intervals [7, 8, 19] and Tr(ρAT21∪A2 )n are known analytically [22, 23, 27, 28]."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 187,
+      "minX": 72,
+      "maxY": 485.4,
+      "maxX": 525.5,
+      "page": 21
+    }],
+    "text": "The numerical extrapolations have been performed through a method based on rational interpolations, which has been first employed in this context by [20]. Its reliability has been checked by reproducing the existing results found from the corresponding lattice models through various techniques like exact diagonalizations [6, 19] and Tree Tensor Networks [9]. In our analysis, we observed that for the entanglement entropy one finds the same curve through different extrapolations already with small values of the degrees p and q of the polynomials occurring in the numerator and in the denominator respectively of the rational interpolation. Instead, for the logarithmic negativity higher values of p and q are needed for the regime of distant intervals, where it falls off faster than any power. Extrapolations having higher values of q are more efficient in providing the expected result, but they can show some spurious behaviour in some parts of the domain. Our numerical analysis has been limited both by our computational resources (in the evaluation of the Riemann theta functions for large matrices) and by the features of the model (e.g. for the logarithmic negativity of distant intervals). These obstacles prevented us to treat some interesting cases like the logarithmic negativity of two disjoint intervals for the compact boson and for the Ising model because high values of n are needed to get convincing extrapolations. We remark that lattice results for E(x) have been found in [28] for the Ising model through Tree Tensor Networks, while for the compact boson they are not available in the literature (see [37] for R̃3 obtained through Quantum Monte Carlo)."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 123.8,
+      "minX": 72,
+      "maxY": 183,
+      "maxX": 525.5,
+      "page": 21
+    }],
+    "text": "When singularities in n occur (see e.g. [38]), the numerical method adopted here is expected to fail. As for the one dimensional systems that have been considered, given the good agreement with the lattice results, a posteriori we expect that there are no singularities in the ranges of n that have been explored."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 59.5,
+        "minX": 72,
+        "maxY": 118.6,
+        "maxX": 525.5,
+        "page": 21
+      },
+      {
+        "minY": 661.1,
+        "minX": 72,
+        "maxY": 720.4,
+        "maxX": 525.5,
+        "page": 22
+      }
+    ],
+    "text": "The rational interpolation method has been also employed to address some cases whose corresponding lattice results are not available in the literature (e.g. the U(1) gauge theory in 2 + 1 dimensions has been studied in [20] and the case of three disjoint intervals for the Ising model in §). Thus, it is a useful tool that could be used in future studies to find numerically the entanglement entropy and the logarithmic negativity of disjoint regions (or for single regions whenever the analytic continuation is difficult to obtain) for other interesting situations like e.g. for CFTs in higher dimensions [39] and in the context of the holographic correspondence [12, 13, 40]."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 22
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 22"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 645.8,
+      "minX": 72,
+      "maxY": 656.6,
+      "maxX": 177.4,
+      "page": 22
+    }],
+    "text": "Acknowledgments"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 586.1,
+      "minX": 72,
+      "maxY": 628.8,
+      "maxX": 525.5,
+      "page": 22
+    }],
+    "text": "We are grateful to Pasquale Calabrese and Luca Tagliacozzo for useful comments on the draft. We thank all the authors of [6, 9] for allowing us to use their numerical results. ET has been supported by the ERC under Starting Grant 279391 EDEQS."
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 570.3,
+      "minX": 72,
+      "maxY": 581,
+      "maxX": 139.7,
+      "page": 22
+    }],
+    "text": "Appendices"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 542.5,
+      "minX": 72,
+      "maxY": 553.2,
+      "maxX": 225.9,
+      "page": 22
+    }],
+    "text": "A. Rational interpolations"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 466.2,
+      "minX": 72,
+      "maxY": 525.3,
+      "maxX": 525.5,
+      "page": 22
+    }],
+    "text": "In this appendix we discuss the numerical method that we have employed throughout the paper, which is based on rational interpolations, and the issues we encountered to address the replica limits for the entanglement entropy and negativity considered in the main text. Its use in this context has been first suggested in [20]."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 387.2,
+      "minX": 72,
+      "maxY": 461.7,
+      "maxX": 525.5,
+      "page": 22
+    }],
+    "text": "The rational interpolation method consists in constructing a rational function which interpolates a finite set of given points labeled by a discrete variable. Once the rational function is written, one simply lets the discrete variable assume all real values. The needed extrapolation is found by just evaluating the rational function obtained in this way for the proper value of the variable."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 307.4,
+        "minX": 72,
+        "maxY": 381.9,
+        "maxX": 525.5,
+        "page": 22
+      },
+      {
+        "minY": 84,
+        "minX": 71.6,
+        "maxY": 254.7,
+        "maxX": 525.5,
+        "page": 22
+      }
+    ],
+    "text": "For the quantities we are interested in, the discrete variable is an integer number n. As a working example, let us consider the case of two disjoint intervals, where the variable x ∈ (0, 1) characterizes the configuration of intervals. For any integer n > 2 we have a real function of x and typically we have access only to n 6 nmax for computational difficulties. The rational function interpolating the given data reads being p ≡ deg(P) and q ≡ deg(Q) the degrees of the numerator and of the denominator respectively as polynomials in n. The extrapolations are performed pointwise in the domain x ∈ (0, 1). Thus, for any given x ∈ (0, 1), in (A.1) we have p + q + 2 coefficients to determine. Nevertheless, since we can divide both numerator and denominator by the same number fixing one of them to 1, the number of independent parameters to find is p + q + 1. Once the coefficients in (A.1) have been found, the extrapolation is easily done by considering n real and setting it to the needed value. It is important to stress that, having access only to a limited number m of data points, we can only perform rational interpolations whose degrees (p, q) are such that p + q + 1 6 m. This method is implemented in Wolfram Mathematica through the Function Approximations package and the command RationalInterpolation."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 266.5,
+      "minX": 132.6,
+      "maxY": 295.8,
+      "maxX": 525.5,
+      "page": 22
+    }],
+    "text": "W((pn,q))(x) ≡ QP((xx;; nn)) ≡ ab00((xx)) ++ ab11((xx))nn ++ ab22((xx))nn22 ++ ·· ·· ·· ++ baqp((xx))nnqp , (A.1)"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 51.4,
+        "minX": 72,
+        "maxY": 81.3,
+        "maxX": 525.5,
+        "page": 22
+      },
+      {
+        "minY": 182.1,
+        "minX": 72,
+        "maxY": 305,
+        "maxX": 525.5,
+        "page": 23
+      },
+      {
+        "minY": 142.5,
+        "minX": 129.3,
+        "maxY": 169.4,
+        "maxX": 525.5,
+        "page": 23
+      },
+      {
+        "minY": 54.5,
+        "minX": 72,
+        "maxY": 129.7,
+        "maxX": 525.5,
+        "page": 23
+      },
+      {
+        "minY": 406.1,
+        "minX": 72,
+        "maxY": 720.9,
+        "maxX": 525.5,
+        "page": 24
+      }
+    ],
+    "text": "In Fig. 9 we consider an explicit example where we extrapolate the Ĩ1(x) in (2.7) of the compact boson (c = 1) for a particular value of the compactification radius corresponding to η = 0.295 (see also Fig 2). For n > 2 the analytic expressions are (2.6) and (2.10) and we take into account 2 6 n 6 6 only (in Fig. 2 we employ also n = 7). Given these data, we can perform rational interpolations with p + q + 1 6 5. The blue curve in Fig. 9 is the extrapolation to n = 1 of the rational interpolation with (p, q) = (2, 2). We find it instructive to describe the details for a specific value of x. Let us consider, for instance, a configuration corresponding to x = x̃ ≡ 0.2101 (see the dashed rectangle in Fig. 9). First one has to compute the rational interpolation with (p, q) = (2, 2), then the limit n → 1 must be taken. For these two steps, we find respectively W(n2,2)(x̃) = 0.315+8 −1.304.478n0 +n +7.837.608n92n2 , nli→m1 W(n2,2)(x̃) = 0.349 . (A.2) In the inset of Fig. 9 we show how adding more data improves the final extrapolation and how it becomes stable. Focusing again on x = x̃, we can start by taking only n ∈ {2, 3}, which allow to perform a rational interpolation with (p, q) = (1, 0) (a line). Since rational interpolations having p = 0 often provide wrong predictions, we prefer to avoid them, if possible. The extrapolation to n = 1 corresponding to (p, q) = (1, 0) cannot be trusted and therefore we consider four input data n ∈ {2, 3, 4, 5} which allow to consider a rational interpolation with, for instance, (p, q) = (3, 0) and also (p, q) = (1, 1). These two different rational interpolations do not provide the same extrapolation to n = 1 and therefore we must take into account more input data. Considering 2 6 n 6 6 we can choose also (p, q) = (2, 2) finding that the corresponding rational interpolation basically coincides with the one with (p, q) = (1, 1) (their difference is of order 10−3). Thus, the extrapolation to n = 1 obtained with (p, q) = (2, 2) is quite stable. Repeating this analysis for the whole range of x ∈ (0, 1), one can find the blue curve in Fig. 9. As a further check, in Fig. 2 we have used (p, q) = (3, 2) using more input data, finding that the final extrapolation is basically the same. Plots like the one shown in the inset of Fig. 9 are very useful to understand the stability of the extrapolation to n = 1. Increasing the values of p and q in the rational interpolations leads to more precise extrapolations, as expected. Rational interpolations with q > 0 provide extrapolations which are closer to the expected value with respect to the ones with q = 0. When q is strictly positive, q poles occur in the complex plane parameterized by n ∈ C. Nevertheless, if these poles are far enough from the real interval (1, nmax) containing all the n's employed as input data for the interpolation, the extrapolations to n = 1 are reliable. Increasing q, we have higher probability that one of the poles is close to the region of interpolation, spoiling the extrapolation. Plotting W(np,q)(x) as function of n is useful to realize whether this situation occurs (see the inset of Fig. 10 for an explicit example)."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 23
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 23"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 331.8,
+      "minX": 143.7,
+      "maxY": 433.7,
+      "maxX": 526.1,
+      "page": 23
+    }],
+    "text": "Figure 9. The quantity Ĩn in (2.6) and the corresponding n → 1 limit (2.7) for the compact boson (c = 1) with η = 0.295. The blue line is the extrapolation n = 1 of the rational interpolation with (p, q) = (2, 2) obtained through the analytic expressions given by (2.10) and (2.11) with 2 6 n 6 6, whose values for Ĩn are shown by points for some values of the four point ratio x. In the inset, considering the configuration having x = 0.2101 (highlighted by the dashed rectangle in the main plot), we show Ĩn as function of n for rational interpolations having different (p, q). The extrapolations having q > 0 capture the expected value better than the ones having q = 0."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 24
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 24"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 55.9,
+        "minX": 72,
+        "maxY": 401.6,
+        "maxX": 525.5,
+        "page": 24
+      },
+      {
+        "minY": 191.2,
+        "minX": 72,
+        "maxY": 249.8,
+        "maxX": 525.5,
+        "page": 25
+      }
+    ],
+    "text": "The issue of evaluating Riemann theta functions which involve large matrices becomes important when we want to compute IA1,A2,A3 (see (3.11) and (3.12)) for a compact boson. Indeed, F3,n(x) in (3.14) is given by (3.7) for N = 3 and therefore the matrix occurring in the Riemann theta function is 2g × 2g with g = 2(n − 1). Given our computational power, we computed IA(n1),A2,A3 for n ∈ {2, 3} for all the needed configurations of intervals, while for n = 4 we got results only for small intervals. In Fig. 10 we show our data and some numerical extrapolations. In the whole range of x2 we performed only the rational interpolation with (p, q) = (1, 0) (blue line) because only two input data are available, while for x2 ∈ (0, 0.22), where also n = 4 is available, we could employ higher values of p and q. When we have more extrapolations, unfortunately they do not overlap, indicating that we cannot trust these curves to give a prediction, even if they are quite close. Another indication that n = 4 is not enough to get a precise extrapolation comes from the fact that, given the data with n ∈ {3, 4} and extrapolating to n = 2 (orange curve in Fig. 10) we did not recover exactly the expected values (purple circles) found with the analytic expressions. In the inset we focus on a configuration of three intervals corresponding to x2 = 0.224 and show the dependence of IA(n1),A2,A3 on n for various (p, q). While the extrapolations to n = 1 associated to (1, 0) (for this one only n ∈ {2, 3} have been used), (1, 1) and (2, 0) are very close, the one corresponding to (p, q) = (0, 2) provides a completely different extrapolation to n = 1. Considering the two poles of the interpolating function in the regime of x2 where also n = 4 is available, we find that they are real and at least one of them is inside the domain n ∈ (1, 4). Thus, the function cannot be considered a good approximation of the true analytic continuation and the extrapolation cannot be trusted. This behaviour does not occur for the case considered in the inset of Fig. 9. Thus, it is useful to plot the n dependence of the functions obtained through the rational interpolation method in order to check the occurrence of singularities that could lead to wrong extrapolations."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 25
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 25"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 277.3,
+      "minX": 143.7,
+      "maxY": 445.1,
+      "maxX": 525.5,
+      "page": 25
+    }],
+    "text": "Figure 10. Three disjoint intervals: The quantity IA(n1),A2,A3 in (3.12) for the compact boson, computed through (3.14) and (3.7) for n > 2. Our limited computational power in evaluating Riemann theta functions for large matrices prevented us to consider n = 4 in the whole range of configurations and this limits also the possible rational interpolations that can be employed. The blu line is the extrapolation found by using only n ∈ {2, 3}, which should not be considered as a prediction because more n's are needed to find stable extrapolations. The orange line is a check of the method for n = 2: the fact that the expected points are not precisely recovered is due to low number of n's (n ∈ {3, 4}) available. In the inset, considering the configuration having x2 = 0.224, we show IA(n1),A2,A3 as function of n for rational interpolations having different (p, q). The rational interpolation with (p, q) = (0, 2) (red line) shows a bad behaviour and the extrapolation to n = 1 cannot be trusted; indeed, the red curve in the main plot is different from the other extrapolations."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 63.6,
+        "minX": 72,
+        "maxY": 186.1,
+        "maxX": 525.5,
+        "page": 25
+      },
+      {
+        "minY": 77.4,
+        "minX": 72,
+        "maxY": 327.9,
+        "maxX": 526.1,
+        "page": 26
+      }
+    ],
+    "text": "We find it instructive to discuss some details about the extrapolations of the logarithmic negativity of two disjoint intervals (see §). The simplest case we can deal with is the non compact boson and the replica limit to perform for this model is (4.8). The analytic expression (4.9) contains only hypergeometric functions and therefore it can be evaluated for high values of n. Some extrapolations performed through the rational interpolation method explained above are shown in Figs. 8 and 11. The first difference between the logarithmic negativity and the mutual information in the extrapolation process is that for the former quantity we need to consider higher values of p and q with respect to the latter one to recover the expected result. Moreover, in the regime of small intervals or large separation (i.e. x ∼ 0), where the logarithmic negativity falls off to zero faster than any power, it is very difficult to capture its behaviour in a clean way, despite the high values of p and q. In Fig. 11 we show some extrapolations characterized by low values of p and q. The most difficult regime to capture is the one with x ∼ 0. Thus, in Fig. 8 we show some extrapolations having higher values of p and q. Comparing the curves in these figures, one observes that with low q's it is difficult to capture the regime of small x, even for very high values of p. Increasing q, the agreement slightly improves for small x, but, as already remarked, it is more probable that the singularities of the rational interpolation fall close to the domain of the interpolated data. For example, in the case of the dashed magenta curve of Fig.11, all the poles of the rational function are real. Varying the parameter x, they move on the real axis and, whenever one of them comes close to the interpolation region (1, nmax) and it is not too far from n = 1, the extrapolated function to n = 1 cannot be trusted as approximation of the true analytic continuation. This leads to fluctuations or singularities in the extrapolation curve as function of x (e.g. see also the dashed cyan curve in Fig. 11 and the black and magenta curves in Fig. 8)."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 26
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 26"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 355.4,
+      "minX": 143.7,
+      "maxY": 429.7,
+      "maxX": 525.5,
+      "page": 26
+    }],
+    "text": "Figure 11. Logarithmic negativity of two disjoint intervals for the non compact boson: Extrapolations having low values of p and q. This plot should be compared with Fig. 8, where higher values of p and q have been considered. Increasing q improves the extrapolation but in some regimes of x wrong results can be found. The dashed red curve is the analytic continuation for the regime x → 1− found in [23], while the points are obtained through a periodic harmonic chain (3.15) with L sites."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 27
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 27"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 711.8,
+      "minX": 72,
+      "maxY": 720.3,
+      "maxX": 134.9,
+      "page": 27
+    }],
+    "text": "References"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 658.8,
+      "minX": 77,
+      "maxY": 694.6,
+      "maxX": 448,
+      "page": 27
+    }],
+    "text": "[1] L. Amico, R. Fazio, A. Osterloh, and V. Vedral, Rev. Mod. Phys. 80, 517 (2008); J. Eisert, M. Cramer, and M. B. Plenio, Rev. Mod. Phys. 82, 277 (2010); P. Calabrese, J. Cardy, and B. Doyon Eds, J. Phys. A 42 500301 (2009)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 632.9,
+      "minX": 77,
+      "maxY": 655.8,
+      "maxX": 411.9,
+      "page": 27
+    }],
+    "text": "[2] C. G. Callan and F. Wilczek, Phys. Lett. B 333, 55 (1994); C. Holzhey, F. Larsen, and F. Wilczek, Nucl. Phys. B 424, 443 (1994)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 619.9,
+      "minX": 77,
+      "maxY": 629.9,
+      "maxX": 343,
+      "page": 27
+    }],
+    "text": "[3] P. Calabrese and J. Cardy, J. Stat. Mech. P06002 (2004)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 607,
+      "minX": 77,
+      "maxY": 616.9,
+      "maxX": 343.2,
+      "page": 27
+    }],
+    "text": "[4] P. Calabrese and J. Cardy, J. Phys. A 42, 504005 (2009)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 594,
+      "minX": 77,
+      "maxY": 604,
+      "maxX": 320.9,
+      "page": 27
+    }],
+    "text": "[5] M. Caraglio and F. Gliozzi, JHEP 0811: 076 (2008)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 581.1,
+      "minX": 77,
+      "maxY": 591,
+      "maxX": 445.3,
+      "page": 27
+    }],
+    "text": "[6] S. Furukawa, V. Pasquier, and J. Shiraishi, Phys. Rev. Lett. 102, 170602 (2009)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 568.1,
+      "minX": 77,
+      "maxY": 578.1,
+      "maxX": 389.9,
+      "page": 27
+    }],
+    "text": "[7] P. Calabrese, J. Cardy, and E. Tonni, J. Stat. Mech. P11001 (2009)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 555.2,
+      "minX": 77,
+      "maxY": 565.1,
+      "maxX": 389.9,
+      "page": 27
+    }],
+    "text": "[8] P. Calabrese, J. Cardy, and E. Tonni, J. Stat. Mech. P01021 (2011)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 542.2,
+      "minX": 77,
+      "maxY": 552.2,
+      "maxX": 420.2,
+      "page": 27
+    }],
+    "text": "[9] V. Alba, L. Tagliacozzo, and P. Calabrese, Phys. Rev. B 81 060411 (2010)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 529.2,
+      "minX": 72,
+      "maxY": 539.2,
+      "maxX": 352.1,
+      "page": 27
+    }],
+    "text": "[10] M. Fagotti and P. Calabrese, J. Stat. Mech. (2010) P04016."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 477.4,
+      "minX": 72,
+      "maxY": 526.3,
+      "maxX": 448.1,
+      "page": 27
+    }],
+    "text": "[11] F. Igloi and I. Peschel, 2010 EPL 89 40001; V. Alba, L. Tagliacozzo, and P. Calabrese, J. Stat. Mech. (2011) P06012; M. Rajabpour and F. Gliozzi, J. Stat. Mech. (2012) P02016; M. Fagotti, EPL 97, 17007 (2012); P. Calabrese, J. Stat. Mech. (2010) P09013."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 451.5,
+      "minX": 72,
+      "maxY": 474.5,
+      "maxX": 366.6,
+      "page": 27
+    }],
+    "text": "[12] S. Ryu and T. Takayanagi, Phys. Rev. Lett. 96 (2006) 181602; S. Ryu and T. Takayanagi, JHEP 0608: 045 (2006)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 438.6,
+      "minX": 72,
+      "maxY": 448.6,
+      "maxX": 294.8,
+      "page": 27
+    }],
+    "text": "[13] M. Headrick, Phys. Rev. D 82, 126010 (2010)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 412.7,
+      "minX": 72,
+      "maxY": 435.6,
+      "maxX": 426.9,
+      "page": 27
+    }],
+    "text": "[14] F. Alcaraz, M. Berganza and G. Sierra, Phys. Rev. Lett. 106 (2011) 201601; M. Berganza, F. Alcaraz and G. Sierra, J. Stat. Mech. (2012) P01016."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 399.7,
+      "minX": 72,
+      "maxY": 409.7,
+      "maxX": 442.6,
+      "page": 27
+    }],
+    "text": "[15] L. Taddia, J. Xavier, F. Alcaraz and G. Sierra, Phys. Rev. B 88, 075112 (2013)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 373.8,
+      "minX": 72,
+      "maxY": 396.7,
+      "maxX": 424.5,
+      "page": 27
+    }],
+    "text": "[16] F. Essler, A. Lauchli and P. Calabrese, Phys. Rev. Lett. 110 (2013) 115701; P. Calabrese, F. Essler and A. Lauchli, J. Stat. Mech. (2014) P09025."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 360.9,
+      "minX": 72,
+      "maxY": 370.8,
+      "maxX": 284.4,
+      "page": 27
+    }],
+    "text": "[17] T. Pálmai, Phys. Rev. B 90, 161404 (2014)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 347.9,
+      "minX": 72,
+      "maxY": 357.9,
+      "maxX": 356.6,
+      "page": 27
+    }],
+    "text": "[18] F. Gliozzi and L. Tagliacozzo, J. Stat. Mech. (2010) P01002."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 335,
+      "minX": 72,
+      "maxY": 344.9,
+      "maxX": 398.9,
+      "page": 27
+    }],
+    "text": "[19] A. Coser, L. Tagliacozzo, and E. Tonni, J. Stat. Mech. (2014) P01008."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 322,
+      "minX": 72,
+      "maxY": 332,
+      "maxX": 459.8,
+      "page": 27
+    }],
+    "text": "[20] C. M. Agón, M. Headrick, D. L. Jafferis, S. Kasko, Phys. Rev. D 89, 025018 (2014)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 218.4,
+      "minX": 72,
+      "maxY": 319,
+      "maxX": 501.6,
+      "page": 27
+    }],
+    "text": "[21] G. Vidal and R. F. Werner, Phys. Rev. A 65, 032314 (2002); G. Vidal, J. Mod. Opt. 47 (2000) 355; K. Zyczkowski, P. Horodecki, A. Sanpera and M. Lewenstein, Phys. Rev. A 58, 883 (1998); A. Peres, Phys. Rev. Lett. 77, 1413 (1996); J. Eisert, quant-ph/0610253; J. Eisert and M. B. Plenio, J. Mod. Opt. 46, 145 (1999); H. Wichterich, J. Molina-Vilaplana and S. bose, Phys. Rev. A 80, 010304 (2009); S. Marcovitch, A. Retzker, M. B. Plenio and B. Reznik, Phys. Rev. A 80, 012325 (2009)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 205.5,
+      "minX": 72,
+      "maxY": 215.4,
+      "maxX": 421.4,
+      "page": 27
+    }],
+    "text": "[22] P. Calabrese, J. Cardy, and E. Tonni, Phys. Rev. Lett. 109, 130502 (2012)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 192.5,
+      "minX": 72,
+      "maxY": 202.5,
+      "maxX": 389.9,
+      "page": 27
+    }],
+    "text": "[23] P. Calabrese, J. Cardy, and E. Tonni, J. Stat. Mech. (2013) P02008."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 179.6,
+      "minX": 72,
+      "maxY": 189.5,
+      "maxX": 379.8,
+      "page": 27
+    }],
+    "text": "[24] P. Calabrese, J. Cardy, and E. Tonni, J. Phys. A48 (2015) 015006"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 166.6,
+      "minX": 72,
+      "maxY": 176.6,
+      "maxX": 387.9,
+      "page": 27
+    }],
+    "text": "[25] A. Coser, E. Tonni and P. Calabrese, J. Stat. Mech. P12017 (2014)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 128.2,
+      "minX": 72,
+      "maxY": 163.6,
+      "maxX": 349.9,
+      "page": 27
+    }],
+    "text": "[26] V. Eisler and Z. Zimboras, New J. Phys. 16 (2014) 123020; M. Hoogeveen and B. Doyon, arXiv:1412.7568; X. Wen, P.-Y. Chang and S. Ryu, arXiv:1501.00568."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 114.8,
+      "minX": 72,
+      "maxY": 124.8,
+      "maxX": 263.2,
+      "page": 27
+    }],
+    "text": "[27] V. Alba, J. Stat. Mech. P05013 (2013)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 101.9,
+      "minX": 72,
+      "maxY": 111.8,
+      "maxX": 412.3,
+      "page": 27
+    }],
+    "text": "[28] P. Calabrese, L. Tagliacozzo and E. Tonni, J. Stat. Mech. P05002 (2013)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 63,
+      "minX": 72,
+      "maxY": 98.9,
+      "maxX": 525.6,
+      "page": 27
+    }],
+    "text": "[29] W. Press, S. Teukolsky, W. Vetterling and B. Flannery, Numerical Recipes: The Art of Scientific Computing Cambridge University Press 2007. [30] J. Cardy, O. Castro-Alvaredo, and B. Doyon, J. Stat. Phys. 130 (2008) 129."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 735.4,
+      "minX": 76.2,
+      "maxY": 746.3,
+      "maxX": 525.5,
+      "page": 28
+    }],
+    "text": "Extrapolating entanglement entropy and negativity of disjoint intervals in CFT 28"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 631.7,
+      "minX": 72,
+      "maxY": 719.4,
+      "maxX": 485.9,
+      "page": 28
+    }],
+    "text": "[31] L. J. Dixon, D. Friedan, E. J. Martinec and S. H. Shenker, Nucl. Phys. B 282 (1987) 13; Al. B. Zamolodchikov, Nucl. Phys. B 285 (1987) 481; L. Alvarez-Gaumé, G. W. Moore and C. Vafa, Commun. Math. Phys. 106 1 (1986); E. Verlinde and H. Verlinde, Nucl. Phys. B 288 (1987) 357; V. G. Knizhnik, Commun. Math. Phys. 112, (1987) 567; M. Bershadsky and A. Radul, Int. J. Mod. Phys. A02, 165 (1987); R. Dijkgraaf, E. P. Verlinde and H. L. Verlinde, Commun. Math. Phys. 115 (1988) 649."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 580.4,
+      "minX": 72,
+      "maxY": 628.8,
+      "maxX": 525.5,
+      "page": 28
+    }],
+    "text": "[32] J. Fay, Theta functions on Riemann surfaces, Lecture Notes in Mathematics 352, Springer-Verlag, 1973; D. Mumford, Tata lectures on Theta III, Progress in Mathematics 97, Birkhäuser, Boston 1991; J. Igusa, Theta Functions, Springer-Verlag, 1972."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 567,
+      "minX": 72,
+      "maxY": 577,
+      "maxX": 511.3,
+      "page": 28
+    }],
+    "text": "[33] T. Giamarchi, Quantum Physics in One Dimension, Oxford University Press, New York (2004)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 554,
+      "minX": 72,
+      "maxY": 564,
+      "maxX": 417.3,
+      "page": 28
+    }],
+    "text": "[34] L. Tagliacozzo, G. Evenbly, and G. Vidal, Phys. Rev. B 80 235127 (2009)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 463.4,
+      "minX": 72,
+      "maxY": 551,
+      "maxX": 498.2,
+      "page": 28
+    }],
+    "text": "[35] I. Peschel and M. C. Chung, J. Phys. A 32, (1999) 8419; K. Audenaert, J. Eisert, M. B. Plenio, and R. F. Werner, Phys. Rev. A 66, 042327 (2002); I. Peschel, J. Phys. A 36, (2003) L205; A Botero and B. Reznik, Phys. Rev. A 70, 052329 (2004). M. B. Plenio, J. Eisert, J. Dressig and M. Cramer, Phys. Rev. Lett. 94, 060503 (2005); M. Cramer, J. Eisert, M. B. Plenio, and J. Dreissig, Phys. Rev. A 73, 012309 (2006); I. Peschel and V. Eisler, J. Phys. A 42, (2009) 504003."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 424.5,
+      "minX": 72,
+      "maxY": 460.4,
+      "maxX": 493.2,
+      "page": 28
+    }],
+    "text": "[36] P. Calabrese, M. Campostrini, F. Essler and B. Nienhius, Phys. Rev. L 104, 095701 (2010); P. Calabrese and J. Cardy, J. Stat. Mech. P04023 (2010); P. Calabrese and F. Essler, J. Stat. Mech. P08029 (2010)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 411.6,
+      "minX": 72,
+      "maxY": 421.5,
+      "maxX": 465.1,
+      "page": 28
+    }],
+    "text": "[37] C. Chung, V. Alba, L. Bonnes, P. Chen, A. Lauchli, Phys. Rev. B 90, 064401 (2014)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 398.6,
+      "minX": 72,
+      "maxY": 408.6,
+      "maxX": 425.9,
+      "page": 28
+    }],
+    "text": "[38] M. Zaletel, J. Bardarson and J. Moore, Phys. Rev. Lett. 107 (2011) 020402."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 347.4,
+      "minX": 72,
+      "maxY": 395.6,
+      "maxX": 322.7,
+      "page": 28
+    }],
+    "text": "[39] J. Cardy, J. Phys. A 46 (2013) 285402; H. Casini and M. Huerta, JHEP 0903: 048 (2009); N. Shiba, JHEP 1207:100 (2012). H. Schnitzer, arXiv:1406.1161."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 256.7,
+      "minX": 72,
+      "maxY": 343.8,
+      "maxX": 426.4,
+      "page": 28
+    }],
+    "text": "[40] V. E. Hubeny and M. Rangamani, JHEP 0803: 006 (2008); E. Tonni, JHEP 1105:004 (2011); P. Hayden, M. Headrick and A. Maloney Phys. Rev. D 87, 046003 (2013). T. Faulkner, arXiv:1303.7221; T. Hartman, arXiv:1303.6955; T. Faulkner, A. Lewkowycz, and J. Maldacena, JHEP 1311 (2013) 074. P. Fonda, L. Giomi, A. Salvio and E. Tonni, arXiv:1411.3608."
+  }}
+]}

@@ -1,0 +1,2239 @@
+{"paragraphs": [
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 781.8,
+      "minX": 40.2,
+      "maxY": 801.8,
+      "maxX": 555,
+      "page": 1
+    }],
+    "text": "Astronomy & Astrophysics manuscript no. bar_quenching ©cESO 2020 May 29, 2020"
+  }},
+  {"paragraph": {
+    "role": "title",
+    "positions": [{
+      "minY": 713.8,
+      "minX": 162.4,
+      "maxY": 729.3,
+      "maxX": 432.9,
+      "page": 1
+    }],
+    "text": "Bar quenching in gas-rich galaxies"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 692,
+      "minX": 129.7,
+      "maxY": 703.8,
+      "maxX": 465,
+      "page": 1
+    }],
+    "text": "S. Khoperskov1?, M. Haywood1, P. Di Matteo1, M. D. Lehnert2, F. Combes3"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 656.1,
+      "minX": 59.5,
+      "maxY": 674.2,
+      "maxX": 535.8,
+      "page": 1
+    }],
+    "text": "GEPI, Observatoire de Paris, CNRS, 5 place Jules Janssen, 92190 Meudon, France 2 Sorbonne Universités, UPMC Univ. Paris 6 et CNRS, UMR 7095, Institut d'Astrophysique de Paris, 98 bis bd Arago, 75014 Paris,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 636.2,
+      "minX": 60.5,
+      "maxY": 654,
+      "maxX": 472.8,
+      "page": 1
+    }],
+    "text": "France 3 Observatoire de Paris, LERMA, College de France, CNRS, PSL, Sorbonne Univ. UPMC, F-75014, Paris, France"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 618.3,
+      "minX": 59.5,
+      "maxY": 626.3,
+      "maxX": 130.9,
+      "page": 1
+    }],
+    "text": "Received ; accepted"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 593.6,
+      "minX": 274.4,
+      "maxY": 600.1,
+      "maxX": 320.9,
+      "page": 1
+    }],
+    "text": "ABSTRACT"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 423.5,
+      "minX": 59.5,
+      "maxY": 581,
+      "maxX": 536.2,
+      "page": 1
+    }],
+    "text": "Galaxy surveys have suggested that rapid and sustained decrease in the star-formation rate, \"quenching\", in massive disk galaxies is frequently related to the presence of a bar. Optical and near-IR observations reveal that nearly 60% of disk galaxies in the local universe are barred, thus it is important to understand the relationship between bars and star formation in disk galaxies. Recent observational results imply that the Milky Way quenched about 9\u201310 Gyr ago, at the transition between the cessation of the growth of the kinematically hot, old, metal-poor thick disk and the kinematically colder, younger, and more metal-rich thin disk. Although perhaps coincidental, the quenching episode could also be related to the formation of the bar. Indeed the transfer of energy from the large-scale shear induced by the bar to increasing turbulent energy could stabilize the gaseous disk against wide-spread star formation and quench the galaxy. To explore the relation between bar formation and star formation in gas rich galaxies quantitatively, we simulated gas-rich disk isolated galaxies. Our simulations include prescriptions for star formation, stellar feedback, and for regulating the multi-phase interstellar medium. We find that the action of stellar bar efficiently quenches star formation, reducing the star-formation rate by a factor of 10 in less than 1 Gyr. Analytical and self-consistent galaxy simulations with bars suggest that the action of the stellar bar increases the gas random motions within the co-rotation radius of the bar. Indeed, we detect an increase in the gas velocity dispersion up to 20 − 35 km s−1 at the end of the bar formation phase. The star-formation efficiency decreases rapidly, and in all of our models, the bar quenches the star formation in the galaxy. The star-formation efficiency is much lower in simulated barred compared to unbarred galaxies and more rapid bar formation implies more rapid quenching."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 407.5,
+      "minX": 59.5,
+      "maxY": 415.7,
+      "maxX": 478.5,
+      "page": 1
+    }],
+    "text": "Key words. galaxies: evolution \u2013 galaxies: kinematics and dynamics \u2013 galaxies: structure \u2013 galaxies: star formation"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 373.4,
+      "minX": 36.9,
+      "maxY": 381.2,
+      "maxX": 109.1,
+      "page": 1
+    }],
+    "text": "1. Introduction"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 178.3,
+      "minX": 36.9,
+      "maxY": 362.6,
+      "maxX": 292.5,
+      "page": 1
+    }],
+    "text": "Understanding the formation and evolution of disk galaxies requires, at a minimum, a detailed knowledge of the star-formation history of the ensemble of galaxies. When classified by the relative rates of star formation, galaxies divide into two separate sequences, a red and a blue sequence consisting of ellipticals and lenticulars and spirals and irregulars, respectively (Strateva et al. 2001; Bell et al. 2004). Several mechanisms have been proposed to explain the observed transition from blue active star-forming galaxies to red galaxies. These range from invoking the energy output of active galactic nuclei, major mergers initiating starbursts which exhaust the gas, to accreting gas being heated to such a high temperatures that it no longer cools significantly in a Hubble time, to environment effects such a tidal and ram-pressure stripping, to simple gas exhaustion, or the action of bars in disk galaxies. Several of these mechanisms may operate in coordination or simultaneously, perhaps even within the same galaxy."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 101.4,
+        "minX": 36.9,
+        "maxY": 175.8,
+        "maxX": 292,
+        "page": 1
+      },
+      {
+        "minY": 284.2,
+        "minX": 303.3,
+        "maxY": 380.5,
+        "maxX": 558.4,
+        "page": 1
+      },
+      {
+        "minY": 195.7,
+        "minX": 303.3,
+        "maxY": 279.3,
+        "maxX": 558.4,
+        "page": 1
+      }
+    ],
+    "text": "In our current level of understanding of galaxy evolution, active galactic nuclei (AGN) feedback can suppress star-formation activity (Silk & Rees 1998; Di Matteo et al. 2005; Fabian 2012; Harrison 2017). A number of galaxy formation models (Springel et al. 2005; Bower et al. 2006; Somerville et al. 2008; Oppenheimer et al. 2010; Pontzen et al. 2017), isolated galaxy simulations (Dubois et al. 2014; Gabor & Bournaud 2014) and semianalytic models (Croton et al. 2006; Somerville et al. 2008) have suggested that AGNs are able to suppress star formation rapidly either by removing gas from the galaxy (see e.g., Sijacki et al. 2007; Dubois et al. 2013, and references therein), or by injecting turbulence which stabilizes the gas against fragmentation and becoming self-gravitation on any scale (Guillard et al. 2015; Lanz et al. 2016). Various types of observations confirm that star formation can be suppressed by a factor of 3-50 (e.g., Mullaney et al. 2015; Shimizu et al. 2015) It has long been known that galaxy properties are closely related to the local environmental density (Kauffmann et al. 2004). In dense environments, star formation can be easily quenched by gas removal due to ram-pressure or tidal interactions (George et al. 2011; van der Wel et al. 2010; Walker et al. 2010; Cortese et al. 2011). Schaefer et al. (2017), for example, found that the specific star-formation rate drops by a factor of 4 in dense environments."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 81.8,
+      "minX": 42.8,
+      "maxY": 90.3,
+      "maxX": 158.6,
+      "page": 1
+    }],
+    "text": "? sergey.khoperskov@obspm.fr"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 303.3,
+        "maxY": 189.1,
+        "maxX": 558.5,
+        "page": 1
+      },
+      {
+        "minY": 741.5,
+        "minX": 36.8,
+        "maxY": 782.9,
+        "maxX": 292,
+        "page": 2
+      }
+    ],
+    "text": "Martig et al. (2009) analyzed the stability of disks proposing \"morphological\" quenching whereby the formation of a stellar spheroid stabilizes the disk against gravitational instability and formation of star-forming clumps. Martig et al. (2013) subsequently confirmed a possible role of disk stabilization in a study of local galaxies. A strong advantage of this mechanism is that it can explain the quenching without removing or depleting the gas. However it is not clear if this mechanism is efficient in high redshift galaxies where the fraction of gas in the disk is high, 40-50%. While morphological quenching may be effective in suppressing star formation in early-type galaxies, it is not the mechanism responsible for quenching observed in late-type disks, since they lack any significant spheroid (see, for example Laurikainen et al. 2007)."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 455.2,
+      "maxY": 69.9,
+      "maxX": 558.4,
+      "page": 1
+    }],
+    "text": "Article number, page 1 of 17"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 218.3,
+      "maxY": 807.1,
+      "maxX": 377,
+      "page": 2
+    }],
+    "text": "A&A proofs: manuscript no. bar_quenching"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 302.5,
+      "minX": 36.8,
+      "maxY": 738.4,
+      "maxX": 292,
+      "page": 2
+    }],
+    "text": "Bars are a common feature in the inner regions of nearby disk galaxies. Roughly 60% of disk galaxies in the local universe have stellar bars (Eskridge et al. 2000; Menéndez-Delmestre et al. 2007; Knapen et al. 2000; Marinova & Jogee 2007; Hernández-Toledo et al. 2007). Galactic bars very likely play an important role in both secular evolution of disk galaxies (Combes & Sanders 1981; Combes et al. 1990; Debattista et al. 2004; Athanassoula et al. 2005; Athanassoula 2013; Di Matteo et al. 2015; Gadotti et al. 2015, and references therein), and in a dynamical (re-)distribution of gas (Combes & Gerin 1985; Athanassoula 1992, 2000; Romero-Gómez et al. 2007; Berentzen et al. 2007) and metals in the galactic disks (Laurikainen et al. 2004b; Martel et al. 2013; Di Matteo et al. 2013; Seidel et al. 2016). The dynamics of gas in a bar potential is complex, depending on the local environment of the ISM and how the bar evolves (see e.g., Athanassoula 1992; Piner et al. 1995; Englmaier & Shlosman 2000; Wada & Koda 2001; Maciejewski et al. 2002; Regan & Teuben 2004; Fragkoudi et al. 2016). The formation and dynamics of bars is potentially an important mechanism for regulating the evolution of the star-formation rate in disk galaxies. While studies have highlighted a possible link between the star formation and the existence of bars in disk galaxies (see e.g., Laurikainen et al. 2004a; Jogee et al. 2005; Masters et al. 2010; Ellison et al. 2011), by studying the central regions of four strongly barred galaxies, James & Percival (2016) showed that the recent star formation appears to have been suppressed by the bars. By reconstructing the star-formation history of main-sequence galaxies from z = 3 to the present epoch, Gavazzi et al. (2015) found that star-forming galaxies quenched above a mass threshold which increases with increasing redshift. They also noted that in the local Universe there is a sharp increase in the fraction of visually classified strong bars as a function of mass, suggesting that strong bars may be responsible for the quenching observed at high redshifts and bars ability to quench star formation depends on galaxy mass. In such a scenario, the bar sweeps most of the gas into the galactic center, where it is then converted into stars. The vigorousness of the re-sulting bar-induced starburst depends on the mass of the galaxy, with massive barred galaxies converting all the gas funnelled to their centers into stars (Carles et al. 2016)."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 126,
+      "minX": 36.8,
+      "maxY": 299.4,
+      "maxX": 292.5,
+      "page": 2
+    }],
+    "text": "An analysis of the ErisBH simulation demonstrated that the formation of a bar in a galaxy with a quiet merger history can quench its star formation on kiloparsec scales (Spinoso et al. 2017). They showed that gas can be removed rapidly by the bar in the inner region, preventing any further strong star formation. Cheung et al. (2013) also discussed the possibility that bars are able to quench star formation. Through an analysis of Galaxy Zoo 2 dataset they claim that secular evolution is able to build high enough central densities to act as a quenching mechanism. Complex cases may occur though. Observational results for the galaxy NGC 4371 suggests that, although barred, the quenching of its star formation is very likely an environmental effect (Gadotti et al. 2015). Thus, possible complications due to environmental effects make it even harder to extract a general statement on the ways star formation and quenching proceed in barred galaxies."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 36.8,
+        "maxY": 123.4,
+        "maxX": 292,
+        "page": 2
+      },
+      {
+        "minY": 500,
+        "minX": 303.3,
+        "maxY": 782.9,
+        "maxX": 558.9,
+        "page": 2
+      }
+    ],
+    "text": "Since a large fraction of galaxies have a bar at the present epoch and many galaxies (including the Milky Way, see Haywood et al. 2016) passed through a stage of quenching, we want to study the possible relation between the bar formation and quenching phase for Milky Way-type galaxies. This link is intriguing, in particular in the Milky Way, where it has been established that a drastic (about a factor 10) and rapid (in about 1 Gyr) decrease in the star-formation rate occurred approximatively 9 − 10 Gyr ago, at the transition between the formation of the thick and thin disks of our Galaxy. For galaxies with masses similar to the Milky Way, this epoch corresponds also to the time when a substantial increase in the fraction of barred galaxies is observed (Sheth et al. 2008, 2012). It is thus important to understand and quantify if there exists a causal link between these two phenomena. Haywood et al. (2016), for example, proposed that in the Milky Way the action of a stellar bar could have increased the gas turbulence, stabilizing the disk against star formation, quenching its star formation. In this scenario, the suppression of the star formation is not associated to a substantial consumption of the available gas, as in other proposed mechanisms. Indeed, the gas would still be present in the disk at those epochs, but its high turbulence would have significantly limited the star-formation efficiency. Not depleting the gas reservoir is the important element, which, at least for the quenching episode in the Milky Way, has to be the case. There is a continuity in the elemental abundances between the stellar populations that formed before and after the quenching episode, which implies that the gas reservoir was not substantially replenished after the quenching episode (Haywood et al. 2016; Haywood et al. 2017, in prep.)."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 36.9,
+      "maxY": 69.9,
+      "maxX": 140.1,
+      "page": 2
+    }],
+    "text": "Article number, page 2 of 17"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 346.3,
+      "minX": 303.3,
+      "maxY": 495.7,
+      "maxX": 558.4,
+      "page": 2
+    }],
+    "text": "The present study aims to address the link between bar formation and star-formation rate in gas-rich galaxies. To accomplish this, we analyze a suite of simulated galaxies with a range of bar parameters (strength, formation time-scales) and different star formation prescriptions. The paper is structured as follows. We describe our simulation code in Section and our model simulations in Section . Results are presented in Section where we compare star-formation histories, star-formation efficiency, gas velocity dispersion in barred and unbarred galaxies. We also analyse a set of simulations with various bar parameters and describe our self-consistent \"live\" bar simulations. In Section we discuss our results in the context of the evolution of galaxies and the Milky Way. We summarize the key results of our investigation in Section ."
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 331,
+      "minX": 303.3,
+      "maxY": 338.9,
+      "maxX": 373.8,
+      "page": 2
+    }],
+    "text": "2. Simulations"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 311.4,
+      "minX": 303.3,
+      "maxY": 318.5,
+      "maxX": 353.4,
+      "page": 2
+    }],
+    "text": "2.1. Models"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 303.3,
+        "maxY": 298.7,
+        "maxX": 558.9,
+        "page": 2
+      },
+      {
+        "minY": 741.1,
+        "minX": 36.9,
+        "maxY": 783,
+        "maxX": 292,
+        "page": 3
+      }
+    ],
+    "text": "We study star formation in barred galaxies via N-body/hydrodynamical simulations of the stellar-gaseous disk of Milky Way-like galaxies embedded in a dark matter halo potential. We use the code based on the TVD MUSCL scheme (Total Variation Diminishing Multi Upstream Scheme for Conservation Laws) for gas dynamics and TreeCode for gravity calculation (Khoperskov et al. 2014). We incorporate a multi-phase model of the ISM and star-formation prescription (Khoperskov et al. 2013, 2016). We adopted gas cooling and heating rates from (Khoperskov et al. 2013, see Appendix B). This model produces a multi-phase ISM with T ≈ 100 K for cold phase, T ≈ 104 K for warm medium and T ≈ 106 K for hot medium. In these simulations we adopted a gas radiative cooling for metallicity 0.5Z . Star formation from the cold phase gas is based on three criteria (i) Jeans mass criterion (Mgas > MJeans); (ii) temperature threshold (T < 100 K); and (iii) converging flow ∇ · v < 0. We create a stellar particle in a gaseous cell when hydrodynamical variables satisfy all these star formation criteria. Note, in particular, that the adoption of a convergent flow criterion in star formation prescription is widely accepted in the literature (see for instance Dobbs et al. 2011; Cole et al. 2014; Marasco et al. 2015; Athanassoula et al. 2016). These works also use converging flow criteria for star formation in isolated galaxy simulations and they have a spatial resolution in the range of 40 − 70 pc."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 196.4,
+      "maxY": 807.1,
+      "maxX": 398.9,
+      "page": 3
+    }],
+    "text": "S. Khoperskov et al.: Bar quenching in gas-rich galaxies"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 664.9,
+      "minX": 36.9,
+      "maxY": 739.1,
+      "maxX": 292,
+      "page": 3
+    }],
+    "text": "In our simulations the star particles are assumed to represent a stellar cluster whose mass distribution follows a Salpeter initial mass function (Salpeter 1955). Mass loss by stellar populations as well as SNe energy ejection at each time step are calculated according to stellar evolution code STARBURST99 (Leitherer et al. 1999). We do not consider central black hole formation/evolution in our simulations."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 620.5,
+        "minX": 36.9,
+        "maxY": 662.4,
+        "maxX": 292,
+        "page": 3
+      },
+      {
+        "minY": 590.9,
+        "minX": 36.9,
+        "maxY": 599.7,
+        "maxX": 292,
+        "page": 3
+      },
+      {
+        "minY": 495.7,
+        "minX": 36.8,
+        "maxY": 570,
+        "maxX": 292,
+        "page": 3
+      },
+      {
+        "minY": 455.9,
+        "minX": 36.8,
+        "maxY": 485.3,
+        "maxX": 141.9,
+        "page": 3
+      },
+      {
+        "minY": 466.5,
+        "minX": 280.4,
+        "maxY": 475,
+        "maxX": 292,
+        "page": 3
+      },
+      {
+        "minY": 456.2,
+        "minX": 146.9,
+        "maxY": 466.3,
+        "maxX": 235.3,
+        "page": 3
+      },
+      {
+        "minY": 417.2,
+        "minX": 36.8,
+        "maxY": 446,
+        "maxX": 292,
+        "page": 3
+      },
+      {
+        "minY": 384.2,
+        "minX": 36.9,
+        "maxY": 408.3,
+        "maxX": 292,
+        "page": 3
+      },
+      {
+        "minY": 322.6,
+        "minX": 36.8,
+        "maxY": 375.5,
+        "maxX": 292,
+        "page": 3
+      }
+    ],
+    "text": "In the paper we consider two types of models: models with a rigid disk and dark matter halo potential and self-consistent simulations. For models with a rigid potential, the total gravitational potential Ψtot is given by: Ψtot(r, t) = Ψh(r) + Ψd(r) × (1 + ζ(t)Ψb(r)) , (1) where r is the space coordinate vector, t is the time variable, Ψh is the dark matter halo in pseudo-isothermal sphere model (Burkert 1995), Ψd is the stellar disk potential, defined through the Bessel functions (see e.g. Chapter 2.6.2 in Binney & Tremaine 2008), Ψb is the bar-perturbation and ζ(t) is the bar amplitude. These functions are adopted according to Dehnen (2000): Ψb = cos (2[ϕ − Ωbt]) ×  (2) (r/rb)3 − 2 if r ≤ rb, The amplitude of non-axisymmetric perturbation ζ is switched on smoothly. It is zero before t = 0, grows with time at 0 < t < h as ζ(t) = εb ( 136 ξ(t)5 − 85 ξ(t)3 + 1156 ξ(t) + 21 ) , ξ(t) ≡ 2 ht − 1, (3) and stays constant at ζ(t) = εb after a time, h. The bar is assumed to rotate rigidly about the galactic center with a fixed pattern speed (Ωb ≈ 52 km s−1 ) and a co-rotation radius close to the end of bar, which is in agreement with previous studies (see e.g. Contopoulos 1980; Combes & Elmegreen 1993)."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 476.8,
+      "minX": 146.9,
+      "maxY": 486.9,
+      "maxX": 235.3,
+      "page": 3
+    }],
+    "text": "−(rb/r)3 if r ≥ rb,"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 213.1,
+      "minX": 36.9,
+      "maxY": 320.7,
+      "maxX": 292,
+      "page": 3
+    }],
+    "text": "In most of the models run with a rigid halo and stellar disk potential, we also introduce a bar perturbation, whose amplitude increases according to the function ζ(t) defined above. To quantify the effect of the bar on the star-formation history of the simulated disk galaxy, we also run some rigid models, without including any asymmetric perturbation (unbarred models). In all these models (barred and unbarred), the potential is initially axisymmetric, and so is the gas density distribution. For generating the vertical and radial equilibrium for the gaseous disk, we used the technique described in Khoperskov et al. (2012)."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.6,
+        "minX": 36.8,
+        "maxY": 211.1,
+        "maxX": 292.5,
+        "page": 3
+      },
+      {
+        "minY": 505.7,
+        "minX": 303.3,
+        "maxY": 720.8,
+        "maxX": 558.9,
+        "page": 3
+      }
+    ],
+    "text": "For the self-consistent simulations we consider models with initial stellar and gaseous disk embedded into a live dark matter halo potential. The density profiles of the dark halo is a Plummer sphere and initial stellar disk follows a Miyamoto-Nagai profile (Miyamoto & Nagai 1975). The galaxy is composed of 106 particles of \"dark matter\", and 106 \"stellar particles\" for the initial disk. Equilibrium distribution functions for these components are found by using the method described in Rodionov et al. (2009). For the gaseous disk component (for both types of models) we adopted a computational domain 30 × 30 × 8 kpc with a uniform grid and a spatial resolution of 50 pc. All parameters (masses, spatial scales and etc.) of our models are listed in We performed a set of isolated galaxy simulations, evolving them for 2 Gyr since we are only interested in modeling bar formation and its impact on the star-formation history, rather than their long term, secular evolution. We simulated a total of 12 models: 2 rigid, axisymmetric models; 8 rigid asymmetric models with a bar whose strength can vary from εb = 0.1 to εb = 1, and whose formation timescale has been varied from h = 0.2 Gyr to h = 1 Gyr; 2 self-consistent simulations, with a live halo and live initial stellar disk. All model parameters are given in Table 1. For all models, we used the star-formation prescription described previously, except for the three models marked with minus in Table 1. For these three simulations, we used a star-formation prescription without the converging flow criterion. As we will discuss subsequently, not including this criterion allows us to clarify the role of random gas motions on the calculated star-formation history (SFH). We start our analysis with two fiducial models (barred RB and unbarred RA) and then the effect of varying parameters is studied by using further 8 models with rigid bar potential. Finally we discuss our \"self-consistent\" simulations."
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 741.1,
+      "minX": 303.3,
+      "maxY": 783,
+      "maxX": 558.4,
+      "page": 3
+    }],
+    "text": "Table 1. We set the opening angle of the TreeCode to θ = 0.5 in all simulations. Since we take into account star formation, the final number of stellar particles depends on the star-formation rate and it varies in the range (2 − 4) × 106 after 2 Gyr of evolution."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 729.8,
+      "minX": 303.3,
+      "maxY": 738.7,
+      "maxX": 402.9,
+      "page": 3
+    }],
+    "text": "2.2. Parameter regimes"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 492.2,
+      "minX": 303.3,
+      "maxY": 499.9,
+      "maxX": 425.6,
+      "page": 3
+    }],
+    "text": "3. Results of simulations"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 461.6,
+      "minX": 303.3,
+      "maxY": 481.5,
+      "maxX": 545.2,
+      "page": 3
+    }],
+    "text": "3.1. Barred versus unbarred models : gas distribution and star forming regions"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 290.2,
+      "minX": 303.3,
+      "maxY": 452.6,
+      "maxX": 558.4,
+      "page": 3
+    }],
+    "text": "Figure 1 shows the distribution of stars, gas and star-formation surface density at four different times, for the rigid, axisymmetric model. At a simulation time of t = 0.2 Gyr, flocculent spiral arms are clearly visible in both components. These structures have high cold gas fractions and are sites of enhanced star formation. Stars form throughout the whole disk, with star-formation rate surface-density following the gas distribution and recently formed stars trace the gas structures well. After this initial phase, lasting for less than 1 Gyr, the large scale structures dissipate rapidly and the models then follow a quasi-steady evolution of the disk. Flocculent spiral structures are short lived because the disk tends to be heated up by the action of the spiral waves (see e.g., Thomasson et al. 1991; Carlberg & Sellwood 1985; Sellwood 2011) which in turn stabilizes the disk against non-axisymmetric perturbations."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 303.3,
+        "maxY": 287.8,
+        "maxX": 558.9,
+        "page": 3
+      },
+      {
+        "minY": 675.7,
+        "minX": 60.1,
+        "maxY": 684.6,
+        "maxX": 534.8,
+        "page": 4
+      },
+      {
+        "minY": 520,
+        "minX": 57.6,
+        "maxY": 663.2,
+        "maxX": 537.6,
+        "page": 4
+      },
+      {
+        "minY": 336.7,
+        "minX": 36.9,
+        "maxY": 400.5,
+        "maxX": 292,
+        "page": 5
+      }
+    ],
+    "text": "The typical evolution of a rigid model with the bar potential imposed in the disk is shown in Fig. 2. The barred model shown is the model RB (Table 1), having h = 0.2, εb = 0.1. There is a strong redistribution of the gas at initial stages of evolution (t < 0.2 − 0.5 Gyr), coinciding with the formation of the bar, and after 0.5 Gyr a bar pattern is clearly visible both in the gaseous and young stellar component. Relative to the size of the bar, an extended outer spiral structure also arises in the disk. The bar is able to influence the spiral pattern outside of its co-rotation. At later times, star formation mostly occurs over a small fraction of the disk, mainly along the bar major axis. Recently formed stars also trace similar patterns and form both along the bar and the trailing spiral structure which is still visible after 2 Gyr of evolution. The spiral structure appears to be much weaker in the underlying stellar distribution. There is also a strong, ≈ 109 M , mass concentration of gas in the very center (< 1 kpc) because the stellar bar potential drives a gas flow inside the inner Lindblad resonance (see e.g. Athanassoula 1992). At the leading side of the bar there are shocks which at least Model Halo Initial stellar disk Gas Bar parameters 1010M kpc 1010M kpc kpc 1010M kpc kpc Gyr kpc RA rigid / iso 5.8 5 rigid / exp 2 3 0.3 2 6 0.2 - - - RA- rigid / iso 5.8 5 rigid / exp 2 3 0.3 2 6 0.2 - - - RB rigid / iso 5.8 5 rigid / exp 2 3 0.3 2 6 0.2 0.2 5 0.1 RBm02 rigid / iso 5.8 5 rigid / exp 2 3 0.3 0.2 6 0.2 0.2 5 0.1 RB- rigid / iso 5.8 5 rigid / exp 2 3 0.3 2 6 0.2 0.2 5 0.1 RBh05 rigid / iso 5.8 5 rigid / exp 2 3 0.3 2 6 0.2 0.5 5 0.1 RBh1 rigid / iso 5.8 5 rigid / exp 2 3 0.3 2 6 0.2 1 5 0.1 RBe02 rigid / iso 5.8 5 rigid / exp 2 3 0.3 2 6 0.2 0.5 5 0.2 RBe05 rigid / iso 5.8 5 rigid / exp 2 3 0.3 2 6 0.2 0.5 5 0.5 RBe1 rigid / iso 5.8 5 rigid / exp 2 3 0.3 2 6 0.2 0.5 5 1.0 LB live / plum 10 10 live / M-N 2 3 0.3 2 6 0.2 - - - LB- live / plum 10 10 live / M-N 2 3 0.3 2 6 0.2 - - - observationally, coincide with the dust lanes, and are extremely narrow. In spite of the fact that we are using an analytic gravitational potential for the bar in this model, a variety of structural properties of the galaxy are evident from the snapshots, including ISM morphology, qualitatively similar to those observed in actual barred galaxies."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 455.2,
+      "maxY": 69.9,
+      "maxX": 558.4,
+      "page": 3
+    }],
+    "text": "Article number, page 3 of 17"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 218.3,
+      "maxY": 807.1,
+      "maxX": 377,
+      "page": 4
+    }],
+    "text": "A&A proofs: manuscript no. bar_quenching"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 707.4,
+      "minX": 36.8,
+      "maxY": 785.3,
+      "maxX": 558.5,
+      "page": 4
+    }],
+    "text": "Table 1. Initial parameters: Mh is the halo mass, ah is the halo scale length; Md, Rd, zd are the initial stellar disk mass, radial scale length and vertical scale height respectively; Mgas, Rgas, zgas are the initial stellar disk mass, radial scale length and vertical scale hight respectively; rb is the bar size, εb is the bar potential amplitude, h is the bar growth timescale in models with a rigid bar potential. Models marked by minus include no converging flow criterion in the star-formation prescription. First section of the table shows the model with no bar imposed in the disk (axisymmetric potential); the second section presents models with a rigid potential of bar; and the last section shows the parameters of the self-consistent simulations that have live halos and an initial stellar disk. For simulations with a rigid potential, we adopted an isothermal dark matter (iso) distribution and exponential (exp) stellar disk; for self-consistent simulations we used Plummer (plum) sphere for dark matter halo and Miyamoto-Nagai (M-N) initial stellar disk."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 663.5,
+      "minX": 113.4,
+      "maxY": 673.3,
+      "maxX": 535.3,
+      "page": 4
+    }],
+    "text": "type Mh ah type Md Rd zd Mgas Rgas zgas h rb εb"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 112.6,
+      "minX": 36.9,
+      "maxY": 140.6,
+      "maxX": 558.4,
+      "page": 4
+    }],
+    "text": "Fig. 1. The evolution of a gas surface density (top row), surface density of young stars (middle row) and a mean star formation rate over the last 5 Myr (bottom row) in model without a bar potential. Rotation is anti-clockwise in each panel. The each box size of the face-on maps is 30 × 30 kpc2."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 36.9,
+      "maxY": 69.9,
+      "maxX": 140.1,
+      "page": 4
+    }],
+    "text": "Article number, page 4 of 17"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 196.4,
+      "maxY": 807.1,
+      "maxX": 398.9,
+      "page": 5
+    }],
+    "text": "S. Khoperskov et al.: Bar quenching in gas-rich galaxies"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 421.6,
+      "minX": 36.9,
+      "maxY": 429.7,
+      "maxX": 391.2,
+      "page": 5
+    }],
+    "text": "Fig. 2. As in Fig. 1, but for the model with a rigid bar potential (εb = 0.1, rb = 5 kpc, h = 0.2 Gyr)."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 148.9,
+      "minX": 36.8,
+      "maxY": 333.2,
+      "maxX": 292,
+      "page": 5
+    }],
+    "text": "The star-formation histories of the simulated barred and unbarred galaxies summarize the efficiency of gas consumption for models galaxies with different (imposed or live) disk structures. Figure 3 (left) shows the global star-formation rate, i.e., that over the whole disk, in the two models with and without a bar as a function of time. Once the simulation starts, both models show that the star-formation rate increases rapidly reaching up to 4 M yr−1 during the first 0.1 Gyr. Then the feedback from stars reduces the rate at which star formation increases. However, the gas reservoir is still very large and the star-formation rate continues to increase up to 8 M yr−1 between 0.3 − 0.5 Gyr. After 0.5 Gyr, the star-formation rate of the unbarred galaxy varies very slowly. It only decreases by a factor of 1.25 over 2 Gyr after its initial peak, remaining at the level of 6 − 8 M yr−1 . This model has steady conversion of gas into stars without the formation of any prominent spatial structures. It is clear that the model does not possess any rapidly growing instabilities."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 36.8,
+        "maxY": 145.3,
+        "maxX": 292,
+        "page": 5
+      },
+      {
+        "minY": 338.8,
+        "minX": 303.3,
+        "maxY": 400.5,
+        "maxX": 558.4,
+        "page": 5
+      }
+    ],
+    "text": "When a bar is present in a model with the same structure, the model shows a rapid decrease in the star-formation rate immediately after the bar amplitude reaches its maximum strength. Such decrease starts at t = 0.2 − 0.3 Gyr for the reference model (RB). Star formation in the model decreases rapidly to ≈1 M yr−1 within 1 Gyr. After 1 Gyr, the star-formation rate is roughly constant. The gas in the very inner regions is compressed by the bar potential and depleted by star formation. The star formation in the outer disk is sufficiently low that the distribution and intensity of the star formation there disk changes very little throughout the simulation. The bar has little influence on the star-formation rate in the outer disk."
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 180.7,
+      "minX": 303.3,
+      "maxY": 332.2,
+      "maxX": 558.4,
+      "page": 5
+    }],
+    "text": "Figure 3 shows the ratio between the star-formation rates at different radii in the two simulations with and without bars. In the case of the simulation with a bar, the star-formation rate decreases only in the inner region. Inside 5 kpc, where the bar action is the dominant driver of dynamical evolution, star formation drops down by a factor of 5 − 30. In the outer disk the star formation in the barred galaxy is more similar to that of the unbarred case \u2013 the ratio between the barred and unbarred simulated galaxies is close to unity. However, the SFR at larger radii remains relatively low and the global quenching observed in the model is largely driven by the star-formation rate evolution in the central regions of the disk. When we average over the entire extent of the disk, the star-formation rate is a factor of 10 lower than that observed in the axisymmetric case."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 145.4,
+      "minX": 303.3,
+      "maxY": 176.3,
+      "maxX": 548.8,
+      "page": 5
+    }],
+    "text": "3.2. Barred versus unbarred models: evolution with time of the star-formation rate, gas mass and star-formation efficiency"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 303.3,
+        "maxY": 134.4,
+        "maxX": 558.4,
+        "page": 5
+      },
+      {
+        "minY": 686.3,
+        "minX": 36.9,
+        "maxY": 782.9,
+        "maxX": 292,
+        "page": 7
+      }
+    ],
+    "text": "The reason for the decrease in the star-formation ratio of the barred versus unbarred models can be understood by comparing the star-formation rate evolution at different disk radii in the two models (see Fig. 4). Since the star-formation rate depends on the gas density, initially, t = 0, it decreases from the center to the outskirts of the disk. With time, the unbarred galaxy shows a monotonic decrease of SFR at large radii (r > 5 kpc), whereas the inner regions, r < 5 kpc, the SFR is nearly constant. That it is the amount of gas available at a given radius the main driver of the temporal evolution of the SFR in the unbarred galaxy (Fig. 5). Comparing Figs. 4 and 5 for the unbarred model, one sees that the nearly constant SFR observed in the inner regions of the unbarred disk is reflected into the nearly constant gas mass for each region."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 455.2,
+      "maxY": 70,
+      "maxX": 558.4,
+      "page": 5
+    }],
+    "text": "Article number, page 5 of 17"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 218.3,
+      "maxY": 807.1,
+      "maxX": 377,
+      "page": 6
+    }],
+    "text": "A&A proofs: manuscript no. bar_quenching"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 574.7,
+      "minX": 36.9,
+      "maxY": 620.9,
+      "maxX": 558.4,
+      "page": 6
+    }],
+    "text": "Fig. 3. Left: Comparison of the global star-formation rate in a model with a bar potential imposed in the disk (dashed line) and in a model with axisymmetric potential (black line). Bar parameters are given in the legend. Right: star-formation rate ratio for these models. Different lines correspond to the ratio at different radii. Solid lines represent the results for radii over the range 1 − 5 kpc and dashed lines the radii over the range 6 − 10 kpc. Each line corresponds to the SFR calculated in a ring of 1 kpc width. Black solid line represents the mean star-formation rate ratio over the whole disk."
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 334.3,
+      "minX": 36.8,
+      "maxY": 362.4,
+      "maxX": 558.4,
+      "page": 6
+    }],
+    "text": "Fig. 4. Star-formation rate in different models: one with no bar (left), one with a bar (right) at different radii. The parameters of the bar are, εb = 0.1, rb = 5 kpc, and h = 0.2 Gyr. The lines are the same as in Fig. 3. Each line corresponds to the SFR integrated over the area of a 1 kpc width ring centered on the value given in the legend of Fig. 3."
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 103.9,
+      "minX": 36.9,
+      "maxY": 122,
+      "maxX": 558.4,
+      "page": 6
+    }],
+    "text": "Fig. 5. The evolution of the mass of gas for the same models as show in Fig. 4. Here, the black line corresponds to the total mass of gas with 15 kpc radius of the disk."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 36.9,
+      "maxY": 69.9,
+      "maxX": 140.1,
+      "page": 6
+    }],
+    "text": "Article number, page 6 of 17"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 196.4,
+      "maxY": 807.1,
+      "maxX": 398.9,
+      "page": 7
+    }],
+    "text": "S. Khoperskov et al.: Bar quenching in gas-rich galaxies"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 476.7,
+      "minX": 36.9,
+      "maxY": 683,
+      "maxX": 292.5,
+      "page": 7
+    }],
+    "text": "On the contrary, the SFR evolution in the barred galaxy is more complex. After an initial peak, at about t=0.25 Gyr, just after the growth of the bar has ended, the SFR generally decreases. Over the innermost region, r < 3 kpc, after an initial decrease, the SFR is constant for t > 0.7 Gyr. At intermediate radii, 3 − 7 kpc, the star-formation rate decreases by a factor of 5 − 10. Star formation is mostly absent/suppressed within the bar radius except for the strong gas concentration area along the bar major axis (Fig. 2). The overall SFR decreases by a factor of about 10. Comparing the evolution of the SFR and gas mass over the same regions in the barred model, we see that the decrease in the SFR observed in the inner regions is not due to a decrease in the gas mass. Perhaps surprisingly, the decrease in the SFR occurs while there is an increase in the gas content within about 3 kpc of the galactic center. This indicates that gas is losing angular momentum and flows inwards accumulating in the center. Once there, it is not converted into stars with the same efficiency observed for the unbarred model, otherwise we would expect a corresponding increase of the SFR in the center of the disk."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 324.1,
+      "minX": 36.9,
+      "maxY": 473.5,
+      "maxX": 292,
+      "page": 7
+    }],
+    "text": "The evolution of the mass or surface density of gas at different radii cannot explain quantitatively the decrease of the star-formation rate in the barred galaxy. To emphasize this, we show the evolution of the star-formation efficiency which is defined as the star-formation rate surface density per unit gas mass surface density SFE = Σsfr/Σgas with units of yr−1. It is clear that in the unbarred galaxy, the star-formation efficiency is roughly constant in the inner regions, r < 5, both in time and in space (Fig. 6). It is only in the outer disk of the unbarred model that the SFE decreases by a factor of a few. Whereas for the barred galaxy, the star-formation efficiency decreases rapidly at all radii by a factor of 2 − 10 right after the formation of the bar. Moreover, the SFE in the barred galaxy simulation is overall lower than it is in the unbarred simulation."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 178.2,
+      "minX": 36.9,
+      "maxY": 318.7,
+      "maxX": 292,
+      "page": 7
+    }],
+    "text": "It appears that the formation and presence of a bar strongly affects the star-formation efficiency, especially within the bar scale length (r < 5 kpc in our models), by reducing it significantly. So while gas that is shocked and dissipates angular momentum can pile up at the center, it is not efficiently converted into stars. In the centers of gas-rich barred galaxies, it appears that an increase in the gas content is accompanied by a decrease in the SFR. It is widely accepted that there are several small and large scale possible processes which regulate star formation in galactic disks (McKee & Ostriker 2007; Dobbs et al. 2014). Gas random motions, in particular, may provide an important mechanism counteracting gravity, preventing the gas from becoming self-gravitating and from forming stars."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 166.1,
+      "minX": 36.9,
+      "maxY": 175.1,
+      "maxX": 220,
+      "page": 7
+    }],
+    "text": "3.3. Stellar bars and gas velocity dispersion"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 36.9,
+        "maxY": 156.3,
+        "maxX": 292,
+        "page": 7
+      },
+      {
+        "minY": 664.8,
+        "minX": 303.3,
+        "maxY": 783,
+        "maxX": 558.4,
+        "page": 7
+      }
+    ],
+    "text": "Mechanisms driving ISM turbulence in galaxies are still not well-known or understood (see Krumholz & Burkhart 2016, and references therein). Feedback from the recently formed stellar populations is considered one of the most important mechanisms. It is widely accepted that the large scale velocity dispersion correlates with high SFR in disks (see e.g. Hopkins et al. 2012), dwarf galaxies (see e.g. Simpson et al. 2013; Moiseev et al. 2015) and galaxies over a wide range of redshifts (Lehnert et al. 2009, 2013). For instance, Dib et al. (2006) established that a dispersion of 10 km s−1 can be sustained by a surface star formation rate of about (1 − 2) × 10−3 M yr−1 kpc−2 . There is potentially enough energy and momentum in supernovae, radiative feedback and stellar winds but it is not clear whether they are deposited efficiently within gas in the disk. Circumstantial evidence against stellar feedback as a direct source of turbulence is the lack of correlation between the level of the velocity dispersion and the proximity to star-forming clumps (see e.g. Förster Schreiber et al. 2009; Genzel et al. 2011)."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 456.1,
+      "minX": 303.3,
+      "maxY": 662.4,
+      "maxX": 558.4,
+      "page": 7
+    }],
+    "text": "On the other hand, local small scale self-gravity/shear due to galactic rotation contribute to the formation of turbulent velocity fields (see e.g. Agertz et al. 2009). Galactic bar rotation can supply an effectively inexhaustible amount of kinetic energy to power turbulence in the ISM, where shocks can efficiently transform some of the available bulk rotational energy into random gas motions. Since most of the gas in the central part is pushed by the bar potential, this gas can have a relatively large velocity dispersion which in turn would affect the star-formation efficiency. The drivers of the turbulent component of the velocity dispersion are gravity and shear. In the presence of a bar, the leading shock waves swing in the center and amplify, inducing gravitational torques in the gas and hence increasing gas streaming motions and the local velocity dispersion (see e.g., Kim et al. 2002; Kim & Ostriker 2007). Such a process converts ordered circular motion of the gas to random velocities, hence tapping rotational energy from the disk. Numerical simulations clearly show that the stellar bar in NGC 2915 enhances the ISM velocity dispersion (Wada et al. 2002)."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 346.6,
+        "minX": 303.3,
+        "maxY": 454.2,
+        "maxX": 558.4,
+        "page": 7
+      },
+      {
+        "minY": 137.7,
+        "minX": 303.3,
+        "maxY": 289.1,
+        "maxX": 558.4,
+        "page": 7
+      }
+    ],
+    "text": "Since there is a strong shear flow along the bar major axis, it is not obvious how to distinguish this large scale gas flow from true random motions. To check that the bar action provides an increase in the gas random motions we calculate the gas velocity dispersion for each two-dimensional position in the disk for the face-on galaxy configuration. We calculate the velocity dispersion for each component of the gas velocity (radial, azimuthal and vertical) in columns across the disk plane. Then we calculate the mean gas velocity dispersion for each position x, y in face on map: where σR, σφ, σz are the velocity dispersions in the various directions. In Fig. 7 we plot the total gas velocity dispersion in the barred galaxy simulation. We find that the bar region is characterized by a high gas velocity dispersion, which can locally reach up to 25 − 35 km s−1 . To check the role of the gas velocity dispersion definition, we also compare our definition Eq. 4 with a simple line-of-sight gas velocity dispersion for the same face-on galaxy configuration which is simply the vertical gas velocity dispersion σz. In Fig. 7 (center) we can clearly see that there is nice spatial correlation between σz and σgas. We also see that higher vertical gas velocity dispersion coincides well with the bar position. However, the most important consequence of this picture is the relative increase of the gas random motions in the bar region in comparison to unbarred configuration."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 304.3,
+      "minX": 303.3,
+      "maxY": 328.4,
+      "maxX": 558.4,
+      "page": 7
+    }],
+    "text": "σgas = √31 (σR2 + σφ2 + σz2) (4)"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 114.9,
+        "minX": 303.3,
+        "maxY": 135.7,
+        "maxX": 558.4,
+        "page": 7
+      },
+      {
+        "minY": 81.5,
+        "minX": 303.3,
+        "maxY": 114,
+        "maxX": 558.4,
+        "page": 7
+      },
+      {
+        "minY": 271.8,
+        "minX": 36.9,
+        "maxY": 335.6,
+        "maxX": 292,
+        "page": 8
+      }
+    ],
+    "text": "For the model without bar, the gas velocity dispersion σgas is supported only by the stellar feedback and σgas does not exceed 15 km s−1 (Fig 8) which is in a agreement with a number of studies (see e.g. Caldú-Primo et al. 2013). Usually gas velocity dispersion is assumed to be equal to 11 km s−1 which is a typical value for the HI gas in a local sample of galaxies (the THINGS sample; Tamburro et al. 2009). Note, however, that we have a relatively high star-formation rate in the model and our definition of σgas cannot be directly compared with these observational numbers because we do not consider both the thermal and kinetic components of the observed velocity dispersion."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 455.2,
+      "maxY": 69.9,
+      "maxX": 558.4,
+      "page": 7
+    }],
+    "text": "Article number, page 7 of 17"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 218.3,
+      "maxY": 807.1,
+      "maxX": 377,
+      "page": 8
+    }],
+    "text": "A&A proofs: manuscript no. bar_quenching"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 567.6,
+      "minX": 36.9,
+      "maxY": 585.7,
+      "maxX": 558.4,
+      "page": 8
+    }],
+    "text": "Fig. 6. The evolution of the star-formation efficiency, ΣSFR/Σgas, for the same models as in Fig. 4. In this figure, the black line corresponds to the mean star-formation efficiency within 15 kpc of the center of the disk."
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 356.7,
+      "minX": 36.9,
+      "maxY": 375.9,
+      "maxX": 558.4,
+      "page": 8
+    }],
+    "text": "Fig. 7. Maps of the gas velocity dispersion σgas in km s−1 (left), vertical gas velocity dispersion σz in km s−1 (center) and gas disk thickness in kpc (right) for barred galaxy model at a single time, 1.2 Gyr. Contours show the stellar surface density distribution in the vicinity of bar."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 236.1,
+        "minX": 36.9,
+        "maxY": 267.9,
+        "maxX": 292,
+        "page": 8
+      },
+      {
+        "minY": 212.9,
+        "minX": 36.8,
+        "maxY": 235.2,
+        "maxX": 292,
+        "page": 8
+      },
+      {
+        "minY": 179.5,
+        "minX": 36.8,
+        "maxY": 211.9,
+        "maxX": 292,
+        "page": 8
+      }
+    ],
+    "text": "For the model with bar, the gas velocity dispersion increases rapidly after 0.2 − 0.5 Gyr, right after the bar amplitude becomes substantial. Mean values of σgas remain higher in the central 5 kpc, up to 25 km s−1 . In particular, the gas velocity dispersion σgas has a maximum along the bar major axis peaking up to ≈ 35 km s−1 . In the outer parts, the gas velocity dispersion is constant and agrees with the corresponding values in the unbarred galaxy simulations."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 166.7,
+      "minX": 36.8,
+      "maxY": 175.8,
+      "maxX": 220.5,
+      "page": 8
+    }],
+    "text": "3.4. Gaseous disk thickness and its stability"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 36.8,
+        "maxY": 156.3,
+        "maxX": 292,
+        "page": 8
+      },
+      {
+        "minY": 249.9,
+        "minX": 303.3,
+        "maxY": 335.6,
+        "maxX": 558.4,
+        "page": 8
+      }
+    ],
+    "text": "Since star formation takes place in gravitationally unstable galactic disks, it can be quenched when a disk becomes stable against fragmentation. It is widely accepted that galactic disk stability is affected by several factors including the vertical structure of the disk and gas turbulence (see e.g., Romeo & Wiegert 2011; Elmegreen 2011; Hoffmann & Romeo 2012). The effect of disk thickness is to increase the effective stability parameter (e.g., Eqs. 15, 19 in Romeo & Falstad 2013) \u2013 an increase in the thickness of either the gaseous or stellar disks stabilizes such a two component galactic disk. Disk stability analyses usually assumes an axisymmetric galaxy disk which can not be globally explored in the case of non-axisymmetric configurations, such as that in bar-dominated galaxies. However, we try to address the effect induced by the growth of the gas velocity dispersion on the disk thickening in the following."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 36.9,
+      "maxY": 69.9,
+      "maxX": 140.1,
+      "page": 8
+    }],
+    "text": "Article number, page 8 of 17"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 303.3,
+        "maxY": 243.9,
+        "maxX": 558.5,
+        "page": 8
+      },
+      {
+        "minY": 283.1,
+        "minX": 36.9,
+        "maxY": 324.9,
+        "maxX": 292,
+        "page": 9
+      }
+    ],
+    "text": "In equilibrium, for a given gravitational potential, axisymmetric gaseous disk thickness is determined by the gas velocity dispersion, hgas ∝ σg2as. In the previous section we showed that the action of the stellar bar is to efficiently increase the gas random motions. Thus we naturally expect a thickening of the gaseous disk due to its higher velocity dispersion in the bar region, which is seen in Fig. 7 for r < 5 kpc. To demonstrate this point quantitatively we show the relation between disk thickness, defined as the mean absolute value of the mass weighted vertical position of gas, versus square of gas velocity dispersion (see Eq. 4) for unbarred (RA) and barred galaxy simulation (RB) at 1.2 Gyr and within inner 5 kpc (Fig. 9). For the unbarred galaxy, the gas velocity dispersion is mostly induced by the stellar feedback which is rather high at the current level of the star formation, ≈ 8 M yr−1 . For the barred galaxy, the gaseous disk thickness tends to be larger compared to unbarred model, with significantly high values of thickness (> 1 kpc) for the highest velocity dispersions. These high velocity dispersion regions are within the bar region (Fig. 7)."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 196.4,
+      "maxY": 807.1,
+      "maxX": 398.9,
+      "page": 9
+    }],
+    "text": "S. Khoperskov et al.: Bar quenching in gas-rich galaxies"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 566.9,
+      "minX": 36.9,
+      "maxY": 585.7,
+      "maxX": 558.4,
+      "page": 9
+    }],
+    "text": "Fig. 8. The evolution of the gas velocity dispersion (see Eq. 4) for the same models as in Fig. 4. The black line corresponds to the mean gas velocity dispersion, σgas, averaged over the inner 15 kpc of the disk."
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 346,
+      "minX": 36.2,
+      "maxY": 374.1,
+      "maxX": 558.6,
+      "page": 9
+    }],
+    "text": "Fig. 9. Relation between the gaseous disk thickness and the gas velocity dispersion for the unbarred galaxy simulation (RA) and the barred galaxy model (RB). This relation is shown for values within the inner 5 kpc of the disk and at 1.2 Gyr in each simulation (left and center panels). Right panel: The distribution functions of the thickness of the gaseous disk for the two models shown in the left and center panels."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 149.4,
+      "minX": 36.9,
+      "maxY": 279,
+      "maxX": 292,
+      "page": 9
+    }],
+    "text": "To derive a quantitative difference between the disk thickness in the barred and unbarred galaxies, we show the disk thickness distribution functions (Fig. 9). In both models the distribution functions are very wide. The mean value of the thickness for the unbarred galaxy is close to 0.2 kpc while for the barred galaxy there are two peaks in the distribution function. The lowest peak is very close to the one for the observed for the unbarred galaxy. The highest peak corresponds to r≈ 0.8 kpc which is the manifestation of bar-induced disk thickening. Thus we can argue that stellar bar action and the following gas velocity dispersion growth lead to the disk thickening which is important stabilizing the two-component disk."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.6,
+        "minX": 36.9,
+        "maxY": 145.3,
+        "maxX": 292,
+        "page": 9
+      },
+      {
+        "minY": 206.4,
+        "minX": 303.3,
+        "maxY": 324.9,
+        "maxX": 558.9,
+        "page": 9
+      }
+    ],
+    "text": "A detailed stability analysis is complicated due to strongly non-axisymmetric configuration of our models with bars. In lieu of a detailed stability analysis, we simply suggest that the growth of the gas velocity dispersion and gaseous disk thickness tends to stabilize the galactic disk against gravitational fragmentation which in turn suppresses the star formation. From this point of view, our results are in agreement with the mechanism of morphological quenching (Martig et al. 2009). In Martig et al. (2009), the disk is stabilized due to the growth of the dynamically hot spheroid which is built up by successive mergers. In another words, the quenching mechanism is the result of the increase of the stellar velocity dispersion induced by interactions. In this study, we propose a mechanism for the stabilization of the gaseous disk that does not need environment to play any role. In one sense, both studies reach the same conclusion, increasing the velocity dispersion of one components, stars or gas, stabilizes the disk against fragmentation and thus suppresses star formation."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 190.1,
+      "minX": 303.3,
+      "maxY": 200.1,
+      "maxX": 420.2,
+      "page": 9
+    }],
+    "text": "3.5. The ΣSFR − Σgas relation"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 81.5,
+      "minX": 303.3,
+      "maxY": 178.2,
+      "maxX": 558.4,
+      "page": 9
+    }],
+    "text": "Another way to understand the significance of the interplay between gas content, star-formation rate and gas velocity dispersion is to investigate the star-formation rate surface density versus the gas surface density (Fig. 10). We choose to illustrate this at a particular moment in the simulation, 1.2 Gyr, because at this time the quenching episode occurred quite recently. The star-formation rate in a given model element is represented by the mass of stars formed during the previous 10 Myr and the gas surface density is taken from the single snapshot at t = 1.2 Gyr."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 455.2,
+      "maxY": 69.9,
+      "maxX": 558.4,
+      "page": 9
+    }],
+    "text": "Article number, page 9 of 17"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 218.3,
+      "maxY": 807.1,
+      "maxX": 377,
+      "page": 10
+    }],
+    "text": "A&A proofs: manuscript no. bar_quenching"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 675.3,
+      "minX": 36.8,
+      "maxY": 782.9,
+      "maxX": 292,
+      "page": 10
+    }],
+    "text": "For the unbarred galaxy, the ΣSFR − Σgas relation seems to be in agreement with the classical Kennicutt-Schmidt law (K-S, Schmidt 1959; Kennicutt 1998). Indeed, depletion timescale increases with radius, from a few Gyrs for the center to 10 Gyr in the outskirts. Central star formation rate is close to the intensity of starburst galaxies (see e.g., Kennicutt 1998), because the maximum of the star formation occurs in the central region where the SFR is in the range 6 − 8 M yr−1 (see Fig. 5). Meanwhile, much less efficient outer star formation is similar to those found in nearby galaxies (Bigiel et al. 2010)."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 510.4,
+      "minX": 36.8,
+      "maxY": 672.8,
+      "maxX": 292,
+      "page": 10
+    }],
+    "text": "We have already shown that there is a variation of the star-formation efficiency with radius and time, most significantly in the barred galaxy model. We showed that averaged SFE in the bar region decreases by a factor of 2 − 10 in comparison to the unbarred galaxy simulation (Fig. 6). When the disk is quenching, the Kennicutt-Schmidt like relation is also different from the behavior observed in the unbarred galaxy. Figure 10 shows the relation ΣSFR − Σgas at 1.2 Gyr calculated for the barred galaxy. The barred galaxy simulation contains the same amount of gas as the unbarred one, whereas non-axisymmetric bar action results in much higher densities. There is also a clear variation in the SFE with radius that is overall similar to the unbarred galaxy (Fig. 6), with a decrease by a factor of 10 from the inner to the outer disk. The bar has little impact on the outer disk as the SFE is already low there."
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 347.6,
+      "minX": 36.8,
+      "maxY": 508,
+      "maxX": 292,
+      "page": 10
+    }],
+    "text": "Figure 11 shows clear evidence for a break in the SFE in the central region where the gas velocity dispersion is very high (Fig. 7). Most pixels agree well with K-S-type relation meanwhile the filling factor of suppressed star formation regions is low. At the same time, the K-S relation for the middle and outer parts of the disk is roughly the same for barred and unbarred galaxy models. In the densest regions which lie along the bar major axis and in the central over density and where the gas surface density can reach up to 103 M pc−2 , we find a very wide range of star-formation efficiencies. The SFE of regions where there is very dense gas is significantly reduced, which explains the overall lower star-formation rate. However, the high amount of gas still generates a higher star-formation rate than in the outer disk, where star formation always contributes only a small fraction of the total SFR."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 104,
+      "minX": 36.8,
+      "maxY": 343.1,
+      "maxX": 292.5,
+      "page": 10
+    }],
+    "text": "As previously described, Fig. 11 shows the flattening of the K-S relation at high densities for the gas-rich model. In Fig. 12 we plot the K-S relation for a simulation with a gas fraction of 10%. Also for this model, the slope of the K-S relation is ≈ 1.4 in the disk, while in a limited region at high densities the relation appears to have a flatter slope, of ≈ 1. So, while a hint of a flattening in the K-S relation is visible also for the barred, gas-poor galaxy, it is clear that the effect is much stronger in gas-rich systems. Currently, only few studies have compared the SFE in the bar region and outside it. They generally reach the conclusion that SFEs in bars are lower than in the surrounding disk. Momose et al. (2010), for example, have studied NGC 4303, a barred galaxy, and shown that the K-S relation appears flatter in the bar region than in the surrounding disk. They show indeed that there is active star formation in the spiral arms, while in the bar region the SFE is lower by a factor of ≈ 2. For the barred galaxy NGC 1530, Reynaud & Downes (1998) claimed that the star formation is inhibited at the places where the shocks and the shear are strong enough. By making an analysis of radial distributions of the different types of supernovae Hakobyan et al. (2016) reported about the substantial suppression of massive star formation in the radial range swept by strong bars."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 36.8,
+        "maxY": 101.5,
+        "maxX": 292,
+        "page": 10
+      },
+      {
+        "minY": 686.3,
+        "minX": 303.3,
+        "maxY": 782.9,
+        "maxX": 558.4,
+        "page": 10
+      }
+    ],
+    "text": "In Maffei 2 Sorai et al. (2012) found that molecular gas in the bar ridge regions is gravitationally unbound, which suggests that it can hardly become dense enough to form stars. Such a gravitationally unbound condition may decrease the star-formation efficiency in the bar region. Note however, that none of these studies concern galaxies at high redshift or particularly gas-rich. Here we suggest that the mechanism of the bar-induced quenching is efficient in gas-rich galaxies and the flattening of the K-S relation in the central regions may also be considered as a prediction to be checked with observations of high-redshift, or local gas-rich galaxies."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 36.9,
+      "maxY": 69.9,
+      "maxX": 144.6,
+      "page": 10
+    }],
+    "text": "Article number, page 10 of 17"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 520.4,
+      "minX": 303.3,
+      "maxY": 682.8,
+      "maxX": 558.4,
+      "page": 10
+    }],
+    "text": "Detailed analysis of the spatially resolved star formation efficiency in barred galaxy simulation is presented in Fig. 13. The locally averaged SFE in spiral arms is higher by a factor of ≈ 5 than those of the entire disk region. The difference in gas dynamics between the bar and spiral arms may be the cause of this higher efficiency. The gas density and SFR are the highest in the nuclear region. SFE varies strongly with local conditions, but the locally averaged SFE in the nucleus is relatively low. The local values of SFE are constant in the circumnuclear overdensity and in the bar, and it increases toward the spiral arms. The comparison of SFE in the bar and spiral arms shows that SFE is about twice as high in the arms as those in the bar. Extreme SFE is found in the spiral arms, but not in the bar, indicates that the efficient triggering of star formation is related not only to the local gas density, but also to the local gas dynamics."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 499,
+      "minX": 303.3,
+      "maxY": 517.1,
+      "maxX": 519.3,
+      "page": 10
+    }],
+    "text": "3.6. Dependence on bar strength and bar formation timescale"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 379.6,
+      "minX": 303.3,
+      "maxY": 487.2,
+      "maxX": 558.9,
+      "page": 10
+    }],
+    "text": "To generalize our results from the previous section, it is important to understand how varying the bar parameters influence the suppression of star formation in our models. To do this, we ran simulations with a range of bar strengths εb and bar growth timescales h. Importantly, to investigate the influence of gas flows on the star-formation rate in our simulations, we also ran simulations where we turned off the converging flow criteria in the star-formation prescription. We note here that the study of these additional models with different parameters basically confirms the general trends we have found so far."
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 237.7,
+      "minX": 303.3,
+      "maxY": 376.2,
+      "maxX": 558.4,
+      "page": 10
+    }],
+    "text": "Figure 14 shows the SFHs in a variety of disk simulations (see Table 1 for details). In the model with the larger bar amplitude (ε = 0.2), the bar suppresses star formation earlier and even more rapidly. The influence of the bar formation timescale is also very clear. The impact of the bar occurs at later times for slower bar formation regimes and the timescale of quenching itself is proportional to the bar formation timescale. In all cases of the bar parameters we simulated1, the quenching of the SF appears after about 1 Gyr from the beginning of the simulation, and coincides with the epoch of maximal growth of the bar. After 1 Gyr, all simulations show roughly the same SFRs, equal to ≈ 1 M yr−1 . This is a factor of 8 − 10 lower than the SFR of the unbarred model at the same time."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 225.2,
+      "minX": 303.3,
+      "maxY": 232.4,
+      "maxX": 434.8,
+      "page": 10
+    }],
+    "text": "3.7. Self-consistent simulations"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 105.8,
+        "minX": 303.3,
+        "maxY": 213.4,
+        "maxX": 558.4,
+        "page": 10
+      },
+      {
+        "minY": 292,
+        "minX": 36.8,
+        "maxY": 311.9,
+        "maxX": 292,
+        "page": 11
+      },
+      {
+        "minY": 252.4,
+        "minX": 36.6,
+        "maxY": 267.7,
+        "maxX": 292,
+        "page": 11
+      },
+      {
+        "minY": 169.2,
+        "minX": 36.8,
+        "maxY": 233,
+        "maxX": 292,
+        "page": 11
+      }
+    ],
+    "text": "To further generalize our results, we also ran \"self-consistent\" simulations. By self-consistent, we mean that the galaxy is composed of a live stellar and gaseous disks, and a live dark matter halo. In contrast to the simulations we have discussed, the bar potential is not imposed analytically. In these simulations, a stellar bar naturally forms after 0.5 Gyr. It arises as the result of energy and angular momentum redistribution within the galaxy. The disadvantage over our previously discussed simulation is that we now need to estimate the bar strength, which will generally depend on time. To quantify the strength of the bar, we use the m = 2 Fourier moment A2 of the density distribution in the following way: A2 = ∑ mk exp (2iφk) , (5) where mk is the mass of k-th particle and summation is carried out over both initial and recently formed stellar particles. We find that the disc develops a strong bar whose length is ≈ 5 kpc at the end of simulation. The bar strength increases from the beginning of the simulation and reaches a saturation level after about 1 Gyr (Fig. 15)."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 81.8,
+      "minX": 305.3,
+      "maxY": 91,
+      "maxX": 524,
+      "page": 10
+    }],
+    "text": "1 in models with the standard SF prescription, see Fig. 14a,b"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 196.4,
+      "maxY": 807.1,
+      "maxX": 398.9,
+      "page": 11
+    }],
+    "text": "S. Khoperskov et al.: Bar quenching in gas-rich galaxies"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 333,
+      "minX": 36.8,
+      "maxY": 400.9,
+      "maxX": 558.4,
+      "page": 11
+    }],
+    "text": "Fig. 10. Relationship between the star-formation rate surface density and the gas surface density, ΣSFR − Σgas, in the model without bar (RA) at a single time, 1.2 Gyr for a variety of spatial scales over the disk. In the top row color represents normalised density (from 0 to 1) with a given SFR and gas density; in bottom row color represents a mean gas velocity dispersion and contours show the values from 10 km s−1 to 40 km s−1 with a bin size of 5 km s−1 . Panelsfrom left to right: The K-S relationship using data from the entire disk; from the inner, r < 5 kpc; from the radii between 5 < r < 10 kpc; and from the outer parts of the disk, r > 10 kpc. The solid black line represents the K-S relation with a slope of 1.4 (Kennicutt 1998). The diagonal dashed lines cutting across each panel represents the star-formation efficiencies of 100%, 10%, 1%, 0.1% and 0.01% per 109 yr."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 269.6,
+      "minX": 63,
+      "maxY": 274.3,
+      "maxX": 68.3,
+      "page": 11
+    }],
+    "text": "N"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 246,
+      "minX": 60.1,
+      "maxY": 250.9,
+      "maxX": 71.2,
+      "page": 11
+    }],
+    "text": "k=1"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 81.5,
+      "minX": 36.8,
+      "maxY": 167.2,
+      "maxX": 292,
+      "page": 11
+    }],
+    "text": "Because of the smoother evolution of the bar amplitude, the effect of the bar on the gas dynamics is somewhat weaker in comparison to our fiducial rigid bar model. However, it agrees very well with the model RBe05 (h = 0.5 Gyr, εb = 0.2) and in the self-consistent isolated disk simulations we find the same trend in SFH as in the models with a rigid potential (Fig. 15). Our self-consistent galaxy model confirms that star formation is suppressed right after the bar strength reaches its saturation level."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 237.2,
+      "minX": 303.3,
+      "maxY": 311.9,
+      "maxX": 558.9,
+      "page": 11
+    }],
+    "text": "Star-formation quenching is not as rapid as in our fiducial simulation with a rigid potential, but it still appears after 0.5 − 1 Gyr. The gas velocity dispersion also increases and consequently star-formation efficiency decreases. Indeed, there is a fast decrease of the SFR from 8 to 3 M yr−1 during ≈ 0.7 Gyr, then the SFR is almost constant for 0.5 Gyr and then it decreases smoothly to 1 M yr−1 ."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 195.5,
+      "minX": 303.3,
+      "maxY": 215.6,
+      "maxX": 519.7,
+      "page": 11
+    }],
+    "text": "3.8. Star-formation prescription: the influence of the converging flow criterion on star formation"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 83.6,
+        "minX": 303.3,
+        "maxY": 167.2,
+        "maxX": 558.4,
+        "page": 11
+      },
+      {
+        "minY": 127.2,
+        "minX": 36.9,
+        "maxY": 145.1,
+        "maxX": 292,
+        "page": 12
+      }
+    ],
+    "text": "Since our fiducial star-formation prescription includes the converging flow criterion, the formation of stars directly depends on the gas velocity dispersion. To investigate the influence of this particular criterion, we have made three additional runs where we do not use the converging flow criteria to form stars: model with no bar, rigid bar model (εb = 0.1, h = 0.2 Gyr), and self-consistent model with a live bar formation (section ). Figure 16 shows the evolution of star formation in these three models in comparison to simulations where our fiducial star-formation criteria is used."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 450.7,
+      "maxY": 69.9,
+      "maxX": 558.4,
+      "page": 11
+    }],
+    "text": "Article number, page 11 of 17"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 218.3,
+      "maxY": 807.1,
+      "maxX": 377,
+      "page": 12
+    }],
+    "text": "A&A proofs: manuscript no. bar_quenching"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 392.7,
+      "minX": 36.9,
+      "maxY": 400.9,
+      "maxX": 521.7,
+      "page": 12
+    }],
+    "text": "Fig. 11. Same panels as in Fig. 10, but now for the model containing a bar (RA). The contours and lines are also the same as in Fig. 10."
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 166.1,
+      "minX": 36.9,
+      "maxY": 184.2,
+      "maxX": 558.4,
+      "page": 12
+    }],
+    "text": "Fig. 12. Same panels as in Fig. 11 (top), but now for the model containing a bar and a low gas fraction (RBM02). The contours and lines are also the same as in Fig. 11."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 36.9,
+        "maxY": 112.4,
+        "maxX": 292,
+        "page": 12
+      },
+      {
+        "minY": 92.2,
+        "minX": 303.3,
+        "maxY": 145.1,
+        "maxX": 558.4,
+        "page": 12
+      },
+      {
+        "minY": 316.9,
+        "minX": 36.9,
+        "maxY": 336.8,
+        "maxX": 292,
+        "page": 13
+      }
+    ],
+    "text": "The models with the convergence flow star-formation prescription demonstrate a very similar gas velocity dispersion evolution, but in models with no converging flow criterion the star-formation rate is higher by a factor of 2 − 6 all the time. This behaviour was to be expected because the conditions for the conversion of gas density into new stellar particles are now weaker. For all models, star formation reaches up to 11 − 12 M yr−1 in ≈ 0.5 Gyr. In the unbarred galaxy model, star formation slowly decreases only due to the conversion of gas into stars, with a slower decay than in our basic no-bar simulation."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 36.9,
+      "maxY": 69.9,
+      "maxX": 144.6,
+      "page": 12
+    }],
+    "text": "Article number, page 12 of 17"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 196.4,
+      "maxY": 807.1,
+      "maxX": 398.9,
+      "page": 13
+    }],
+    "text": "S. Khoperskov et al.: Bar quenching in gas-rich galaxies"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 592.8,
+      "minX": 36.9,
+      "maxY": 619,
+      "maxX": 558.4,
+      "page": 13
+    }],
+    "text": "Fig. 13. Maps of the gas surface density (left), surface star formation rate (center) and star formation efficiency (right) for barred galaxy model at a single time, 1.2 Gyr. Black circles correspond to the positions of inner Lindblad resonance (solid line) and corotation radius (dashed line) for the bar."
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 357.9,
+      "minX": 36.9,
+      "maxY": 376,
+      "maxX": 558.4,
+      "page": 13
+    }],
+    "text": "Fig. 14. Star-formation history in the different models. Unbarred galaxy SFR is shown by black line in all panels. Left: Comparison of models with two different bar strengths, εb = 0.1 and 0.2; right: Models with three different bar formation time-scales, h = 0.2, 0.5, 1 Gyr."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 36.9,
+        "maxY": 265.9,
+        "maxX": 292,
+        "page": 13
+      },
+      {
+        "minY": 316.9,
+        "minX": 303.3,
+        "maxY": 336.8,
+        "maxX": 558.4,
+        "page": 13
+      }
+    ],
+    "text": "In barred galaxy simulations, star formation decreases not as rapidly after the bar formation in comparison to our standard simulations. The SFR decreases because the gas is driven to central regions and converted to stars. In the standard model star formation is suppressed very rapidly right after the bar formation while in a model where star formation does not depend on the gas random motions star formation continues after the bar formation, but at lower level decreasing only due to gas consumption and depletion. Globally, in the case of no converging flow, bar formation reduces the star-formation rate by a factor of few which is much slower than in our fiducial runs. At the end of the simulation (after 2 Gyr), SFR is still high: ≈ 3 M yr−1 for rigid bar simulation and ≈ 7 M yr−1 for self-consistent run. Even if a slow and weak decrease in the star formation rate is found also in the models where the converging flow criterion is not implemented, we conclude that the inclusion of random gas motions in star-formation prescriptions produces a rapid quenching phase rather than a slow star-formation rate decrease in models without such a prescription."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 305.7,
+      "minX": 303.3,
+      "maxY": 314.8,
+      "maxX": 419,
+      "page": 13
+    }],
+    "text": "3.9. Quenching parameters"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 235.1,
+        "minX": 303.3,
+        "maxY": 296.8,
+        "maxX": 558.4,
+        "page": 13
+      },
+      {
+        "minY": 200,
+        "minX": 303.3,
+        "maxY": 209.8,
+        "maxX": 558.4,
+        "page": 13
+      },
+      {
+        "minY": 113.8,
+        "minX": 303.3,
+        "maxY": 177.6,
+        "maxX": 558.4,
+        "page": 13
+      },
+      {
+        "minY": 81.5,
+        "minX": 303.3,
+        "maxY": 90.5,
+        "maxX": 558.4,
+        "page": 13
+      },
+      {
+        "minY": 214.8,
+        "minX": 36.9,
+        "maxY": 365.5,
+        "maxX": 292,
+        "page": 14
+      }
+    ],
+    "text": "In this section we aim to quantify the star-formation quenching efficiency in our various models and to investigate how the efficiency depends on bar parameters, i.e., strength ε, timescale h. We introduce simple quenching parameters. First, we estimate the quenching timescale hq as an exponential timescale for the star-formation rate decrease: SFR(t) ∝ exp(−t/hq) . (6) To make the fit, we did not use the whole time span of the simulations, but only the period when star formation is suppressed. The second parameter is the quenching rate ζ which we take as the ratio between the maximum star formation rate before star formation suppression and its value after the quenching phase: ζ = SFR(before quenching)/SFR(after quenching) . (7) For each model star-formation history we measure these two parameters and analyze them as a function of the main bar parameters (Fig. 17) For this analysis we also added two models with no bar in order to distinguish quantitatively whether quenching has occurred in a given run. Finally we estimate the quenching parameters according to Eqs. 6 and 7, for the Milky Way star-formation history derived from fitting the solar vicinity age-[Si/Fe] abundance with a chemical evolution model (Snaith et al. 2015). Quenching parameters for the MW have been estimated by analyzing the mean star-formation rates during the thick (9 − 11 Gyr ago) and thin (< 8 Gyr) disks formation phases taking into account the estimated uncertainties in the SFR. For the quenching time scale, we find 0.6 − 2 Gyr and for quenching rate, 8 − 12."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 450.7,
+      "maxY": 69.9,
+      "maxX": 558.4,
+      "page": 13
+    }],
+    "text": "Article number, page 13 of 17"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 218.3,
+      "maxY": 807.1,
+      "maxX": 377,
+      "page": 14
+    }],
+    "text": "A&A proofs: manuscript no. bar_quenching"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 575.3,
+      "minX": 36.8,
+      "maxY": 603.4,
+      "maxX": 558.4,
+      "page": 14
+    }],
+    "text": "Fig. 15. Left: Bar strength defined as the amplitude of the m = 2 Fourier moment, A2, as a function of time in the self-consistent model. Right: Star-formation history in the live bar simulation (green solid line) and in the rigid bar simulation (dashed blue line, model RBe02). The black line represents the star-formation rate in model with no bar."
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 398,
+      "minX": 36.2,
+      "maxY": 424.2,
+      "maxX": 558.6,
+      "page": 14
+    }],
+    "text": "Fig. 16. Comparison of the star-formation rates in models with and without converging flow criterion used in the star-formation prescription. Left panel (a): Models with no bar; center panel (b): models with a rigid bar (ε = 0.1, h = 0.2 Gyr); right panel (c): models with self-consistent model bar formation."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 136.8,
+      "minX": 36.9,
+      "maxY": 211.6,
+      "maxX": 292,
+      "page": 14
+    }],
+    "text": "We find that for all our standard star-formation prescriptions, barred galaxy models produce a quenching episode with an exponential timescale, hq = 0.1 − 0.8 Gyr, and rate, ζ = 8 − 11. For the unbarred simulations these parameters are 4 Gyr and 1.5 respectively. For the runs without converging flow criteria in the star-formation prescription, the suppression of the star formation is much longer, > 2 Gyr."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 83.6,
+        "minX": 36.9,
+        "maxY": 134.4,
+        "maxX": 292.5,
+        "page": 14
+      },
+      {
+        "minY": 346,
+        "minX": 303.3,
+        "maxY": 376.9,
+        "maxX": 558.4,
+        "page": 14
+      }
+    ],
+    "text": "The process described here fits very well the observations of the Milky Way: a decrease in the SFR by a factor of about 6−12, occurring in less than 1.5 Gyr. Barred galaxy models with no converging flow in star-formation prescription exhibits a much slower and less efficient star formation decrease. Thus without taking into account the converging flow criterion, we are not able to get a star-formation quenching comparable to the Milky Way, quenching rate, ≈ 10, and quenching timescale, ≈ 1 Gyr."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 36.9,
+      "maxY": 69.9,
+      "maxX": 144.6,
+      "page": 14
+    }],
+    "text": "Article number, page 14 of 17"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 257.7,
+      "minX": 303.3,
+      "maxY": 343.4,
+      "maxX": 558.4,
+      "page": 14
+    }],
+    "text": "We clearly find that the stronger the bar, the faster star formation is quenched (Fig. 17). We find shallow linear dependences, hq ∝ h and ζ ∝ h for our set of simulations with different bar timescales and fixed bar strengths ε = 0.1 and 0.2 (Fig. 17). Interestingly, the quenching rate does not depend on the bar strength, ε (Fig. 17). It is possible that during the bar amplitude growth, the star formation also increases slightly, but quenching episode starts earlier for stronger bars (Fig. 14)."
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 231,
+      "minX": 303.3,
+      "maxY": 253.8,
+      "maxX": 551.7,
+      "page": 14
+    }],
+    "text": "4. Discussion: Implications for the MW and distant disk galaxies"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 303.3,
+        "maxY": 222,
+        "maxX": 558.5,
+        "page": 14
+      },
+      {
+        "minY": 285.3,
+        "minX": 36.9,
+        "maxY": 358,
+        "maxX": 292,
+        "page": 15
+      }
+    ],
+    "text": "The star-formation history of the Milky Way shows a quenching episode between 10 and 7 Gyr (Snaith et al. 2014, 2015). Although this result was initially derived from stars in the solar vicinity, this SFH has a more general validity as the stars originate from all over the disk and yet, despite this \"geographical\" diversity, stars in the MW form a tight age-[α/Fe] relation (Snaith et al. 2014, 2015). Haywood et al. (2016) confirmed these results by showing that the bimodality of the [α/Fe] distribution visible in the APOGEE data in the entire inner disk can be reproduced if its star formation was quenched at the end of the formation of the thick disk. This quenching episode occurred throughout the inner disk (. 7 kpc of the galactic center). In contradiction with many quenching models, the data suggest however that the quenching did not occur because of the exhaustion of gas. The chemical continuity observed on stars formed before and after the quenching episode excludes the possibility that substantial amounts of gas was accreted during this period. This implies that the disk at the end of the quenching epoch possessed a sufficient reservoir of gas to resume star formation and form the thin disk."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 196.4,
+      "maxY": 807.1,
+      "maxX": 398.9,
+      "page": 15
+    }],
+    "text": "S. Khoperskov et al.: Bar quenching in gas-rich galaxies"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 379.1,
+      "minX": 36.9,
+      "maxY": 447,
+      "maxX": 558.4,
+      "page": 15
+    }],
+    "text": "Fig. 17. Relation between the quenching rate, ζ, and quenching timescale, hq, and bar parameters, bar strength ε and bar timescale h, in our simulated galaxies. Black 6-pointed star formally shows the parameters measured for a model without a bar. The blue symbols show the results for models with a bar strength ε = 0.1, while the red symbols indicate models with ε = 0.2 with a rigid bar potential. Green triangle corresponds to the results of the self-consistent bar simulation. The filled grey area in each panel represents the quenching parameters measured for star-formation history of the inner Milky Way (Snaith et al. 2014). Note that the symbol colors are the same as in star-formation histories used in Figs. 14 and 15. Models without taking into account converging flow criteria in the star-formation prescription are shows by crosses. Error bars refer to the 95% confidence interval from the fitting procedure."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 36.9,
+        "maxY": 276.8,
+        "maxX": 292,
+        "page": 15
+      },
+      {
+        "minY": 272.3,
+        "minX": 303.3,
+        "maxY": 358,
+        "maxX": 558.4,
+        "page": 15
+      }
+    ],
+    "text": "Haywood et al. (2016) suggested that the bar could be responsible for the quenching over this epoch in the MW by increasing the turbulence in the gas, preventing altogether the gas from collapsing, becoming self-gravitating, and forming stars. Indeed, the quenching of the star formation has been observed in local galaxies despite them having substantial gas reservoirs. For example, Rowlands et al. (2015) and French et al. (2015) discovered significant molecular reservoirs in post-starburst galaxies which is inconsistent with their star-formation rate in comparison to normal galaxies. K-S relation for some of these post-starburst galaxies suggests that the star-formation efficiency is lower by a factor of ≈ 20 for a given molecular gas mass. Alatalo et al. (2015b) proposed that most of the molecular gas in NGC 1266 is very inefficient at forming stars. The most likely explanation for the suppression of SF in dense gas is that turbulence dissipation rate is long enough and the energy high enough to keep the gas from collapsing gravitationally. Thus the sustained turbulence is a reasonable explanation for suppressing star formation. The cloud, G0.253 + 0.016, is one example of where star formation is surpressed by turbulence. This cloud is located in the galactic center, has a lower star-formation efficiency compared to similar clouds and has an especially high gas velocity dispersion (Kauffmann et al. 2013). These results and others (see, e.g., Alatalo et al. 2015a; Guillard et al. 2015) find that it is not necessary to substantially remove gas reservoirs to quench or suppress star formation in galaxies on global or local scales."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 138.6,
+      "minX": 303.3,
+      "maxY": 268.1,
+      "maxX": 558.9,
+      "page": 15
+    }],
+    "text": "We find that bars can be responsible for the increase of turbulence in the gas, suppressing the star-formation efficiency within the co-rotation radius. This scenario is different from the one proposed by Gavazzi et al. (2015), where the star formation is quenched by sweeping the gas with the bar to the Galactic center. As already discussed in Haywood et al. (2016), we feel this solution is not appropriate for the Milky Way, since once the gas is swept to the Galaxy center, it needs to be replenished to allow the thin (very extended) disk to form. The accretion of new gas would leave a signature in the abundances, while the data shows strict continuity between the thick and thin disks. On these grounds, such a model cannot be appropriate for the MW."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 303.3,
+        "maxY": 134.4,
+        "maxX": 558.4,
+        "page": 15
+      },
+      {
+        "minY": 730.1,
+        "minX": 36.8,
+        "maxY": 782.9,
+        "maxX": 292,
+        "page": 16
+      }
+    ],
+    "text": "The possible role of bar in quenching processes was established empirically by Masters et al. (2010, 2012), who showed that for a given amount of gas, barred galaxies are redder than unbarred galaxies. In another words, disk galaxies with bars are more likely to be quenched than unbarred galaxies (see also Masters et al. 2011). Recently, also Consolandi (2016) found that barred massive galaxies have redder colors within their co-rotation radius. According to them this is consistent with bar-quenching, since bars bring gas to the center, and create nuclear concentration, and increase the bulge."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 450.7,
+      "maxY": 70,
+      "maxX": 558.4,
+      "page": 15
+    }],
+    "text": "Article number, page 15 of 17"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 218.3,
+      "maxY": 807.1,
+      "maxX": 377,
+      "page": 16
+    }],
+    "text": "A&A proofs: manuscript no. bar_quenching"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 542.1,
+      "minX": 36.8,
+      "maxY": 726.4,
+      "maxX": 292,
+      "page": 16
+    }],
+    "text": "Because bars seem a very common phenomenon, occurring in two thirds of disk galaxies, the process described here may be widely applicable. Bar shocks injecting substantial turbulent energy into galactic disk within bar co-rotation and the turbulence stabilize the molecular gas against collapse. In this mechanism, the gas content from galactic disks does not need to be expelled for galaxies to quench. The underlying mechanism for bar quenching is simply to stir-up the gas to high dispersions. It is through these high velocity dispersions that star-formation efficiency is decreased. This mechanism, high dispersions suppressing star formation has been confirmed both empirically, phenomenologically, and numerically. However, many aspects of bar quenching and the impact of turbulence on star formation remain mysterious, such as understanding in detail how the bar rotational energy is transferred to the gas on large and small scales, how rapidly this energy dissipates as function of bar parameters, galaxy-type and mass, etc."
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 529.3,
+      "minX": 36.8,
+      "maxY": 537.3,
+      "maxX": 110.8,
+      "page": 16
+    }],
+    "text": "5. Conclusions"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 234.4,
+      "minX": 36.8,
+      "maxY": 517.3,
+      "maxX": 292,
+      "page": 16
+    }],
+    "text": "This study emphasizes the fundamental role that stellar bars play in influencing the gas dynamics on large scales within gas-rich galaxy disks and thereby in modulating galaxy star-formation histories. Using N-body/hydrodynamical simulations of gas-rich barred galaxies, we find that star-formation history strongly depends on the formation and evolution of bars. The results of our simulations show that it is possible to suppress the star formation in barred galaxies by collecting most of the gas in the bar-region and then by inducing significant random gas motions through the shear and modulating gravitational potential generated by the rotation of the bar. We find that the formation of bars is responsible for quenching star formation in gas-rich disks of galaxies. These findings strongly support the idea that a bar may have had a substantial impact on the star-formation history of the Milky Way (Haywood et al. 2016). Haywood et al. (2016) found that a decrease in the SFR by a factor of 10 occurring within 1 Gyr is needed to explain the chemical abundances in the disk. They proposed that the bar could be at the origin of the quenching by increasing the turbulence in the ISM. At least with the detailed data we have on the Milky Way, it appears that the rise of the stellar asymmetries in the disk could be the origin of the transition from the thick disk to the thin disk populations. The results above imply that it is essential to compute the bar evolution and multi-phase ISM self-consistently in order to understand star-formation history of spiral galaxies and their quenching phase."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 221.7,
+        "minX": 51.8,
+        "maxY": 230.6,
+        "maxX": 168.5,
+        "page": 16
+      },
+      {
+        "minY": 178.2,
+        "minX": 41.9,
+        "maxY": 218,
+        "maxX": 292,
+        "page": 16
+      }
+    ],
+    "text": "From this study, we find that: \u2022 The formation of a bar plays a crucial role in regulating the star-formation rates of massive gas-rich galaxies. Our simulations demonstrate a rapid decreases of the star-formation rate after the formation of the bar."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 130.9,
+      "minX": 41.9,
+      "maxY": 170.7,
+      "maxX": 292,
+      "page": 16
+    }],
+    "text": "\u2022 For our standard model of a bar with an amplitude of 10%, the star-formation rate is suppressed by a factor of 10 within 1 Gyr compared to a model with exactly the same parameters but has no bar."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 81.5,
+        "minX": 41.9,
+        "maxY": 123.4,
+        "maxX": 292,
+        "page": 16
+      },
+      {
+        "minY": 599.3,
+        "minX": 308.3,
+        "maxY": 782.9,
+        "maxX": 558.4,
+        "page": 16
+      }
+    ],
+    "text": "\u2022 We find that in barred galaxies gas velocity dispersion strongly depends on the radius. For the central parts, meaning radii within the length of the bar, the velocity dispersion can reach up to 20 − 35 km s−1 . A large velocity dispersion is observed in the barred galaxy simulations, even if there is no intense on-going star formation. \u2022 There is a significant growth of the gas velocity dispersion within the co-rotation radius of the bar reduces the star-formation efficiency by a factor of 2 − 5. \u2022 We also demonstrated that the gas with high velocity dispersion is maintained in the galactic disk. However, star formation is less efficient in the turbulent ISM and in the majority of our models, the star formation is quenched. Thus, we conclude that the action of the bar can efficiently quench star formation without needing to deplete the gas. \u2022 The analysis of the Kennicutt-Schmidt relation in simulated gas-rich galaxies reveals a flattening of its slope in the bar region. Currently observational studies on the spatially resolved star formation efficiency in gas-rich (or high-redshift) barred galaxies are missing, thus our conclusions can be used as a prediction to test with further observations."
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 36.9,
+      "maxY": 69.9,
+      "maxX": 144.6,
+      "page": 16
+    }],
+    "text": "Article number, page 16 of 17"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 510.8,
+      "minX": 302.9,
+      "maxY": 588.7,
+      "maxX": 558.4,
+      "page": 16
+    }],
+    "text": "Acknowledgements. We thank the referee for her/his helpful comments. The authors wish to thank N. Bastian, P. James, R. Schiavon, for enriching discussions. This work was granted access to the HPC resources of CINES under the allocations 2016-040507 (PI : F. Combes) and 2017-040507 (Pi : P. Di Matteo) made by GENCI. This work has been supported by ANR (Agence Nationale de la Recherche) through the MOD4Gaia project (ANR-15-CE31-0007, P.I.: P. Di Matteo). Numerical simulations partially have been performed at the Research Computing Center (Moscow State University) under the RFBR grant (16-3260043)."
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 467.6,
+      "minX": 303.3,
+      "maxY": 475.4,
+      "maxX": 359.1,
+      "page": 16
+    }],
+    "text": "References"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 389.2,
+      "minX": 303.3,
+      "maxY": 457.9,
+      "maxX": 558.4,
+      "page": 16
+    }],
+    "text": "Agertz, O., Lake, G., Teyssier, R., et al. 2009, MNRAS, 392, 294 Alatalo, K., Appleton, P. N., Lisenfeld, U., et al. 2015a, ApJ, 812, 117 Alatalo, K., Lacy, M., Lanz, L., et al. 2015b, ApJ, 798, 31 Athanassoula, E. 1992, MNRAS, 259, 345 Athanassoula, E. 2000, in Astronomical Society of the Pacific Conference Series, Vol. 221, Stars, Gas and Dust in Galaxies: Exploring the Links, ed. D. Alloin, K. Olsen, & G. Galaz, 243 Athanassoula, E. 2013, Bars and secular evolution in disk galaxies: Theoretical"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 362.7,
+      "minX": 303.3,
+      "maxY": 387.4,
+      "maxX": 558.4,
+      "page": 16
+    }],
+    "text": "input, ed. J. Falcón-Barroso & J. H. Knapen, 305 Athanassoula, E., Lambert, J. C., & Dehnen, W. 2005, MNRAS, 363, 496 Athanassoula, E., Rodionov, S. A., Peschken, N., & Lambert, J. C. 2016, ApJ,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 336.3,
+      "minX": 303.3,
+      "maxY": 360.9,
+      "maxX": 558.4,
+      "page": 16
+    }],
+    "text": "821, 90 Bell, E. F., Wolf, C., Meisenheimer, K., et al. 2004, ApJ, 608, 752 Berentzen, I., Shlosman, I., Martinez-Valpuesta, I., & Heller, C. H. 2007, ApJ,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 309.9,
+      "minX": 303.3,
+      "maxY": 334.5,
+      "maxX": 558.4,
+      "page": 16
+    }],
+    "text": "666, 189 Bigiel, F., Leroy, A., Walter, F., et al. 2010, AJ, 140, 1194 Binney, J. & Tremaine, S. 2008, Galactic Dynamics: Second Edition (Princeton"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 239.8,
+      "minX": 303.3,
+      "maxY": 308.1,
+      "maxX": 558.4,
+      "page": 16
+    }],
+    "text": "University Press) Bower, R. G., Benson, A. J., Malbon, R., et al. 2006, MNRAS, 370, 645 Burkert, A. 1995, ApJ, 447, L25 Caldú-Primo, A., Schruba, A., Walter, F., et al. 2013, AJ, 146, 150 Carlberg, R. G. & Sellwood, J. A. 1985, ApJ, 292, 79 Carles, C., Martel, H., Ellison, S. L., & Kawata, D. 2016, MNRAS, 463, 1074 Cheung, E., Athanassoula, E., Masters, K. L., et al. 2013, ApJ, 779, 162 Cole, D. R., Debattista, V. P., Erwin, P., Earp, S. W. F., & Roškar, R. 2014,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 170.4,
+      "minX": 303.3,
+      "maxY": 238.1,
+      "maxX": 558.4,
+      "page": 16
+    }],
+    "text": "MNRAS, 445, 3352 Combes, F., Debbasch, F., Friedli, D., & Pfenniger, D. 1990, A&A, 233, 82 Combes, F. & Elmegreen, B. G. 1993, A&A, 271, 391 Combes, F. & Gerin, M. 1985, A&A, 150, 327 Combes, F. & Sanders, R. H. 1981, A&A, 96, 164 Consolandi, G. 2016, A&A, 595, A67 Contopoulos, G. 1980, A&A, 81, 198 Cortese, L., Catinella, B., Boissier, S., Boselli, A., & Heinis, S. 2011, MNRAS,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 117.1,
+      "minX": 303.3,
+      "maxY": 168,
+      "maxX": 558.4,
+      "page": 16
+    }],
+    "text": "415, 1797 Croton, D. J., Springel, V., White, S. D. M., et al. 2006, MNRAS, 365, 11 Debattista, V. P., Carollo, C. M., Mayer, L., & Moore, B. 2004, ApJ, 604, L93 Dehnen, W. 2000, AJ, 119, 800 Di Matteo, P., Gómez, A., Haywood, M., et al. 2015, A&A, 577, A1 Di Matteo, P., Haywood, M., Combes, F., Semelin, B., & Snaith, O. N. 2013,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 82,
+      "minX": 303.3,
+      "maxY": 115.4,
+      "maxX": 523.5,
+      "page": 16
+    }],
+    "text": "A&A, 553, A102 Di Matteo, T., Springel, V., & Hernquist, L. 2005, Nature, 433, 604 Dib, S., Bell, E., & Burkert, A. 2006, ApJ, 638, 797 Dobbs, C. L., Burkert, A., & Pringle, J. E. 2011, MNRAS, 417, 1318"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 799.1,
+      "minX": 196.4,
+      "maxY": 807.1,
+      "maxX": 398.9,
+      "page": 17
+    }],
+    "text": "S. Khoperskov et al.: Bar quenching in gas-rich galaxies"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 775,
+      "minX": 36.9,
+      "maxY": 781.6,
+      "maxX": 292,
+      "page": 17
+    }],
+    "text": "Dobbs, C. L., Krumholz, M. R., Ballesteros-Paredes, J., et al. 2014, Protostars"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 748,
+      "minX": 36.9,
+      "maxY": 772.6,
+      "maxX": 292,
+      "page": 17
+    }],
+    "text": "and Planets VI, 3 Dubois, Y., Gavazzi, R., Peirani, S., & Silk, J. 2013, MNRAS, 433, 3297 Dubois, Y., Volonteri, M., Silk, J., Devriendt, J., & Slyz, A. 2014, MNRAS, 440,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 608.1,
+      "minX": 36.9,
+      "maxY": 746.1,
+      "maxX": 292,
+      "page": 17
+    }],
+    "text": "2333 Ellison, S. L., Nair, P., Patton, D. R., et al. 2011, MNRAS, 416, 2182 Elmegreen, B. G. 2011, ApJ, 737, 10 Englmaier, P. & Shlosman, I. 2000, ApJ, 528, 677 Eskridge, P. B., Frogel, J. A., Pogge, R. W., et al. 2000, AJ, 119, 536 Fabian, A. C. 2012, ARA&A, 50, 455 Förster Schreiber, N. M., Genzel, R., Bouché, N., et al. 2009, ApJ, 706, 1364 Fragkoudi, F., Athanassoula, E., & Bosma, A. 2016, MNRAS, 462, L41 French, K. D., Yang, Y., Zabludoff, A., et al. 2015, ApJ, 801, 1 Gabor, J. M. & Bournaud, F. 2014, MNRAS, 441, 1615 Gadotti, D. A., Seidel, M. K., Sánchez-Blázquez, P., et al. 2015, A&A, 584, A90 Gavazzi, G., Consolandi, G., Dotti, M., et al. 2015, A&A, 580, A116 Genzel, R., Newman, S., Jones, T., et al. 2011, ApJ, 733, 101 George, M. R., Leauthaud, A., Bundy, K., et al. 2011, ApJ, 742, 125 Guillard, P., Boulanger, F., Lehnert, M. D., et al. 2015, A&A, 574, A32 Hakobyan, A. A., Karapetyan, A. G., Barkhudaryan, L. V., et al. 2016, MNRAS,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 564.2,
+      "minX": 36.9,
+      "maxY": 606.3,
+      "maxX": 292,
+      "page": 17
+    }],
+    "text": "456, 2848 Harrison, C. M. 2017, Nature Astronomy, 1, 0165 Haywood, M., Lehnert, M. D., Di Matteo, P., et al. 2016, A&A, 589, A66 Haywood et al. 2017, in prep. Hernández-Toledo, H. M., Zendejas-Domínguez, J., & Avila-Reese, V. 2007, AJ,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 512.2,
+      "minX": 36.9,
+      "maxY": 562.4,
+      "maxX": 292,
+      "page": 17
+    }],
+    "text": "134, 2286 Hoffmann, V. & Romeo, A. B. 2012, MNRAS, 425, 1511 Hopkins, P. F., Quataert, E., & Murray, N. 2012, MNRAS, 421, 3488 James, P. A. & Percival, S. M. 2016, MNRAS, 457, 917 Jogee, S., Scoville, N., & Kenney, J. D. P. 2005, ApJ, 630, 837 Kauffmann, G., White, S. D. M., Heckman, T. M., et al. 2004, MNRAS, 353,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 476.4,
+      "minX": 36.9,
+      "maxY": 509.7,
+      "maxX": 292,
+      "page": 17
+    }],
+    "text": "713 Kauffmann, J., Pillai, T., & Zhang, Q. 2013, ApJ, 765, L35 Kennicutt, Jr., R. C. 1998, ApJ, 498, 541 Khoperskov, S. A., Khoperskov, A. V., Khrykin, I. S., et al. 2012, MNRAS, 427,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 458.7,
+      "minX": 36.9,
+      "maxY": 474.6,
+      "maxX": 292,
+      "page": 17
+    }],
+    "text": "1983 Khoperskov, S. A., Vasiliev, E. O., Khoperskov, A. V., & I, V. N. 2014, Journal"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 441,
+      "minX": 36.9,
+      "maxY": 457,
+      "maxX": 292,
+      "page": 17
+    }],
+    "text": "of Physics Conference Series, 510, 012011 Khoperskov, S. A., Vasiliev, E. O., Ladeyschikov, D. A., Sobolev, A. M., &"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 423.3,
+      "minX": 36.9,
+      "maxY": 439.3,
+      "maxX": 292,
+      "page": 17
+    }],
+    "text": "Khoperskov, A. V. 2016, MNRAS, 455, 1782 Khoperskov, S. A., Vasiliev, E. O., Sobolev, A. M., & Khoperskov, A. V. 2013,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 309.6,
+      "minX": 36.9,
+      "maxY": 421.5,
+      "maxX": 292,
+      "page": 17
+    }],
+    "text": "MNRAS, 428, 2311 Kim, W.-T. & Ostriker, E. C. 2007, ApJ, 660, 1232 Kim, W.-T., Ostriker, E. C., & Stone, J. M. 2002, ApJ, 581, 1080 Knapen, J. H., Shlosman, I., & Peletier, R. F. 2000, ApJ, 529, 93 Krumholz, M. R. & Burkhart, B. 2016, MNRAS, 458, 1671 Lanz, L., Ogle, P. M., Alatalo, K., & Appleton, P. N. 2016, ApJ, 826, 29 Laurikainen, E., Salo, H., & Buta, R. 2004a, ApJ, 607, 103 Laurikainen, E., Salo, H., Buta, R., & Knapen, J. H. 2007, MNRAS, 381, 401 Laurikainen, E., Salo, H., Buta, R., & Vasylyev, S. 2004b, MNRAS, 355, 1251 Lehnert, M. D., Le Tiran, L., Nesvadba, N. P. H., et al. 2013, A&A, 555, A72 Lehnert, M. D., Nesvadba, N. P. H., Le Tiran, L., et al. 2009, ApJ, 699, 1660 Leitherer, C., Schaerer, D., Goldader, J. D., et al. 1999, ApJS, 123, 3 Maciejewski, W., Teuben, P. J., Sparke, L. S., & Stone, J. M. 2002, MNRAS,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 214,
+      "minX": 36.9,
+      "maxY": 307.9,
+      "maxX": 292,
+      "page": 17
+    }],
+    "text": "329, 502 Marasco, A., Debattista, V. P., Fraternali, F., et al. 2015, MNRAS, 451, 4223 Marinova, I. & Jogee, S. 2007, ApJ, 659, 1176 Martel, H., Kawata, D., & Ellison, S. L. 2013, MNRAS, 431, 2560 Martig, M., Bournaud, F., Teyssier, R., & Dekel, A. 2009, ApJ, 707, 250 Martig, M., Crocker, A. F., Bournaud, F., et al. 2013, MNRAS, 432, 1914 Masters, K. L., Mosleh, M., Romer, A. K., et al. 2010, MNRAS, 405, 783 Masters, K. L., Nichol, R. C., Haynes, M. P., et al. 2012, MNRAS, 424, 2180 Masters, K. L., Nichol, R. C., Hoyle, B., et al. 2011, MNRAS, 411, 2026 McKee, C. F. & Ostriker, E. C. 2007, ARA&A, 45, 565 Menéndez-Delmestre, K., Sheth, K., Schinnerer, E., Jarrett, T. H., & Scoville,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 82.6,
+      "minX": 36.9,
+      "maxY": 211.6,
+      "maxX": 292,
+      "page": 17
+    }],
+    "text": "N. Z. 2007, ApJ, 657, 790 Miyamoto, M. & Nagai, R. 1975, PASJ, 27, 533 Moiseev, A. V., Tikhonov, A. V., & Klypin, A. 2015, MNRAS, 449, 3568 Momose, R., Okumura, S. K., Koda, J., & Sawada, T. 2010, ApJ, 721, 383 Mullaney, J. R., Alexander, D. M., Aird, J., et al. 2015, MNRAS, 453, L83 Oppenheimer, B. D., Davé, R., Kereš, D., et al. 2010, MNRAS, 406, 2325 Piner, B. G., Stone, J. M., & Teuben, P. J. 1995, ApJ, 449, 508 Pontzen, A., Tremmel, M., Roth, N., et al. 2017, MNRAS, 465, 547 Regan, M. W. & Teuben, P. J. 2004, ApJ, 600, 595 Reynaud, D. & Downes, D. 1998, A&A, 337, 671 Rodionov, S. A., Athanassoula, E., & Sotnikova, N. Y. 2009, MNRAS, 392, 904 Romeo, A. B. & Falstad, N. 2013, MNRAS, 433, 1389 Romeo, A. B. & Wiegert, J. 2011, MNRAS, 416, 1191 Romero-Gómez, M., Athanassoula, E., Masdemont, J. J., & García-Gómez, C. 2007, A&A, 472, 63"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 738.5,
+      "minX": 303.3,
+      "maxY": 781.6,
+      "maxX": 558.4,
+      "page": 17
+    }],
+    "text": "Rowlands, K., Wild, V., Nesvadba, N., et al. 2015, MNRAS, 448, 258 Salpeter, E. E. 1955, ApJ, 121, 161 Schaefer, A. L., Croom, S. M., Allen, J. T., et al. 2017, MNRAS, 464, 121 Schmidt, M. 1959, ApJ, 129, 243 Seidel, M. K., Falcón-Barroso, J., Martínez-Valpuesta, I., et al. 2016, MNRAS,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 693.7,
+      "minX": 303.3,
+      "maxY": 736.7,
+      "maxX": 558.4,
+      "page": 17
+    }],
+    "text": "460, 3784 Sellwood, J. A. 2011, MNRAS, 410, 1637 Sheth, K., Elmegreen, D. M., Elmegreen, B. G., et al. 2008, ApJ, 675, 1141 Sheth, K., Melbourne, J., Elmegreen, D. M., et al. 2012, ApJ, 758, 136 Shimizu, T. T., Mushotzky, R. F., Meléndez, M., Koss, M., & Rosario, D. J. 2015,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 630.9,
+      "minX": 303.3,
+      "maxY": 691.9,
+      "maxX": 558.4,
+      "page": 17
+    }],
+    "text": "MNRAS, 452, 1841 Sijacki, D., Springel, V., Di Matteo, T., & Hernquist, L. 2007, MNRAS, 380, 877 Silk, J. & Rees, M. J. 1998, A&A, 331, L1 Simpson, C. M., Bryan, G. L., Johnston, K. V., et al. 2013, MNRAS, 432, 1989 Snaith, O., Haywood, M., Di Matteo, P., et al. 2015, A&A, 578, A87 Snaith, O. N., Haywood, M., Di Matteo, P., et al. 2014, ApJ, 781, L31 Somerville, R. S., Hopkins, P. F., Cox, T. J., Robertson, B. E., & Hernquist, L."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 559.8,
+      "minX": 303.3,
+      "maxY": 629.1,
+      "maxX": 558.4,
+      "page": 17
+    }],
+    "text": "2008, MNRAS, 391, 481 Sorai, K., Kuno, N., Nishiyama, K., et al. 2012, PASJ, 64, 51 Spinoso, D., Bonoli, S., Dotti, M., et al. 2017, MNRAS, 465, 3729 Springel, V., Di Matteo, T., & Hernquist, L. 2005, ApJ, 620, L79 Strateva, I., Ivezić, Ž., Knapp, G. R., et al. 2001, AJ, 122, 1861 Tamburro, D., Rix, H.-W., Leroy, A. K., et al. 2009, AJ, 137, 4424 Thomasson, M., Donner, K. J., & Elmegreen, B. G. 1991, A&A, 250, 316 van der Wel, A., Bell, E. F., Holden, B. P., Skibba, R. A., & Rix, H.-W. 2010,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 523.3,
+      "minX": 303.3,
+      "maxY": 557.3,
+      "maxX": 539.9,
+      "page": 17
+    }],
+    "text": "ApJ, 714, 1779 Wada, K. & Koda, J. 2001, PASJ, 53, 1163 Wada, K., Meurer, G., & Norman, C. A. 2002, ApJ, 577, 197 Walker, L. M., Johnson, K. E., Gallagher, S. C., et al. 2010, AJ, 140, 1254"
+  }},
+  {"paragraph": {
+    "role": "footer",
+    "positions": [{
+      "minY": 61.8,
+      "minX": 450.7,
+      "maxY": 69.9,
+      "maxX": 558.4,
+      "page": 17
+    }],
+    "text": "Article number, page 17 of 17"
+  }}
+]}

@@ -1,0 +1,4769 @@
+{"paragraphs": [
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 738.1,
+      "minX": 59.9,
+      "maxY": 744.6,
+      "maxX": 167.4,
+      "page": 1
+    }],
+    "text": "DRAFT VERSION MAY 29, 2020"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 729.3,
+      "minX": 59.7,
+      "maxY": 735.7,
+      "maxX": 218.5,
+      "page": 1
+    }],
+    "text": "Preprint typeset using LATEX style emulateapj v. 01/23/15"
+  }},
+  {"paragraph": {
+    "role": "title",
+    "positions": [{
+      "minY": 681.9,
+      "minX": 80.5,
+      "maxY": 690.4,
+      "maxX": 529.7,
+      "page": 1
+    }],
+    "text": "SEPARATING CMB STOKES Q AND U POLARIZATION SIGNALS FROM NON-GAUSSIAN EMISSIONS"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 664.5,
+      "minX": 232.5,
+      "maxY": 673.6,
+      "maxX": 375.3,
+      "page": 1
+    }],
+    "text": "UJJAL PURKAYASTHA1, RAJIB SAHA1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 652.8,
+      "minX": 262,
+      "maxY": 659.8,
+      "maxX": 350.6,
+      "page": 1
+    }],
+    "text": "Draft version May 29, 2020"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 634.3,
+        "minX": 280.5,
+        "maxY": 641.2,
+        "maxX": 332.2,
+        "page": 1
+      },
+      {
+        "minY": 482.1,
+        "minX": 50.7,
+        "maxY": 627.9,
+        "maxX": 562,
+        "page": 1
+      }
+    ],
+    "text": "ABSTRACT In this paper we estimate diffuse foreground minimized Cosmic Microwave Background (CMB) Stokes Q and U polarization maps based upon the fundamental concept of Gaussian nature of CMB and strong non-Gaussian nature of astrophysical polarized foregrounds using WMAP nine year published polarization maps. We excise regions of the sky that define position of the known point sources, regions that are strongly contaminated by either the detector noise or by the diffuse foregrounds or both, and then perform foreground minimizations over the surviving sky regions that constitute approximately 50% of the full sky area. We critically evaluate performance of foreground minimizations in several ways and show that our foreground minimization method removes significant foregrounds from input maps. The cleaned Stokes {Q, U} polarization maps have less EE and BB power from relevant sky region compared to WMAP foreground-reduced Stokes {Q, U} polarization maps at different multipole ranges. We validate our methodology by performing detailed Monte Carlo simulations. The main driving machinery of our method is an internal-linear-combination (ILC) approach, however, unlike simple variance minimization performed in usual ILC method, the core of the method being dependent on the theoretically well motivated concept of Gaussianity of CMB polarization a direct connection is established between observations and models of inflation. Additionally, the method, like the usual ILC method, is independent on modeling uncertainties of polarized foregrounds. It will be useful to apply our method in future generation low-noise CMB polarization experiments."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 469.2,
+        "minX": 86.7,
+        "maxY": 478.2,
+        "maxX": 470.9,
+        "page": 1
+      },
+      {
+        "minY": 87.9,
+        "minX": 50.7,
+        "maxY": 434.5,
+        "maxX": 295.1,
+        "page": 1
+      },
+      {
+        "minY": 209,
+        "minX": 317.6,
+        "maxY": 449,
+        "maxX": 562,
+        "page": 1
+      }
+    ],
+    "text": "Subject headings: cosmic background radiation \u2014 cosmology: observations \u2014 diffuse radiation Anisotropies of Cosmic Microwave Background (CMB) radiation are deemed to be the fundamental ingredients responsible for the structure formation and therefore for the very existence of the Universe as we observe it and think of it today. Soon after detection of CMB (Penzias & Wilson 1965) it was realized that the anisotropic universe can induce polarization in CMB with unique feature (Rees 1968; Negroponte & Silk 1980; Lubin et al. 1983). The anisotropies in CMB are expected to be weakly and linearly polarized (Crittenden et al. 1995) due to Thompson scattering at the surface of last scattering and due to imprints of small fluctuations in metric that could have been generated during the epoch of inflation (Guth 1981; Starobinsky 1982; Linde 1983). Although weak, Stokes Q and U polarization anisotropies of CMB contain valuable information about various physical processes in a wide range of energy scales - starting from 1016 GeV or so, at the time of inflation until today, when the energy scale of cosmological interest is only ∼ 0.2 meV. To highlight the rich variety of problems that have been investigated in the literature in this context we mention that polarization anisotropy can be used to constrain primordial gravitational wave (Polnarev 1985; Crittenden et al. 1993; Frewin et al. 1994). Crittenden et al. (1995) show that it is possible to infer about the primordial tensor anisotropies from the correlation of temperature and polarization of CMB. Kamionkowski et al. (1997) find a method that can probe long-wavelength gravitational wave and vector-mode perturbations of metric elements using CMB polarization. Stark (1981b,a); Zaldarriaga (1997) show that reionization of intergalactic medium induces new polarization in CMB. Spergel & Zaldarriaga (1997) argue that CMB polarization can serve as a direct test of inflation. The primordial gravitational wave as measured by CMB polarization can be used detect energy scale of inflation (Knox & Song 2002). The effect of gravitational weak lensing on the CMB polarization power spectrum and also on temperaturepolarization cross power spectrum was studied by Zaldarriaga & Seljak (1998). Hu & Okamoto (2002) propose a method to reconstruct large scale mass distribution of the Universe using CMB polarization. Seljak & Zaldarriaga (1999) show that it is possible to measure dark matter power spectrum by using distortion of CMB weak lensing. Padmanabhan & Finkbeiner (2005) proposes a method to constrain possible dark matter annihilation at the time of recombination using CMB polarization. Balaji et al. (2003) show that the parity odd ChernSimons terms in the effective Lagrangian containing Maxwell fields can give rise to polarization axis rotation which in turn could probe physics of very early universe. Planck Collaboration et al. (2016e) argue that CMB polarization signal is more powerful than temperature anisotropy signal to constrain any possible sharp features in the primordial scalar power spectrum. Bucher et al. (2001) showed that polarization observations can constrain primordial isocurvature modes by lifting its degeneracy with the cosmological parameters. Detailed theoretical framework for the study of CMB polarization have been developed by Kosowsky (1996, 1999); Cabella & Kamionkowski (2004); Bucher (2015)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 442.1,
+      "minX": 137.4,
+      "maxY": 448.3,
+      "maxX": 208.5,
+      "page": 1
+    }],
+    "text": "1. INTRODUCTION"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 57.3,
+      "minX": 58.7,
+      "maxY": 74.3,
+      "maxX": 295.1,
+      "page": 1
+    }],
+    "text": "1 Physics Department, Indian Institute of Science Education and Research Bhopal, Bhopal, M.P, 462066, India."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 61.3,
+        "minX": 317.6,
+        "maxY": 207.1,
+        "maxX": 562,
+        "page": 1
+      },
+      {
+        "minY": 433.6,
+        "minX": 50.7,
+        "maxY": 726.2,
+        "maxX": 295.6,
+        "page": 2
+      }
+    ],
+    "text": "Following the discussion above, it is clear that CMB polarization signal can be used to understand problems in Cosmology with a diverse spectrum. Therefore, it becomes utmost important to device a method that estimates a clean map of the CMB polarization, which then can be reliably used to extract these information. In real life, however, estimating a cleaned CMB signal from observation in microwave part of electromagnetic spectrum is a non-trivial task since the net polarization signal that can be measured by a polarization sensitive detector placed on Earth, or in space, contains both the weak primordial CMB signal along with polarization signal due to various foreground emissions that originate due to different astrophysical processes that take place inside our Galaxy. An interesting property of Stokes Q and U polarization signals of CMB generated due to primordial gravitational wave is that they follow Gaussian distribution. Moreover the polarization generated at the surface of last scattering due to Thompson scattering were directly proportional to the amplitude of quadrapolar temperature anisotropy of that time. Therefore, such polarizations signals again follow Gaussian distribution with a high accuracy. The only assumption that we make in both the above cases is simple slow roll models for inflation \u2013 where any non Gaussianity generated are small (Allen et al. 1987; Gangui et al. 1994, 2002; Munshi et al. 1995; Acquaviva et al. 2003; Maldacena 2003; Komatsu et al. 2003) - are valid descriptions. The anisotropies of the polarized foregrounds however follow highly non-Gaussian properties due to complex non-linear physics involved in their origin. Motivated by the very accurate Gaussian nature of the cosmological Stokes Q and U polarization signals and highly non-Gaussian signature of polarized foregrounds, in this work, we seek to isolate cleaned pictures of primordial CMB Stokes Q and U anisotropy signals from their observed mixture with foregrounds, based upon the Gaussian nature of the former and non-Gaussian nature of later. The method has been applied on WMAP temperature anisotropy data by Saha (2011). In this work, we extend the earlier work to the case of CMB Stokes Q and U polarization. A related approach in the context of CMB which is useful to estimate maximally independent components of a mixture is independent component analysis (ICA) (e.g., see Hyvärinen & Oja (2000); Baccigalupi et al. (2004))."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 740.4,
+      "minX": 53.2,
+      "maxY": 747.1,
+      "maxX": 58.2,
+      "page": 2
+    }],
+    "text": "2"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 159.6,
+      "minX": 50.7,
+      "maxY": 431.6,
+      "maxX": 295.6,
+      "page": 2
+    }],
+    "text": "The basic driving machinery of our method is the usual internal-linear-combination (ILC) approach (e.g., see Bennett et al. (1992); Tegmark & Efstathiou (1996a); Bennett et al. (2003); Tegmark et al. (2003); Eriksen et al. (2004); Saha et al. (2006); Hinshaw et al. (2007); Saha et al. (2008); Gold et al. (2009); Kim et al. (2008, 2009); Samal et al. (2010) for descriptions about ILC approach and applications thereof). However, unlike the usual ILC method, wherein data-variance is minimized, in the current work, we minimize a suitably chosen statistic that quantifies the measure of non-Gaussian property intrinsic to a set of samples. As in Saha (2011) we take sample kurtosis as the measure on non-Gaussianness of the samples and minimize this quantity to estimate the cleaned CMB Stokes Q and U polarization signal following the ILC approach. Additionally, as discussed later in Section , our method relies on the blackbody nature of CMB spectrum (Mather et al. 1990, 1994; Fixsen et al. 1996) and non-blackbody nature of spectra of different foreground components. As a consequence of this, our final estimate of cleaned CMB signal also preserves any non-Gaussian CMB polarization signal along with the Gaussian CMB signal, when both types have a blackbody spectrum. Thus our method also preserves CMB weak lensing signal which possesses non-Gaussian properties along with the Gaussian signals due to primordial Gravitation wave and Thompson scattering at the surface of last scattering."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 54.4,
+        "minX": 50.7,
+        "maxY": 158.1,
+        "maxX": 295.1,
+        "page": 2
+      },
+      {
+        "minY": 664.6,
+        "minX": 317.6,
+        "maxY": 726.2,
+        "maxX": 561.9,
+        "page": 2
+      }
+    ],
+    "text": "The ILC approach has been applied in the field of component separation in the context of CMB in many different forms. Delabrouille et al. (2009); Basak & Delabrouille (2012, 2013) implement a needlet space ILC approach on WMAP temperature and polarization maps. Remazeilles et al. (2011b,a) generalize ILC method for non-CMB component estimations. Rogers et al. (2016a,b) implement a scale dependent, directional ILC method on CMB temperature and polarization maps. Saha & Aluri (2016) apply the ILC approach following a perturbative technique on simulated Stokes Q observations of WMAP and Planck at low resolution to estimate variation of synchrotron spectral index over the sky positions and jointly estimate all foregrounds and CMB components. Sudevan et al. (2017) improve the usual iterative ILC approach in harmonic space by nullifying a foreground leakage signal."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 591,
+      "minX": 317.6,
+      "maxY": 663.1,
+      "maxX": 562,
+      "page": 2
+    }],
+    "text": "Among the non-ILC approaches we refer to Bunn et al. (1994) and Bouchet et al. (1999) for Weiner filter method, (Bennett et al. 2003; Hinshaw et al. 2007; Gold et al. 2011, 2009) for template fitting methods, Gold et al. (2009, 2011) for Markov Chain Monte Carlo Method and Eriksen et al. (2007, 2008b,a); Planck Collaboration et al. (2016b,a) for Gibbs sampling approaches for component separation."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 254.3,
+        "minX": 317.6,
+        "maxY": 589.4,
+        "maxX": 562.4,
+        "page": 2
+      },
+      {
+        "minY": 245.8,
+        "minX": 317.6,
+        "maxY": 252.8,
+        "maxX": 372.9,
+        "page": 2
+      }
+    ],
+    "text": "We organize our paper in the following way. We present the problem that we wish to discuss in this work in Section . We present our statistical variable to quantify non-Gaussian properties and to minimize foreground contamination in Section . We then describe the basic formalism of this work in Section . In Section we first discuss preparation of input maps of our method. We then briefly discuss foreground and noise properties of these input maps. Based upon these discussions we identify regions of the sky where either foreground, or detector noise or both are dominant source of contamination. Using the knowledge of these regions, in Section we describe the mask that removes regions with strong foreground or detector noise contamination. We use this mask later in Section to reconstruct foreground minimized Stokes Q and U maps. We then demonstrate the non-Gaussian nature of polarized foregrounds using the empirical foreground model proposed by the WMAP science team in Section , both i) from the sky region defined by the mask obtained in Section and ii) from the full sky. After demonstrating the non-Gaussian properties of polarized foregrounds in Section we then describe how the statistical variable to measure non-Gaussian properties (e.g., see Section ) varies with increase in contamination strength of the non-Gaussian foregrounds. In Section we describe non-Gaussian properties of the input maps due to foreground contamination. We discuss variation of the values of our non-Gaussian measure with detector noise contamination but without any foreground in Section . We discuss the foreground minimization methodology in Section . In Section we discuss the results and critically evaluate the performance of the foreground minimization. In Section we discuss the detailed Monte Carlo simulations of foreground minimizations and results thereof. In Section we finally discuss our work and conclude."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 237.5,
+      "minX": 406.8,
+      "maxY": 243.7,
+      "maxX": 472.8,
+      "page": 2
+    }],
+    "text": "2. THE PROBLEM"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 63.1,
+      "minX": 317.6,
+      "maxY": 229.9,
+      "maxX": 561.9,
+      "page": 2
+    }],
+    "text": "The basic problem that we plan to discuss in this work is as follows. Let, we have observations of CMB Stokes Q and U parameters at different frequencies (and possibly at different instrument resolutions) over certain region of the sky. As discussed in Section slow-roll inflationary models with a single scalar field predict that primordial anisotropies of CMB polarizations signal follow Gaussian distribution with a very high accuracy. On the other hand, astrophysical foregrounds strongly deviate from Gaussian nature due to complex non-linear processes involved in their emission process. We propose to provide a solution of the question of separating CMB Stokes Q and U polarization signals from its observed mixture with (non-Gaussian) foregrounds based upon the Gaussian nature of the former and non-Gaussian nature of later. We refer to Section for a discussion about non-Gaussian nature of foregrounds."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 738.2,
+      "minX": 213.8,
+      "maxY": 747.2,
+      "maxX": 561.9,
+      "page": 3
+    }],
+    "text": "Separating Gaussian CMB polarization signal 3"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 719.2,
+      "minX": 104.7,
+      "maxY": 725.4,
+      "maxX": 241.2,
+      "page": 3
+    }],
+    "text": "3. MEASURE OF NON-GAUSSIANITY"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 660.6,
+        "minX": 50.7,
+        "maxY": 711.7,
+        "maxX": 295.6,
+        "page": 3
+      },
+      {
+        "minY": 706.7,
+        "minX": 317.6,
+        "maxY": 726.2,
+        "maxX": 561.9,
+        "page": 3
+      }
+    ],
+    "text": "Which statistical variable can be used as the measure of non-Gaussianity? As in Saha (2011) we take excess kurtosis as measure of non-Gaussian nature of a set of random values. The excess kurtosis for a set of N random numbers Rk is given by of Eqn. 2 should be interpreted as appropriately smoothed versions of the actual sky components or detector noise."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 664.6,
+        "minX": 317.6,
+        "maxY": 705.1,
+        "maxX": 561.9,
+        "page": 3
+      },
+      {
+        "minY": 618.8,
+        "minX": 120.3,
+        "maxY": 642.8,
+        "maxX": 295.1,
+        "page": 3
+      },
+      {
+        "minY": 486.3,
+        "minX": 50.7,
+        "maxY": 602,
+        "maxX": 295.1,
+        "page": 3
+      },
+      {
+        "minY": 475.8,
+        "minX": 50.7,
+        "maxY": 484.8,
+        "maxX": 238.2,
+        "page": 3
+      }
+    ],
+    "text": "Using the frequency maps Mi(p) the foreground minimized ILC map, MC(p), is defined as the linear superposition of all of them with certain amplitude terms wi that depends upon the frequency band νi K = N1 ∑N (Rk σ−4R0)4 − 3 , (1) where R0 represents sample mean and σ2 is the sample variance. Excess kurtosis for a Gaussian probability density function is zero. As described later in Section the excess kurtosis for foreground contaminated Q and U signals tend to take positive values and increases quickly with the increase in the contamination levels. On the other hand, the excess kurtosis for a random Gaussian realization of CMB Stokes Q or U map is close to zero. This makes the excess kurtosis an efficient estimator for measuring non-Gaussian foreground contamination in CMB polarization maps. In subsequent part of this paper we use 'sample kurtosis' or simply 'kurtosis' to actually represent the excess kurtosis as defined by Eqn. 1."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 613.7,
+      "minX": 150.7,
+      "maxY": 618.6,
+      "maxX": 161.3,
+      "page": 3
+    }],
+    "text": "k=1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 469.5,
+      "minX": 131,
+      "maxY": 475.7,
+      "maxX": 214.8,
+      "page": 3
+    }],
+    "text": "4. BASIC FORMALISM"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 360.3,
+      "minX": 50.7,
+      "maxY": 461.9,
+      "maxX": 295.6,
+      "page": 3
+    }],
+    "text": "In this section we review the basic formalism (e.g., see Saha (2011)) of estimating Gaussian Stokes Q and U polarized CMB components from the mixture with non-Gaussian foreground components. The basic driving tool of our method is an ILC method in pixel space to estimate foreground minimized CMB Stokes Q and U anisotropy maps. However the core of the method relies on a more fundamental concept of minimizing the non-Gaussianity of the ILC map, rather than minimizing a relatively simpler concept of variance that is followed in the usual ILC methods."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 316.2,
+        "minX": 50.7,
+        "maxY": 356.7,
+        "maxX": 295.1,
+        "page": 3
+      },
+      {
+        "minY": 284.3,
+        "minX": 50.7,
+        "maxY": 314.6,
+        "maxX": 295.1,
+        "page": 3
+      },
+      {
+        "minY": 255.4,
+        "minX": 106.9,
+        "maxY": 267.8,
+        "maxX": 295.1,
+        "page": 3
+      },
+      {
+        "minY": 206.4,
+        "minX": 50.7,
+        "maxY": 236.4,
+        "maxX": 295.1,
+        "page": 3
+      },
+      {
+        "minY": 120,
+        "minX": 50.7,
+        "maxY": 205.5,
+        "maxX": 295.1,
+        "page": 3
+      },
+      {
+        "minY": 628.4,
+        "minX": 394.2,
+        "maxY": 642.4,
+        "maxX": 561.9,
+        "page": 3
+      },
+      {
+        "minY": 525.8,
+        "minX": 317.6,
+        "maxY": 610.9,
+        "maxX": 562,
+        "page": 3
+      }
+    ],
+    "text": "Let we have observations of CMB Stokes Q or U polarization over some region of the sky at n different frequency binasntrdusm.Fenutrathlebre,awme aasnsdumpiexethlartesaollluthtieosnes m2aapnsdhtahveeythheavseamaleready been converted to thermodynamic (µK) temperature unit. If Mi(p) represents Stokes Q or U polarization signal at pixel p and at a frequency νi where i ∈ {1, 2, 3, ...n} then Mi(p) = Mc(p) + Mif(p) + Min(p) , (2) where Mc(p) represents the CMB polarization anisotropy signal at a pixel p. CMB anisotropy is independent on frequency νi in thermodynamic temperature unit since frequency spectrum of CMB follows blackbody spectrum. Mif(p) represents the net foreground contribution at frequency νi and at a pixel p. Finally, Min(p) represents the detector noise contribution at a frequency νi and at a pixel p. We note that, in Eqn. 2 we have omitted any explicit reference of beam or pixel window function. This is justified since we assume all frequency maps Mi(p) have same beam (and also pixel) smoothing effects. In other words, each component of the right hand side MC(p) = ∑ wiMi(p) , (3) torwsh3e.reTothereacmonpsltirtuucdtesthwe1C,wM2B,...c.o,wmnp,odneefinntewdhaischwefoigllhotwfascablackbody spectrum we further impose a constraint on the weights that w1 + w2 + .... + wn = 1, i.e., the weights of all frequency bands sum to unity. Such a constraint leads to effectively n − 1 independent number of weight factors. The weight factors are obtained by minimizing 'sample kurtosis' (e.g., see Section and Section ) of the cleaned map."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 57.3,
+      "minX": 50.7,
+      "maxY": 107.6,
+      "maxX": 295.1,
+      "page": 3
+    }],
+    "text": "2 In general, and as is the case of WMAP, the observed maps at different frequency bands possess different instrumental resolutions, even if they have same pixel resolution. Here we assume that all such maps have already been converted to a suitably chosen and common instrumental resolution. If the frequency maps had different pixel resolutions as well, one could use the method described by Sudevan et al. (2017)."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 645.3,
+      "minX": 436.1,
+      "maxY": 648.4,
+      "maxX": 439.6,
+      "page": 3
+    }],
+    "text": "n"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 620.9,
+      "minX": 433.1,
+      "maxY": 625.7,
+      "maxX": 442.5,
+      "page": 3
+    }],
+    "text": "i=1"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 504.7,
+        "minX": 317.6,
+        "maxY": 525.7,
+        "maxX": 561.9,
+        "page": 3
+      },
+      {
+        "minY": 464.4,
+        "minX": 374.1,
+        "maxY": 489.5,
+        "maxX": 561.9,
+        "page": 3
+      },
+      {
+        "minY": 416.5,
+        "minX": 317.6,
+        "maxY": 446.5,
+        "maxX": 561.9,
+        "page": 3
+      },
+      {
+        "minY": 380.3,
+        "minX": 411.1,
+        "maxY": 394.3,
+        "maxX": 561.9,
+        "page": 3
+      },
+      {
+        "minY": 331.3,
+        "minX": 317.6,
+        "maxY": 362.7,
+        "maxX": 562,
+        "page": 3
+      },
+      {
+        "minY": 250.1,
+        "minX": 317.6,
+        "maxY": 271.2,
+        "maxX": 561.9,
+        "page": 3
+      },
+      {
+        "minY": 196.1,
+        "minX": 317.6,
+        "maxY": 249.2,
+        "maxX": 561.9,
+        "page": 3
+      },
+      {
+        "minY": 158.4,
+        "minX": 411.9,
+        "maxY": 172.4,
+        "maxX": 561.9,
+        "page": 3
+      }
+    ],
+    "text": "If the cleaned map, MC(p) contains N pixels following Eqn 1 the sample kurtosis of the cleaned map is given by KC = N1 ∑N (MC(pσ)4− M0)4 − 3 , (4) where M0 denotes sample mean of the cleaned map and σ represents standard deviation. Using Eqn 3 and the condition on weights that they sum to unity one can show that M0 = ∑M0i , (5) where M0i represents the mean temperature of input map at a frequency νi. Using Eqns 3 and 5 along with the constraint equation satisfied by the weights, in Eqn. 4 we find where W is a 1× n row-vector with wi as its ith element. Mp is an n × n symmetric matrix for each pixel p and is elements are defined as, Mp(ii\u2032) = M̃i(p)M̃i\u2032 (p) , where M̃i(p) represents the polarization (Q or U) signal at pixel p for frequency νi after the mean signal corresponding to this frequency band has been subtracted from the original pixel values. M in the denominator of Eqn. 6 is also an n × n matrix and is given by M = ∑ Mp . (7)"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 458.1,
+      "minX": 409.1,
+      "maxY": 464.2,
+      "maxX": 420.5,
+      "page": 3
+    }],
+    "text": "p=1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 397.2,
+      "minX": 439.1,
+      "maxY": 400.3,
+      "maxX": 442.6,
+      "page": 3
+    }],
+    "text": "n"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 372.8,
+      "minX": 436.1,
+      "maxY": 377.6,
+      "maxX": 445.5,
+      "page": 3
+    }],
+    "text": "i=1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 280.2,
+      "minX": 346.6,
+      "maxY": 316.1,
+      "maxX": 561.9,
+      "page": 3
+    }],
+    "text": "KC(W) =  (WMNWT)2 ∑pN=1 (WMpW)2 − 3 , (6)"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 175.2,
+      "minX": 435.9,
+      "maxY": 179.9,
+      "maxX": 441.1,
+      "page": 3
+    }],
+    "text": "N"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 149.6,
+      "minX": 432.8,
+      "maxY": 155.7,
+      "maxX": 444.3,
+      "page": 3
+    }],
+    "text": "p=1"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 57.3,
+      "minX": 317.6,
+      "maxY": 140.9,
+      "maxX": 562,
+      "page": 3
+    }],
+    "text": "3 Here we have omitted any dependence of weight factors with the pixel positions at any given frequency νi. An important future project will be allowing weight to vary with the sky positions, to take into account varying spectral properties of polarized foreground components, e.g., synchrotron and thermal dust components. Letting weights depend on the sky positions will also allow them to be varied with different regions of the probability density function of the net foreground emissions, which is expected to lead to better performance of our foreground removal. We shall explore this problem in a future publication. In the current work we treat weights to be independent on sky positions for any given frequency."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 740.4,
+      "minX": 53.2,
+      "maxY": 747.1,
+      "maxX": 58.2,
+      "page": 4
+    }],
+    "text": "4"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 270,
+      "minX": 50.7,
+      "maxY": 285.5,
+      "maxX": 561.9,
+      "page": 4
+    }],
+    "text": "FIG. 1.\u2014 Left column: figures, from top to bottom, showing the Q polarization maps starting from WMAP K1 to W band frequency maps, in the order of the increasing frequency of different bands. Middle column: same as left panel but for U polarization map. Right column: figures showing magnitude of polarization"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 218.7,
+      "minX": 50.7,
+      "maxY": 269,
+      "maxX": 561.9,
+      "page": 4
+    }],
+    "text": "vector P = {Q2 + U2}0.5 using different WMAP frequency maps as shown in the first two columns. The low frequency Q and U maps are dominated by the diffused galactic contamination due to synchrotron component. The high frequency maps of V and W bands also contain detector noise as a dominant source of contamination apart from significant diffuse foreground contamination due to thermal dust component. The noisy nature of the polarization maps in the right panel are clearly visible for the V and W band frequency maps. One of the important things that these maps show is that the WMAP low frequency maps are dominated by the foreground contamination whereas high frequency maps have both foregrounds and detector noise as significant sources of contamination. All the maps of this figure have a common instrumental resolution of 1◦."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 196.1,
+      "minX": 143.7,
+      "maxY": 202.4,
+      "maxX": 202.1,
+      "page": 4
+    }],
+    "text": "5. INPUT MAPS"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 179.7,
+      "minX": 128.6,
+      "maxY": 188.2,
+      "maxX": 217.2,
+      "page": 4
+    }],
+    "text": "5.1. Data Preparation"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 123,
+        "minX": 50.7,
+        "maxY": 174,
+        "maxX": 295.1,
+        "page": 4
+      },
+      {
+        "minY": 91.4,
+        "minX": 50.7,
+        "maxY": 121.4,
+        "maxX": 295.1,
+        "page": 4
+      },
+      {
+        "minY": 107.7,
+        "minX": 317.6,
+        "maxY": 211.4,
+        "maxX": 562,
+        "page": 4
+      },
+      {
+        "minY": 86.7,
+        "minX": 317.6,
+        "maxY": 106.1,
+        "maxX": 562.4,
+        "page": 4
+      },
+      {
+        "minY": 545.3,
+        "minX": 50.7,
+        "maxY": 617.2,
+        "maxX": 295.1,
+        "page": 5
+      },
+      {
+        "minY": 249.8,
+        "minX": 50.7,
+        "maxY": 539.6,
+        "maxX": 295.1,
+        "page": 5
+      },
+      {
+        "minY": 56.4,
+        "minX": 50.7,
+        "maxY": 242.2,
+        "maxX": 295.6,
+        "page": 5
+      }
+    ],
+    "text": "In this work we use WMAP nine year published Stokes Q and U polarization maps corresponding to different differencing assemblies (DA) as the primary input maps. A total oHfE1A0LDPAix2mpaipxselarreesoplruotvioidnedpabraymtheeteWrNMsidAeP= s5c1i2enactedtieffaemrenatt frequencies starting from 23 GHz to 94 GHz. Each of these DA map belong to a given frequency band. A list of all the DA maps, their frequency of observations and corresponding frequency band are mentioned in Table 1. Since each DA map has different instrumental resolution corresponding to different detector of WMAP satellite mission the DA maps are not directly usable as is in our method. We first bring all the DA maps to a common resolution corresponding to a Gaussian polarized instrumental response function of FWHM = 1◦ at Nside = 512 by multiplying the spherical harmonic coefficients of each map by the ratio of beam window functions bcoerarmeswpoinnddoinwg ftuon1ct◦ioGnaoufstshiaencobreraemspownidnidnogwDaAndmtahpe3.nEataicvhe of WMAP 23 and 33 GHz frequency bands (i.e., K1 and Ka1 bands) has only single detector each. However, since each of WMAP 41 (Q), 61 (V) and 94 GHz (W) frequency bands has multiple DA maps we average all the DA maps corresponding to each of these frequency bands to form a single map corresponding to each of these frequency bands. This results in a total of five frequency maps corresponding to all K1, Ka1, Q, V and W bands of WMAP for use as input in our work. 5.2. Foreground and noise properties We show these input frequency maps after masking of the position of known point sources in Fig. 1 in µK thermodynamic temperature unit. The leftmost column of this figure shows Q Stokes maps, in order of increasing frequency from top to bottom, corresponding to five WMAP frequency bands. The middle column shows the same except for the U Stokes signal. The rightmost column shows the magnitude of polarization vector, P = {Q2 + U2}0.5. Both the Q and U Stokes maps are dominantly contaminated by the galactic diffused contamination, both in the galactic plane and out of the galactic plane for K1, Ka1 and Q frequency bands. This is clearly seen from the plots of the first three rows of this figure. The foreground polarization in the V and W bands are more dominant in the galactic plane than the region outside the plane. The V and W band also contain significantly strong detector noise which can be easily inferred from the plots of the last two rows, specifically from the last two plots of the rightmost column. The transition from foreground dominated low frequency polarization maps to both foreground and detector noise dominated high frequency WMAP maps is clearly visible from the last column of this figure. We note in passing that mean standard deviation from 1000 simulations of CMB Stokes Q and U polarization signal at the same Nside parameter and 1◦ resolution is merely ∼ 0.55 µK. This indicates that all these frequency maps of this figure contain foreground and detector noise contaminations that are stronger than the expected level of primordial6s.igMnAalS.KS As described in Section and as seen from Fig. 1 the low frequency polarization maps (K1, Ka1, Q frequency bands) of WMAP have strong foreground contaminations both along the galactic plane and away from the plane in both the hemispheres. The high frequency V and W band maps are more dominated by the detector noise along the ecliptic plane. Presence of foreground contamination can be visibly seen along the galactic plane in all the five frequency maps (e.g., see the third column of Fig. 1). Since presence of any detector noise that is not negligible compared to the foregrounds significantly reduces the efficiency of foreground removal, we chose to remove regions on the sky that is heavily contaminated by the detector noise. For this purpose we make a mask in the ecliptic coordinate system that excise 15◦ on each side of the ecliptic plane. We find the spherical harmonic coefficients of this mask and rotate these coefficients to galactic coordinate system using the HEALPix provided facility alteralm. We then convert the rotated harmonic coefficients to a new mask."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 57.7,
+      "minX": 50.7,
+      "maxY": 74.3,
+      "maxX": 295.1,
+      "page": 4
+    }],
+    "text": "2 Hierarchical Equal Area Isolatitude Pixellization of Sphere, e.g., see Górski et al. (2005)."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 57.3,
+      "minX": 317.6,
+      "maxY": 74.3,
+      "maxX": 561.9,
+      "page": 4
+    }],
+    "text": "3 We use WMAP nine year published beam window functions corresponding to different DA maps in this work."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 738.2,
+      "minX": 213.8,
+      "maxY": 747.2,
+      "maxX": 561.9,
+      "page": 5
+    }],
+    "text": "Separating Gaussian CMB polarization signal 5"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 715.6,
+      "minX": 156.4,
+      "maxY": 721,
+      "maxX": 189.4,
+      "page": 5
+    }],
+    "text": "TABLE 1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 707.1,
+      "minX": 99.8,
+      "maxY": 712.6,
+      "maxX": 246.1,
+      "page": 5
+    }],
+    "text": "LIST OF WMAP MAPS USED IN THIS WORK"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 681.1,
+      "minX": 55.7,
+      "maxY": 697.8,
+      "maxX": 177.9,
+      "page": 5
+    }],
+    "text": "Frequency Band Name DA Maps (GHz)"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 631.6,
+      "minX": 55.7,
+      "maxY": 677.6,
+      "maxX": 205,
+      "page": 5
+    }],
+    "text": "23 K1 K1 33 Ka1 Ka1 41 Q Q1, Q2 61 V V1, V2 94 W W1, W2, W3, W4"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 538.1,
+      "minX": 317.6,
+      "maxY": 601.9,
+      "maxX": 561.9,
+      "page": 5
+    }],
+    "text": "FIG. 2.\u2014 The CMask or composite mask used in this work to define usable sky region for the polarized foreground removal. The golden yellow region shows the region defined by ±15◦ on both sides of the ecliptic plane and galactic plane and are excluded in this work. The blue regions, which is also removed in this work, represent the position of resolved point sources as given by the WMAP nine year point source mask outside the golden yellow region. The white region of this figure is used for foreground removal of this work."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 348.6,
+        "minX": 317.6,
+        "maxY": 525.9,
+        "maxX": 561.9,
+        "page": 5
+      },
+      {
+        "minY": 338.1,
+        "minX": 317.6,
+        "maxY": 347,
+        "maxX": 401.3,
+        "page": 5
+      }
+    ],
+    "text": "The resulting mask contains some pixels with values differing from unity or zero. We finally convert this mask to a new mask by setting pixel values less than 0.5 to zero and rest to unity. The resulting mask is a binary map and excise all the regions defined by ±15◦ along the ecliptic plane in the galactic coordinate system. To reduce contaminations due to resolved point sources we also remove the position of point sources as defined by the WMAP nine year point source mask. Finally we excise all pixels of this mask that lies within ±15◦ of the galactic plane. Our final mask is the product of the WMAP nine year point source mask, the ±15◦ mask along the ecliptic plane and the ±15◦ mask along the galactic plane. This final mask, called CMask (or composite mask) in our analysis, contains a total of 1611603 surviving pixels at Nside = 512 implying a 51% sky region being used in our analysis. We show the CMask in Fig. 2. The CMask region described hereafter in this work refers to the sky region where CMask takes the value unity."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 323.5,
+      "minX": 328.5,
+      "maxY": 337.8,
+      "maxX": 551,
+      "page": 5
+    }],
+    "text": "7. NON GAUSSIAN NATURE OF POLARIZED FOREGROUNDS FROM DENSITY ANALYSIS"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 54.4,
+      "minX": 317.6,
+      "maxY": 315.9,
+      "maxX": 562.4,
+      "page": 5
+    }],
+    "text": "One of basic principles on which the current work is based is that the polarized foregrounds possess non-Gaussian properties. In this section we verify this assumption. To establish the non-Gaussian nature of polarized foregrounds we rely upon the polarized emission maps produced by the WMAP science team. Both synchrotron and thermal dust emissions are polarized. We verify non Gaussian nature of these components using WMAP nine year base-polarization model of synchrotron (at K band) and thermal dust (at W band) (Gold et al. 2009, 2011). Using these polarized foreground maps of these two frequencies we estimate the probability distribution of Stokes Q and U polarizations of these two components from the entire sky region as well as from the region that survive after application of CMask. We show these distributions in Fig. 3 which clearly show deviations from Gaussian nature. Although these distributions appear symmetric they possesses sharp peaks which suggests non-Gaussian. The decay of probability distributions on both sides of the peak is concave upward for each case, which is in sharp contrast with respect to Gaussian distribution. Moreover, the distributions have long tails on both sides of the peak suggesting non-Gaussian properties of the underlying Stokes Q and U samples. The kurtosis values for each of the cases plotted in Fig. 3 are shown in Table 2. From this table we note that synchrotron emission at K1 band shows stronger non-Gaussian"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 740.2,
+      "minX": 53.2,
+      "maxY": 747.2,
+      "maxX": 58.2,
+      "page": 6
+    }],
+    "text": "6"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 715.1,
+      "minX": 77.1,
+      "maxY": 722.3,
+      "maxX": 100.1,
+      "page": 6
+    }],
+    "text": "0.045"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 669.4,
+      "minX": 77.1,
+      "maxY": 707.1,
+      "maxX": 100.1,
+      "page": 6
+    }],
+    "text": "0.04 0.035 0.03"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 705.9,
+      "minX": 117.8,
+      "maxY": 715.3,
+      "maxX": 247.1,
+      "page": 6
+    }],
+    "text": "Q Stokes, synchrotron, fullsky"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 695.9,
+      "minX": 115.9,
+      "maxY": 705.2,
+      "maxX": 247.1,
+      "page": 6
+    }],
+    "text": "Q Stokes, synchrotron, CMask"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 685.8,
+      "minX": 118.1,
+      "maxY": 695.1,
+      "maxX": 247.1,
+      "page": 6
+    }],
+    "text": "U Stokes, synchrotron, fullsky"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 675.7,
+      "minX": 116.2,
+      "maxY": 685,
+      "maxX": 247.1,
+      "page": 6
+    }],
+    "text": "U Stokes, synchrotron, CMask"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 639,
+      "minX": 77.1,
+      "maxY": 661.3,
+      "maxX": 100.1,
+      "page": 6
+    }],
+    "text": "0.025 0.02"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 715.1,
+      "minX": 340.4,
+      "maxY": 722.2,
+      "maxX": 353.3,
+      "page": 6
+    }],
+    "text": "0.3"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 692.2,
+      "minX": 335.3,
+      "maxY": 699.3,
+      "maxX": 353.3,
+      "page": 6
+    }],
+    "text": "0.25"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 669.4,
+      "minX": 340.4,
+      "maxY": 676.5,
+      "maxX": 353.3,
+      "page": 6
+    }],
+    "text": "0.2"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 705.9,
+      "minX": 372.6,
+      "maxY": 715.3,
+      "maxX": 506.3,
+      "page": 6
+    }],
+    "text": "Q Stokes, thermal dust, fullsky"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 695.9,
+      "minX": 370.7,
+      "maxY": 705.2,
+      "maxX": 506.3,
+      "page": 6
+    }],
+    "text": "Q Stokes, thermal dust, CMask"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 685.8,
+      "minX": 372.9,
+      "maxY": 695.1,
+      "maxX": 506.3,
+      "page": 6
+    }],
+    "text": "U Stokes, thermal dust, fullsky"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 675.8,
+      "minX": 371,
+      "maxY": 685,
+      "maxX": 506.3,
+      "page": 6
+    }],
+    "text": "U Stokes, thermal dust, CMask"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 646.6,
+      "minX": 335.3,
+      "maxY": 653.7,
+      "maxX": 353.3,
+      "page": 6
+    }],
+    "text": "0.15"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 623.7,
+      "minX": 77.1,
+      "maxY": 630.8,
+      "maxX": 100.1,
+      "page": 6
+    }],
+    "text": "0.015"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 593.3,
+      "minX": 77.1,
+      "maxY": 615.6,
+      "maxX": 100.1,
+      "page": 6
+    }],
+    "text": "0.01 0.005"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 623.7,
+      "minX": 340.4,
+      "maxY": 630.8,
+      "maxX": 353.3,
+      "page": 6
+    }],
+    "text": "0.1"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 600.9,
+      "minX": 335.3,
+      "maxY": 608,
+      "maxX": 353.3,
+      "page": 6
+    }],
+    "text": "0.05"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 568,
+      "minX": 94.6,
+      "maxY": 585.1,
+      "maxX": 299.3,
+      "page": 6
+    }],
+    "text": "0 −150 −100 −50 0 50 100 150"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 550.4,
+      "minX": 151.5,
+      "maxY": 560.8,
+      "maxX": 246.4,
+      "page": 6
+    }],
+    "text": "Stokes Q (or U) (µK)"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 568,
+      "minX": 348.2,
+      "maxY": 585.1,
+      "maxX": 556,
+      "page": 6
+    }],
+    "text": "0 −20 −15 −10 −5 0 5 10 15 20"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 550.4,
+      "minX": 407.6,
+      "maxY": 560.8,
+      "maxX": 502.6,
+      "page": 6
+    }],
+    "text": "Stokes Q (or U) (µK)"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 518.7,
+      "minX": 50.7,
+      "maxY": 542.5,
+      "maxX": 561.9,
+      "page": 6
+    }],
+    "text": "FIG. 3.\u2014 Left panel: histogram of kurtosis values estimated from full sky as well as the region of the sky that survives after application of CMask for synchrotron component for both Stokes Q and U polarization. Right panel: same as left panel but for thermal dust component. From these distributions one can easily infer about the non-Gaussian nature of these components for both Q and U polarization."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 500.7,
+      "minX": 156.4,
+      "maxY": 506.1,
+      "maxX": 189.4,
+      "page": 6
+    }],
+    "text": "TABLE 2"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 484,
+      "minX": 68.5,
+      "maxY": 497.8,
+      "maxX": 277.4,
+      "page": 6
+    }],
+    "text": "KURTOSIS VALUES OF STOKES Q AND U POLARIZATIONS FOR FOREGROUNDS"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 467.5,
+      "minX": 55.7,
+      "maxY": 474.7,
+      "maxX": 232.5,
+      "page": 6
+    }],
+    "text": "Sky region Synchrotron Thermal Dust"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 457.9,
+      "minX": 100.2,
+      "maxY": 464.8,
+      "maxX": 217.4,
+      "page": 6
+    }],
+    "text": "Q Stokes U Stokes Q Stokes"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 439,
+      "minX": 55.7,
+      "maxY": 454.5,
+      "maxX": 210.4,
+      "page": 6
+    }],
+    "text": "Full sky 149.193 54.009 11.302 CMask 7.892 4.766 2.852"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 459.2,
+      "minX": 242.5,
+      "maxY": 464.8,
+      "maxX": 271.4,
+      "page": 6
+    }],
+    "text": "U Stokes"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 439,
+      "minX": 242.5,
+      "maxY": 454.4,
+      "maxX": 260.4,
+      "page": 6
+    }],
+    "text": "8.132 3.985"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 340.3,
+        "minX": 50.7,
+        "maxY": 422.9,
+        "maxX": 295.6,
+        "page": 6
+      },
+      {
+        "minY": 329.7,
+        "minX": 50.7,
+        "maxY": 338.7,
+        "maxX": 106,
+        "page": 6
+      }
+    ],
+    "text": "properties than the non-Gaussian properties of thermal dust at W band for both polarizations and for both sky regions. Moreover, for these regions the synchrotron Q Stokes signal shows stronger non-Gaussian than the corresponding U Stokes signal. For the thermal dust component at W band, Q Stokes shows stronger non-Gaussian than U Stokes over the full sky. However, over the CMask sky region, U Stokes signal of thermal dust is more non-Gaussian than the corresponding Q Stokes signal."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 323.5,
+      "minX": 81.1,
+      "maxY": 329.6,
+      "maxX": 264.7,
+      "page": 6
+    }],
+    "text": "8. CALIBRATING THE NON-GAUSSIAN MEASURE"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 54.4,
+        "minX": 50.7,
+        "maxY": 315.9,
+        "maxX": 295.6,
+        "page": 6
+      },
+      {
+        "minY": 60.5,
+        "minX": 317.6,
+        "maxY": 511.3,
+        "maxX": 562.4,
+        "page": 6
+      },
+      {
+        "minY": 61.6,
+        "minX": 50.7,
+        "maxY": 365.2,
+        "maxX": 295.1,
+        "page": 7
+      },
+      {
+        "minY": 248.5,
+        "minX": 317.6,
+        "maxY": 263.8,
+        "maxX": 532.8,
+        "page": 7
+      }
+    ],
+    "text": "Given that in Section we have empirically established the non-Gaussian nature of polarized foregrounds, in the current Section we attempt to understand how the kurtosis of diffuse foreground contaminated CMB polarization maps changes with the level of foreground contamination. We show this in Fig. 4 by plotting the values of kurtosis for foreground contaminated Stokes Q and U CMB maps as functions of foreground strength, separately for each of Stokes parameter maps, for two cases \u2013 with and without detector noise contamination. To obtain CMB plus foreground polarization maps at each of the WMAP frequencies with different levels of contaminations of foregrounds, we first form realistic foreground polarization maps at each of the five WMAP frequencies using the WMAP nine year base-model for synchrotron and thermal dust polarization components at Nside = 512 and at 1◦ Gaussian beam resolution. For details of the polarized foreground model used in this work we refer to Section . We randomly generate a realization of Stokes Q and U signal for pure CMB using Planck 2015 best-fit power spectrum (Planck Collaboration et al. 2016c) at Nside = 512 and also at 1◦ Gaussian beam resolution. We add with the pure CMB signal foreground Stokes signals obtained above at various strength to form a number of CMB plus foreground only polarization maps at each of the five WMAP frequencies. We apply CMask on each of these maps. For each frequency band we find the sample kurtosis values from the surviving pixels as function of the increasing foreground strength. The variation of kurtosis values with the increase in foreground contamination is shown in the left panel of Fig. 4 for CMB plus foreground only case. Foreground strength, as plotted in the horizontal axes of this figure simply represents the multiplicative factors that were applied to the net foreground signal at each frequency before adding them with the CMB. As we see from the left panel of this figure the kurtosis values increases quickly as the foreground strength increases from zero for both Stokes Q and U signal. For larger foreground strength the kurtosis values for all frequency maps almost saturates (with minor fluctuations not visible in the scale of these figures). Such behavior may be explained by noting that by increasing foreground strength in these figures CMB polarization signal becomes increasingly weaker compared to the foregrounds. The saturation property of the graphs then follows from a simple property of the kurtosis of a set of samples that kurtosis remains invariant by simply scaling all sample values by a unique constant. An important observation from this figure is the presence of a global minimum in the kurtosis value for all WMAP frequency maps when the foreground contamination becomes absent. The presence of the global minimum also seen in the cases of foreground and detector noise contaminated CMB polarization maps, as shown in the right panel of Fig. 4 justifies globally minimizing kurtosis to eliminate the non-Gaussian foreground contaminations. The right panel of Fig. 4 shows the variation of kurtosis for foreground and detector noise contaminated polarized CMB maps after application of CMask. For details of forming the the noise realizations we refer to Section . For each frequency map only the foreground strength is varied with the CMB and detector noise being compatible to LCDM signal and WMAP frequency maps respectively and corresponding kurtosis values are plotted as functions of foreground strength. In interesting difference of this plot with the corresponding ones of the left panel is that unlike the top panel the kurtosis values increases even with the largest level of foreground contamination for all frequency maps and for both Stokes Q and U polarization. This can be explained by noting that although polarized CMB signal is much weaker than the polarized foreground contamination detector noise contamination in WMAP frequencies is not negligible compared to the foreground contaminations. The rise of kurtosis values with increasing the foreground strength becomes slower for the detector noise contaminated case compared to the case when detector noise is absent . This can be explained by noting that both the detector noise and CMB are Gaussian, and noise is stronger than CMB but comparable with the foregrounds. Another important observations from this figure for each frequency maps and for both Stokes polarizations overall the values of kurtosis becomes smaller when the maps have detector noise contamination added in them. This is expected since in presence of detector noise foreground removal becomes less effective than the noise free case. Finally we note that it is worth listing the kurtosis values from the CMask sky region without any foreground addition but for both pure CMB and pure CMB plus detector noise addition for both Stokes parameters for the particular CMB and detector noise realizations used to make the plots Fig. 4 . The kurtosis value of the particular CMB realization for Stokes Q and U maps are respectively −0.0224 and 0.1349 . Adding detector noise to Q maps (with zero foreground level) increases kurtosis values that depends upon K1, Ka1, Q, V and W frequency bands as follows, 0.2786, 0.2113, 0.2303, 0.2261, 0.2168. Similarly, for the U polarization (with zero foreground level) the kurtosis values increase with addition of detector noise to pure CMB U signal (0.2298, 0.1742, 0.2086, 0.1889, 0.1971 respectively for K1 to W bands.) Such increase in the value of kurtosis with addition of detector noise may be explained by noting that kurtosis values show larger variance when detector noise which is a strong signal than the pure CMB polarization signal to the pure9.CNMOBN-SGtAoUkSeSsIAQNaNnAdTUURpEoOlaFriWzaMtiAoPn MsiAgnPSals."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 738.2,
+      "minX": 213.8,
+      "maxY": 747.2,
+      "maxX": 561.9,
+      "page": 7
+    }],
+    "text": "Separating Gaussian CMB polarization signal 7"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 716.7,
+      "minX": 69.8,
+      "maxY": 723,
+      "maxX": 78.9,
+      "page": 7
+    }],
+    "text": "14"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 699.1,
+      "minX": 69.8,
+      "maxY": 705.3,
+      "maxX": 78.9,
+      "page": 7
+    }],
+    "text": "12"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 681.2,
+      "minX": 69.8,
+      "maxY": 687.6,
+      "maxX": 78.9,
+      "page": 7
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 663.5,
+      "minX": 74.4,
+      "maxY": 669.9,
+      "maxX": 78.9,
+      "page": 7
+    }],
+    "text": "8"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 645.9,
+      "minX": 74.4,
+      "maxY": 652.3,
+      "maxX": 78.9,
+      "page": 7
+    }],
+    "text": "6"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 628.4,
+      "minX": 74.4,
+      "maxY": 634.7,
+      "maxX": 78.9,
+      "page": 7
+    }],
+    "text": "4"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 716.5,
+      "minX": 302.9,
+      "maxY": 723,
+      "maxX": 307.5,
+      "page": 7
+    }],
+    "text": "7"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 698.9,
+      "minX": 302.9,
+      "maxY": 705.3,
+      "maxX": 307.5,
+      "page": 7
+    }],
+    "text": "6"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 681.2,
+      "minX": 302.9,
+      "maxY": 687.6,
+      "maxX": 307.5,
+      "page": 7
+    }],
+    "text": "5"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 663.7,
+      "minX": 302.9,
+      "maxY": 670,
+      "maxX": 307.5,
+      "page": 7
+    }],
+    "text": "4"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 701,
+      "minX": 319,
+      "maxY": 716.5,
+      "maxX": 334.8,
+      "page": 7
+    }],
+    "text": "K1 Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 673.6,
+      "minX": 325.7,
+      "maxY": 698.5,
+      "maxX": 334.8,
+      "page": 7
+    }],
+    "text": "Q V W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 645.9,
+      "minX": 302.9,
+      "maxY": 652.3,
+      "maxX": 307.5,
+      "page": 7
+    }],
+    "text": "3"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 628.4,
+      "minX": 302.9,
+      "maxY": 634.6,
+      "maxX": 307.5,
+      "page": 7
+    }],
+    "text": "2"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 610.7,
+      "minX": 74.4,
+      "maxY": 616.9,
+      "maxX": 307.5,
+      "page": 7
+    }],
+    "text": "2 1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 592.8,
+      "minX": 74.4,
+      "maxY": 599.2,
+      "maxX": 78.9,
+      "page": 7
+    }],
+    "text": "0"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 583.7,
+      "minX": 82.1,
+      "maxY": 590.2,
+      "maxX": 270.6,
+      "page": 7
+    }],
+    "text": "0 0.2 0.4 0.6 0.8 1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 568.3,
+      "minX": 136.8,
+      "maxY": 576.7,
+      "maxX": 215.9,
+      "page": 7
+    }],
+    "text": "Foreground strength"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 592.8,
+      "minX": 302.9,
+      "maxY": 599.2,
+      "maxX": 307.5,
+      "page": 7
+    }],
+    "text": "0"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 583.7,
+      "minX": 310.7,
+      "maxY": 590.2,
+      "maxX": 504.6,
+      "page": 7
+    }],
+    "text": "0 0.2 0.4 0.6 0.8 1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 568.3,
+      "minX": 368.1,
+      "maxY": 576.7,
+      "maxX": 447.1,
+      "page": 7
+    }],
+    "text": "Foreground strength"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 443,
+      "minX": 68.9,
+      "maxY": 559.2,
+      "maxX": 73.5,
+      "page": 7
+    }],
+    "text": "9 8 7 6 5 4 3 2 1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 429,
+      "minX": 68.9,
+      "maxY": 435.4,
+      "maxX": 73.5,
+      "page": 7
+    }],
+    "text": "0"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 419.9,
+      "minX": 76.7,
+      "maxY": 426.3,
+      "maxX": 122.6,
+      "page": 7
+    }],
+    "text": "0 0.2"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 419.9,
+      "minX": 148.9,
+      "maxY": 426.4,
+      "maxX": 270.6,
+      "page": 7
+    }],
+    "text": "0.4 0.6 0.8 1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 404.5,
+      "minX": 134.1,
+      "maxY": 412.9,
+      "maxX": 213.2,
+      "page": 7
+    }],
+    "text": "Foreground strength"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 552.8,
+      "minX": 306.7,
+      "maxY": 559.3,
+      "maxX": 318.4,
+      "page": 7
+    }],
+    "text": "4.5"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 525.3,
+      "minX": 306.7,
+      "maxY": 545.5,
+      "maxX": 318.4,
+      "page": 7
+    }],
+    "text": "4 3.5"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 484.2,
+      "minX": 306.7,
+      "maxY": 517.9,
+      "maxX": 318.4,
+      "page": 7
+    }],
+    "text": "3 2.5 2"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 537.2,
+      "minX": 329.9,
+      "maxY": 552.8,
+      "maxX": 345.7,
+      "page": 7
+    }],
+    "text": "K1 Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 509.8,
+      "minX": 336.6,
+      "maxY": 534.7,
+      "maxX": 345.7,
+      "page": 7
+    }],
+    "text": "Q V W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 470.3,
+      "minX": 306.7,
+      "maxY": 476.7,
+      "maxX": 318.4,
+      "page": 7
+    }],
+    "text": "1.5"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 442.8,
+      "minX": 306.7,
+      "maxY": 462.9,
+      "maxX": 318.4,
+      "page": 7
+    }],
+    "text": "1 0.5"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 429,
+      "minX": 313.8,
+      "maxY": 435.4,
+      "maxX": 318.4,
+      "page": 7
+    }],
+    "text": "0"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 419.9,
+      "minX": 321.6,
+      "maxY": 426.3,
+      "maxX": 365.4,
+      "page": 7
+    }],
+    "text": "0 0.2"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 419.9,
+      "minX": 389.4,
+      "maxY": 426.4,
+      "maxX": 504.6,
+      "page": 7
+    }],
+    "text": "0.4 0.6 0.8 1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 404.5,
+      "minX": 373.5,
+      "maxY": 412.9,
+      "maxX": 452.6,
+      "page": 7
+    }],
+    "text": "Foreground strength"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 372.5,
+      "minX": 50.7,
+      "maxY": 396.4,
+      "maxX": 562.3,
+      "page": 7
+    }],
+    "text": "FIG. 4.\u2014 Left panel: variation of kurtosis with foreground strength added to randomly generated CMB Stokes Q and U polarization signals for all five WMAP frequency bands. Right panel: same as the left panel but in this case, detector noise consistent with different WMAP frequency maps and varying levels of foregrounds are added to the same CMB realization as in the left panel. All plots of this figure are obtained from CMask sky region."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 354.4,
+      "minX": 423.3,
+      "maxY": 359.9,
+      "maxX": 456.2,
+      "page": 7
+    }],
+    "text": "TABLE 3"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 337.8,
+      "minX": 318.4,
+      "maxY": 351.6,
+      "maxX": 561.1,
+      "page": 7
+    }],
+    "text": "KURTOSIS VALUES OF INPUT Q AND U STOKES MAPS ESTIMATED FROM FULL SKY AS WELL AS FROM THE CMask SKY-REGION."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 311.4,
+      "minX": 322.6,
+      "maxY": 328.5,
+      "maxX": 527,
+      "page": 7
+    }],
+    "text": "Stokes and K1 Ka1 Q V W sky-region"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 291.5,
+      "minX": 322.6,
+      "maxY": 308.3,
+      "maxX": 537.4,
+      "page": 7
+    }],
+    "text": "Q, Full sky 677.946 1178.631 1279.929 212.516 3.283 Q, CMask 17.751 8.154 3.444 0.251 0.418"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 271.7,
+      "minX": 322.6,
+      "maxY": 288.2,
+      "maxX": 537.4,
+      "page": 7
+    }],
+    "text": "U, Full sky 69.836 36.613 13.533 0.898 0.29 U, CMask 5.764 1.806 0.902 0.311 0.293"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 105.8,
+        "minX": 317.6,
+        "maxY": 241,
+        "maxX": 562,
+        "page": 7
+      },
+      {
+        "minY": 84.7,
+        "minX": 317.6,
+        "maxY": 104.2,
+        "maxX": 561.9,
+        "page": 7
+      },
+      {
+        "minY": 172.1,
+        "minX": 50.7,
+        "maxY": 433.6,
+        "maxX": 295.1,
+        "page": 8
+      },
+      {
+        "minY": 161.6,
+        "minX": 50.7,
+        "maxY": 170.5,
+        "maxX": 132.9,
+        "page": 8
+      }
+    ],
+    "text": "Following our discussions about strong non-Gaussian nature of polarized foregrounds from the view point of density analysis in Section and after providing justifications of using kurtosis statistic as a measure of non-Gaussian property of polarized foregrounds (plus detector noise) contaminated CMB map in Section in this Section we turn our attention to quantify non-Gaussian properties are inherent into the five input WMAP maps using the kurtosis statistic. We estimate sample kurtosis of both Q and U polarizations for all five input maps at different WMAP frequencies for the full sky as well as from the region of the sky that survive after applying CMask. We sthheowmathxeimseukmurptooswisevraflourebsointhTEabElean3d. ABlBthopuogwhe,rKs1pebcatnrudmha2s, we note that the Q band has the maximum non-Gaussianity. This clearly indicates that the non-Gaussian measure of this work identifies some contamination which are not detected in simple power-spectrum based measure of contamination. The W band gets minimum kurtosis amongst five bands for the full sky case, since it has lowest synchrotron emission level and a thermal dust emission level that is also comparable to detector noise level of W band. After application of CMask V band gets minimum kurtosis (unlike W band for the full sky case) which is consistent with the expectation that V band is minimally foreground contaminated within the observation window of WMAP. Moreover, as seen from the second row of this table the kurtosis of Q polarization estimated from CMask sky region gradually decreases from K band to V band. This particularly implies the excess contamination for Q band that is observed in the measured kurtosis of the full sky Q band map, arise from the sky region that is outside the CMask. For the U polarization the kurtosis values decreases gradually from K1 band to W band for both full sky and CMask sky. From the systematically larger kurtosis values of Q over U polarization for the full sky we conclude that the foregrounds in U polarization possess less non-Gaussian properties than the foregrounds in Q polarization. Moreover, for V and W bands kurtosis values for U polarization estimated from CMask region, are comparable. This likely implies that detector noise for V and W band for U polarization are at least as strong as the thermal dust emission which is the dominant foreground of these frequencies."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 57.3,
+      "minX": 317.6,
+      "maxY": 74.3,
+      "maxX": 561.9,
+      "page": 7
+    }],
+    "text": "2 This may be easily seen by plotting the full sky EE and BB power spectra from the five input maps discussed in Section ."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 740.2,
+      "minX": 53.2,
+      "maxY": 747.1,
+      "maxX": 58.2,
+      "page": 8
+    }],
+    "text": "8"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 646,
+      "minX": 71.1,
+      "maxY": 722.4,
+      "maxX": 80.5,
+      "page": 8
+    }],
+    "text": "25 20 15 10 5"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 708.7,
+      "minX": 97.3,
+      "maxY": 715.2,
+      "maxX": 109.3,
+      "page": 8
+    }],
+    "text": "K1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 699,
+      "minX": 92.7,
+      "maxY": 705.6,
+      "maxX": 109.3,
+      "page": 8
+    }],
+    "text": "Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 679.7,
+      "minX": 102,
+      "maxY": 696.2,
+      "maxX": 109.3,
+      "page": 8
+    }],
+    "text": "Q V"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 670.1,
+      "minX": 99.7,
+      "maxY": 676.8,
+      "maxX": 109.3,
+      "page": 8
+    }],
+    "text": "W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 660.5,
+      "minX": 87.3,
+      "maxY": 667.4,
+      "maxX": 109.3,
+      "page": 8
+    }],
+    "text": "CMB"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 618.9,
+      "minX": 74.2,
+      "maxY": 635.1,
+      "maxX": 560.1,
+      "page": 8
+    }],
+    "text": "0 −0.15 −0.1 −0.05 0 0.05 0.1 0.15 0.2 0.25 0.3 0.35"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 602.3,
+      "minX": 278.4,
+      "maxY": 611.9,
+      "maxX": 359.7,
+      "page": 8
+    }],
+    "text": "Kurtosis (Q Stokes)"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 516.4,
+      "minX": 71.1,
+      "maxY": 592.8,
+      "maxX": 80.5,
+      "page": 8
+    }],
+    "text": "25 20 15 10 5"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 579.1,
+      "minX": 97.3,
+      "maxY": 585.7,
+      "maxX": 109.3,
+      "page": 8
+    }],
+    "text": "K1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 569.4,
+      "minX": 92.7,
+      "maxY": 576.1,
+      "maxX": 109.3,
+      "page": 8
+    }],
+    "text": "Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 550.2,
+      "minX": 102,
+      "maxY": 566.7,
+      "maxX": 109.3,
+      "page": 8
+    }],
+    "text": "Q V"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 540.6,
+      "minX": 99.7,
+      "maxY": 547.3,
+      "maxX": 109.3,
+      "page": 8
+    }],
+    "text": "W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 531,
+      "minX": 87.3,
+      "maxY": 537.9,
+      "maxX": 109.3,
+      "page": 8
+    }],
+    "text": "CMB"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 489.3,
+      "minX": 75.8,
+      "maxY": 505.5,
+      "maxX": 560.1,
+      "page": 8
+    }],
+    "text": "0 −0.2 −0.15 −0.1 −0.05 0 0.05 0.1 0.15 0.2 0.25 0.3 0.35"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 472.7,
+      "minX": 278.5,
+      "maxY": 482.3,
+      "maxX": 359.5,
+      "page": 8
+    }],
+    "text": "Kurtosis (U Stokes)"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 440.9,
+      "minX": 50.7,
+      "maxY": 464.8,
+      "maxX": 562.3,
+      "page": 8
+    }],
+    "text": "FIG. 5.\u2014 Top panel: histograms of kurtosis values from region of the sky that survives after application of CMask for pure CMB and pure CMB plus detector noise (compatible to WMAP frequencies) maps for Stokes Q parameter. Bottom panel: same as top panel, but for U Stokes parameter. Clearly, addition of detector noise causes the kurtosis values to deviate towards the positive sides for both the Stokes parameters."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 155.3,
+      "minX": 76.1,
+      "maxY": 161.5,
+      "maxX": 269.7,
+      "page": 8
+    }],
+    "text": "10. KURTOSIS VARIATION WITHOUT FOREGROUND"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 54.6,
+        "minX": 50.7,
+        "maxY": 147.7,
+        "maxX": 295.1,
+        "page": 8
+      },
+      {
+        "minY": 140.5,
+        "minX": 317.6,
+        "maxY": 433.6,
+        "maxX": 562,
+        "page": 8
+      },
+      {
+        "minY": 130,
+        "minX": 317.6,
+        "maxY": 139,
+        "maxX": 458.3,
+        "page": 8
+      }
+    ],
+    "text": "In section we have discussed variation of kurtosis with increase in foreground strength for pure CMB plus foreground contaminated maps and pure CMB plus both detector noise and foreground contaminated maps for each of the five WMAP frequency maps from the region of the sky that survive after applying CMask. In practice, to correctly interpret value of measured kurtosis for both foreground and detector noise contaminated case we also need to know typical values and variation of kurtosis for pure CMB plus detector noise case in the absence of any foreground contamination. For this purpose we simulate 1000 realizations of pure CMB Stokes Q and U maps at 1◦ beam resolution and at Nside = 512. We apply CMask on each of these realization and estimate kurtosis values for both Q and U polarizations from the surviving pixels. Histograms of these kurtosis values are shown in the top and bottom panel of Fig. 5. The sample mean (µ̂) and standard deviation (σ̂) for the Q Stokes for pure CMB maps from the CMask sky-region are respectively −0.01251 and 0.04268. The corresponding values for U polarizations are −0.01257 and 0.04818 respectively. As expected, the sample mean (or standard deviation) values are nearly identical for the case of Q and U polarization, which is expected since both Q and U Stokes parameters are equally preferred for CMB anisotropies. The histograms of kurtosis values estimated from CMask region of Q and U polarization maps for CMB plus detector noise case are also shown in Fig. 5 for all the five WMAP frequencies 2. The mean sample kurtosis for Q Stokes parameter are 0.2087, 0.18, 0.2378, 0.202 and 0.2118 respectively for K1, Ka1, Q, V and W band maps. The corresponding sample mean values for U polarization are respectively 0.2071, 0.1801, 0.2386, 0.1986 and 0.2123. The standard deviation for both Q and U polarizations are approximately independent on any of the two polarization types and frequency maps and varies approximately between 0.02 and 0.03. Comparing the sample mean values of kurtosis for pure CMB and CMB plus detector noise cases, we conclude addition of detector noise makes the kurtosis to significantly deviate towards the positive values."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 123.7,
+      "minX": 400.9,
+      "maxY": 129.9,
+      "maxX": 478.6,
+      "page": 8
+    }],
+    "text": "11. METHODOLOGY"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 96.7,
+        "minX": 317.6,
+        "maxY": 116.2,
+        "maxX": 561.9,
+        "page": 8
+      },
+      {
+        "minY": 454.2,
+        "minX": 50.7,
+        "maxY": 726.2,
+        "maxX": 295.1,
+        "page": 9
+      },
+      {
+        "minY": 444.1,
+        "minX": 50.7,
+        "maxY": 452.6,
+        "maxX": 227.3,
+        "page": 9
+      }
+    ],
+    "text": "A well known property of the usual ILC method (either in pixel space or harmonic space at each multipole ) that relies upon estimating the weight factors by minimizing the empirical variance of cleaned map is that weights can be directly computed using an analytical expression. The analytical estimation of weights is possible in that case since the empirical variance of the cleaned map is a quadratic function of the weight factors. As a result, the best-fit weights, which are solution obtained by differentiation of the variance and suitably setting the result to zero by employing a Lagrange's multiplier approach, satisfy an equation which is linear in the weights themselves (e.g., see Eqn A3 in appendix A of Saha et al. (2008)). Because of this linear equation weights can easily be obtained in terms of an analytical equation (e.g., Tegmark & Efstathiou (1996b); Tegmark et al. (2003); Saha et al. (2006, 2008); Sudevan et al. (2017)) in ILC methods that minimize variance. In the current work we however minimize kurtosis as a measure of non-Gaussian properties inherent in the data. Since the kurtosis of the cleaned ILC map is highly non-linear function of weights, e.g., see Eqn. 6, (unlike the minimally non-linear quadratic function as in the case of variance minimization) differentiating this kurtosis with respect to the weights following the Lagrange's undermined multiplier's approach does not result in a linear equation of weights. Hence an analytical expression for weights for our current work does not seem feasible. Instead as in Saha (2011) we develop a code (hereafter called PolG to solve for weights that minimizes Eqn. 6 by employing a non-linear minimization algorithm due to Powell as in Press et al. (1989)."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 57.3,
+      "minX": 317.6,
+      "maxY": 82.6,
+      "maxX": 561.9,
+      "page": 8
+    }],
+    "text": "2 These histograms were obtained from 400 simulations of CMB plus detector noise maps corresponding to each of the five WMAP frequencies. We refer to Section for a discussions about generating the noise simulations."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 738.2,
+      "minX": 213.8,
+      "maxY": 747.2,
+      "maxX": 561.9,
+      "page": 9
+    }],
+    "text": "Separating Gaussian CMB polarization signal 9"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 437.4,
+      "minX": 148.2,
+      "maxY": 443.6,
+      "maxX": 197.7,
+      "page": 9
+    }],
+    "text": "12. RESULTS"
+  }},
+  {"paragraph": {
+    "role": "heading",
+    "positions": [{
+      "minY": 421,
+      "minX": 77.9,
+      "maxY": 429.8,
+      "maxX": 267.9,
+      "page": 9
+    }],
+    "text": "12.1. Foreground cleaned Stokes Q and U maps"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 59.2,
+        "minX": 50.7,
+        "maxY": 415.3,
+        "maxX": 295.6,
+        "page": 9
+      },
+      {
+        "minY": 54.4,
+        "minX": 317.6,
+        "maxY": 274.8,
+        "maxX": 562.4,
+        "page": 9
+      },
+      {
+        "minY": 696.3,
+        "minX": 50.7,
+        "maxY": 726.2,
+        "maxX": 295.1,
+        "page": 11
+      },
+      {
+        "minY": 439.8,
+        "minX": 50.7,
+        "maxY": 690.6,
+        "maxX": 295.1,
+        "page": 11
+      },
+      {
+        "minY": 214.9,
+        "minX": 50.7,
+        "maxY": 434.2,
+        "maxX": 295.6,
+        "page": 11
+      },
+      {
+        "minY": 63.5,
+        "minX": 50.7,
+        "maxY": 209.2,
+        "maxX": 295.6,
+        "page": 11
+      },
+      {
+        "minY": 204.9,
+        "minX": 50.7,
+        "maxY": 382,
+        "maxX": 295.1,
+        "page": 12
+      },
+      {
+        "minY": 54.1,
+        "minX": 50.7,
+        "maxY": 179.1,
+        "maxX": 295.1,
+        "page": 12
+      },
+      {
+        "minY": 173.2,
+        "minX": 317.6,
+        "maxY": 382,
+        "maxX": 562,
+        "page": 12
+      },
+      {
+        "minY": 57.4,
+        "minX": 317.6,
+        "maxY": 172.1,
+        "maxX": 562,
+        "page": 12
+      },
+      {
+        "minY": 255,
+        "minX": 50.7,
+        "maxY": 484.9,
+        "maxX": 295.1,
+        "page": 13
+      }
+    ],
+    "text": "First, we apply CMask obtained in Section to Stokes Q polarization maps of the five WMAP frequency bands which have a common resolution of 1◦, as discussed in Section . Using the PolG code we then minimize kurtosis over the surviving pixels of five Stokes Q polarization maps. Since WMAP V band is expected to have minimum foreground contamination from the CMask sky region, (e.g., see table 3), we choose V band weight to be unity and all other frequency band weights to be zero as the initial values of the weight factors. For the Q polarization weight vector W becomes (−0.237422, 0.376352, 0.136837, 0.691807, 0.032427) for the minimum value of kurtosis 0.188642 This is clearly less than the kurtosis values of all the five input WMAP Q polarization maps, estimated after application of CMask (e.g., see Table 3). The PolG code generates, the maximum weight for V band, since it is expected to be the minimally foreground contaminated frequency band over the CMask region as discussed in Section . It is interesting to note that both Ka and Q bands get positive weights, whereas, at the low frequency side, K band gets a negative weight. This is because strong synchrotron signal at the WMAP low frequency side (e.g., at 23, 33 and 41 GHz) is canceled by assigning negative weight to K1 band, where the synchrotron contamination is strongest and positive weights to Ka and Q bands where synchrotron contamination becomes gradually weak. The highest frequency WMAP frequency band, on the other hand gets, a very small weight since this map is dominated by the thermal dust emission. From table 3 we note that for U polarization both V and W band have similar kurtosis ∼ 0.30 from CMask sky. This kurtosis value is well within the range of kurtosis values we obtain from the simulations of pure CMB and detector noise (e.g., see Fig. 5). We conclude from this both W band V band U polarization maps which likely contains detector noise contamination that is at the least comparable or in practice stronger compared to the foreground emission levels of CMask regions of these frequency bands. Because of larger detector noise contamination the V and W frequency bands provide little leverage in removing foregrounds. Also, in practice excluding these two frequency bands from the analysis is not an option since one would like use a wide frequency coverage for better estimation of CMB signal removing foregrounds, particularly when data becomes noise dominated. We therefore do not use U polarization maps to estimate the weights. Instead, we simply use the weights obtained for Q Stokes map to obtain a foreground cleaned U polarization map from the CMask region. The kurtosis value of cleaned U polarization map obtained in this way is comparable (∼ 0.333) to kurtosis of input V and W bands (from CMask region). We show the cleaned Q and U Stokes maps in the top and middle panel of Fig. 6. The corresponding map of magnitude, P = {Q2 + U2}0.5 of polarization vector, is shown in the bottom panel of this figure. Clearly the polarization map shows presence of residual detector noise contamination around the region along the ecliptic plane. Presence of some residual foregrounds are visible near north galactic spur and on the southern galactic plane. Our cleaned Q and U Stokes maps together hereafter will be referred to as QUGMap. 12.2. Comparison with Input Stokes Q and U Maps A direct way to demonstrate the efficiency of foreground minimization may be obtained by comparing the input foreground (and detector noise contaminated) maps with the final foreground cleaned maps by our method for both the Stokes parameters. We show all five input WMAP Q and U Stokes polarization maps after application of CMask in Fig. 7. From top to bottom the left column of this figure shows Q Stokes maps from K1, KA1, Q, V and W band respectively. The right panel shows the same, but for U polarization. Comparing this figure with top and middle panel of Fig. 6 we see that our method effectively minimizes strong foreground that is present in K1 or Ka1 band. Foreground contamination clearly visible from north polar spur region and immediately below the galactic plane for WMAP Q band for both the Stokes maps. However, such features is absent in our foreground cleaned map which implies efficient foreground minimization by PolG. For W band the input maps show features that are more consistent with contamination due to both detector noise and foregrounds (thermal dust) and a visual inspection of foreground minimization algorithm is not reliable. The efficiency of foreground removal with respect to these input maps may be clearly demonstrated by noting the standard deviation and kurtosis values of all the maps. 12.3. Difference with Input Polarization Maps What is the difference between the magnitude of polarization vectors estimated from input maps and our Stokes Q and U cleaned maps? Such difference maps are of particular interest since they show the performance of the algorithm in reducing foreground power from the regions of the sky where foreground are strong compared to both detector noise and the expected level weak CMB polarization signal. We show these difference maps in Fig. 8 from top to bottom for K1 band to W band in the increasing order of their frequencies. From the topmost image of this figure we see that strong foreground contamination of K1 band is minimized in both the northern and southern galactic hemisphere. Particularly visible from this figure the efficiency of our algorithm from the left hand side of galactic plane (on both hemispheres) and the ring like structure in the northern galactic plane. The difference maps for each of Ka1 and Q bands shows efficient foreground minimization near the north galactic spur region. For V and W bands the difference maps tend to loose visual presence of foreground patterns since foregrounds becomes comparable to the detector noise level. 12.4. Variance Analysis It is interesting to note that, the standard deviation values of cleaned Q (5.50 µK) and U (5.48 µK) polarization maps from CMask region match very closely to each other. The standard deviations of five input Q polarization maps from the same sky region are 21.14, 8.94, 6.48, 6.25 and 8.44 µK from the K1 band to W band, respectively. The corresponding values for U polarizations are respectively 19.16, 8.33, 6.35, 6.25 and 8.35 µK. This shows that our foreground removal method reduces the sample standard deviation of the uncleaned maps by at least 0.75 µK for Q Stokes polarization and 0.77 µK for the U polarization, when we compare with the corresponding standard deviation of the uncleaned V band maps. When compared with the K1, Ka1 and W band the reduction in strength of contaminations are even stronger, indicating the efficient performance of the method. In this context we note that since CMB polarization is a weak signal than the temperature counterpart, pure CMB (both Q or U Stokes maps, after smoothing by 1◦ Gaussian window function) has a mean standard deviation value of only ∼ 0.55 µK over the same CMask sky region with a sample standard deviation 0.018 µK. Even, considering the performance of foreground removal as compared with the two lowest variance uncleaned V or W bands, one may therefore conclude that a reduction of standard deviation by ∼ 0.75 µK using PolG code amounts to significant reduction of contamination compared to the weak CMB polarization signals. It is interesting to note that for both Q and U polarization the standard deviations of cleaned Q and U maps are less than the minimum standard deviations of all five input maps, although our foreground minimization algorithm is independent on variance minimization. 12.5. Power Spectrum An effective way to discuss the efficiency of foreground minimization by a foreground removal method is to study the spectra obtained from the final cleaned maps produced by the method and compare them with the corresponding spectra estimated from the input uncleaned maps. We compare EE and BB power spectra of QUGMap obtained from CMask region with the corresponding spectra of the foreground contaminated Stokes Q and U maps corresponding to five WMAP frequencies (see Section for a discussion about how these maps are generated). We show the results in Fig. 9. The top left plot of this figure shows our cleaned EE power spectrum, CEE = CEE ( + 1)/2π along with the corresponding EE spectra estimated from the five input frequency maps, all spectra being estimated from the CMask sky region. The top left figure shows the overall variation of the EE spectra for the entire range of multipoles. The top right plot of Fig. 9 shows absolute magnitude of difference of input and cleaned EE spectra. For any of the five difference spectra of top right figure we use solid lines if the value of cleaned EE spectrum is less than the corresponding input EE spectrum of the corresponding WMAP input map at any given multipole. In such a case, some foregrounds have been removed by our method from the polarization map of the concerned input Stokes Q and U maps, at the particular multipole. If, on the other hand, the cleaned EE spectrum is more than corresponding EE spectrum of any input map at a multipole the corresponding values of the absolute difference is plotted in points or dashed line. Such points represent multipoles where our foreground removal has not become very effective. As seen from the top right plot our method reduces a significant amount of power from input K1 and Ka1 frequency bands for all multipoles. The cleaned EE spectrum is less than Q band EE spectrum for . 40. For V and W bands, except for lower few multipoles our method effectively removes foreground power up to intermediate multipoles. The bottom left figure of Fig. 9 represent BB spectra (CBB = CBB ( + 1)/2π) of QUGMap and all five input maps from CMask region. The bottom right figure shows the absolute difference of BB spectrum of our cleaned map and any of the input WMAP polarization maps. Like the top right figure, the solid lines of the bottom right figure shows the multipoles and frequency bands for which our cleaned map has lower foregrounds. The points or the dashed lines represent the multipoles for which our foreground removal is not very effective. In top panel of Fig. 10 we compare the cleaned EE spectra with the uncleaned EE spectra of five input frequency bands from CMask region, for different ranges of multipoles. Bottom panel represents corresponding plots for BB spectra. The color codes of the sub-figures of Fig. 10 are identical to that of top left figure. The (1,1) (following (row, column) convention) and (2,1) figures shows the overall variation of EE and BB spectra up to multipole = 500. (1,2) and (2,2) figures show that our cleaned EE and BB spectra have less power than K1, Ka1, Q frequency band input polarization maps for ≤ 10. Both EE and BB spectra are less than corresponding W band spectra at almost all multipoles ≤ 10. The V band EE and BB spectra are comparable, or less than the cleaned EE and BB spectra at the lowest few multipoles, however the cleaned spectra have less power than all WMAP input maps soon as increases beyond multipole 10. This is shown in figures (1,3) and (2,3). At higher multipoles ≥ 220 the cleaned spectra again possesses more power than V band spectra (e.g., (1,1) and (2,1) figures). At even higher multipoles the cleaned spectra have more power than Q, V and W band input maps, but less power than K1 and Ka1 band input maps, as shown in figures (1,4) and (2,4)."
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 310.3,
+      "minX": 317.6,
+      "maxY": 327.4,
+      "maxX": 561.9,
+      "page": 9
+    }],
+    "text": "FIG. 6.\u2014 Top: foreground cleaned Q Stokes map obtained by our method. Middle: foreground cleaned U Stokes map. Bottom: map of P = {Q2 +"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 292.4,
+      "minX": 317.2,
+      "maxY": 309.4,
+      "maxX": 561.9,
+      "page": 9
+    }],
+    "text": "U2}0.5, using Q and U maps of top and middle panels. The cleaned Q and U Stokes maps of this work together are referred to as QUGMap."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 740.2,
+      "minX": 53.2,
+      "maxY": 747.1,
+      "maxX": 63.2,
+      "page": 10
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 57,
+      "minX": 50.7,
+      "maxY": 72.5,
+      "maxX": 561.9,
+      "page": 10
+    }],
+    "text": "FIG. 7.\u2014 Left column: from top to bottom, input Stokes Q maps for WMAP K1, Ka1, Q, V and W band respectively (after applying CMask). Right column: same as left column, but for U Stokes parameter."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 738.2,
+      "minX": 211.3,
+      "maxY": 747.2,
+      "maxX": 561.9,
+      "page": 11
+    }],
+    "text": "Separating Gaussian CMB polarization signal 11"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 50.3,
+      "minX": 317.6,
+      "maxY": 82.4,
+      "maxX": 561.9,
+      "page": 11
+    }],
+    "text": "FIG. 8.\u2014 Difference of magnitude of polarization vectors of the input maps and output foreground minimized map obtained by our method. From top to bottom images represent difference maps for K1 to W band in the increasing order of the frequency."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 740.4,
+      "minX": 53.2,
+      "maxY": 747.1,
+      "maxX": 63.2,
+      "page": 12
+    }],
+    "text": "12"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 718.6,
+      "minX": 68.6,
+      "maxY": 723.8,
+      "maxX": 83.8,
+      "page": 12
+    }],
+    "text": "1000"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 693.3,
+      "minX": 72.4,
+      "maxY": 698.5,
+      "maxX": 83.8,
+      "page": 12
+    }],
+    "text": "100"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 667.9,
+      "minX": 76.2,
+      "maxY": 673.2,
+      "maxX": 83.8,
+      "page": 12
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 642.8,
+      "minX": 80,
+      "maxY": 647.9,
+      "maxX": 83.8,
+      "page": 12
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 629,
+      "minX": 240.8,
+      "maxY": 642,
+      "maxX": 254.3,
+      "page": 12
+    }],
+    "text": "K1 Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 613.5,
+      "minX": 74.1,
+      "maxY": 626.7,
+      "maxX": 254.3,
+      "page": 12
+    }],
+    "text": "0.1 QV"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 605.8,
+      "minX": 246.5,
+      "maxY": 611.2,
+      "maxX": 254.3,
+      "page": 12
+    }],
+    "text": "W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 598.1,
+      "minX": 214.9,
+      "maxY": 603.6,
+      "maxX": 254.3,
+      "page": 12
+    }],
+    "text": "Cleaned EE"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 592,
+      "minX": 70.3,
+      "maxY": 597.3,
+      "maxX": 83.8,
+      "page": 12
+    }],
+    "text": "0.01"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 584.3,
+      "minX": 86.6,
+      "maxY": 589.6,
+      "maxX": 295.8,
+      "page": 12
+    }],
+    "text": "1 10 100 1000"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 567.4,
+      "minX": 72.4,
+      "maxY": 572.6,
+      "maxX": 83.8,
+      "page": 12
+    }],
+    "text": "100"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 535.8,
+      "minX": 76.2,
+      "maxY": 541,
+      "maxX": 83.8,
+      "page": 12
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 718.6,
+      "minX": 329.8,
+      "maxY": 723.8,
+      "maxX": 345.1,
+      "page": 12
+    }],
+    "text": "1000"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 700.5,
+      "minX": 333.6,
+      "maxY": 705.7,
+      "maxX": 345.1,
+      "page": 12
+    }],
+    "text": "100"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 682.4,
+      "minX": 337.4,
+      "maxY": 687.7,
+      "maxX": 345.1,
+      "page": 12
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 664.5,
+      "minX": 341.3,
+      "maxY": 669.6,
+      "maxX": 345.1,
+      "page": 12
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 704.9,
+      "minX": 354.7,
+      "maxY": 717.9,
+      "maxX": 368.2,
+      "page": 12
+    }],
+    "text": "K1 Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 681.7,
+      "minX": 360.4,
+      "maxY": 702.6,
+      "maxX": 368.2,
+      "page": 12
+    }],
+    "text": "Q V W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 646.2,
+      "minX": 335.3,
+      "maxY": 651.5,
+      "maxX": 345.1,
+      "page": 12
+    }],
+    "text": "0.1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 628.2,
+      "minX": 331.5,
+      "maxY": 633.4,
+      "maxX": 345.1,
+      "page": 12
+    }],
+    "text": "0.01"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 610.1,
+      "minX": 327.7,
+      "maxY": 615.3,
+      "maxX": 345.1,
+      "page": 12
+    }],
+    "text": "0.001"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 592,
+      "minX": 323.9,
+      "maxY": 597.3,
+      "maxX": 345.1,
+      "page": 12
+    }],
+    "text": "0.0001"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 584.3,
+      "minX": 347.8,
+      "maxY": 589.6,
+      "maxX": 547.8,
+      "page": 12
+    }],
+    "text": "1 10 100 1000"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 567.4,
+      "minX": 333.6,
+      "maxY": 572.6,
+      "maxX": 345.1,
+      "page": 12
+    }],
+    "text": "100"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 546.3,
+      "minX": 337.4,
+      "maxY": 551.5,
+      "maxX": 345.1,
+      "page": 12
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 525.4,
+      "minX": 341.3,
+      "maxY": 530.5,
+      "maxX": 345.1,
+      "page": 12
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 504.1,
+      "minX": 80,
+      "maxY": 509.4,
+      "maxX": 345.1,
+      "page": 12
+    }],
+    "text": "1 0.1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 485.6,
+      "minX": 244.6,
+      "maxY": 490.8,
+      "maxX": 254.3,
+      "page": 12
+    }],
+    "text": "K1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 477.8,
+      "minX": 240.8,
+      "maxY": 483.1,
+      "maxX": 254.3,
+      "page": 12
+    }],
+    "text": "Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 468.6,
+      "minX": 74.1,
+      "maxY": 477.7,
+      "maxX": 254.3,
+      "page": 12
+    }],
+    "text": "0.1 Q"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 454.6,
+      "minX": 246.5,
+      "maxY": 467.7,
+      "maxX": 254.3,
+      "page": 12
+    }],
+    "text": "V W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 446.9,
+      "minX": 214.4,
+      "maxY": 452.4,
+      "maxX": 254.3,
+      "page": 12
+    }],
+    "text": "Cleaned BB"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 440.8,
+      "minX": 70.3,
+      "maxY": 446.1,
+      "maxX": 83.8,
+      "page": 12
+    }],
+    "text": "0.01"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 433.1,
+      "minX": 86.6,
+      "maxY": 438.4,
+      "maxX": 295.8,
+      "page": 12
+    }],
+    "text": "1 10 100 1000"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 477.9,
+      "minX": 331.5,
+      "maxY": 488.3,
+      "maxX": 368.2,
+      "page": 12
+    }],
+    "text": "0.01 K1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 470.1,
+      "minX": 354.7,
+      "maxY": 475.4,
+      "maxX": 368.2,
+      "page": 12
+    }],
+    "text": "Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 460.9,
+      "minX": 327.7,
+      "maxY": 467.8,
+      "maxX": 368.2,
+      "page": 12
+    }],
+    "text": "0.001 Q"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 454.6,
+      "minX": 362.5,
+      "maxY": 460,
+      "maxX": 368.2,
+      "page": 12
+    }],
+    "text": "V"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 446.9,
+      "minX": 360.4,
+      "maxY": 452.3,
+      "maxX": 368.2,
+      "page": 12
+    }],
+    "text": "W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 440.8,
+      "minX": 323.9,
+      "maxY": 446.1,
+      "maxX": 345.1,
+      "page": 12
+    }],
+    "text": "0.0001"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 433.1,
+      "minX": 347.8,
+      "maxY": 438.4,
+      "maxX": 547.8,
+      "page": 12
+    }],
+    "text": "1 10 100 1000"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 389.4,
+      "minX": 50.7,
+      "maxY": 421.6,
+      "maxX": 561.9,
+      "page": 12
+    }],
+    "text": "FIG. 9.\u2014 Top left and bottom left: figures showing the EE and BB power spectra respectively obtained from CMask region from cleaned Stokes Q and U maps of this work along with the corresponding spectra from five input maps (as discussed in Section ) after application of CMask. The vertical axes of both the figures show the 'reduced spectrum', ( + 1)C̀/2π. Top right and bottom right: The absolute difference of reduced EE and BB spectra respectively, estimated from our {Q, U} cleaned maps and five input maps from CMask region. See Section for details."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 191.4,
+      "minX": 89.5,
+      "maxY": 199.4,
+      "maxX": 256.3,
+      "page": 12
+    }],
+    "text": "12.5.1. Comparison with Input Power Spectra"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 738.2,
+      "minX": 211.3,
+      "maxY": 747.2,
+      "maxX": 561.9,
+      "page": 13
+    }],
+    "text": "Separating Gaussian CMB polarization signal 13"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 667.1,
+      "minX": 68.2,
+      "maxY": 729.4,
+      "maxX": 76.7,
+      "page": 13
+    }],
+    "text": "40 35 30 25 20 15"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 708.3,
+      "minX": 132,
+      "maxY": 722.9,
+      "maxX": 146.9,
+      "page": 13
+    }],
+    "text": "K1 Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 672.2,
+      "minX": 110.8,
+      "maxY": 705.8,
+      "maxX": 146.9,
+      "page": 13
+    }],
+    "text": "Q V W QUGMap"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 714.4,
+      "minX": 192.6,
+      "maxY": 720.3,
+      "maxX": 201.1,
+      "page": 13
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 684.5,
+      "minX": 196.9,
+      "maxY": 690.2,
+      "maxX": 201.1,
+      "page": 13
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 644.5,
+      "minX": 68.2,
+      "maxY": 661.7,
+      "maxX": 201.1,
+      "page": 13
+    }],
+    "text": "10 0.1 5"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 620.8,
+      "minX": 68.2,
+      "maxY": 639.2,
+      "maxX": 314.1,
+      "page": 13
+    }],
+    "text": "0 40 0 100 200 300 400 500 0 2 4 6 8 10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 564.4,
+      "minX": 68.2,
+      "maxY": 617.7,
+      "maxX": 201.1,
+      "page": 13
+    }],
+    "text": "35 10 30 25 1 20 15"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 541.9,
+      "minX": 68.2,
+      "maxY": 559.1,
+      "maxX": 201.1,
+      "page": 13
+    }],
+    "text": "10 0.1 5"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 530.6,
+      "minX": 72.4,
+      "maxY": 536.6,
+      "maxX": 76.7,
+      "page": 13
+    }],
+    "text": "0"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 522,
+      "minX": 79.7,
+      "maxY": 528,
+      "maxX": 314.1,
+      "page": 13
+    }],
+    "text": "0 100 200 300 400 500 0 2 4 6 8 10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 656,
+      "minX": 321.3,
+      "maxY": 729.3,
+      "maxX": 325.5,
+      "page": 13
+    }],
+    "text": "8 7 6 5 4 3 2"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 716.1,
+      "minX": 441.5,
+      "maxY": 722,
+      "maxX": 449.9,
+      "page": 13
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 674.9,
+      "minX": 445.7,
+      "maxY": 680.6,
+      "maxX": 449.9,
+      "page": 13
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 644.7,
+      "minX": 321.3,
+      "maxY": 650.5,
+      "maxX": 325.5,
+      "page": 13
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 609.6,
+      "minX": 321.3,
+      "maxY": 639.2,
+      "maxX": 565,
+      "page": 13
+    }],
+    "text": "0 0.1 8 10 15 20 25 30 35 40 45 50 300 350 400 450 500 550 600 7 10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 587,
+      "minX": 321.3,
+      "maxY": 604.2,
+      "maxX": 325.5,
+      "page": 13
+    }],
+    "text": "6 5"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 542.1,
+      "minX": 321.3,
+      "maxY": 581.7,
+      "maxX": 449.9,
+      "page": 13
+    }],
+    "text": "4 1 3 2 1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 522,
+      "minX": 321.3,
+      "maxY": 536.6,
+      "maxX": 565,
+      "page": 13
+    }],
+    "text": "0 0.1 10 15 20 25 30 35 40 45 50 300 350 400 450 500 550 600"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 492.2,
+      "minX": 50.7,
+      "maxY": 516.6,
+      "maxX": 561.9,
+      "page": 13
+    }],
+    "text": "FIG. 10.\u2014 Comparison of EE (top panel) and BB (bottom panel) power spectra, C = ( + 1)C̀/2π, obtained from QUGMap with the corresponding EE and BB spectra of all input maps used in this work at different WMAP frequencies, for different ranges of multipoles. The K1 band spectra remain outside the vertical plot range shown in figures (1,2), (1,3) and (2,2). All spectra are estimated from CMask region."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 181.3,
+      "minX": 50.7,
+      "maxY": 253.4,
+      "maxX": 295.1,
+      "page": 13
+    }],
+    "text": "We note in passing that the BB power spectra obtained from power spectra are merely an indication of residual foregrounds and detector noise contamination. The measured BB spectra should not be interpreted to be caused by the primordial CMB signal since primordial BB signal is expected to be of much lower magnitude, much lower than even CMB EE power spectrum."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 55.1,
+        "minX": 50.7,
+        "maxY": 179.8,
+        "maxX": 295.1,
+        "page": 13
+      },
+      {
+        "minY": 360.2,
+        "minX": 317.6,
+        "maxY": 484.9,
+        "maxX": 562,
+        "page": 13
+      }
+    ],
+    "text": "An important phenomena in the context of EE and BB power spectrum estimation from partial sky is leakage of EE signal to BB and vice versa (Tegmark & de Oliveira-Costa 2001; Lewis et al. 2002; Hansen & Górski 2003). The leakage requires careful analysis to extract accurate primordial CMB signal from the mixture of EE and BB spectra obtained from the partial sky. In particular Samal et al. (2008) suggest that the leakage can be avoided if one converts the full sky Stokes Q and U polarization maps to E and B mode maps at the beginning of the analysis. In the current work, however, we have chosen to apply CMask on the input WMAP Q and U Stokes maps at the beginning of the analysis, without converting the full sky Stokes maps to E and B maps at any stage of our analysis. This necessarily implies that there would be leakage of power between EE and (foreground plus detector noise) BB mode in the all the spectra shown in Fig. 9. However, for the mere comparison of residual power in different cleaned maps the leakage between EE and BB modes is not a concern and therefore we avoid reconstruction of true EE (or BB) that will be measured without leakage, from the partial sky estimates of EE and BB spectra shown in Fig. 9. The partial sky EE and BB spectra of this figure merely represent the measure of residual contaminations and not any accurate estimate of primordial CMB EE or BB power spectra."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 341.2,
+      "minX": 331.1,
+      "maxY": 358.9,
+      "maxX": 548.6,
+      "page": 13
+    }],
+    "text": "12.5.2. Comparison with WMAP foreground-reduced Power Spectra"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 191.2,
+      "minX": 317.6,
+      "maxY": 327.4,
+      "maxX": 562.4,
+      "page": 13
+    }],
+    "text": "WMAP Science team have produced a set of foreground cleaned CMB Stokes Q and U polarization maps for each DA except the DA for the K1 band (Page et al. 2007; Bennett et al. 2013). As described in Page et al. (2007) for polarization foreground removal synchrotron emission is modeled by using the K1 band Stokes Q and U maps taking care of weak CMB signal of this frequency band. The authors then, first, model thermal dust intensity, I(n̂), at 94 GHz using FDS model eight of Finkbeiner et al. (1999). Using this intensity model Page et al. (2007) then obtain Stokes Q and U template maps using Eqn 15 of their paper. The templates then fitted with the data from Ka1 to W band DA maps by minimizing the χ2 defined by Eqn. 19 of their paper."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 54.4,
+        "minX": 317.6,
+        "maxY": 189.6,
+        "maxX": 562,
+        "page": 13
+      },
+      {
+        "minY": 360.2,
+        "minX": 50.7,
+        "maxY": 484.9,
+        "maxX": 295.1,
+        "page": 14
+      },
+      {
+        "minY": 297,
+        "minX": 50.7,
+        "maxY": 358.6,
+        "maxX": 295.1,
+        "page": 14
+      },
+      {
+        "minY": 106.2,
+        "minX": 50.7,
+        "maxY": 295.4,
+        "maxX": 295.1,
+        "page": 14
+      },
+      {
+        "minY": 95.7,
+        "minX": 50.7,
+        "maxY": 104.7,
+        "maxX": 107.2,
+        "page": 14
+      }
+    ],
+    "text": "We compare EE and BB power spectra obtained from CMask region of QUGMap with the corresponding spectra of the foreground cleaned Stokes Q and U maps provided by WMAP science team. For this purpose we first smooth the Ka1 band Q, U Stokes maps to 1◦ Gaussian beam resolution at Nside = 512 performing the smoothing operation in the multipole space using ratio of the window function of 1◦ Gaussian beam and the native beam function of the WMAP Ka1 band. For each Q, V and W bands multipole DA maps available. We convert each of these DA maps to 1◦ Gaussian beam smoothed maps following procedure similar to used for Ka1 band. Moreover, for the each of Q, V and W bands we average the smoothed DA maps over the available DA maps at the corresponding band. This results in a total of four foreground cleaned maps for each of Q and U Stokes parameter for Ka1, Q, V and W band respectively. We apply these maps by the CMask and estimate their EE and BB power-spectra along with the power spectrum, obtained from our QUGMap, from the same sky region. We show these spectra at the top and bottom panel, respectively, of Fig. 11 for different multipole ranges. The vertical axes of each of the images of this plot represents C = ( + 1)C̀/2π. Overall variation of different spectra between the multipole range ≤ 500 is shown in the (1,1) and (2,1) figures. The (1,2) and (2,2) figures show all the spectra at the lowest multipoles, 2 ≤ ≤ 10. At = 2 and 3, EE power from QUGMap, becomes comparable to WMAP W band cleaned map, but larger than power in other cleaned WMAP maps at these multipoles. We can expect that some residual contamination is present in our QUGMap (and WMAP cleaned W band map) at this multipole. However, CEE soon catches up with the corresponding spectra of all other cleaned WMAP maps as increases. At = 4, CEE from QUGMap becomes lower than corresponding power of Q and W bands, comparable to Ka1 band EE power and larger than V band EE power. At = 10 EE power from QUGMap becomes comparable to corresponding power of cleanest V band cleaned map produced by WMAP. Similar pattern is also seen from the BB power spectra shown in figure (2,2). In the case of BB spectra power in our cleaned spectrum becomes less than cleanest WMAP V band BB spectrum starting from multipole ∼ 8. As shown in (1,3), (2,3), (1,1) and (2,1) figures of Fig. 11 between the multipole range 220 ≥ ≥ 10 EE and BB power spectra obtained from our cleaned map has less power than the corresponding foreground cleaned spectra obtained from all four WMAP foreground cleaned maps. Power spectra for the multipole range 300 ≤ ≤ 600 are shown in (1,4) and (2,4) figures of Fig. 11. From these plots we see that, at high clean EE and BB spectrum obtained from QUGMap have somewhat more power than the WMAP cleaned maps."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 740.4,
+      "minX": 53.2,
+      "maxY": 747.1,
+      "maxX": 63.2,
+      "page": 14
+    }],
+    "text": "14"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 678.4,
+      "minX": 68.2,
+      "maxY": 729.4,
+      "maxX": 76.7,
+      "page": 14
+    }],
+    "text": "40 35 30 25 20"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 716.9,
+      "minX": 132,
+      "maxY": 722.9,
+      "maxX": 146.9,
+      "page": 14
+    }],
+    "text": "Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 680.8,
+      "minX": 110.8,
+      "maxY": 714.4,
+      "maxX": 146.9,
+      "page": 14
+    }],
+    "text": "Q V W QUGMap"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 723.4,
+      "minX": 192.6,
+      "maxY": 729.3,
+      "maxX": 201.1,
+      "page": 14
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 693.5,
+      "minX": 196.9,
+      "maxY": 699.3,
+      "maxX": 201.1,
+      "page": 14
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 655.8,
+      "minX": 68.2,
+      "maxY": 673,
+      "maxX": 201.1,
+      "page": 14
+    }],
+    "text": "15 0.1 10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 712.2,
+      "minX": 321.3,
+      "maxY": 729.3,
+      "maxX": 449.9,
+      "page": 14
+    }],
+    "text": "8 7 10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 689.6,
+      "minX": 321.3,
+      "maxY": 706.8,
+      "maxX": 325.5,
+      "page": 14
+    }],
+    "text": "6 5"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 644.5,
+      "minX": 72.4,
+      "maxY": 684.3,
+      "maxX": 449.9,
+      "page": 14
+    }],
+    "text": "4 1 3 2 5 1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 620.8,
+      "minX": 68.2,
+      "maxY": 639.2,
+      "maxX": 565,
+      "page": 14
+    }],
+    "text": "0 0.01 0 0.1 45 0 100 200 300 400 500100 0 2 4 6 8 10 10 10 15 20 25 30 35 40 45 50 300 350 400 450 500 550 600"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 590.8,
+      "minX": 68.2,
+      "maxY": 619.4,
+      "maxX": 449.9,
+      "page": 14
+    }],
+    "text": "40 9 10 3305 10 78"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 566.9,
+      "minX": 68.2,
+      "maxY": 590.7,
+      "maxX": 449.9,
+      "page": 14
+    }],
+    "text": "2205 1 465 1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 548.9,
+      "minX": 68.2,
+      "maxY": 566.6,
+      "maxX": 325.5,
+      "page": 14
+    }],
+    "text": "1150 0.1 23"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 522,
+      "minX": 72.4,
+      "maxY": 546.6,
+      "maxX": 565,
+      "page": 14
+    }],
+    "text": "5 1 0 0.01 0 0.1 0 100 200 300 400 500 0 2 4 6 8 10 10 15 20 25 30 35 40 45 50 300 350 400 450 500 550 600"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 492.2,
+      "minX": 50.7,
+      "maxY": 516.6,
+      "maxX": 561.9,
+      "page": 14
+    }],
+    "text": "FIG. 11.\u2014 Comparison of EE (top panel) and BB (bottom panel) power spectra, C = ( + 1)C̀/2π, obtained from QUGMap with the corresponding spectra estimated from all four WMAP foreground reduced polarization maps for different ranges of multipoles. All spectra of this plot have been estimated from CMask sky region."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 89.4,
+      "minX": 70.7,
+      "maxY": 95.6,
+      "maxX": 275.1,
+      "page": 14
+    }],
+    "text": "13. VALIDATION USING MONTE-CARLO SIMULATIONS"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 62.4,
+        "minX": 50.7,
+        "maxY": 81.9,
+        "maxX": 295.1,
+        "page": 14
+      },
+      {
+        "minY": 412.9,
+        "minX": 317.6,
+        "maxY": 484.9,
+        "maxX": 562,
+        "page": 14
+      },
+      {
+        "minY": 328.3,
+        "minX": 317.6,
+        "maxY": 387.9,
+        "maxX": 562,
+        "page": 14
+      }
+    ],
+    "text": "In this section we study our foreground minimization method for Stokes Q and U parameters by performing Monte Carlo simulations. We perform these simulations using CMB, foregrounds and detector noise levels compatible to WMAP nine year polarization observations. Before we discuss the results of Monte Carlo simulations we first describe below method of generating input CMB, foreground and detector noise maps. 13.1. Input maps We generate a set of 400 CMB Stokes Q and U polarization maps at HEALPix pixel resolution parameter Nside = 512 using a theoretical power spectrum that is consistent with Planck 2015 best fit cosmological parameters (Planck Collaboration et al. 2016c). We smooth each of these maps by a polarized Gaussian beam function of FWHM = 1◦."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 399.5,
+      "minX": 404.6,
+      "maxY": 407.4,
+      "maxX": 474.9,
+      "page": 14
+    }],
+    "text": "13.1.1. CMB Maps"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 317,
+      "minX": 393.5,
+      "maxY": 324.9,
+      "maxX": 486.1,
+      "page": 14
+    }],
+    "text": "13.1.2. Foreground Maps"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 54.4,
+        "minX": 317.6,
+        "maxY": 305.4,
+        "maxX": 562.4,
+        "page": 14
+      },
+      {
+        "minY": 717.2,
+        "minX": 50.7,
+        "maxY": 726.2,
+        "maxX": 89.2,
+        "page": 15
+      },
+      {
+        "minY": 623.5,
+        "minX": 50.5,
+        "maxY": 664.3,
+        "maxX": 295.1,
+        "page": 15
+      },
+      {
+        "minY": 581.5,
+        "minX": 113.7,
+        "maxY": 607.9,
+        "maxX": 295.1,
+        "page": 15
+      },
+      {
+        "minY": 540.3,
+        "minX": 50.7,
+        "maxY": 570.3,
+        "maxX": 295.1,
+        "page": 15
+      }
+    ],
+    "text": "To generate Stokes Q and U maps at the frequencies of WMAP K1, KA1, Q, V and W bands we use the WMAP nine year base model (that is model 'c') for foregrounds as described by Gold et al. (2009, 2011). The foreground model consists of a synchrotron and a thermal dust polarized component with an amplitude and a spectral index defined at each pixel. Specifically, the synchrotron amplitude map is provided at the K1 band, which is the frequency band where Synchrotron component is most dominant in the WMAP frequency window. The thermal dust map is provided at the highest WMAP frequency band W, where the thermal dust component is strongest. The amplitude of Stokes Q and U at any given pixel are different while the spectral index is same for both Stokes parameter for any given pixel. Since the amplitude maps are given at Nside = 64, in antenna Milli Kelvin temperature units, and they are already at beam resolution of 1◦ we simply upgrade their pixel resolution and convert them to thermodynamic µK temperature unit. The spectral index maps for synchrotron and thermal dust components were simply upgraded to Nside = 512. Let As(p) (Ad(p)) represents the resulting synchrotron (thermal dust) Q or U map at the reference frequency, νs = 23 GHz (νd = 94 GHz for thermal dust), then, we estimate synchrotron emission in any of the two Stokes Q or U parameter and at any WMAP frequency, ν following where βs(p) is the synchrotron spectral index maps at Nside = 512. In a similar fashion, for thermal dust emission, Stokes Q or U parameter map at any of the five WMAP frequencies is given by, Ad(ν, p) = Ad(p) ( ννd )βd(p) . (9) We estimate net foreground signal at any frequency ν for any of the two Stokes parameters Q and U by superposing Eqns. 8 and 9."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 738.2,
+      "minX": 211.3,
+      "maxY": 747.2,
+      "maxX": 561.9,
+      "page": 15
+    }],
+    "text": "Separating Gaussian CMB polarization signal 15"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 675.2,
+      "minX": 115.8,
+      "maxY": 701.6,
+      "maxX": 295.1,
+      "page": 15
+    }],
+    "text": "As(ν, p) = As(p) ( ννs )βs(p) , (8)"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 531,
+      "minX": 120.2,
+      "maxY": 538.9,
+      "maxX": 225.6,
+      "page": 15
+    }],
+    "text": "13.1.3. Detector Noise Maps"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 410.4,
+        "minX": 50.7,
+        "maxY": 524.6,
+        "maxX": 295.1,
+        "page": 15
+      },
+      {
+        "minY": 186.7,
+        "minX": 50.7,
+        "maxY": 352.8,
+        "maxX": 295.1,
+        "page": 15
+      },
+      {
+        "minY": 54.4,
+        "minX": 50.7,
+        "maxY": 179.1,
+        "maxX": 295.1,
+        "page": 15
+      },
+      {
+        "minY": 316.4,
+        "minX": 317.6,
+        "maxY": 726.2,
+        "maxX": 562.4,
+        "page": 15
+      }
+    ],
+    "text": "WMAP science team has provided effective number of observations, Noibs(p) for each pixel, p for a DA, labeled by index i (i = 1,2, ....,10) as an extension to the corresponding binary fits file that contain temperature and polarization anisotropies maps. The standard deviation of noise at each of the 10 DA maps per unit observation is mentioned in Table 5 of Bennett et al. (2013) in Milli Kelvin thermodynamic temperature unit. We convert these standard deviation values in µK (thermodynamic) temperature unit and call them σ0i for the ith DA map. Using these inputs we estimate noise realization for the ith DA map following where Gi(p) represents a Gaussian deviate with zero mean and unit variance corresponding to the DA under consideration. The resulting noise map, ni(p) is smoothed in the harmonic space by the ratio of beam window function corresponding to 1◦ polarized Gaussian beam and the WMAP nine year supplied beam functions corresponding to different DAs. We generate 400 noise simulations for each WMAP DAs. We form 'frequency-band' noise maps for each of Q, V and W bands by averaging over noise maps of all DAs available within a given frequency band. At the end of these operations we obtain 400 noise simulations for each of five WMAP frequency bands and for each of Stokes Q and U parameters at 1◦ beam resolution and at Nside = 512. We note that noise maps for different frequency maps and different simulations have uncorrelated noise properties. 13.2. Results Using foreground maps corresponding to five WMAP frequency bands, 400 CMB simulations and additionally 400 noise simulations for each of WMAP frequency maps, as discussed in Section we form a total of 400 realizations of foreground and detector noise contaminated CMB polarization maps for each of Stokes Q and U parameters for each of five WMAP frequencies. This effectively give us a set of 400 realizations, each of which contain five maps corresponding to five WMAP frequencies for each Stokes parameter. As is the case for our analysis on the WMAP data we apply CMask on each of these maps before foreground minimization. For the simulation of foreground removal procedure we separately clean the Q polarization and U polarization maps. For Q polarization maps we minimize the kurtosis with respect to weights of three WMAP bands, K1, Q and W respectively. For this purpose we initialize the weights in PolG code for K1, Q, W bands as −0.3, 0.3, −0.3 respectively. We fix the Ka1 band weights to 0.5 for all the simulations of foreground minimization. For each of these simulations V band weight is obtained from the constrained equation that weights must add to unity to preserve the CMB Q polarization anisotropy, due to blackbody nature of CMB frequency spectrum. Since CMB polarization anisotropy is a weak signal compared to detector noise contamination at WMAP frequencies, weights in some of these simulations that have not been properly converged give rise to undesired and high foreground residuals. To avoid such simulations from our analysis, from all the 400 sets of weights obtained after the end of all simulations we take only those sets of weights for which the V band weight lies between 0.2 and 1.1. We find that such a choice of prior on the V band weight is sufficient to remove simulations that resulted in any visibly excess power in the final {Q, U} cleaned maps. Using the set of all weights from 289 simulations for which the V band weights lie within the chosen range of prior, we obtain the foreground cleaned map for Q Stokes parameter from the CMask region. We also use the same sets of weights to obtain 289 foreground cleaned maps of U Stokes polarization from the sky region survived after application of the CMask. From each of these cleaned partial sky {Q, U} polarization maps we obtain both EE and BB angular power spectra. We show the average of all such EE and BB spectra, ( + 1)C̀/2π, in µK2 thermodynamic temperature unit, along with the error-bars estimated from these simulations in top left panel of Fig. 12. We note that the non-zero BB spectrum in this plot indicates presence of residual foregrounds and detector noise, and does not represent any primordial BB power spectrum, since the initial theoretical power spectrum from which the CMB Stokes Q and U polarization maps were generated contained no BB spectrum. Some portion of the BB spectrum seen in this figure is caused due to leakage of EE signal to BB signal due finite sky area effect."
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 362.5,
+      "minX": 122.9,
+      "maxY": 394.7,
+      "maxX": 295.1,
+      "page": 15
+    }],
+    "text": "ni(p) = √Nσoib0is(p) Gi(p) , (10)"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 63.9,
+        "minX": 317.6,
+        "maxY": 314.9,
+        "maxX": 562.4,
+        "page": 15
+      },
+      {
+        "minY": 305.4,
+        "minX": 50.7,
+        "maxY": 388,
+        "maxX": 295.1,
+        "page": 16
+      }
+    ],
+    "text": "Following a procedure similar to estimating the partial sky foreground cleaned {Q, U} maps using the weights obtained from Q Stokes maps alone, we also estimate a set of cleaned maps {Q, U} maps from the same sky region using weights that are estimated using the U maps alone. In this case, we initialize, K1, Q and W band weights to the identical values as the Q polarization case discussed in the preceding paragraph. We fix the Ka1 band weight to 0.5 and the PolG code then estimates the V band weights from the constrained equation satisfied by the weights. Imposing the prior [0.2, 1.1] on the resulting 400 V band weights we find that a set of 256 simulations for which the final V band weights fulfill the prior condition. Using these weights we estimate foreground cleaned {Q, U} maps from the sky region that survives after application of CMask. We estimate partial sky EE and BB angular power spectra from each of these foreground cleaned maps. In top right panel of Fig. 12 we show the mean of all such spectra along with the error-bar computed from the same set of simulations. The mean EE and BB spectra match well with the corresponding spectra obtained from the cleaned maps that were estimated from the weights obtained from Q polarization maps alone. The difference of EE spectra of top panels is shown in red line in bottom panel. Also shown in bottom panel of Fig. 12, the difference of BB spectra in blue. The green and blue curves of the bottom panel shows 1σ error lines. From the difference spectra and error line plots we conclude that our foreground minimization method works overall with the similar efficiency for both Stokes Q and U polarizations maps separately. We again emphasize that the BB spectra in this case is mere indication of presence of residual foreground and detector noise in the final cleaned maps, and not the primordial BB signal."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 740.2,
+      "minX": 53.2,
+      "maxY": 747.2,
+      "maxX": 63.2,
+      "page": 16
+    }],
+    "text": "16"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 718.6,
+      "minX": 73.9,
+      "maxY": 723.8,
+      "maxX": 85.4,
+      "page": 16
+    }],
+    "text": "100"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 693.3,
+      "minX": 77.8,
+      "maxY": 698.5,
+      "maxX": 85.4,
+      "page": 16
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 668.1,
+      "minX": 81.6,
+      "maxY": 673.2,
+      "maxX": 85.4,
+      "page": 16
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 680.3,
+      "minX": 118.3,
+      "maxY": 718,
+      "maxX": 210.1,
+      "page": 16
+    }],
+    "text": "EE, Weights from Stokes Q BB, Weights from Stokes Q EE BB Theory CEE"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 718.6,
+      "minX": 325.9,
+      "maxY": 723.8,
+      "maxX": 337.4,
+      "page": 16
+    }],
+    "text": "100"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 693.3,
+      "minX": 329.7,
+      "maxY": 698.5,
+      "maxX": 337.4,
+      "page": 16
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 680.3,
+      "minX": 370.5,
+      "maxY": 718,
+      "maxX": 462.1,
+      "page": 16
+    }],
+    "text": "EE, Weights from Stokes U BB, Weights from Stokes U EE BB Theory CEE"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 668.1,
+      "minX": 333.6,
+      "maxY": 673.2,
+      "maxX": 337.4,
+      "page": 16
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 642.7,
+      "minX": 75.6,
+      "maxY": 648,
+      "maxX": 337.4,
+      "page": 16
+    }],
+    "text": "0.1 0.1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 617.4,
+      "minX": 71.8,
+      "maxY": 622.7,
+      "maxX": 337.4,
+      "page": 16
+    }],
+    "text": "0.01 0.01"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 592.1,
+      "minX": 68,
+      "maxY": 597.4,
+      "maxX": 337.4,
+      "page": 16
+    }],
+    "text": "0.001 0.001"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 566.8,
+      "minX": 64.2,
+      "maxY": 572.1,
+      "maxX": 85.4,
+      "page": 16
+    }],
+    "text": "0.0001"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 559.3,
+      "minX": 88.1,
+      "maxY": 564.4,
+      "maxX": 91.9,
+      "page": 16
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 505.9,
+      "minX": 67.2,
+      "maxY": 555,
+      "maxX": 80.8,
+      "page": 16
+    }],
+    "text": "10 1 0.1 0.01"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 559.1,
+      "minX": 152.2,
+      "maxY": 564.4,
+      "maxX": 227.8,
+      "page": 16
+    }],
+    "text": "10 100"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 534.7,
+      "minX": 100.6,
+      "maxY": 549.2,
+      "maxX": 131.6,
+      "page": 16
+    }],
+    "text": "EE, di EE, error"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 519.3,
+      "minX": 100.2,
+      "maxY": 533.8,
+      "maxX": 131.6,
+      "page": 16
+    }],
+    "text": "BB, di BB, error"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 491.2,
+      "minX": 63.4,
+      "maxY": 496.5,
+      "maxX": 80.8,
+      "page": 16
+    }],
+    "text": "0.001"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 483.5,
+      "minX": 83.5,
+      "maxY": 488.8,
+      "maxX": 240.5,
+      "page": 16
+    }],
+    "text": "1 10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 559.1,
+      "minX": 280.5,
+      "maxY": 572.1,
+      "maxX": 547.8,
+      "page": 16
+    }],
+    "text": "0.0001 1000 1 10 100 1000"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 483.5,
+      "minX": 382.3,
+      "maxY": 488.8,
+      "maxX": 546.9,
+      "page": 16
+    }],
+    "text": "100 1000"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 413.3,
+      "minX": 50.7,
+      "maxY": 471.9,
+      "maxX": 561.9,
+      "page": 16
+    }],
+    "text": "FIG. 12.\u2014 In top left panel, mean EE and BB angular power spectra, ( + 1)C̀/2π, in µK2 thermodynamic temperature unit, from CMask sky region plotted in violet and green color. The mean spectra are computed from 289 Monte Carlo simulations of the foreground minimization using the weights estimated from the Stokes Q maps, alone. Violet and green curves of top right panel are same as those of left panel except that these mean spectra are computed from 256 Monte Carlo simulations with weights obtained from Stokes U maps alone. In both these panels we show the full sky theoretical EE spectrum expected from LCDM model. The dark blue and red curves of both the top panels represent EE and BB spectra respectively, from the CMask sky, from 400 Monte Carlo simulations of pure CMB Stokes Q and U maps. The error bars represent cosmic plus sample variance. The red curve, representing the non-zero BB spectrum is actually leakage of EE signal to BB on the partial sky. The bottom panel represent the difference of EE spectra (in red) of top two panels and the difference of BB spectra"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 395.4,
+      "minX": 50.7,
+      "maxY": 412.3,
+      "maxX": 561.9,
+      "page": 16
+    }],
+    "text": "(blue) of the same two panels, in µK2 thermodynamic temperature unit. The green and orange lines show 1σ error lines on EE and BB spectra obtained from simulations where weights from Stokes Q maps alone are used."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 231.8,
+        "minX": 50.7,
+        "maxY": 303.9,
+        "maxX": 295.1,
+        "page": 16
+      },
+      {
+        "minY": 63.4,
+        "minX": 50.7,
+        "maxY": 230.9,
+        "maxX": 295.1,
+        "page": 16
+      }
+    ],
+    "text": "We compare the mean cleaned EE and BB power spectra estimated from accepted Monte Carlo simulations (for the case when weights are determined by the Q Stokes maps) along with the mean EE and BB spectra of each of five simulated frequency maps from the 400 simulations in top left and bottom left of Fig. 13. All spectra of these figures are estimated from CMask sky region and are multiplied by the factor ( + 1)/2π. The error bars of these figures are estimated from Monte Carlo simulations. The reduced power in the cleaned maps indicate efficiency of foreground minimization using the method described in this work. The top right figure represent the absolute difference of mean cleaned EE spectrum and the mean spectra of each of five input maps of Monte Carlo simulations and represent the appropriate difference spectra using the results shown in top left panel. The solid lines of top right panel represent the case when the mean EE spectrum has less power than the power of an input map, implying an effective foreground removal has taken place for the particular frequency band and for the particular multipole(s). The dashed lines and points of these plots represent multipoles for which mean cleaned EE spectrum is higher than the spectrum of an input frequency map. Hence foreground minimization at these multipoles and frequency band is not very effective."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 358,
+      "minX": 317.6,
+      "maxY": 388,
+      "maxX": 562,
+      "page": 16
+    }],
+    "text": "The bottom right figure of Fig. 13 shows the same as top right figure, except that the bottom right figure shows the case for BB spectra."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 231.8,
+        "minX": 317.6,
+        "maxY": 356.5,
+        "maxX": 562,
+        "page": 16
+      },
+      {
+        "minY": 221.2,
+        "minX": 317.6,
+        "maxY": 230.2,
+        "maxX": 510.6,
+        "page": 16
+      }
+    ],
+    "text": "How does the weights vary with the simulations? We have shown the weights for each of K1, Ka1, Q, V and W bands from the accepted simulations as a function of simulation index in Fig. 14. Left panel of this figure shows the case when weights are estimated only from Q Stokes maps alone. The right panel shows the case when weights are estimated from the U polarization maps alone. In both cases we see that weights for K1 band have minimum dispersion since it has the maximum signal to noise ratio for the foregrounds due to strong synchrotron emission. The V band weights have the largest dispersion since V band weights are estimated passively, i.e., from the constrained equation of weights given the values of weights of rest of the frequency bands."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 215,
+      "minX": 372.1,
+      "maxY": 221.1,
+      "maxX": 507.4,
+      "page": 16
+    }],
+    "text": "14. DISCUSSION AND CONCLUSION"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 61.6,
+        "minX": 317.6,
+        "maxY": 207.4,
+        "maxX": 561.9,
+        "page": 16
+      },
+      {
+        "minY": 738.2,
+        "minX": 211.3,
+        "maxY": 747.2,
+        "maxX": 393.9,
+        "page": 17
+      },
+      {
+        "minY": 61.9,
+        "minX": 50.7,
+        "maxY": 165.6,
+        "maxX": 295.1,
+        "page": 17
+      },
+      {
+        "minY": 61.9,
+        "minX": 317.6,
+        "maxY": 165.6,
+        "maxX": 561.9,
+        "page": 17
+      },
+      {
+        "minY": 654.1,
+        "minX": 50.7,
+        "maxY": 726.2,
+        "maxX": 295.1,
+        "page": 18
+      }
+    ],
+    "text": "Simple models of inflation predict that the fluctuations in the primordial inflaton field were Gaussian to very good approximations. The Gaussian nature of the primordial density fluctuations directly imply that the CMB anisotropies also follow Gaussian distribution, since the later is related to the former by means of a multiplicative transfer function. Using the concept of Gaussian distribution of CMB polarization anisotropies and strongly non-Gaussian nature of diffused polarized emissions from Milky Way, in this work we have proposed a methodology to separate the former from the observed mixture of the later using the WMAP nine year Stokes Q and U polarization maps, from a region of the sky that excludes regions heavily contaminated by foregrounds or detector noise. For cosmological analysis of observed CMB polarization Separating Gaussian CMB polarization signal maps a major task is to minimize the foreground contaminations. The foreground polarization may be rather complex \u2013 apart from variation of spectral spectral indices with sky locations for both synchrotron and thermal dust Stokes Q and U signals, thermal dust emission may exhibit high fraction of polarization even from regions where the signal is weak. In this context, the reconstruction of CMB polarization maps presented in this article has two important advantages. First, since the method uses usual ILC technique as the basic driving machinery, one does not need to use any explicit model for polarized foregrounds. Thus our method possesses an interesting property that the foreground minimized CMB Stokes maps are free from any error that could otherwise result from any incorrect foreground modeling. The only assumption we make about the foreground spectrum is that they are non-blackbody. This is a valid assumption for polarized emissions like synchrotron and thermal dust. The second, and very important in the context of physics of early universe, advantage of our method, is that, our method minimizes a measure of non-Gaussian properties to estimate the foreground minimized CMB polarization map. The assumption of Gaussian properties of CMB anisotropies is motivated from the simplest models of inflation. The non-Gaussian nature of polarized foreground emission is expected due to various non-linear mechanisms that operate during their emission. We demonstrate strong non-Gaussian properties of polarized foregrounds based upon empirical results."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 718.6,
+      "minX": 68.6,
+      "maxY": 723.8,
+      "maxX": 83.8,
+      "page": 17
+    }],
+    "text": "1000"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 693.3,
+      "minX": 72.4,
+      "maxY": 698.5,
+      "maxX": 83.8,
+      "page": 17
+    }],
+    "text": "100"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 667.9,
+      "minX": 76.2,
+      "maxY": 673.2,
+      "maxX": 83.8,
+      "page": 17
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 642.8,
+      "minX": 80,
+      "maxY": 647.9,
+      "maxX": 83.8,
+      "page": 17
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 617.3,
+      "minX": 74.1,
+      "maxY": 622.6,
+      "maxX": 83.8,
+      "page": 17
+    }],
+    "text": "0.1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 592,
+      "minX": 70.3,
+      "maxY": 597.3,
+      "maxX": 83.8,
+      "page": 17
+    }],
+    "text": "0.01"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 584.3,
+      "minX": 86.6,
+      "maxY": 589.6,
+      "maxX": 158.9,
+      "page": 17
+    }],
+    "text": "1 10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 567.4,
+      "minX": 72.4,
+      "maxY": 572.6,
+      "maxX": 83.8,
+      "page": 17
+    }],
+    "text": "100"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 535.8,
+      "minX": 76.2,
+      "maxY": 541,
+      "maxX": 83.8,
+      "page": 17
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 718.6,
+      "minX": 325.2,
+      "maxY": 723.8,
+      "maxX": 340.5,
+      "page": 17
+    }],
+    "text": "1000"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 697.5,
+      "minX": 329,
+      "maxY": 702.7,
+      "maxX": 340.5,
+      "page": 17
+    }],
+    "text": "100"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 676.4,
+      "minX": 332.8,
+      "maxY": 681.6,
+      "maxX": 340.5,
+      "page": 17
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 704.9,
+      "minX": 350.1,
+      "maxY": 718.4,
+      "maxX": 363.6,
+      "page": 17
+    }],
+    "text": "K1| Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 681.7,
+      "minX": 355.8,
+      "maxY": 702.6,
+      "maxX": 363.6,
+      "page": 17
+    }],
+    "text": "Q V| W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 621.3,
+      "minX": 194.6,
+      "maxY": 642.1,
+      "maxX": 254.3,
+      "page": 17
+    }],
+    "text": "Cleaned spectrum K1 Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 598.1,
+      "minX": 246.5,
+      "maxY": 619,
+      "maxX": 254.3,
+      "page": 17
+    }],
+    "text": "Q V W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 584.3,
+      "minX": 215.9,
+      "maxY": 589.6,
+      "maxX": 295.8,
+      "page": 17
+    }],
+    "text": "100 1000"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 655.5,
+      "minX": 336.6,
+      "maxY": 660.6,
+      "maxX": 340.5,
+      "page": 17
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 634.2,
+      "minX": 330.7,
+      "maxY": 639.5,
+      "maxX": 340.5,
+      "page": 17
+    }],
+    "text": "0.1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 613.1,
+      "minX": 326.9,
+      "maxY": 618.4,
+      "maxX": 340.5,
+      "page": 17
+    }],
+    "text": "0.01"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 592,
+      "minX": 323.1,
+      "maxY": 597.3,
+      "maxX": 340.5,
+      "page": 17
+    }],
+    "text": "0.001"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 584.5,
+      "minX": 343.2,
+      "maxY": 589.6,
+      "maxX": 347,
+      "page": 17
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 567.4,
+      "minX": 333.6,
+      "maxY": 572.6,
+      "maxX": 345.1,
+      "page": 17
+    }],
+    "text": "100"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 740.3,
+      "minX": 552,
+      "maxY": 747.1,
+      "maxX": 561.9,
+      "page": 17
+    }],
+    "text": "17"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 584.3,
+      "minX": 406.3,
+      "maxY": 589.6,
+      "maxX": 547.8,
+      "page": 17
+    }],
+    "text": "10 100 1000"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 546.3,
+      "minX": 337.4,
+      "maxY": 551.5,
+      "maxX": 345.1,
+      "page": 17
+    }],
+    "text": "10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 525.4,
+      "minX": 341.3,
+      "maxY": 530.5,
+      "maxX": 345.1,
+      "page": 17
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 504.1,
+      "minX": 80,
+      "maxY": 509.4,
+      "maxX": 345.1,
+      "page": 17
+    }],
+    "text": "1 0.1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 472.5,
+      "minX": 74.1,
+      "maxY": 477.7,
+      "maxX": 83.8,
+      "page": 17
+    }],
+    "text": "0.1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 440.8,
+      "minX": 70.3,
+      "maxY": 446.1,
+      "maxX": 83.8,
+      "page": 17
+    }],
+    "text": "0.01"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 433.1,
+      "minX": 86.6,
+      "maxY": 438.4,
+      "maxX": 158.9,
+      "page": 17
+    }],
+    "text": "1 10"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 470.1,
+      "minX": 194.6,
+      "maxY": 490.9,
+      "maxX": 254.3,
+      "page": 17
+    }],
+    "text": "Cleaned spectrum K1 Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 446.9,
+      "minX": 246.5,
+      "maxY": 467.8,
+      "maxX": 254.3,
+      "page": 17
+    }],
+    "text": "Q V W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 433.1,
+      "minX": 215.9,
+      "maxY": 438.4,
+      "maxX": 295.8,
+      "page": 17
+    }],
+    "text": "100 1000"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 477.9,
+      "minX": 331.5,
+      "maxY": 488.3,
+      "maxX": 368.2,
+      "page": 17
+    }],
+    "text": "0.01 K1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 470.1,
+      "minX": 354.7,
+      "maxY": 475.4,
+      "maxX": 368.2,
+      "page": 17
+    }],
+    "text": "Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 460.9,
+      "minX": 327.7,
+      "maxY": 467.8,
+      "maxX": 368.2,
+      "page": 17
+    }],
+    "text": "0.001 Q"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 452.8,
+      "minX": 360.4,
+      "maxY": 460.5,
+      "maxX": 368.2,
+      "page": 17
+    }],
+    "text": "V|"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 446.9,
+      "minX": 360.4,
+      "maxY": 452.3,
+      "maxX": 368.2,
+      "page": 17
+    }],
+    "text": "W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 440.8,
+      "minX": 323.9,
+      "maxY": 446.1,
+      "maxX": 345.1,
+      "page": 17
+    }],
+    "text": "0.0001"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 433.1,
+      "minX": 347.8,
+      "maxY": 438.4,
+      "maxX": 547.8,
+      "page": 17
+    }],
+    "text": "1 10 100 1000"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 389.4,
+      "minX": 50.7,
+      "maxY": 421.6,
+      "maxX": 561.9,
+      "page": 17
+    }],
+    "text": "FIG. 13.\u2014 Top left and bottom left: figures showing the mean EE and BB power spectra respectively obtained from CMask region from cleaned Stokes Q and U maps obtained from Monte Carlo simulations along with the corresponding mean spectra from simulated input maps from the CMask sky region. The vertical axes of both the figures show the 'reduced spectrum', ( + 1)C̀/2π. Top right and bottom right: The absolute difference of reduced EE and BB spectra respectively, estimated from our {Q, U} cleaned maps and five input maps from CMask region. See Section for details."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 366.3,
+      "minX": 66.4,
+      "maxY": 371.4,
+      "maxX": 76.1,
+      "page": 17
+    }],
+    "text": "1.2"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 350.5,
+      "minX": 72.3,
+      "maxY": 355.5,
+      "maxX": 76.1,
+      "page": 17
+    }],
+    "text": "1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 302.8,
+      "minX": 66.4,
+      "maxY": 339.7,
+      "maxX": 76.1,
+      "page": 17
+    }],
+    "text": "0.8 0.6 0.4"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 352.4,
+      "minX": 240.8,
+      "maxY": 365.4,
+      "maxX": 254.3,
+      "page": 17
+    }],
+    "text": "K1 Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 329.3,
+      "minX": 246.5,
+      "maxY": 350.2,
+      "maxX": 254.3,
+      "page": 17
+    }],
+    "text": "Q V W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 286.9,
+      "minX": 66.4,
+      "maxY": 292.2,
+      "maxX": 76.1,
+      "page": 17
+    }],
+    "text": "0.2"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 239.4,
+      "minX": 60.5,
+      "maxY": 276.4,
+      "maxX": 76.1,
+      "page": 17
+    }],
+    "text": "0 −0.2 −0.4"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 223.6,
+      "minX": 60.5,
+      "maxY": 228.9,
+      "maxX": 76.1,
+      "page": 17
+    }],
+    "text": "−0.6"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 215.9,
+      "minX": 78.9,
+      "maxY": 221.2,
+      "maxX": 294.6,
+      "page": 17
+    }],
+    "text": "0 50 100 150 200 250 300"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 204.4,
+      "minX": 143.9,
+      "maxY": 209.9,
+      "maxX": 225.6,
+      "page": 17
+    }],
+    "text": "Monte Carlo simulations"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 366.3,
+      "minX": 318.4,
+      "maxY": 371.4,
+      "maxX": 328.1,
+      "page": 17
+    }],
+    "text": "1.2"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 309.1,
+      "minX": 318.4,
+      "maxY": 357.1,
+      "maxX": 328.1,
+      "page": 17
+    }],
+    "text": "1 0.8 0.6 0.4"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 352.4,
+      "minX": 492.8,
+      "maxY": 365.4,
+      "maxX": 506.3,
+      "page": 17
+    }],
+    "text": "K1 Ka1"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 329.3,
+      "minX": 498.5,
+      "maxY": 350.2,
+      "maxX": 506.3,
+      "page": 17
+    }],
+    "text": "Q V W"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 237.9,
+      "minX": 312.4,
+      "maxY": 300.1,
+      "maxX": 328.1,
+      "page": 17
+    }],
+    "text": "0.2 0 −0.2 −0.4 −0.6"
+  }},
+  {"paragraph": {
+    "role": "footnote",
+    "positions": [{
+      "minY": 223.6,
+      "minX": 312.4,
+      "maxY": 228.9,
+      "maxX": 328.1,
+      "page": 17
+    }],
+    "text": "−0.8"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 215.9,
+      "minX": 330.9,
+      "maxY": 221.2,
+      "maxX": 546.6,
+      "page": 17
+    }],
+    "text": "0 50 100 150 200 250 300"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 204.4,
+      "minX": 395.9,
+      "maxY": 209.9,
+      "maxX": 477.6,
+      "page": 17
+    }],
+    "text": "Monte Carlo simulations"
+  }},
+  {"paragraph": {
+    "role": "caption",
+    "positions": [{
+      "minY": 172.9,
+      "minX": 50.7,
+      "maxY": 195.1,
+      "maxX": 561.9,
+      "page": 17
+    }],
+    "text": "FIG. 14.\u2014 Variation of weights for different frequency maps for different Monte Carlo simulations of our foreground removal procedure. Left panel represents the case when weights are estimated from the Q Stokes maps alone. The right panel shows the variation when weights are estimated from the Stokes U maps alone."
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 740.2,
+      "minX": 53.2,
+      "maxY": 747.1,
+      "maxX": 63.2,
+      "page": 18
+    }],
+    "text": "18"
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 433.2,
+      "minX": 50.7,
+      "maxY": 652.5,
+      "maxX": 295.6,
+      "page": 18
+    }],
+    "text": "We have critically studied the performance of our polarized foreground minimization. Based upon these studies we conclude that the method removes significant amount of foregrounds from different frequency bands. The performance of the method is expected to be even superior for future CMB polarization experiments with low level of detector noise compared to the primordial CMB polarization signal, since detector noise plays a stringent 'bottle-neck' for effective foreground minimization. Interestingly, our foreground minimized Stoke Q and U maps have less power (both EE and BB) than the WMAP template cleaned maps. This shows that, when analyzed over the CMask region our method performs a better foreground removal than a global foreground removal method as followed by the WMAP Science team using template models for the polarized foregrounds. In spite of this, we make a cautious comment that there is indeed residual foregrounds and detector noise in our cleaned Stokes Q and U maps. Great care must be taken, for cosmological analysis of these cleaned maps. It would be very useful to apply our method on the polarization observations of Planck and polarization specific future CMB missions."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [
+      {
+        "minY": 401.6,
+        "minX": 50.7,
+        "maxY": 431.6,
+        "maxX": 295.1,
+        "page": 18
+      },
+      {
+        "minY": 685.6,
+        "minX": 317.6,
+        "maxY": 726.2,
+        "maxX": 562,
+        "page": 18
+      }
+    ],
+    "text": "Analyzing our cleaned EE and BB spectra we find that performance of foreground removal depends upon the multipoles. This is expected since foreground spectra themselves depend upon multipoles and moreover detector noise usually become stronger at higher multipoles. To achieve a better foreground removal an interesting future project will be to generalize our method in the multipole space."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 506.8,
+      "minX": 317.6,
+      "maxY": 684.1,
+      "maxX": 562.4,
+      "page": 18
+    }],
+    "text": "One interesting property of our method is that, although it minimizes non-Gaussian property of foregrounds, any non-Gaussianities intrinsic to CMB remains preserved in the final cleaned map, since CMB follows blackbody spectrum with high accuracy. The condition that weights for all frequency maps add to unity preserves CMB polarization signal even if it has some minute level of non-Gaussianities. In this context we mention that our method will be able to provide a complete picture of CMB anisotropies for models of inflation that produces some level of primordial non-Gaussianity, e.g., see Wands (2010) for a discussion of local non-Gaussian from inflation, or Bartolo et al. (2004) and Planck Collaboration et al. (2016d, 2014) with references therein for comprehensive reviews about non-Gaussianities generated from different models of inflation. It will be valuable to use our method on the future generation CMB experiments to constrain such models that predict minute levels of primordial non-Gaussianities."
+  }},
+  {"paragraph": {
+    "role": "body",
+    "positions": [{
+      "minY": 412.1,
+      "minX": 317.6,
+      "maxY": 505.3,
+      "maxX": 561.9,
+      "page": 18
+    }],
+    "text": "We use publicly available HEALPix Górski et al. (2005) package available from http://healpix.sourceforge.net to perform forward and backward spherical harmonic transformations and for visualization purposes. We acknowledge the use of the Legacy Archive for Microwave Background Data Analysis (LAMBDA). LAMBDA is a part of the High Energy Astrophysics Science Archive Center (HEASARC). HEASARC/LAMBDA is supported by the Astrophysics Science Division at the NASA Goddard Space Flight Center."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 385.3,
+      "minX": 281.3,
+      "maxY": 390.8,
+      "maxX": 331.4,
+      "page": 18
+    }],
+    "text": "REFERENCES"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 369.1,
+      "minX": 50.7,
+      "maxY": 376.3,
+      "maxX": 272.3,
+      "page": 18
+    }],
+    "text": "Acquaviva, V., Bartolo, N., Matarrese, S., & Riotto, A. 2003, Nuclear"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 334.2,
+      "minX": 50.7,
+      "maxY": 367.6,
+      "maxX": 293.5,
+      "page": 18
+    }],
+    "text": "Physics B, 667, 119 Allen, T. J., Grinstein, B., & Wise, M. B. 1987, Physics Letters B, 197, 66 Baccigalupi, C., Perrotta, F., de Zotti, G., et al. 2004, MNRAS, 354, 55 Balaji, K. R. S., Brandenberger, R. H., & Easson, D. A. 2003, J. Cosmology"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 316.8,
+      "minX": 50.7,
+      "maxY": 332.7,
+      "maxX": 293.9,
+      "page": 18
+    }],
+    "text": "Astropart. Phys., 12, 008 Bartolo, N., Komatsu, E., Matarrese, S., & Riotto, A. 2004, Phys. Rep., 402,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 238.4,
+      "minX": 50.7,
+      "maxY": 315.2,
+      "maxX": 288.7,
+      "page": 18
+    }],
+    "text": "103 Basak, S., & Delabrouille, J. 2012, MNRAS, 419, 1163 \u2014. 2013, MNRAS, 435, 18 Bennett, C. L., Smoot, G. F., Hinshaw, G., et al. 1992, ApJ, 396, L7 Bennett, C. L., Hill, R. S., Hinshaw, G., et al. 2003, ApJS, 148, 97 Bennett, C. L., Larson, D., Weiland, J. L., et al. 2013, ApJS, 208, 20 Bouchet, F. R., Prunet, S., & Sethi, S. K. 1999, MNRAS, 302, 663 Bucher, M. 2015, International Journal of Modern Physics D, 24, 1530004 Bucher, M., Moodley, K., & Turok, N. 2001, Physical Review Letters, 87,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 212.2,
+      "minX": 50.7,
+      "maxY": 236.8,
+      "maxX": 272.3,
+      "page": 18
+    }],
+    "text": "191301 Bunn, E. F., Fisher, K. B., Hoffman, Y., et al. 1994, ApJ, 432, L75 Cabella, P., & Kamionkowski, M. 2004, ArXiv Astrophysics e-prints,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 186.1,
+      "minX": 50.7,
+      "maxY": 210.7,
+      "maxX": 277.7,
+      "page": 18
+    }],
+    "text": "astro-ph/0403392 Crittenden, R., Davis, R. L., & Steinhardt, P. J. 1993, ApJ, 417, L13 Crittenden, R. G., Coulson, D., & Turok, N. G. 1995, Phys. Rev. D, 52,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 159.9,
+      "minX": 50.7,
+      "maxY": 184.6,
+      "maxX": 290.9,
+      "page": 18
+    }],
+    "text": "R5402 Delabrouille, J., Cardoso, J.-F., Le Jeune, M., et al. 2009, A&A, 493, 835 Eriksen, H. K., Banday, A. J., Górski, K. M., & Lilje, P. B. 2004, ApJ, 612,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 55.3,
+      "minX": 50.7,
+      "maxY": 158.4,
+      "maxX": 294.1,
+      "page": 18
+    }],
+    "text": "633 Eriksen, H. K., Dickinson, C., Jewell, J. B., et al. 2008a, ApJ, 672, L87 Eriksen, H. K., Jewell, J. B., Dickinson, C., et al. 2008b, ApJ, 676, 10 Eriksen, H. K., Huey, G., Saha, R., et al. 2007, ApJ, 656, 641 Finkbeiner, D. P., Davis, M., & Schlegel, D. J. 1999, ApJ, 524, 867 Fixsen, D. J., Cheng, E. S., Gales, J. M., et al. 1996, ApJ, 473, 576 Frewin, R. A., Polnarev, A. G., & Coles, P. 1994, MNRAS, 266, L21 Gangui, A., Lucchin, F., Matarrese, S., & Mollerach, S. 1994, ApJ, 430, 447 Gangui, A., Martin, J., & Sakellariadou, M. 2002, Phys. Rev. D, 66, 083502 Gold, B., Bennett, C. L., Hill, R. S., et al. 2009, ApJS, 180, 265 Gold, B., Odegard, N., Weiland, J. L., et al. 2011, ApJS, 192, 15 Górski, K. M., Hivon, E., Banday, A. J., et al. 2005, ApJ, 622, 759"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 351.7,
+      "minX": 317.6,
+      "maxY": 376.3,
+      "maxX": 556.3,
+      "page": 18
+    }],
+    "text": "Guth, A. H. 1981, Phys. Rev. D, 23, 347 Hansen, F. K., & Górski, K. M. 2003, MNRAS, 343, 559 Hinshaw, G., Nolta, M. R., Bennett, C. L., et al. 2007, Astrophys. J. Suppl."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 316.8,
+      "minX": 317.6,
+      "maxY": 350.1,
+      "maxX": 554,
+      "page": 18
+    }],
+    "text": "Ser., 170, 288 Hu, W., & Okamoto, T. 2002, ApJ, 574, 566 Hyvärinen, A., & Oja, E. 2000, Neural Netw., 13, 411 Kamionkowski, M., Kosowsky, A., & Stebbins, A. 1997, Physical Review"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 151.2,
+      "minX": 317.6,
+      "maxY": 315.3,
+      "maxX": 554.6,
+      "page": 18
+    }],
+    "text": "Letters, 78, 2058 Kim, J., Naselsky, P., & Christensen, P. R. 2008, Phys. Rev. D, 77, 103002 \u2014. 2009, Phys. Rev. D, 79, 023003 Knox, L., & Song, Y.-S. 2002, Physical Review Letters, 89, 011303 Komatsu, E., Kogut, A., Nolta, M. R., et al. 2003, ApJS, 148, 119 Kosowsky, A. 1996, Annals of Physics, 246, 49 \u2014. 1999, New A Rev., 43, 157 Lewis, A., Challinor, A., & Turok, N. 2002, Phys. Rev. D, 65, 023505 Linde, A. D. 1983, Physics Letters B, 129, 177 Lubin, P., Melese, P., & Smoot, G. 1983, ApJ, 273, L51 Maldacena, J. 2003, Journal of High Energy Physics, 5, 013 Mather, J. C., Cheng, E. S., Eplee, Jr., R. E., et al. 1990, ApJ, 354, L37 Mather, J. C., Cheng, E. S., Cottingham, D. A., et al. 1994, ApJ, 420, 439 Munshi, D., Souradeep, T., & Starobinsky, A. A. 1995, ApJ, 454, 552 Negroponte, J., & Silk, J. 1980, Physical Review Letters, 44, 1433 Padmanabhan, N., & Finkbeiner, D. P. 2005, Phys. Rev. D, 72, 023508 Page, L., Hinshaw, G., Komatsu, E., et al. 2007, ApJS, 170, 335 Penzias, A. A., & Wilson, R. W. 1965, ApJ, 142, 419 Planck Collaboration, Ade, P. A. R., Aghanim, N., et al. 2014, A&A, 571,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 116.3,
+      "minX": 317.6,
+      "maxY": 149.6,
+      "maxX": 558,
+      "page": 18
+    }],
+    "text": "A24 Planck Collaboration, Adam, R., Ade, P. A. R., et al. 2016a, A&A, 594, A9 \u2014. 2016b, A&A, 594, A10 Planck Collaboration, Ade, P. A. R., Aghanim, N., et al. 2016c, A&A, 594,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 72.7,
+      "minX": 317.6,
+      "maxY": 114.7,
+      "maxX": 549.7,
+      "page": 18
+    }],
+    "text": "A13 \u2014. 2016d, A&A, 594, A17 \u2014. 2016e, A&A, 594, A20 Polnarev, A. G. 1985, Soviet Ast., 29, 607 Press, W. H., Flannery, B. P., Teukolsky, S. A., & Vetterling, W. T. 1989,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 55.3,
+      "minX": 317.6,
+      "maxY": 71.2,
+      "maxX": 501.5,
+      "page": 18
+    }],
+    "text": "Numerical recipes in C. The art of scientific computing Rees, M. J. 1968, ApJ, 153, L1"
+  }},
+  {"paragraph": {
+    "role": "page-header",
+    "positions": [{
+      "minY": 738.2,
+      "minX": 211.3,
+      "maxY": 747.2,
+      "maxX": 561.9,
+      "page": 19
+    }],
+    "text": "Separating Gaussian CMB polarization signal 19"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 718.2,
+      "minX": 50.7,
+      "maxY": 724.8,
+      "maxX": 283.7,
+      "page": 19
+    }],
+    "text": "Remazeilles, M., Delabrouille, J., & Cardoso, J.-F. 2011a, MNRAS, 410,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 691.5,
+      "minX": 50.7,
+      "maxY": 716,
+      "maxX": 279.5,
+      "page": 19
+    }],
+    "text": "2481 \u2014. 2011b, ArXiv e-prints, arXiv:1103.1166 Rogers, K. K., Peiris, H. V., Leistedt, B., McEwen, J. D., & Pontzen, A."
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 639.2,
+      "minX": 50.7,
+      "maxY": 690,
+      "maxX": 272.3,
+      "page": 19
+    }],
+    "text": "2016a, MNRAS, 460, 3014 \u2014. 2016b, MNRAS, 463, 2310 Saha, R. 2011, ApJ, 739, L56 Saha, R., & Aluri, P. K. 2016, ApJ, 829, 113 Saha, R., Jain, P., & Souradeep, T. 2006, ApJ, 645, L89 Saha, R., Prunet, S., Jain, P., & Souradeep, T. 2008, Phys. Rev. D, 78,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 604.3,
+      "minX": 50.7,
+      "maxY": 637.6,
+      "maxX": 286.3,
+      "page": 19
+    }],
+    "text": "023003 Samal, P. K., Saha, R., Delabrouille, J., et al. 2010, ApJ, 714, 840 Samal, P. K., Saha, R., Jain, P., & Ralston, J. P. 2008, MNRAS, 385, 1718 Seljak, U., & Zaldarriaga, M. 1999, Physical Review Letters, 82, 2636"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 682.8,
+      "minX": 317.6,
+      "maxY": 724.8,
+      "maxX": 561.9,
+      "page": 19
+    }],
+    "text": "Spergel, D. N., & Zaldarriaga, M. 1997, Physical Review Letters, 79, 2180 Stark, R. F. 1981a, MNRAS, 195, 127 \u2014. 1981b, MNRAS, 195, 115 Starobinsky, A. A. 1982, Physics Letters B, 117, 175 Sudevan, V., Aluri, P. K., Yadav, S. K., Saha, R., & Souradeep, T. 2017, ApJ,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 656.6,
+      "minX": 317.6,
+      "maxY": 681.2,
+      "maxX": 556.9,
+      "page": 19
+    }],
+    "text": "842, 62 Tegmark, M., & de Oliveira-Costa, A. 2001, Phys. Rev. D, 64, 063001 Tegmark, M., de Oliveira-Costa, A., & Hamilton, A. J. 2003, Phys. Rev. D,"
+  }},
+  {"paragraph": {
+    "role": "other",
+    "positions": [{
+      "minY": 604.3,
+      "minX": 317.6,
+      "maxY": 655.1,
+      "maxX": 514.3,
+      "page": 19
+    }],
+    "text": "68, 123523 Tegmark, M., & Efstathiou, G. 1996a, MNRAS, 281, 1297 \u2014. 1996b, Mon. Not. R. Astron. Soc., 281, 1297 Wands, D. 2010, Classical and Quantum Gravity, 27, 124002 Zaldarriaga, M. 1997, Phys. Rev. D, 55, 1822 Zaldarriaga, M., & Seljak, U. 1998, Phys. Rev. D, 58, 023003"
+  }}
+]}
