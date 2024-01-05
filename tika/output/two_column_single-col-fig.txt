@@ -1,0 +1,2835 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DRAFT VERSION MAY 29, 2020
+Preprint typeset using LATEX style emulateapj v. 01/23/15
+
+SEPARATING CMB STOKES Q AND U POLARIZATION SIGNALS FROM NON-GAUSSIAN EMISSIONS
+
+UJJAL PURKAYASTHA1 , RAJIB SAHA1
+
+Draft version May 29, 2020
+
+ABSTRACT
+In this paper we estimate diffuse foreground minimized Cosmic Microwave Background (CMB) Stokes Q and U polarization
+
+maps based upon the fundamental concept of Gaussian nature of CMB and strong non-Gaussian nature of astrophysical polarized
+foregrounds using WMAP nine year published polarization maps. We excise regions of the sky that define position of the known
+point sources, regions that are strongly contaminated by either the detector noise or by the diffuse foregrounds or both, and then
+perform foreground minimizations over the surviving sky regions that constitute approximately 50% of the full sky area. We
+critically evaluate performance of foreground minimizations in several ways and show that our foreground minimization method
+removes significant foregrounds from input maps. The cleaned Stokes {Q, U} polarization maps have less EE and BB power
+from relevant sky region compared to WMAP foreground-reduced Stokes {Q, U} polarization maps at different multipole ranges.
+We validate our methodology by performing detailed Monte Carlo simulations. The main driving machinery of our method is
+an internal-linear-combination (ILC) approach, however, unlike simple variance minimization performed in usual ILC method,
+the core of the method being dependent on the theoretically well motivated concept of Gaussianity of CMB polarization a direct
+connection is established between observations and models of inflation. Additionally, the method, like the usual ILC method,
+is independent on modeling uncertainties of polarized foregrounds. It will be useful to apply our method in future generation
+low-noise CMB polarization experiments.
+
+Subject headings: cosmic background radiation — cosmology: observations — diffuse radiation
+
+1. INTRODUCTION
+
+Anisotropies of Cosmic Microwave Background (CMB) ra-
+diation are deemed to be the fundamental ingredients respon-
+sible for the structure formation and therefore for the very ex-
+istence of the Universe as we observe it and think of it today.
+Soon after detection of CMB (Penzias & Wilson 1965) it was
+realized that the anisotropic universe can induce polarization
+in CMB with unique feature (Rees 1968; Negroponte & Silk
+1980; Lubin et al. 1983). The anisotropies in CMB are ex-
+pected to be weakly and linearly polarized (Crittenden et al.
+1995) due to Thompson scattering at the surface of last scat-
+tering and due to imprints of small fluctuations in metric that
+could have been generated during the epoch of inflation (Guth
+1981; Starobinsky 1982; Linde 1983). Although weak, Stokes
+Q and U polarization anisotropies of CMB contain valuable
+information about various physical processes in a wide range
+of energy scales - starting from 1016 GeV or so, at the time
+of inflation until today, when the energy scale of cosmolog-
+ical interest is only ∼ 0.2 meV. To highlight the rich vari-
+ety of problems that have been investigated in the literature
+in this context we mention that polarization anisotropy can
+be used to constrain primordial gravitational wave (Polnarev
+1985; Crittenden et al. 1993; Frewin et al. 1994). Critten-
+den et al. (1995) show that it is possible to infer about the
+primordial tensor anisotropies from the correlation of temper-
+ature and polarization of CMB. Kamionkowski et al. (1997)
+find a method that can probe long-wavelength gravitational
+wave and vector-mode perturbations of metric elements us-
+ing CMB polarization. Stark (1981b,a); Zaldarriaga (1997)
+show that reionization of intergalactic medium induces new
+polarization in CMB. Spergel & Zaldarriaga (1997) argue that
+CMB polarization can serve as a direct test of inflation. The
+primordial gravitational wave as measured by CMB polariza-
+tion can be used detect energy scale of inflation (Knox &
+
+1 Physics Department, Indian Institute of Science Education and Re-
+search Bhopal, Bhopal, M.P, 462066, India.
+
+Song 2002). The effect of gravitational weak lensing on the
+CMB polarization power spectrum and also on temperature-
+polarization cross power spectrum was studied by Zaldarriaga
+& Seljak (1998). Hu & Okamoto (2002) propose a method to
+reconstruct large scale mass distribution of the Universe using
+CMB polarization. Seljak & Zaldarriaga (1999) show that it
+is possible to measure dark matter power spectrum by using
+distortion of CMB weak lensing. Padmanabhan & Finkbeiner
+(2005) proposes a method to constrain possible dark matter
+annihilation at the time of recombination using CMB polar-
+ization. Balaji et al. (2003) show that the parity odd Chern-
+Simons terms in the effective Lagrangian containing Maxwell
+fields can give rise to polarization axis rotation which in turn
+could probe physics of very early universe. Planck Collabora-
+tion et al. (2016e) argue that CMB polarization signal is more
+powerful than temperature anisotropy signal to constrain any
+possible sharp features in the primordial scalar power spec-
+trum. Bucher et al. (2001) showed that polarization obser-
+vations can constrain primordial isocurvature modes by lift-
+ing its degeneracy with the cosmological parameters. De-
+tailed theoretical framework for the study of CMB polariza-
+tion have been developed by Kosowsky (1996, 1999); Cabella
+& Kamionkowski (2004); Bucher (2015).
+
+Following the discussion above, it is clear that CMB polar-
+ization signal can be used to understand problems in Cosmol-
+ogy with a diverse spectrum. Therefore, it becomes utmost
+important to device a method that estimates a clean map of the
+CMB polarization, which then can be reliably used to extract
+these information. In real life, however, estimating a cleaned
+CMB signal from observation in microwave part of electro-
+magnetic spectrum is a non-trivial task since the net polariza-
+tion signal that can be measured by a polarization sensitive
+detector placed on Earth, or in space, contains both the weak
+primordial CMB signal along with polarization signal due to
+various foreground emissions that originate due to different
+astrophysical processes that take place inside our Galaxy.
+
+An interesting property of Stokes Q and U polarization sig-
+
+
+
+2
+
+nals of CMB generated due to primordial gravitational wave is
+that they follow Gaussian distribution. Moreover the polariza-
+tion generated at the surface of last scattering due to Thomp-
+son scattering were directly proportional to the amplitude of
+quadrapolar temperature anisotropy of that time. Therefore,
+such polarizations signals again follow Gaussian distribution
+with a high accuracy. The only assumption that we make
+in both the above cases is simple slow roll models for infla-
+tion – where any non Gaussianity generated are small (Allen
+et al. 1987; Gangui et al. 1994, 2002; Munshi et al. 1995; Ac-
+quaviva et al. 2003; Maldacena 2003; Komatsu et al. 2003) -
+are valid descriptions. The anisotropies of the polarized fore-
+grounds however follow highly non-Gaussian properties due
+to complex non-linear physics involved in their origin. Mo-
+tivated by the very accurate Gaussian nature of the cosmo-
+logical Stokes Q and U polarization signals and highly non-
+Gaussian signature of polarized foregrounds, in this work, we
+seek to isolate cleaned pictures of primordial CMB Stokes Q
+and U anisotropy signals from their observed mixture with
+foregrounds, based upon the Gaussian nature of the former
+and non-Gaussian nature of later. The method has been ap-
+plied on WMAP temperature anisotropy data by Saha (2011).
+In this work, we extend the earlier work to the case of CMB
+Stokes Q and U polarization. A related approach in the con-
+text of CMB which is useful to estimate maximally indepen-
+dent components of a mixture is independent component anal-
+ysis (ICA) (e.g., see Hyvärinen & Oja (2000); Baccigalupi
+et al. (2004)).
+
+The basic driving machinery of our method is the usual
+internal-linear-combination (ILC) approach (e.g., see Ben-
+nett et al. (1992); Tegmark & Efstathiou (1996a); Bennett
+et al. (2003); Tegmark et al. (2003); Eriksen et al. (2004);
+Saha et al. (2006); Hinshaw et al. (2007); Saha et al. (2008);
+Gold et al. (2009); Kim et al. (2008, 2009); Samal et al.
+(2010) for descriptions about ILC approach and applications
+thereof). However, unlike the usual ILC method, wherein
+data-variance is minimized, in the current work, we mini-
+mize a suitably chosen statistic that quantifies the measure
+of non-Gaussian property intrinsic to a set of samples. As
+in Saha (2011) we take sample kurtosis as the measure on
+non-Gaussianness of the samples and minimize this quan-
+tity to estimate the cleaned CMB Stokes Q and U polar-
+ization signal following the ILC approach. Additionally, as
+discussed later in Section , our method relies on the black-
+body nature of CMB spectrum (Mather et al. 1990, 1994;
+Fixsen et al. 1996) and non-blackbody nature of spectra of
+different foreground components. As a consequence of this,
+our final estimate of cleaned CMB signal also preserves any
+non-Gaussian CMB polarization signal along with the Gaus-
+sian CMB signal, when both types have a blackbody spec-
+trum. Thus our method also preserves CMB weak lensing
+signal which possesses non-Gaussian properties along with
+the Gaussian signals due to primordial Gravitation wave and
+Thompson scattering at the surface of last scattering.
+
+The ILC approach has been applied in the field of com-
+ponent separation in the context of CMB in many differ-
+ent forms. Delabrouille et al. (2009); Basak & Delabrouille
+(2012, 2013) implement a needlet space ILC approach on
+WMAP temperature and polarization maps. Remazeilles et al.
+(2011b,a) generalize ILC method for non-CMB component
+estimations. Rogers et al. (2016a,b) implement a scale depen-
+dent, directional ILC method on CMB temperature and polar-
+ization maps. Saha & Aluri (2016) apply the ILC approach
+following a perturbative technique on simulated Stokes Q ob-
+
+servations of WMAP and Planck at low resolution to estimate
+variation of synchrotron spectral index over the sky positions
+and jointly estimate all foregrounds and CMB components.
+Sudevan et al. (2017) improve the usual iterative ILC ap-
+proach in harmonic space by nullifying a foreground leakage
+signal.
+
+Among the non-ILC approaches we refer to Bunn et al.
+(1994) and Bouchet et al. (1999) for Weiner filter method,
+(Bennett et al. 2003; Hinshaw et al. 2007; Gold et al. 2011,
+2009) for template fitting methods, Gold et al. (2009, 2011)
+for Markov Chain Monte Carlo Method and Eriksen et al.
+(2007, 2008b,a); Planck Collaboration et al. (2016b,a) for
+Gibbs sampling approaches for component separation.
+
+We organize our paper in the following way. We present the
+problem that we wish to discuss in this work in Section . We
+present our statistical variable to quantify non-Gaussian prop-
+erties and to minimize foreground contamination in Section
+. We then describe the basic formalism of this work in Sec-
+tion . In Section we first discuss preparation of input maps
+of our method. We then briefly discuss foreground and noise
+properties of these input maps. Based upon these discussions
+we identify regions of the sky where either foreground, or de-
+tector noise or both are dominant source of contamination.
+Using the knowledge of these regions, in Section we de-
+scribe the mask that removes regions with strong foreground
+or detector noise contamination. We use this mask later in
+Section to reconstruct foreground minimized Stokes Q and
+U maps. We then demonstrate the non-Gaussian nature of
+polarized foregrounds using the empirical foreground model
+proposed by the WMAP science team in Section , both i) from
+the sky region defined by the mask obtained in Section and
+ii) from the full sky. After demonstrating the non-Gaussian
+properties of polarized foregrounds in Section we then de-
+scribe how the statistical variable to measure non-Gaussian
+properties (e.g., see Section ) varies with increase in contam-
+ination strength of the non-Gaussian foregrounds. In Section
+we describe non-Gaussian properties of the input maps due to
+foreground contamination. We discuss variation of the values
+of our non-Gaussian measure with detector noise contamina-
+tion but without any foreground in Section . We discuss the
+foreground minimization methodology in Section . In Section
+we discuss the results and critically evaluate the performance
+of the foreground minimization. In Section we discuss the de-
+tailed Monte Carlo simulations of foreground minimizations
+and results thereof. In Section we finally discuss our work
+and conclude.
+
+2. THE PROBLEM
+
+The basic problem that we plan to discuss in this work is
+as follows. Let, we have observations of CMB Stokes Q and
+U parameters at different frequencies (and possibly at differ-
+ent instrument resolutions) over certain region of the sky. As
+discussed in Section slow-roll inflationary models with a sin-
+gle scalar field predict that primordial anisotropies of CMB
+polarizations signal follow Gaussian distribution with a very
+high accuracy. On the other hand, astrophysical foregrounds
+strongly deviate from Gaussian nature due to complex non-
+linear processes involved in their emission process. We pro-
+pose to provide a solution of the question of separating CMB
+Stokes Q and U polarization signals from its observed mix-
+ture with (non-Gaussian) foregrounds based upon the Gaus-
+sian nature of the former and non-Gaussian nature of later.
+We refer to Section for a discussion about non-Gaussian na-
+ture of foregrounds.
+
+
+
+Separating Gaussian CMB polarization signal 3
+
+3. MEASURE OF NON-GAUSSIANITY
+
+Which statistical variable can be used as the measure of
+non-Gaussianity? As in Saha (2011) we take excess kurtosis
+as measure of non-Gaussian nature of a set of random values.
+The excess kurtosis for a set of N random numbers Rk is given
+by
+
+K =
+1
+N
+
+N∑
+k=1
+
+(Rk − R0)4
+
+σ4 − 3 , (1)
+
+where R0 represents sample mean and σ2 is the sample vari-
+ance. Excess kurtosis for a Gaussian probability density func-
+tion is zero. As described later in Section the excess kurtosis
+for foreground contaminated Q and U signals tend to take pos-
+itive values and increases quickly with the increase in the con-
+tamination levels. On the other hand, the excess kurtosis for
+a random Gaussian realization of CMB Stokes Q or U map is
+close to zero. This makes the excess kurtosis an efficient esti-
+mator for measuring non-Gaussian foreground contamination
+in CMB polarization maps. In subsequent part of this paper
+we use ‘sample kurtosis’ or simply ‘kurtosis’ to actually rep-
+resent the excess kurtosis as defined by Eqn. 1.
+
+4. BASIC FORMALISM
+
+In this section we review the basic formalism (e.g., see
+Saha (2011)) of estimating Gaussian Stokes Q and U polar-
+ized CMB components from the mixture with non-Gaussian
+foreground components. The basic driving tool of our method
+is an ILC method in pixel space to estimate foreground min-
+imized CMB Stokes Q and U anisotropy maps. However the
+core of the method relies on a more fundamental concept of
+minimizing the non-Gaussianity of the ILC map, rather than
+minimizing a relatively simpler concept of variance that is fol-
+lowed in the usual ILC methods.
+
+Let we have observations of CMB Stokes Q or U polar-
+ization over some region of the sky at n different frequency
+bands. Further, we assume that all these maps have the same
+instrumental beam and pixel resolutions 2 and they have al-
+ready been converted to thermodynamic (µK) temperature
+unit. If Mi(p) represents Stokes Q or U polarization signal at
+pixel p and at a frequency νi where i ∈ {1,2,3, ...n} then
+
+Mi(p) = Mc(p) + M f
+i (p) + Mn
+
+i (p) , (2)
+
+where Mc(p) represents the CMB polarization anisotropy
+signal at a pixel p. CMB anisotropy is independent on fre-
+quency νi in thermodynamic temperature unit since frequency
+spectrum of CMB follows blackbody spectrum. M f
+
+i (p) repre-
+sents the net foreground contribution at frequency νi and at a
+pixel p. Finally, Mn
+
+i (p) represents the detector noise contribu-
+tion at a frequency νi and at a pixel p. We note that, in Eqn. 2
+we have omitted any explicit reference of beam or pixel win-
+dow function. This is justified since we assume all frequency
+maps Mi(p) have same beam (and also pixel) smoothing ef-
+fects. In other words, each component of the right hand side
+
+2 In general, and as is the case of WMAP, the observed maps at different
+frequency bands possess different instrumental resolutions, even if they have
+same pixel resolution. Here we assume that all such maps have already been
+converted to a suitably chosen and common instrumental resolution. If the
+frequency maps had different pixel resolutions as well, one could use the
+method described by Sudevan et al. (2017).
+
+of Eqn. 2 should be interpreted as appropriately smoothed
+versions of the actual sky components or detector noise.
+
+Using the frequency maps Mi(p) the foreground minimized
+ILC map, MC(p), is defined as the linear superposition of all
+of them with certain amplitude terms wi that depends upon the
+frequency band νi
+
+MC(p) =
+n∑
+
+i=1
+
+wiMi(p) , (3)
+
+where the amplitudes w1,w2, ....,wn, defined as weight fac-
+tors 3. To reconstruct the CMB component which follows a
+blackbody spectrum we further impose a constraint on the
+weights that w1 + w2 + ....+ wn = 1, i.e., the weights of all fre-
+quency bands sum to unity. Such a constraint leads to effec-
+tively n−1 independent number of weight factors. The weight
+factors are obtained by minimizing ‘sample kurtosis’ (e.g., see
+Section and Section ) of the cleaned map.
+
+If the cleaned map, MC(p) contains N pixels following Eqn
+1 the sample kurtosis of the cleaned map is given by
+
+KC =
+1
+N
+
+N∑
+p=1
+
+(
+MC(p) − M0
+
+)4
+
+σ4 − 3 , (4)
+
+where M0 denotes sample mean of the cleaned map and σ
+represents standard deviation. Using Eqn 3 and the condition
+on weights that they sum to unity one can show that
+
+M0 =
+n∑
+
+i=1
+
+Mi
+0 , (5)
+
+where Mi
+0 represents the mean temperature of input map at
+
+a frequency νi. Using Eqns 3 and 5 along with the constraint
+equation satisfied by the weights, in Eqn. 4 we find
+
+KC(W) =
+
+ N(
+WMWT )2
+
+N∑
+p=1
+
+(
+WMpW
+
+)2
+
+− 3 , (6)
+
+where W is a 1×n row-vector with wi as its ith element. Mp
+is an n×n symmetric matrix for each pixel p and is elements
+are defined as, Mp(ii′) = M̃i(p)M̃i′ (p) , where M̃i(p) represents
+the polarization (Q or U) signal at pixel p for frequency νi
+after the mean signal corresponding to this frequency band
+has been subtracted from the original pixel values. M in the
+denominator of Eqn. 6 is also an n×n matrix and is given by
+
+M =
+N∑
+
+p=1
+
+Mp . (7)
+
+3 Here we have omitted any dependence of weight factors with the pixel
+positions at any given frequency νi. An important future project will be al-
+lowing weight to vary with the sky positions, to take into account varying
+spectral properties of polarized foreground components, e.g., synchrotron and
+thermal dust components. Letting weights depend on the sky positions will
+also allow them to be varied with different regions of the probability density
+function of the net foreground emissions, which is expected to lead to better
+performance of our foreground removal. We shall explore this problem in a
+future publication. In the current work we treat weights to be independent on
+sky positions for any given frequency.
+
+
+
+4
+
+FIG. 1.— Left column: figures, from top to bottom, showing the Q polarization maps starting from WMAP K1 to W band frequency maps, in the order of the
+increasing frequency of different bands. Middle column: same as left panel but for U polarization map. Right column: figures showing magnitude of polarization
+vector P = {Q2 + U2}0.5 using different WMAP frequency maps as shown in the first two columns. The low frequency Q and U maps are dominated by the
+diffused galactic contamination due to synchrotron component. The high frequency maps of V and W bands also contain detector noise as a dominant source
+of contamination apart from significant diffuse foreground contamination due to thermal dust component. The noisy nature of the polarization maps in the right
+panel are clearly visible for the V and W band frequency maps. One of the important things that these maps show is that the WMAP low frequency maps are
+dominated by the foreground contamination whereas high frequency maps have both foregrounds and detector noise as significant sources of contamination. All
+the maps of this figure have a common instrumental resolution of 1◦.
+
+5. INPUT MAPS
+
+5.1. Data Preparation
+In this work we use WMAP nine year published Stokes
+
+Q and U polarization maps corresponding to different differ-
+encing assemblies (DA) as the primary input maps. A total
+of 10 DA maps are provided by the WMAP science team at
+HEALPix2 pixel resolution parameter Nside = 512 at different
+frequencies starting from 23 GHz to 94 GHz. Each of these
+DA map belong to a given frequency band. A list of all the
+DA maps, their frequency of observations and corresponding
+
+2 Hierarchical Equal Area Isolatitude Pixellization of Sphere, e.g., see
+Górski et al. (2005).
+
+frequency band are mentioned in Table 1. Since each DA map
+has different instrumental resolution corresponding to differ-
+ent detector of WMAP satellite mission the DA maps are not
+directly usable as is in our method. We first bring all the
+DA maps to a common resolution corresponding to a Gaus-
+sian polarized instrumental response function of FWHM = 1◦
+
+at Nside = 512 by multiplying the spherical harmonic coeffi-
+cients of each map by the ratio of beam window functions
+corresponding to 1◦ Gaussian beam window and the native
+beam window function of the corresponding DA map3. Each
+of WMAP 23 and 33 GHz frequency bands (i.e., K1 and Ka1
+bands) has only single detector each. However, since each of
+
+3 We use WMAP nine year published beam window functions correspond-
+ing to different DA maps in this work.
+
+
+
+Separating Gaussian CMB polarization signal 5
+
+TABLE 1
+LIST OF WMAP MAPS USED IN THIS WORK
+
+Frequency Band Name DA Maps
+(GHz)
+23 K1 K1
+33 Ka1 Ka1
+41 Q Q1, Q2
+61 V V1, V2
+94 W W1, W2, W3, W4
+
+WMAP 41 (Q), 61 (V) and 94 GHz (W) frequency bands has
+multiple DA maps we average all the DA maps corresponding
+to each of these frequency bands to form a single map corre-
+sponding to each of these frequency bands. This results in a
+total of five frequency maps corresponding to all K1, Ka1, Q,
+V and W bands of WMAP for use as input in our work.
+
+5.2. Foreground and noise properties
+We show these input frequency maps after masking of the
+
+position of known point sources in Fig. 1 in µK thermody-
+namic temperature unit. The leftmost column of this figure
+shows Q Stokes maps, in order of increasing frequency from
+top to bottom, corresponding to five WMAP frequency bands.
+The middle column shows the same except for the U Stokes
+signal. The rightmost column shows the magnitude of polar-
+ization vector, P = {Q2 + U2}0.5. Both the Q and U Stokes
+maps are dominantly contaminated by the galactic diffused
+contamination, both in the galactic plane and out of the galac-
+tic plane for K1, Ka1 and Q frequency bands. This is clearly
+seen from the plots of the first three rows of this figure. The
+foreground polarization in the V and W bands are more dom-
+inant in the galactic plane than the region outside the plane.
+The V and W band also contain significantly strong detec-
+tor noise which can be easily inferred from the plots of the
+last two rows, specifically from the last two plots of the right-
+most column. The transition from foreground dominated low
+frequency polarization maps to both foreground and detector
+noise dominated high frequency WMAP maps is clearly vis-
+ible from the last column of this figure. We note in passing
+that mean standard deviation from 1000 simulations of CMB
+Stokes Q and U polarization signal at the same Nside parameter
+and 1◦ resolution is merely ∼ 0.55 µK. This indicates that all
+these frequency maps of this figure contain foreground and
+detector noise contaminations that are stronger than the ex-
+pected level of primordial signal.
+
+6. MASKS
+
+As described in Section and as seen from Fig. 1 the low
+frequency polarization maps (K1, Ka1, Q frequency bands)
+of WMAP have strong foreground contaminations both along
+the galactic plane and away from the plane in both the hemi-
+spheres. The high frequency V and W band maps are more
+dominated by the detector noise along the ecliptic plane. Pres-
+ence of foreground contamination can be visibly seen along
+the galactic plane in all the five frequency maps (e.g., see the
+third column of Fig. 1). Since presence of any detector noise
+that is not negligible compared to the foregrounds signifi-
+cantly reduces the efficiency of foreground removal, we chose
+to remove regions on the sky that is heavily contaminated by
+the detector noise. For this purpose we make a mask in the
+ecliptic coordinate system that excise 15◦ on each side of the
+ecliptic plane. We find the spherical harmonic coefficients of
+this mask and rotate these coefficients to galactic coordinate
+system using the HEALPix provided facility alteralm. We
+then convert the rotated harmonic coefficients to a new mask.
+
+FIG. 2.— The CMask or composite mask used in this work to define usable
+sky region for the polarized foreground removal. The golden yellow region
+shows the region defined by ±15◦ on both sides of the ecliptic plane and
+galactic plane and are excluded in this work. The blue regions, which is
+also removed in this work, represent the position of resolved point sources as
+given by the WMAP nine year point source mask outside the golden yellow
+region. The white region of this figure is used for foreground removal of this
+work.
+
+The resulting mask contains some pixels with values differ-
+ing from unity or zero. We finally convert this mask to a new
+mask by setting pixel values less than 0.5 to zero and rest to
+unity. The resulting mask is a binary map and excise all the re-
+gions defined by ±15◦ along the ecliptic plane in the galactic
+coordinate system. To reduce contaminations due to resolved
+point sources we also remove the position of point sources as
+defined by the WMAP nine year point source mask. Finally
+we excise all pixels of this mask that lies within ±15◦ of the
+galactic plane. Our final mask is the product of the WMAP
+nine year point source mask, the ±15◦ mask along the eclip-
+tic plane and the ±15◦ mask along the galactic plane. This
+final mask, called CMask (or composite mask) in our analy-
+sis, contains a total of 1611603 surviving pixels at Nside = 512
+implying a 51% sky region being used in our analysis. We
+show the CMask in Fig. 2. The CMask region described
+hereafter in this work refers to the sky region where CMask
+takes the value unity.
+
+7. NON GAUSSIAN NATURE OF POLARIZED FOREGROUNDS
+FROM DENSITY ANALYSIS
+
+One of basic principles on which the current work is based
+is that the polarized foregrounds possess non-Gaussian prop-
+erties. In this section we verify this assumption. To establish
+the non-Gaussian nature of polarized foregrounds we rely
+upon the polarized emission maps produced by the WMAP
+science team. Both synchrotron and thermal dust emissions
+are polarized. We verify non Gaussian nature of these com-
+ponents using WMAP nine year base-polarization model of
+synchrotron (at K band) and thermal dust (at W band) (Gold
+et al. 2009, 2011). Using these polarized foreground maps of
+these two frequencies we estimate the probability distribution
+of Stokes Q and U polarizations of these two components
+from the entire sky region as well as from the region that
+survive after application of CMask. We show these distribu-
+tions in Fig. 3 which clearly show deviations from Gaussian
+nature. Although these distributions appear symmetric they
+possesses sharp peaks which suggests non-Gaussian. The
+decay of probability distributions on both sides of the peak
+is concave upward for each case, which is in sharp contrast
+with respect to Gaussian distribution. Moreover, the distri-
+butions have long tails on both sides of the peak suggesting
+non-Gaussian properties of the underlying Stokes Q and U
+samples. The kurtosis values for each of the cases plotted in
+Fig. 3 are shown in Table 2. From this table we note that syn-
+chrotron emission at K1 band shows stronger non-Gaussian
+
+
+
+6
+
+0
+
+0.005
+
+0.01
+
+0.015
+
+0.02
+
+0.025
+
+0.03
+
+0.035
+
+0.04
+
+0.045
+
+−150 −100 −50 0 50 100 150
+0
+
+0.05
+
+0.1
+
+0.15
+
+0.2
+
+0.25
+
+0.3
+
+−20 −15 −10 −5 0 5 10 15 20
+
+P
+ro
+b
+ab
+
+il
+it
+y
+d
+en
+si
+ty
+
+Stokes Q (or U) (µK)
+
+Q Stokes, synchrotron, fullsky
+Q Stokes, synchrotron, CMask
+U Stokes, synchrotron, fullsky
+U Stokes, synchrotron, CMask
+
+P
+ro
+b
+ab
+
+il
+it
+y
+d
+en
+si
+ty
+
+Stokes Q (or U) (µK)
+
+Q Stokes, thermal dust, fullsky
+Q Stokes, thermal dust, CMask
+U Stokes, thermal dust, fullsky
+U Stokes, thermal dust, CMask
+
+FIG. 3.— Left panel: histogram of kurtosis values estimated from full sky as well as the region of the sky that survives after application of CMask for
+synchrotron component for both Stokes Q and U polarization. Right panel: same as left panel but for thermal dust component. From these distributions one can
+easily infer about the non-Gaussian nature of these components for both Q and U polarization.
+
+TABLE 2
+KURTOSIS VALUES OF STOKES Q AND U POLARIZATIONS FOR
+
+FOREGROUNDS
+
+Sky region Synchrotron Thermal Dust
+Q Stokes U Stokes Q Stokes U Stokes
+
+Full sky 149.193 54.009 11.302 8.132
+CMask 7.892 4.766 2.852 3.985
+
+properties than the non-Gaussian properties of thermal dust at
+W band for both polarizations and for both sky regions. More-
+over, for these regions the synchrotron Q Stokes signal shows
+stronger non-Gaussian than the corresponding U Stokes sig-
+nal. For the thermal dust component at W band, Q Stokes
+shows stronger non-Gaussian than U Stokes over the full sky.
+However, over the CMask sky region, U Stokes signal of
+thermal dust is more non-Gaussian than the corresponding Q
+Stokes signal.
+
+8. CALIBRATING THE NON-GAUSSIAN MEASURE
+
+Given that in Section we have empirically established the
+non-Gaussian nature of polarized foregrounds, in the current
+Section we attempt to understand how the kurtosis of diffuse
+foreground contaminated CMB polarization maps changes
+with the level of foreground contamination. We show this
+in Fig. 4 by plotting the values of kurtosis for foreground
+contaminated Stokes Q and U CMB maps as functions of
+foreground strength, separately for each of Stokes parameter
+maps, for two cases – with and without detector noise contam-
+ination. To obtain CMB plus foreground polarization maps at
+each of the WMAP frequencies with different levels of con-
+taminations of foregrounds, we first form realistic foreground
+polarization maps at each of the five WMAP frequencies us-
+ing the WMAP nine year base-model for synchrotron and
+thermal dust polarization components at Nside = 512 and at
+1◦ Gaussian beam resolution. For details of the polarized
+foreground model used in this work we refer to Section . We
+randomly generate a realization of Stokes Q and U signal
+for pure CMB using Planck 2015 best-fit power spectrum
+(Planck Collaboration et al. 2016c) at Nside = 512 and also
+at 1◦ Gaussian beam resolution. We add with the pure CMB
+signal foreground Stokes signals obtained above at various
+strength to form a number of CMB plus foreground only po-
+larization maps at each of the five WMAP frequencies. We
+apply CMask on each of these maps. For each frequency
+
+band we find the sample kurtosis values from the surviving
+pixels as function of the increasing foreground strength. The
+variation of kurtosis values with the increase in foreground
+contamination is shown in the left panel of Fig. 4 for CMB
+plus foreground only case. Foreground strength, as plotted
+in the horizontal axes of this figure simply represents the
+multiplicative factors that were applied to the net foreground
+signal at each frequency before adding them with the CMB.
+As we see from the left panel of this figure the kurtosis values
+increases quickly as the foreground strength increases from
+zero for both Stokes Q and U signal. For larger foreground
+strength the kurtosis values for all frequency maps almost
+saturates (with minor fluctuations not visible in the scale of
+these figures). Such behavior may be explained by noting
+that by increasing foreground strength in these figures CMB
+polarization signal becomes increasingly weaker compared
+to the foregrounds. The saturation property of the graphs
+then follows from a simple property of the kurtosis of a set
+of samples that kurtosis remains invariant by simply scaling
+all sample values by a unique constant. An important obser-
+vation from this figure is the presence of a global minimum
+in the kurtosis value for all WMAP frequency maps when
+the foreground contamination becomes absent. The presence
+of the global minimum also seen in the cases of foreground
+and detector noise contaminated CMB polarization maps, as
+shown in the right panel of Fig. 4 justifies globally min-
+imizing kurtosis to eliminate the non-Gaussian foreground
+contaminations. The right panel of Fig. 4 shows the variation
+of kurtosis for foreground and detector noise contaminated
+polarized CMB maps after application of CMask. For de-
+tails of forming the the noise realizations we refer to Section
+. For each frequency map only the foreground strength is
+varied with the CMB and detector noise being compatible
+to LCDM signal and WMAP frequency maps respectively
+and corresponding kurtosis values are plotted as functions of
+foreground strength. In interesting difference of this plot with
+the corresponding ones of the left panel is that unlike the top
+panel the kurtosis values increases even with the largest level
+of foreground contamination for all frequency maps and for
+both Stokes Q and U polarization. This can be explained by
+noting that although polarized CMB signal is much weaker
+than the polarized foreground contamination detector noise
+contamination in WMAP frequencies is not negligible com-
+
+
+
+Separating Gaussian CMB polarization signal 7
+
+0
+
+2
+
+4
+
+6
+
+8
+
+10
+
+12
+
+14
+
+0 0.2 0.4 0.6 0.8 1
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+0 0.2 0.4 0.6 0.8 1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+0 0.2 0.4 0.6 0.8 1
+0
+
+0.5
+
+1
+
+1.5
+
+2
+
+2.5
+
+3
+
+3.5
+
+4
+
+4.5
+
+0 0.2 0.4 0.6 0.8 1
+
+K
+u
+rt
+os
+is
+,
+K
+
+(S
+to
+ke
+s
+Q
+)
+
+Foreground strength
+
+K
+u
+rt
+os
+is
+,
+K
+
+(S
+to
+ke
+s
+Q
+)
+
+Foreground strength
+
+K1
+Ka1
+Q
+V
+W
+
+K
+u
+rt
+os
+is
+,
+K
+
+(S
+to
+ke
+s
+U
+)
+
+Foreground strength
+
+K
+u
+rt
+os
+is
+,
+K
+
+(S
+to
+ke
+s
+U
+)
+
+Foreground strength
+
+K1
+Ka1
+Q
+V
+W
+
+FIG. 4.— Left panel: variation of kurtosis with foreground strength added to randomly generated CMB Stokes Q and U polarization signals for all five WMAP
+frequency bands. Right panel: same as the left panel but in this case, detector noise consistent with different WMAP frequency maps and varying levels of
+foregrounds are added to the same CMB realization as in the left panel. All plots of this figure are obtained from CMask sky region.
+
+pared to the foreground contaminations. The rise of kurto-
+sis values with increasing the foreground strength becomes
+slower for the detector noise contaminated case compared to
+the case when detector noise is absent . This can be explained
+by noting that both the detector noise and CMB are Gaussian,
+and noise is stronger than CMB but comparable with the fore-
+grounds. Another important observations from this figure for
+each frequency maps and for both Stokes polarizations overall
+the values of kurtosis becomes smaller when the maps have
+detector noise contamination added in them. This is expected
+since in presence of detector noise foreground removal be-
+comes less effective than the noise free case. Finally we note
+that it is worth listing the kurtosis values from the CMask
+sky region without any foreground addition but for both pure
+CMB and pure CMB plus detector noise addition for both
+Stokes parameters for the particular CMB and detector noise
+realizations used to make the plots Fig. 4 . The kurtosis value
+of the particular CMB realization for Stokes Q and U maps
+are respectively −0.0224 and 0.1349 . Adding detector noise
+to Q maps (with zero foreground level) increases kurtosis val-
+ues that depends upon K1, Ka1, Q, V and W frequency bands
+as follows, 0.2786,0.2113,0.2303,0.2261,0.2168. Similarly,
+for the U polarization (with zero foreground level) the kurtosis
+values increase with addition of detector noise to pure CMB
+U signal (0.2298,0.1742,0.2086,0.1889,0.1971 respectively
+for K1 to W bands.) Such increase in the value of kurtosis
+with addition of detector noise may be explained by noting
+that kurtosis values show larger variance when detector noise
+which is a strong signal than the pure CMB polarization signal
+
+TABLE 3
+KURTOSIS VALUES OF INPUT Q AND U STOKES MAPS ESTIMATED FROM
+
+FULL SKY AS WELL AS FROM THE CMask SKY-REGION.
+
+Stokes and K1 Ka1 Q V W
+sky-region
+Q, Full sky 677.946 1178.631 1279.929 212.516 3.283
+Q, CMask 17.751 8.154 3.444 0.251 0.418
+U, Full sky 69.836 36.613 13.533 0.898 0.29
+U, CMask 5.764 1.806 0.902 0.311 0.293
+
+to the pure CMB Stokes Q and U polarization signals.
+9. NON-GAUSSIAN NATURE OF WMAP MAPS
+
+Following our discussions about strong non-Gaussian na-
+ture of polarized foregrounds from the view point of density
+analysis in Section and after providing justifications of using
+kurtosis statistic as a measure of non-Gaussian property of po-
+larized foregrounds (plus detector noise) contaminated CMB
+map in Section in this Section we turn our attention to quan-
+tify non-Gaussian properties are inherent into the five input
+WMAP maps using the kurtosis statistic. We estimate sample
+kurtosis of both Q and U polarizations for all five input maps
+at different WMAP frequencies for the full sky as well as from
+the region of the sky that survive after applying CMask. We
+show these kurtosis values in Table 3. Although, K1 band has
+the maximum power for both EE and BB power spectrum 2,
+we note that the Q band has the maximum non-Gaussianity.
+This clearly indicates that the non-Gaussian measure of this
+
+2 This may be easily seen by plotting the full sky EE and BB power spectra
+from the five input maps discussed in Section .
+
+
+
+8
+
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+−0.15 −0.1 −0.05 0 0.05 0.1 0.15 0.2 0.25 0.3 0.35
+
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+−0.2 −0.15 −0.1 −0.05 0 0.05 0.1 0.15 0.2 0.25 0.3 0.35
+
+P
+ro
+b
+ab
+il
+it
+y
+D
+en
+si
+ty
+
+Kurtosis (Q Stokes)
+
+K1
+Ka1
+Q
+V
+W
+
+CMB
+
+P
+ro
+b
+ab
+il
+it
+y
+D
+en
+si
+ty
+
+Kurtosis (U Stokes)
+
+K1
+Ka1
+Q
+V
+W
+
+CMB
+
+FIG. 5.— Top panel: histograms of kurtosis values from region of the sky that survives after application of CMask for pure CMB and pure CMB plus detector
+noise (compatible to WMAP frequencies) maps for Stokes Q parameter. Bottom panel: same as top panel, but for U Stokes parameter. Clearly, addition of
+detector noise causes the kurtosis values to deviate towards the positive sides for both the Stokes parameters.
+
+work identifies some contamination which are not detected in
+simple power-spectrum based measure of contamination. The
+W band gets minimum kurtosis amongst five bands for the full
+sky case, since it has lowest synchrotron emission level and a
+thermal dust emission level that is also comparable to detec-
+tor noise level of W band. After application of CMaskV band
+gets minimum kurtosis (unlike W band for the full sky case)
+which is consistent with the expectation that V band is min-
+imally foreground contaminated within the observation win-
+dow of WMAP. Moreover, as seen from the second row of this
+table the kurtosis of Q polarization estimated from CMask sky
+region gradually decreases from K band to V band. This par-
+ticularly implies the excess contamination for Q band that is
+observed in the measured kurtosis of the full sky Q band map,
+arise from the sky region that is outside the CMask. For the
+U polarization the kurtosis values decreases gradually from
+K1 band to W band for both full sky and CMask sky. From
+the systematically larger kurtosis values of Q over U polar-
+ization for the full sky we conclude that the foregrounds in
+U polarization possess less non-Gaussian properties than the
+foregrounds in Q polarization. Moreover, for V and W bands
+kurtosis values for U polarization estimated from CMask re-
+gion, are comparable. This likely implies that detector noise
+for V and W band for U polarization are at least as strong as
+the thermal dust emission which is the dominant foreground
+of these frequencies.
+
+10. KURTOSIS VARIATION WITHOUT FOREGROUND
+
+In section we have discussed variation of kurtosis with
+increase in foreground strength for pure CMB plus fore-
+ground contaminated maps and pure CMB plus both detector
+noise and foreground contaminated maps for each of the five
+WMAP frequency maps from the region of the sky that sur-
+vive after applying CMask. In practice, to correctly interpret
+value of measured kurtosis for both foreground and detector
+noise contaminated case we also need to know typical values
+and variation of kurtosis for pure CMB plus detector noise
+
+case in the absence of any foreground contamination. For this
+purpose we simulate 1000 realizations of pure CMB Stokes
+Q and U maps at 1◦ beam resolution and at Nside = 512. We
+apply CMask on each of these realization and estimate kurto-
+sis values for both Q and U polarizations from the surviving
+pixels. Histograms of these kurtosis values are shown in the
+top and bottom panel of Fig. 5. The sample mean (µ̂) and
+standard deviation (σ̂) for the Q Stokes for pure CMB maps
+from the CMask sky-region are respectively −0.01251 and
+0.04268. The corresponding values for U polarizations are
+−0.01257 and 0.04818 respectively. As expected, the sample
+mean (or standard deviation) values are nearly identical for
+the case of Q and U polarization, which is expected since
+both Q and U Stokes parameters are equally preferred for
+CMB anisotropies. The histograms of kurtosis values esti-
+mated from CMask region of Q and U polarization maps for
+CMB plus detector noise case are also shown in Fig. 5 for
+all the five WMAP frequencies 2. The mean sample kurtosis
+for Q Stokes parameter are 0.2087,0.18,0.2378,0.202 and
+0.2118 respectively for K1, Ka1, Q, V and W band maps.
+The corresponding sample mean values for U polarization
+are respectively 0.2071,0.1801,0.2386,0.1986 and 0.2123.
+The standard deviation for both Q and U polarizations are ap-
+proximately independent on any of the two polarization types
+and frequency maps and varies approximately between 0.02
+and 0.03. Comparing the sample mean values of kurtosis for
+pure CMB and CMB plus detector noise cases, we conclude
+addition of detector noise makes the kurtosis to significantly
+deviate towards the positive values.
+
+11. METHODOLOGY
+
+A well known property of the usual ILC method (either in
+pixel space or harmonic space at each multipole `) that relies
+
+2 These histograms were obtained from 400 simulations of CMB plus de-
+tector noise maps corresponding to each of the five WMAP frequencies. We
+refer to Section for a discussions about generating the noise simulations.
+
+
+
+Separating Gaussian CMB polarization signal 9
+
+upon estimating the weight factors by minimizing the empir-
+ical variance of cleaned map is that weights can be directly
+computed using an analytical expression. The analytical es-
+timation of weights is possible in that case since the empiri-
+cal variance of the cleaned map is a quadratic function of the
+weight factors. As a result, the best-fit weights, which are so-
+lution obtained by differentiation of the variance and suitably
+setting the result to zero by employing a Lagrange’s multiplier
+approach, satisfy an equation which is linear in the weights
+themselves (e.g., see Eqn A3 in appendix A of Saha et al.
+(2008)). Because of this linear equation weights can easily be
+obtained in terms of an analytical equation (e.g., Tegmark &
+Efstathiou (1996b); Tegmark et al. (2003); Saha et al. (2006,
+2008); Sudevan et al. (2017)) in ILC methods that minimize
+variance. In the current work we however minimize kurto-
+sis as a measure of non-Gaussian properties inherent in the
+data. Since the kurtosis of the cleaned ILC map is highly non-
+linear function of weights, e.g., see Eqn. 6, (unlike the mini-
+mally non-linear quadratic function as in the case of variance
+minimization) differentiating this kurtosis with respect to the
+weights following the Lagrange’s undermined multiplier’s ap-
+proach does not result in a linear equation of weights. Hence
+an analytical expression for weights for our current work does
+not seem feasible. Instead as in Saha (2011) we develop a
+code (hereafter called PolG to solve for weights that mini-
+mizes Eqn. 6 by employing a non-linear minimization algo-
+rithm due to Powell as in Press et al. (1989).
+
+12. RESULTS
+
+12.1. Foreground cleaned Stokes Q and U maps
+First, we apply CMask obtained in Section to Stokes Q
+
+polarization maps of the five WMAP frequency bands which
+have a common resolution of 1◦, as discussed in Section . Us-
+ing the PolG code we then minimize kurtosis over the surviv-
+ing pixels of five Stokes Q polarization maps. Since WMAP
+V band is expected to have minimum foreground contami-
+nation from the CMask sky region, (e.g., see table 3), we
+choose V band weight to be unity and all other frequency
+band weights to be zero as the initial values of the weight
+factors. For the Q polarization weight vector W becomes
+(−0.237422,0.376352,0.136837,0.691807,0.032427) for the
+minimum value of kurtosis 0.188642 This is clearly less than
+the kurtosis values of all the five input WMAP Q polariza-
+tion maps, estimated after application of CMask (e.g., see
+Table 3). The PolG code generates, the maximum weight
+for V band, since it is expected to be the minimally fore-
+ground contaminated frequency band over the CMask region
+as discussed in Section . It is interesting to note that both
+Ka and Q bands get positive weights, whereas, at the low fre-
+quency side, K band gets a negative weight. This is because
+strong synchrotron signal at the WMAP low frequency side
+(e.g., at 23, 33 and 41 GHz) is canceled by assigning negative
+weight to K1 band, where the synchrotron contamination is
+strongest and positive weights to Ka and Q bands where syn-
+chrotron contamination becomes gradually weak. The highest
+frequency WMAP frequency band, on the other hand gets, a
+very small weight since this map is dominated by the ther-
+mal dust emission. From table 3 we note that for U polariza-
+tion both V and W band have similar kurtosis ∼ 0.30 from
+CMask sky. This kurtosis value is well within the range of
+kurtosis values we obtain from the simulations of pure CMB
+and detector noise (e.g., see Fig. 5). We conclude from this
+both W band V band U polarization maps which likely con-
+tains detector noise contamination that is at the least compa-
+
+FIG. 6.— Top: foreground cleaned Q Stokes map obtained by our method.
+Middle: foreground cleaned U Stokes map. Bottom: map of P = {Q2 +
+
+U2}0.5, using Q and U maps of top and middle panels. The cleaned Q and U
+Stokes maps of this work together are referred to as QUGMap.
+
+rable or in practice stronger compared to the foreground emis-
+sion levels of CMask regions of these frequency bands. Be-
+cause of larger detector noise contamination the V and W fre-
+quency bands provide little leverage in removing foregrounds.
+Also, in practice excluding these two frequency bands from
+the analysis is not an option since one would like use a wide
+frequency coverage for better estimation of CMB signal re-
+moving foregrounds, particularly when data becomes noise
+dominated. We therefore do not use U polarization maps to
+estimate the weights. Instead, we simply use the weights ob-
+tained for Q Stokes map to obtain a foreground cleaned U
+polarization map from the CMask region. The kurtosis value
+of cleaned U polarization map obtained in this way is com-
+parable (∼ 0.333) to kurtosis of input V and W bands (from
+CMask region). We show the cleaned Q and U Stokes maps in
+the top and middle panel of Fig. 6. The corresponding map of
+magnitude, P = {Q2 +U2}0.5 of polarization vector, is shown
+in the bottom panel of this figure. Clearly the polarization
+map shows presence of residual detector noise contamination
+around the region along the ecliptic plane. Presence of some
+residual foregrounds are visible near north galactic spur and
+
+
+
+10
+
+FIG. 7.— Left column: from top to bottom, input Stokes Q maps for WMAP K1, Ka1, Q, V and W band respectively (after applying CMask). Right column:
+same as left column, but for U Stokes parameter.
+
+
+
+Separating Gaussian CMB polarization signal 11
+
+on the southern galactic plane. Our cleaned Q and U Stokes
+maps together hereafter will be referred to as QUGMap.
+
+12.2. Comparison with Input Stokes Q and U Maps
+A direct way to demonstrate the efficiency of foreground
+
+minimization may be obtained by comparing the input fore-
+ground (and detector noise contaminated) maps with the final
+foreground cleaned maps by our method for both the Stokes
+parameters. We show all five input WMAP Q and U Stokes
+polarization maps after application of CMask in Fig. 7. From
+top to bottom the left column of this figure shows Q Stokes
+maps from K1, KA1, Q, V and W band respectively. The
+right panel shows the same, but for U polarization. Compar-
+ing this figure with top and middle panel of Fig. 6 we see that
+our method effectively minimizes strong foreground that is
+present in K1 or Ka1 band. Foreground contamination clearly
+visible from north polar spur region and immediately below
+the galactic plane for WMAP Q band for both the Stokes
+maps. However, such features is absent in our foreground
+cleaned map which implies efficient foreground minimization
+by PolG. For W band the input maps show features that are
+more consistent with contamination due to both detector noise
+and foregrounds (thermal dust) and a visual inspection of fore-
+ground minimization algorithm is not reliable. The efficiency
+of foreground removal with respect to these input maps may
+be clearly demonstrated by noting the standard deviation and
+kurtosis values of all the maps.
+
+12.3. Difference with Input Polarization Maps
+What is the difference between the magnitude of polariza-
+
+tion vectors estimated from input maps and our Stokes Q and
+U cleaned maps? Such difference maps are of particular in-
+terest since they show the performance of the algorithm in
+reducing foreground power from the regions of the sky where
+foreground are strong compared to both detector noise and the
+expected level weak CMB polarization signal. We show these
+difference maps in Fig. 8 from top to bottom for K1 band
+to W band in the increasing order of their frequencies. From
+the topmost image of this figure we see that strong foreground
+contamination of K1 band is minimized in both the northern
+and southern galactic hemisphere. Particularly visible from
+this figure the efficiency of our algorithm from the left hand
+side of galactic plane (on both hemispheres) and the ring like
+structure in the northern galactic plane. The difference maps
+for each of Ka1 and Q bands shows efficient foreground min-
+imization near the north galactic spur region. For V and W
+bands the difference maps tend to loose visual presence of
+foreground patterns since foregrounds becomes comparable
+to the detector noise level.
+
+12.4. Variance Analysis
+It is interesting to note that, the standard deviation values of
+
+cleaned Q (5.50 µK) and U (5.48 µK) polarization maps from
+CMask region match very closely to each other. The standard
+deviations of five input Q polarization maps from the same
+sky region are 21.14,8.94,6.48,6.25 and 8.44 µK from the
+K1 band to W band, respectively. The corresponding values
+for U polarizations are respectively 19.16,8.33,6.35,6.25 and
+8.35 µK. This shows that our foreground removal method re-
+duces the sample standard deviation of the uncleaned maps
+by at least 0.75 µK for Q Stokes polarization and 0.77 µK for
+the U polarization, when we compare with the corresponding
+standard deviation of the uncleaned V band maps. When com-
+pared with the K1, Ka1 and W band the reduction in strength
+of contaminations are even stronger, indicating the efficient
+
+FIG. 8.— Difference of magnitude of polarization vectors of the input maps
+and output foreground minimized map obtained by our method. From top to
+bottom images represent difference maps for K1 to W band in the increasing
+order of the frequency.
+
+
+
+12
+
+0.01
+
+0.1
+
+1
+
+10
+
+100
+
+1000
+
+1 10 100 1000
+0.0001
+
+0.001
+
+0.01
+
+0.1
+
+1
+
+10
+
+100
+
+1000
+
+1 10 100 1000
+
+0.01
+
+0.1
+
+1
+
+10
+
+100
+
+1 10 100 1000
+0.0001
+
+0.001
+
+0.01
+
+0.1
+
+1
+
+10
+
+100
+
+1 10 100 1000
+
+CE
+E
+
+`
+[µ
+K
+
+2
+]
+
+K1
+Ka1
+Q
+V
+W
+
+Cleaned EE
+
+∆
+CE
+
+E
+`
+
+[µ
+K
+
+2
+]
+
+K1
+Ka1
+Q
+V
+W
+
+CB
+B
+
+`
+[µ
+K
+
+2
+]
+
+K1
+Ka1
+Q
+V
+W
+
+Cleaned BB
+
+∆
+CB
+
+B
+`
+
+[µ
+K
+
+2
+]
+
+K1
+Ka1
+Q
+V
+W
+
+FIG. 9.— Top left and bottom left: figures showing the EE and BB power spectra respectively obtained from CMask region from cleaned Stokes Q and U maps
+of this work along with the corresponding spectra from five input maps (as discussed in Section ) after application of CMask. The vertical axes of both the figures
+show the ‘reduced spectrum’, `(`+ 1)C`/2π. Top right and bottom right: The absolute difference of reduced EE and BB spectra respectively, estimated from our
+{Q, U} cleaned maps and five input maps from CMask region. See Section for details.
+
+performance of the method. In this context we note that since
+CMB polarization is a weak signal than the temperature coun-
+terpart, pure CMB (both Q or U Stokes maps, after smoothing
+by 1◦ Gaussian window function) has a mean standard devia-
+tion value of only∼ 0.55 µK over the same CMask sky region
+with a sample standard deviation 0.018 µK. Even, consider-
+ing the performance of foreground removal as compared with
+the two lowest variance uncleaned V or W bands, one may
+therefore conclude that a reduction of standard deviation by
+∼ 0.75 µK using PolG code amounts to significant reduc-
+tion of contamination compared to the weak CMB polariza-
+tion signals. It is interesting to note that for both Q and U
+polarization the standard deviations of cleaned Q and U maps
+are less than the minimum standard deviations of all five in-
+put maps, although our foreground minimization algorithm is
+independent on variance minimization.
+
+12.5. Power Spectrum
+12.5.1. Comparison with Input Power Spectra
+
+An effective way to discuss the efficiency of foreground
+minimization by a foreground removal method is to study the
+spectra obtained from the final cleaned maps produced by the
+method and compare them with the corresponding spectra es-
+timated from the input uncleaned maps. We compare EE and
+BB power spectra of QUGMap obtained from CMask region
+with the corresponding spectra of the foreground contami-
+nated Stokes Q and U maps corresponding to five WMAP
+frequencies (see Section for a discussion about how these
+maps are generated). We show the results in Fig. 9. The top
+left plot of this figure shows our cleaned EE power spectrum,
+CEE
+` = CEE
+
+` `(`+ 1)/2π along with the corresponding EE spec-
+
+tra estimated from the five input frequency maps, all spectra
+being estimated from the CMask sky region. The top left fig-
+ure shows the overall variation of the EE spectra for the entire
+range of multipoles. The top right plot of Fig. 9 shows ab-
+solute magnitude of difference of input and cleaned EE spec-
+tra. For any of the five difference spectra of top right figure
+we use solid lines if the value of cleaned EE spectrum is less
+than the corresponding input EE spectrum of the correspond-
+ing WMAP input map at any given multipole. In such a case,
+some foregrounds have been removed by our method from
+the polarization map of the concerned input Stokes Q and U
+maps, at the particular multipole. If, on the other hand, the
+cleaned EE spectrum is more than corresponding EE spec-
+trum of any input map at a multipole the corresponding val-
+ues of the absolute difference is plotted in points or dashed
+line. Such points represent multipoles where our foreground
+removal has not become very effective. As seen from the top
+right plot our method reduces a significant amount of power
+from input K1 and Ka1 frequency bands for all multipoles.
+The cleaned EE spectrum is less than Q band EE spectrum for
+` . 40. For V and W bands, except for lower few multipoles
+our method effectively removes foreground power up to inter-
+mediate multipoles. The bottom left figure of Fig. 9 represent
+BB spectra (CBB
+
+` = CBB
+` `(`+1)/2π) of QUGMap and all five in-
+
+put maps from CMask region. The bottom right figure shows
+the absolute difference of BB spectrum of our cleaned map
+and any of the input WMAP polarization maps. Like the top
+right figure, the solid lines of the bottom right figure shows
+the multipoles and frequency bands for which our cleaned
+map has lower foregrounds. The points or the dashed lines
+represent the multipoles for which our foreground removal is
+
+
+
+Separating Gaussian CMB polarization signal 13
+
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+30
+
+35
+
+40
+
+0 100 200 300 400 500
+
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+30
+
+35
+
+40
+
+0 100 200 300 400 500
+
+0.1
+
+1
+
+10
+
+0 2 4 6 8 10
+
+0.1
+
+1
+
+10
+
+0 2 4 6 8 10
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+10 15 20 25 30 35 40 45 50
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+10 15 20 25 30 35 40 45 50
+
+0.1
+
+1
+
+10
+
+300 350 400 450 500 550 600
+
+0.1
+
+1
+
+10
+
+300 350 400 450 500 550 600
+
+CE
+E
+
+`
+,µ
+K
+
+2
+
+K1
+Ka1
+Q
+V
+W
+
+QUGMap
+
+CB
+B
+
+`
+,µ
+K
+
+2
+
+FIG. 10.— Comparison of EE (top panel) and BB (bottom panel) power spectra, C` = `(`+ 1)C`/2π, obtained from QUGMap with the corresponding EE and
+BB spectra of all input maps used in this work at different WMAP frequencies, for different ranges of multipoles. The K1 band spectra remain outside the vertical
+plot range shown in figures (1,2), (1,3) and (2,2). All spectra are estimated from CMask region.
+
+not very effective. In top panel of Fig. 10 we compare the
+cleaned EE spectra with the uncleaned EE spectra of five in-
+put frequency bands from CMask region, for different ranges
+of multipoles. Bottom panel represents corresponding plots
+for BB spectra. The color codes of the sub-figures of Fig. 10
+are identical to that of top left figure. The (1,1) (following
+(row, column) convention) and (2,1) figures shows the overall
+variation of EE and BB spectra up to multipole ` = 500. (1,2)
+and (2,2) figures show that our cleaned EE and BB spectra
+have less power than K1, Ka1, Q frequency band input polar-
+ization maps for `≤ 10. Both EE and BB spectra are less than
+corresponding W band spectra at almost all multipoles ≤ 10.
+The V band EE and BB spectra are comparable, or less than
+the cleaned EE and BB spectra at the lowest few multipoles,
+however the cleaned spectra have less power than all WMAP
+input maps soon as ` increases beyond multipole 10. This is
+shown in figures (1,3) and (2,3). At higher multipoles `≥ 220
+the cleaned spectra again possesses more power than V band
+spectra (e.g., (1,1) and (2,1) figures). At even higher multi-
+poles the cleaned spectra have more power than Q, V and W
+band input maps, but less power than K1 and Ka1 band input
+maps, as shown in figures (1,4) and (2,4).
+
+We note in passing that the BB power spectra obtained
+from power spectra are merely an indication of residual fore-
+grounds and detector noise contamination. The measured BB
+spectra should not be interpreted to be caused by the primor-
+dial CMB signal since primordial BB signal is expected to be
+of much lower magnitude, much lower than even CMB EE
+power spectrum.
+
+An important phenomena in the context of EE and BB
+power spectrum estimation from partial sky is leakage of EE
+signal to BB and vice versa (Tegmark & de Oliveira-Costa
+2001; Lewis et al. 2002; Hansen & Górski 2003). The leak-
+age requires careful analysis to extract accurate primordial
+CMB signal from the mixture of EE and BB spectra obtained
+from the partial sky. In particular Samal et al. (2008) suggest
+that the leakage can be avoided if one converts the full sky
+Stokes Q and U polarization maps to E and B mode maps at
+the beginning of the analysis. In the current work, however,
+we have chosen to apply CMask on the input WMAP Q and
+U Stokes maps at the beginning of the analysis, without con-
+
+verting the full sky Stokes maps to E and B maps at any stage
+of our analysis. This necessarily implies that there would be
+leakage of power between EE and (foreground plus detector
+noise) BB mode in the all the spectra shown in Fig. 9. How-
+ever, for the mere comparison of residual power in different
+cleaned maps the leakage between EE and BB modes is not a
+concern and therefore we avoid reconstruction of true EE (or
+BB) that will be measured without leakage, from the partial
+sky estimates of EE and BB spectra shown in Fig. 9. The
+partial sky EE and BB spectra of this figure merely represent
+the measure of residual contaminations and not any accurate
+estimate of primordial CMB EE or BB power spectra.
+
+12.5.2. Comparison with WMAP foreground-reduced Power
+Spectra
+
+WMAP Science team have produced a set of foreground
+cleaned CMB Stokes Q and U polarization maps for each DA
+except the DA for the K1 band (Page et al. 2007; Bennett et al.
+2013). As described in Page et al. (2007) for polarization fore-
+ground removal synchrotron emission is modeled by using the
+K1 band Stokes Q and U maps taking care of weak CMB sig-
+nal of this frequency band. The authors then, first, model ther-
+mal dust intensity, I(n̂), at 94 GHz using FDS model eight of
+Finkbeiner et al. (1999). Using this intensity model Page et al.
+(2007) then obtain Stokes Q and U template maps using Eqn
+15 of their paper. The templates then fitted with the data from
+Ka1 to W band DA maps by minimizing the χ2 defined by
+Eqn. 19 of their paper.
+
+We compare EE and BB power spectra obtained from
+CMask region of QUGMap with the corresponding spectra
+of the foreground cleaned Stokes Q and U maps provided
+by WMAP science team. For this purpose we first smooth
+the Ka1 band Q, U Stokes maps to 1◦ Gaussian beam reso-
+lution at Nside = 512 performing the smoothing operation in
+the multipole space using ratio of the window function of 1◦
+
+Gaussian beam and the native beam function of the WMAP
+Ka1 band. For each Q, V and W bands multipole DA maps
+available. We convert each of these DA maps to 1◦ Gaussian
+beam smoothed maps following procedure similar to used for
+Ka1 band. Moreover, for the each of Q, V and W bands we
+average the smoothed DA maps over the available DA maps
+
+
+
+14
+
+0
+
+5
+
+10
+
+15
+
+20
+
+25
+
+30
+
+35
+
+40
+
+0 100 200 300 400 500
+
+0
+5
+10
+15
+20
+25
+30
+35
+40
+45
+
+0 100 200 300 400 500
+
+0.01
+
+0.1
+
+1
+
+10
+
+0 2 4 6 8 10
+
+0.01
+
+0.1
+
+1
+
+10
+
+100
+
+0 2 4 6 8 10
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+10 15 20 25 30 35 40 45 50
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+10 15 20 25 30 35 40 45 50
+
+0.1
+
+1
+
+10
+
+300 350 400 450 500 550 600
+
+0.1
+
+1
+
+10
+
+300 350 400 450 500 550 600
+
+CE
+E
+
+`
+,µ
+K
+
+2
+
+Ka1
+Q
+V
+W
+
+QUGMap
+
+CB
+B
+
+`
+,µ
+K
+
+2
+
+FIG. 11.— Comparison of EE (top panel) and BB (bottom panel) power spectra, C` = `(`+ 1)C`/2π, obtained from QUGMap with the corresponding spectra
+estimated from all four WMAP foreground reduced polarization maps for different ranges of multipoles. All spectra of this plot have been estimated from CMask
+sky region.
+
+at the corresponding band. This results in a total of four fore-
+ground cleaned maps for each of Q and U Stokes parameter
+for Ka1, Q, V and W band respectively. We apply these maps
+by the CMask and estimate their EE and BB power-spectra
+along with the power spectrum, obtained from our QUGMap,
+from the same sky region. We show these spectra at the top
+and bottom panel, respectively, of Fig. 11 for different mul-
+tipole ranges. The vertical axes of each of the images of this
+plot represents C` = `(` + 1)C`/2π. Overall variation of dif-
+ferent spectra between the multipole range ` ≤ 500 is shown
+in the (1,1) and (2,1) figures. The (1,2) and (2,2) figures
+show all the spectra at the lowest multipoles, 2 ≤ ` ≤ 10. At
+` = 2 and 3, EE power from QUGMap, becomes comparable to
+WMAP W band cleaned map, but larger than power in other
+cleaned WMAP maps at these multipoles. We can expect that
+some residual contamination is present in our QUGMap (and
+WMAP cleaned W band map) at this multipole. However,
+CEE
+` soon catches up with the corresponding spectra of all
+
+other cleaned WMAP maps as ` increases. At ` = 4, CEE
+`
+
+from QUGMap becomes lower than corresponding power of Q
+and W bands, comparable to Ka1 band EE power and larger
+than V band EE power. At ` = 10 EE power from QUGMap
+becomes comparable to corresponding power of cleanest V
+band cleaned map produced by WMAP. Similar pattern is also
+seen from the BB power spectra shown in figure (2,2). In the
+case of BB spectra power in our cleaned spectrum becomes
+less than cleanest WMAP V band BB spectrum starting from
+multipole ` ∼ 8. As shown in (1,3), (2,3), (1,1) and (2,1)
+figures of Fig. 11 between the multipole range 220 ≥ ` ≥ 10
+EE and BB power spectra obtained from our cleaned map has
+less power than the corresponding foreground cleaned spec-
+tra obtained from all four WMAP foreground cleaned maps.
+Power spectra for the multipole range 300 ≤ ` ≤ 600 are
+shown in (1,4) and (2,4) figures of Fig. 11. From these plots
+we see that, at high ` clean EE and BB spectrum obtained
+from QUGMap have somewhat more power than the WMAP
+cleaned maps.
+
+13. VALIDATION USING MONTE-CARLO SIMULATIONS
+
+In this section we study our foreground minimization
+method for Stokes Q and U parameters by performing Monte
+
+Carlo simulations. We perform these simulations using CMB,
+foregrounds and detector noise levels compatible to WMAP
+nine year polarization observations. Before we discuss the
+results of Monte Carlo simulations we first describe below
+method of generating input CMB, foreground and detector
+noise maps.
+
+13.1. Input maps
+13.1.1. CMB Maps
+
+We generate a set of 400 CMB Stokes Q and U polarization
+maps at HEALPix pixel resolution parameter Nside = 512 us-
+ing a theoretical power spectrum that is consistent with Planck
+2015 best fit cosmological parameters (Planck Collaboration
+et al. 2016c). We smooth each of these maps by a polarized
+Gaussian beam function of FWHM = 1◦.
+
+13.1.2. Foreground Maps
+
+To generate Stokes Q and U maps at the frequencies of
+WMAP K1, KA1, Q, V and W bands we use the WMAP
+nine year base model (that is model ‘c’) for foregrounds as
+described by Gold et al. (2009, 2011). The foreground model
+consists of a synchrotron and a thermal dust polarized com-
+ponent with an amplitude and a spectral index defined at each
+pixel. Specifically, the synchrotron amplitude map is pro-
+vided at the K1 band, which is the frequency band where
+Synchrotron component is most dominant in the WMAP fre-
+quency window. The thermal dust map is provided at the
+highest WMAP frequency band W, where the thermal dust
+component is strongest. The amplitude of Stokes Q and U at
+any given pixel are different while the spectral index is same
+for both Stokes parameter for any given pixel. Since the am-
+plitude maps are given at Nside = 64, in antenna Milli Kelvin
+temperature units, and they are already at beam resolution
+of 1◦ we simply upgrade their pixel resolution and convert
+them to thermodynamic µK temperature unit. The spectral in-
+dex maps for synchrotron and thermal dust components were
+simply upgraded to Nside = 512. Let As(p) (Ad(p)) represents
+the resulting synchrotron (thermal dust) Q or U map at the
+reference frequency, νs = 23 GHz (νd = 94 GHz for thermal
+dust), then, we estimate synchrotron emission in any of the
+two Stokes Q or U parameter and at any WMAP frequency, ν
+
+
+
+Separating Gaussian CMB polarization signal 15
+
+following
+
+As(ν, p) = As(p)
+(
+ν
+
+νs
+
+)βs(p)
+
+, (8)
+
+where βs(p) is the synchrotron spectral index maps at
+Nside = 512. In a similar fashion, for thermal dust emis-
+sion, Stokes Q or U parameter map at any of the five WMAP
+frequencies is given by,
+
+Ad(ν, p) = Ad(p)
+(
+ν
+
+νd
+
+)βd (p)
+
+. (9)
+
+We estimate net foreground signal at any frequency ν for
+any of the two Stokes parameters Q and U by superposing
+Eqns. 8 and 9.
+
+13.1.3. Detector Noise Maps
+
+WMAP science team has provided effective number of ob-
+servations, N i
+
+obs(p) for each pixel, p for a DA, labeled by index
+i (i = 1,2, ....,10) as an extension to the corresponding binary
+fits file that contain temperature and polarization anisotropies
+maps. The standard deviation of noise at each of the 10 DA
+maps per unit observation is mentioned in Table 5 of Bennett
+et al. (2013) in Milli Kelvin thermodynamic temperature unit.
+We convert these standard deviation values in µK (thermody-
+namic) temperature unit and call them σi
+
+0 for the ith DA map.
+Using these inputs we estimate noise realization for the ith
+DA map following
+
+ni(p) =
+σi
+
+0√
+N i
+
+obs(p)
+Gi(p) , (10)
+
+where Gi(p) represents a Gaussian deviate with zero mean
+and unit variance corresponding to the DA under considera-
+tion. The resulting noise map, ni(p) is smoothed in the har-
+monic space by the ratio of beam window function corre-
+sponding to 1◦ polarized Gaussian beam and the WMAP nine
+year supplied beam functions corresponding to different DAs.
+We generate 400 noise simulations for each WMAP DAs.
+We form ‘frequency-band’ noise maps for each of Q, V and
+W bands by averaging over noise maps of all DAs available
+within a given frequency band. At the end of these opera-
+tions we obtain 400 noise simulations for each of five WMAP
+frequency bands and for each of Stokes Q and U parameters
+at 1◦ beam resolution and at Nside = 512. We note that noise
+maps for different frequency maps and different simulations
+have uncorrelated noise properties.
+
+13.2. Results
+Using foreground maps corresponding to five WMAP fre-
+
+quency bands, 400 CMB simulations and additionally 400
+noise simulations for each of WMAP frequency maps, as dis-
+cussed in Section we form a total of 400 realizations of fore-
+ground and detector noise contaminated CMB polarization
+maps for each of Stokes Q and U parameters for each of five
+WMAP frequencies. This effectively give us a set of 400 re-
+alizations, each of which contain five maps corresponding to
+five WMAP frequencies for each Stokes parameter. As is the
+case for our analysis on the WMAP data we apply CMask
+on each of these maps before foreground minimization. For
+the simulation of foreground removal procedure we separately
+
+clean the Q polarization and U polarization maps. For Q
+polarization maps we minimize the kurtosis with respect to
+weights of three WMAP bands, K1, Q and W respectively.
+For this purpose we initialize the weights in PolG code for
+K1, Q, W bands as −0.3,0.3,−0.3 respectively. We fix the
+Ka1 band weights to 0.5 for all the simulations of foreground
+minimization. For each of these simulations V band weight is
+obtained from the constrained equation that weights must add
+to unity to preserve the CMB Q polarization anisotropy, due
+to blackbody nature of CMB frequency spectrum. Since CMB
+polarization anisotropy is a weak signal compared to detector
+noise contamination at WMAP frequencies, weights in some
+of these simulations that have not been properly converged
+give rise to undesired and high foreground residuals. To avoid
+such simulations from our analysis, from all the 400 sets of
+weights obtained after the end of all simulations we take only
+those sets of weights for which the V band weight lies be-
+tween 0.2 and 1.1. We find that such a choice of prior on
+the V band weight is sufficient to remove simulations that re-
+sulted in any visibly excess power in the final {Q, U} cleaned
+maps. Using the set of all weights from 289 simulations for
+which the V band weights lie within the chosen range of prior,
+we obtain the foreground cleaned map for Q Stokes parame-
+ter from the CMask region. We also use the same sets of
+weights to obtain 289 foreground cleaned maps of U Stokes
+polarization from the sky region survived after application of
+the CMask. From each of these cleaned partial sky {Q, U}
+polarization maps we obtain both EE and BB angular power
+spectra. We show the average of all such EE and BB spec-
+tra, `(` + 1)C`/2π, in µK2 thermodynamic temperature unit,
+along with the error-bars estimated from these simulations in
+top left panel of Fig. 12. We note that the non-zero BB spec-
+trum in this plot indicates presence of residual foregrounds
+and detector noise, and does not represent any primordial BB
+power spectrum, since the initial theoretical power spectrum
+from which the CMB Stokes Q and U polarization maps were
+generated contained no BB spectrum. Some portion of the
+BB spectrum seen in this figure is caused due to leakage of
+EE signal to BB signal due finite sky area effect.
+
+Following a procedure similar to estimating the partial sky
+foreground cleaned {Q, U} maps using the weights obtained
+from Q Stokes maps alone, we also estimate a set of cleaned
+maps {Q, U} maps from the same sky region using weights
+that are estimated using the U maps alone. In this case, we ini-
+tialize, K1, Q and W band weights to the identical values as
+the Q polarization case discussed in the preceding paragraph.
+We fix the Ka1 band weight to 0.5 and the PolG code then
+estimates the V band weights from the constrained equation
+satisfied by the weights. Imposing the prior [0.2,1.1] on the
+resulting 400 V band weights we find that a set of 256 simula-
+tions for which the final V band weights fulfill the prior condi-
+tion. Using these weights we estimate foreground cleaned {Q,
+U} maps from the sky region that survives after application of
+CMask. We estimate partial sky EE and BB angular power
+spectra from each of these foreground cleaned maps. In top
+right panel of Fig. 12 we show the mean of all such spectra
+along with the error-bar computed from the same set of sim-
+ulations. The mean EE and BB spectra match well with the
+corresponding spectra obtained from the cleaned maps that
+were estimated from the weights obtained from Q polariza-
+tion maps alone. The difference of EE spectra of top panels
+is shown in red line in bottom panel. Also shown in bottom
+panel of Fig. 12, the difference of BB spectra in blue. The
+
+
+
+16
+
+0.0001
+
+0.001
+
+0.01
+
+0.1
+
+1
+
+10
+
+100
+
+1 10 100 1000
+0.0001
+
+0.001
+
+0.01
+
+0.1
+
+1
+
+10
+
+100
+
+1 10 100 1000
+
+0.001
+
+0.01
+
+0.1
+
+1
+
+10
+
+1 10 100 1000
+
+EE, Weights from Stokes Q
+BB, Weights from Stokes Q
+
+EE
+BB
+
+Theory CEE
+`
+
+EE, Weights from Stokes U
+BB, Weights from Stokes U
+
+EE
+BB
+
+Theory CEE
+`
+
+EE, di�
+EE, error
+BB, di�
+
+BB, error
+
+FIG. 12.— In top left panel, mean EE and BB angular power spectra, `(`+ 1)C`/2π, in µK2 thermodynamic temperature unit, from CMask sky region plotted
+in violet and green color. The mean spectra are computed from 289 Monte Carlo simulations of the foreground minimization using the weights estimated from
+the Stokes Q maps, alone. Violet and green curves of top right panel are same as those of left panel except that these mean spectra are computed from 256 Monte
+Carlo simulations with weights obtained from Stokes U maps alone. In both these panels we show the full sky theoretical EE spectrum expected from LCDM
+model. The dark blue and red curves of both the top panels represent EE and BB spectra respectively, from the CMask sky, from 400 Monte Carlo simulations
+of pure CMB Stokes Q and U maps. The error bars represent cosmic plus sample variance. The red curve, representing the non-zero BB spectrum is actually
+leakage of EE signal to BB on the partial sky. The bottom panel represent the difference of EE spectra (in red) of top two panels and the difference of BB spectra
+(blue) of the same two panels, in µK2 thermodynamic temperature unit. The green and orange lines show 1σ error lines on EE and BB spectra obtained from
+simulations where weights from Stokes Q maps alone are used.
+
+green and blue curves of the bottom panel shows 1σ error
+lines. From the difference spectra and error line plots we con-
+clude that our foreground minimization method works overall
+with the similar efficiency for both Stokes Q and U polar-
+izations maps separately. We again emphasize that the BB
+spectra in this case is mere indication of presence of residual
+foreground and detector noise in the final cleaned maps, and
+not the primordial BB signal.
+
+We compare the mean cleaned EE and BB power spectra es-
+timated from accepted Monte Carlo simulations (for the case
+when weights are determined by the Q Stokes maps) along
+with the mean EE and BB spectra of each of five simulated
+frequency maps from the 400 simulations in top left and bot-
+tom left of Fig. 13. All spectra of these figures are esti-
+mated from CMask sky region and are multiplied by the factor
+`(`+1)/2π. The error bars of these figures are estimated from
+Monte Carlo simulations. The reduced power in the cleaned
+maps indicate efficiency of foreground minimization using the
+method described in this work. The top right figure represent
+the absolute difference of mean cleaned EE spectrum and the
+mean spectra of each of five input maps of Monte Carlo sim-
+ulations and represent the appropriate difference spectra us-
+ing the results shown in top left panel. The solid lines of top
+right panel represent the case when the mean EE spectrum
+has less power than the power of an input map, implying an
+effective foreground removal has taken place for the partic-
+ular frequency band and for the particular multipole(s). The
+dashed lines and points of these plots represent multipoles for
+which mean cleaned EE spectrum is higher than the spectrum
+of an input frequency map. Hence foreground minimization
+at these multipoles and frequency band is not very effective.
+
+The bottom right figure of Fig. 13 shows the same as top right
+figure, except that the bottom right figure shows the case for
+BB spectra.
+
+How does the weights vary with the simulations? We have
+shown the weights for each of K1, Ka1, Q, V and W bands
+from the accepted simulations as a function of simulation in-
+dex in Fig. 14. Left panel of this figure shows the case when
+weights are estimated only from Q Stokes maps alone. The
+right panel shows the case when weights are estimated from
+the U polarization maps alone. In both cases we see that
+weights for K1 band have minimum dispersion since it has
+the maximum signal to noise ratio for the foregrounds due
+to strong synchrotron emission. The V band weights have
+the largest dispersion since V band weights are estimated pas-
+sively, i.e., from the constrained equation of weights given the
+values of weights of rest of the frequency bands.
+
+14. DISCUSSION AND CONCLUSION
+
+Simple models of inflation predict that the fluctuations in
+the primordial inflaton field were Gaussian to very good ap-
+proximations. The Gaussian nature of the primordial den-
+sity fluctuations directly imply that the CMB anisotropies also
+follow Gaussian distribution, since the later is related to the
+former by means of a multiplicative transfer function. Us-
+ing the concept of Gaussian distribution of CMB polarization
+anisotropies and strongly non-Gaussian nature of diffused po-
+larized emissions from Milky Way, in this work we have pro-
+posed a methodology to separate the former from the observed
+mixture of the later using the WMAP nine year Stokes Q and
+U polarization maps, from a region of the sky that excludes re-
+gions heavily contaminated by foregrounds or detector noise.
+
+For cosmological analysis of observed CMB polarization
+
+
+
+Separating Gaussian CMB polarization signal 17
+
+0.01
+
+0.1
+
+1
+
+10
+
+100
+
+1000
+
+1 10 100 1000
+0.001
+
+0.01
+
+0.1
+
+1
+
+10
+
+100
+
+1000
+
+1 10 100 1000
+
+0.01
+
+0.1
+
+1
+
+10
+
+100
+
+1 10 100 1000
+0.0001
+
+0.001
+
+0.01
+
+0.1
+
+1
+
+10
+
+100
+
+1 10 100 1000
+
+CE
+E
+
+`
+[µ
+K
+
+2
+]
+
+Cleaned spectrum
+K1
+Ka1
+Q
+V
+W
+
+∆
+CE
+
+E
+`
+
+[µ
+K
+
+2
+]
+
+K1|
+Ka1
+Q
+V|
+W
+
+CB
+B
+
+`
+[µ
+K
+
+2
+]
+
+Cleaned spectrum
+K1
+Ka1
+Q
+V
+W
+
+∆
+CB
+
+B
+`
+
+[µ
+K
+
+2
+]
+
+K1
+Ka1
+Q
+V|
+W
+
+FIG. 13.— Top left and bottom left: figures showing the mean EE and BB power spectra respectively obtained from CMask region from cleaned Stokes Q
+and U maps obtained from Monte Carlo simulations along with the corresponding mean spectra from simulated input maps from the CMask sky region. The
+vertical axes of both the figures show the ‘reduced spectrum’, `(`+ 1)C`/2π. Top right and bottom right: The absolute difference of reduced EE and BB spectra
+respectively, estimated from our {Q, U} cleaned maps and five input maps from CMask region. See Section for details.
+
+−0.6
+
+−0.4
+
+−0.2
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+1.2
+
+0 50 100 150 200 250 300
+−0.8
+
+−0.6
+
+−0.4
+
+−0.2
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+1.2
+
+0 50 100 150 200 250 300
+
+Monte Carlo simulations
+
+K1
+Ka1
+Q
+V
+W
+
+Monte Carlo simulations
+
+K1
+Ka1
+Q
+V
+W
+
+FIG. 14.— Variation of weights for different frequency maps for different Monte Carlo simulations of our foreground removal procedure. Left panel represents
+the case when weights are estimated from the Q Stokes maps alone. The right panel shows the variation when weights are estimated from the Stokes U maps
+alone.
+
+maps a major task is to minimize the foreground contamina-
+tions. The foreground polarization may be rather complex –
+apart from variation of spectral spectral indices with sky lo-
+cations for both synchrotron and thermal dust Stokes Q and
+U signals, thermal dust emission may exhibit high fraction
+of polarization even from regions where the signal is weak.
+In this context, the reconstruction of CMB polarization maps
+presented in this article has two important advantages. First,
+since the method uses usual ILC technique as the basic driv-
+ing machinery, one does not need to use any explicit model
+
+for polarized foregrounds. Thus our method possesses an in-
+teresting property that the foreground minimized CMB Stokes
+maps are free from any error that could otherwise result from
+any incorrect foreground modeling. The only assumption we
+make about the foreground spectrum is that they are non-
+blackbody. This is a valid assumption for polarized emis-
+sions like synchrotron and thermal dust. The second, and very
+important in the context of physics of early universe, advan-
+tage of our method, is that, our method minimizes a measure
+of non-Gaussian properties to estimate the foreground mini-
+
+
+
+18
+
+mized CMB polarization map. The assumption of Gaussian
+properties of CMB anisotropies is motivated from the sim-
+plest models of inflation. The non-Gaussian nature of po-
+larized foreground emission is expected due to various non-
+linear mechanisms that operate during their emission. We
+demonstrate strong non-Gaussian properties of polarized fore-
+grounds based upon empirical results.
+
+We have critically studied the performance of our polar-
+ized foreground minimization. Based upon these studies we
+conclude that the method removes significant amount of fore-
+grounds from different frequency bands. The performance of
+the method is expected to be even superior for future CMB
+polarization experiments with low level of detector noise
+compared to the primordial CMB polarization signal, since
+detector noise plays a stringent ‘bottle-neck’ for effective
+foreground minimization. Interestingly, our foreground min-
+imized Stoke Q and U maps have less power (both EE and
+BB) than the WMAP template cleaned maps. This shows that,
+when analyzed over the CMask region our method performs
+a better foreground removal than a global foreground removal
+method as followed by the WMAP Science team using tem-
+plate models for the polarized foregrounds. In spite of this,
+we make a cautious comment that there is indeed residual
+foregrounds and detector noise in our cleaned Stokes Q and
+U maps. Great care must be taken, for cosmological analy-
+sis of these cleaned maps. It would be very useful to apply
+our method on the polarization observations of Planck and
+polarization specific future CMB missions.
+
+Analyzing our cleaned EE and BB spectra we find that
+performance of foreground removal depends upon the multi-
+poles. This is expected since foreground spectra themselves
+
+depend upon multipoles and moreover detector noise usually
+become stronger at higher multipoles. To achieve a better
+foreground removal an interesting future project will be to
+generalize our method in the multipole space.
+
+One interesting property of our method is that, although it
+minimizes non-Gaussian property of foregrounds, any non-
+Gaussianities intrinsic to CMB remains preserved in the final
+cleaned map, since CMB follows blackbody spectrum with
+high accuracy. The condition that weights for all frequency
+maps add to unity preserves CMB polarization signal even if
+it has some minute level of non-Gaussianities. In this context
+we mention that our method will be able to provide a com-
+plete picture of CMB anisotropies for models of inflation that
+produces some level of primordial non-Gaussianity, e.g., see
+Wands (2010) for a discussion of local non-Gaussian from in-
+flation, or Bartolo et al. (2004) and Planck Collaboration et al.
+(2016d, 2014) with references therein for comprehensive re-
+views about non-Gaussianities generated from different mod-
+els of inflation. It will be valuable to use our method on the
+future generation CMB experiments to constrain such models
+that predict minute levels of primordial non-Gaussianities.
+
+We use publicly available HEALPix Górski et al. (2005)
+package available from http://healpix.sourceforge.net to per-
+form forward and backward spherical harmonic transfor-
+mations and for visualization purposes. We acknowledge
+the use of the Legacy Archive for Microwave Background
+Data Analysis (LAMBDA). LAMBDA is a part of the High
+Energy Astrophysics Science Archive Center (HEASARC).
+HEASARC/LAMBDA is supported by the Astrophysics Sci-
+ence Division at the NASA Goddard Space Flight Center.
+
+REFERENCES
+
+Acquaviva, V., Bartolo, N., Matarrese, S., & Riotto, A. 2003, Nuclear
+Physics B, 667, 119
+
+Allen, T. J., Grinstein, B., & Wise, M. B. 1987, Physics Letters B, 197, 66
+Baccigalupi, C., Perrotta, F., de Zotti, G., et al. 2004, MNRAS, 354, 55
+Balaji, K. R. S., Brandenberger, R. H., & Easson, D. A. 2003, J. Cosmology
+
+Astropart. Phys., 12, 008
+Bartolo, N., Komatsu, E., Matarrese, S., & Riotto, A. 2004, Phys. Rep., 402,
+
+103
+Basak, S., & Delabrouille, J. 2012, MNRAS, 419, 1163
+—. 2013, MNRAS, 435, 18
+Bennett, C. L., Smoot, G. F., Hinshaw, G., et al. 1992, ApJ, 396, L7
+Bennett, C. L., Hill, R. S., Hinshaw, G., et al. 2003, ApJS, 148, 97
+Bennett, C. L., Larson, D., Weiland, J. L., et al. 2013, ApJS, 208, 20
+Bouchet, F. R., Prunet, S., & Sethi, S. K. 1999, MNRAS, 302, 663
+Bucher, M. 2015, International Journal of Modern Physics D, 24, 1530004
+Bucher, M., Moodley, K., & Turok, N. 2001, Physical Review Letters, 87,
+
+191301
+Bunn, E. F., Fisher, K. B., Hoffman, Y., et al. 1994, ApJ, 432, L75
+Cabella, P., & Kamionkowski, M. 2004, ArXiv Astrophysics e-prints,
+
+astro-ph/0403392
+Crittenden, R., Davis, R. L., & Steinhardt, P. J. 1993, ApJ, 417, L13
+Crittenden, R. G., Coulson, D., & Turok, N. G. 1995, Phys. Rev. D, 52,
+
+R5402
+Delabrouille, J., Cardoso, J.-F., Le Jeune, M., et al. 2009, A&A, 493, 835
+Eriksen, H. K., Banday, A. J., Górski, K. M., & Lilje, P. B. 2004, ApJ, 612,
+
+633
+Eriksen, H. K., Dickinson, C., Jewell, J. B., et al. 2008a, ApJ, 672, L87
+Eriksen, H. K., Jewell, J. B., Dickinson, C., et al. 2008b, ApJ, 676, 10
+Eriksen, H. K., Huey, G., Saha, R., et al. 2007, ApJ, 656, 641
+Finkbeiner, D. P., Davis, M., & Schlegel, D. J. 1999, ApJ, 524, 867
+Fixsen, D. J., Cheng, E. S., Gales, J. M., et al. 1996, ApJ, 473, 576
+Frewin, R. A., Polnarev, A. G., & Coles, P. 1994, MNRAS, 266, L21
+Gangui, A., Lucchin, F., Matarrese, S., & Mollerach, S. 1994, ApJ, 430, 447
+Gangui, A., Martin, J., & Sakellariadou, M. 2002, Phys. Rev. D, 66, 083502
+Gold, B., Bennett, C. L., Hill, R. S., et al. 2009, ApJS, 180, 265
+Gold, B., Odegard, N., Weiland, J. L., et al. 2011, ApJS, 192, 15
+Górski, K. M., Hivon, E., Banday, A. J., et al. 2005, ApJ, 622, 759
+
+Guth, A. H. 1981, Phys. Rev. D, 23, 347
+Hansen, F. K., & Górski, K. M. 2003, MNRAS, 343, 559
+Hinshaw, G., Nolta, M. R., Bennett, C. L., et al. 2007, Astrophys. J. Suppl.
+
+Ser., 170, 288
+Hu, W., & Okamoto, T. 2002, ApJ, 574, 566
+Hyvärinen, A., & Oja, E. 2000, Neural Netw., 13, 411
+Kamionkowski, M., Kosowsky, A., & Stebbins, A. 1997, Physical Review
+
+Letters, 78, 2058
+Kim, J., Naselsky, P., & Christensen, P. R. 2008, Phys. Rev. D, 77, 103002
+—. 2009, Phys. Rev. D, 79, 023003
+Knox, L., & Song, Y.-S. 2002, Physical Review Letters, 89, 011303
+Komatsu, E., Kogut, A., Nolta, M. R., et al. 2003, ApJS, 148, 119
+Kosowsky, A. 1996, Annals of Physics, 246, 49
+—. 1999, New A Rev., 43, 157
+Lewis, A., Challinor, A., & Turok, N. 2002, Phys. Rev. D, 65, 023505
+Linde, A. D. 1983, Physics Letters B, 129, 177
+Lubin, P., Melese, P., & Smoot, G. 1983, ApJ, 273, L51
+Maldacena, J. 2003, Journal of High Energy Physics, 5, 013
+Mather, J. C., Cheng, E. S., Eplee, Jr., R. E., et al. 1990, ApJ, 354, L37
+Mather, J. C., Cheng, E. S., Cottingham, D. A., et al. 1994, ApJ, 420, 439
+Munshi, D., Souradeep, T., & Starobinsky, A. A. 1995, ApJ, 454, 552
+Negroponte, J., & Silk, J. 1980, Physical Review Letters, 44, 1433
+Padmanabhan, N., & Finkbeiner, D. P. 2005, Phys. Rev. D, 72, 023508
+Page, L., Hinshaw, G., Komatsu, E., et al. 2007, ApJS, 170, 335
+Penzias, A. A., & Wilson, R. W. 1965, ApJ, 142, 419
+Planck Collaboration, Ade, P. A. R., Aghanim, N., et al. 2014, A&A, 571,
+
+A24
+Planck Collaboration, Adam, R., Ade, P. A. R., et al. 2016a, A&A, 594, A9
+—. 2016b, A&A, 594, A10
+Planck Collaboration, Ade, P. A. R., Aghanim, N., et al. 2016c, A&A, 594,
+
+A13
+—. 2016d, A&A, 594, A17
+—. 2016e, A&A, 594, A20
+Polnarev, A. G. 1985, Soviet Ast., 29, 607
+Press, W. H., Flannery, B. P., Teukolsky, S. A., & Vetterling, W. T. 1989,
+
+Numerical recipes in C. The art of scientific computing
+Rees, M. J. 1968, ApJ, 153, L1
+
+
+
+Separating Gaussian CMB polarization signal 19
+
+Remazeilles, M., Delabrouille, J., & Cardoso, J.-F. 2011a, MNRAS, 410,
+2481
+
+—. 2011b, ArXiv e-prints, arXiv:1103.1166
+Rogers, K. K., Peiris, H. V., Leistedt, B., McEwen, J. D., & Pontzen, A.
+
+2016a, MNRAS, 460, 3014
+—. 2016b, MNRAS, 463, 2310
+Saha, R. 2011, ApJ, 739, L56
+Saha, R., & Aluri, P. K. 2016, ApJ, 829, 113
+Saha, R., Jain, P., & Souradeep, T. 2006, ApJ, 645, L89
+Saha, R., Prunet, S., Jain, P., & Souradeep, T. 2008, Phys. Rev. D, 78,
+
+023003
+Samal, P. K., Saha, R., Delabrouille, J., et al. 2010, ApJ, 714, 840
+Samal, P. K., Saha, R., Jain, P., & Ralston, J. P. 2008, MNRAS, 385, 1718
+Seljak, U., & Zaldarriaga, M. 1999, Physical Review Letters, 82, 2636
+
+Spergel, D. N., & Zaldarriaga, M. 1997, Physical Review Letters, 79, 2180
+Stark, R. F. 1981a, MNRAS, 195, 127
+—. 1981b, MNRAS, 195, 115
+Starobinsky, A. A. 1982, Physics Letters B, 117, 175
+Sudevan, V., Aluri, P. K., Yadav, S. K., Saha, R., & Souradeep, T. 2017, ApJ,
+
+842, 62
+Tegmark, M., & de Oliveira-Costa, A. 2001, Phys. Rev. D, 64, 063001
+Tegmark, M., de Oliveira-Costa, A., & Hamilton, A. J. 2003, Phys. Rev. D,
+
+68, 123523
+Tegmark, M., & Efstathiou, G. 1996a, MNRAS, 281, 1297
+—. 1996b, Mon. Not. R. Astron. Soc., 281, 1297
+Wands, D. 2010, Classical and Quantum Gravity, 27, 124002
+Zaldarriaga, M. 1997, Phys. Rev. D, 55, 1822
+Zaldarriaga, M., & Seljak, U. 1998, Phys. Rev. D, 58, 023003
+
+
+	ABSTRACT
+	Introduction
+	The problem
+	Measure of non-Gaussianity
+	Basic Formalism
+	Input Maps
+	Data Preparation
+	Foreground and noise properties
+
+	Masks
+	Non Gaussian nature of polarized foregrounds from density analysis
+	Calibrating the non-Gaussian measure
+	Non-Gaussian Nature of WMAP maps
+	Kurtosis variation without foreground
+	Methodology
+	Results
+	Foreground cleaned Stokes Q and U maps
+	Comparison with Input Stokes Q and U Maps
+	Difference with Input Polarization Maps
+	Variance Analysis
+	Power Spectrum
+	Comparison with Input Power Spectra
+	Comparison with WMAP foreground-reduced Power Spectra
+
+
+	Validation using Monte-Carlo simulations
+	Input maps
+	CMB Maps
+	Foreground Maps
+	Detector Noise Maps
+
+	Results
+
+	Discussion and Conclusion
+

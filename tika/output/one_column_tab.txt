@@ -1,0 +1,6455 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+k·p theory for two-dimensional transition metal
+
+dichalcogenide semiconductors
+
+Andor Kormányos1, Guido Burkard1
+
+1 Department of Physics, University of Konstanz, D-78464 Konstanz, Germany
+
+Martin Gmitra2, Jaroslav Fabian2
+
+2 Institute for Theoretical Physics, University of Regensburg, D-93040 Regensburg,
+
+Germany
+
+Viktor Zólyomi3, Neil D. Drummond3, Vladimir Fal’ko3
+
+3 Department of Physics, Lancaster University, Lancaster LA1 4YB, United Kingdom
+
+E-mail: andor.kormanyos@uni-konstanz.de
+
+E-mail: guido.burkard@uni-konstanz.de
+
+Abstract.
+
+We present k·p Hamiltonians parametrised by ab initio density functional theory
+
+calculations to describe the dispersion of the valence and conduction bands at their
+
+extrema (the K, Q, Γ, and M points of the hexagonal Brillouin zone) in atomic
+
+crystals of semiconducting monolayer transition metal dichalcogenides. We discuss
+
+the parametrisation of the essential parts of the k·p Hamiltonians for MoS2, MoSe2,
+
+MoTe2, WS2, WSe2, and WTe2, including the spin-splitting and spin-polarisation of
+
+the bands, and we briefly review the vibrational properties of these materials. We
+
+then use k·p theory to analyse optical transitions in two-dimensional transition metal
+
+dichalcogenides over a broad spectral range that covers the Van Hove singularities
+
+in the band structure (the M points). We also discuss the visualisation of scanning
+
+tunnelling microscopy maps.
+
+PACS numbers:
+
+Contents
+
+1 Introduction 1
+
+2 Lattice parameters, band-structure calculations and vibrational
+
+properties 3
+
+3 Band-edge energy differences and spin-splittings 7
+
+4 Valence band width Dvb 9
+
+
+
+k · p theory for 2D TMDCs 2
+
+5 Effective model at the K and −K points 9
+
+5.1 K and −K points . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+5.2 Basic characterization and material parameters . . . . . . . . . . . . . . 10
+
+5.3 k · p Hamiltonian . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+6 Effective models at the Q (a.k.a. Λ) point 21
+
+6.1 Qi points . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+6.2 Basic characterisation and material parameters . . . . . . . . . . . . . . 21
+
+6.3 k · p Hamiltonian . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+
+7 Effective models at the Γ point 26
+
+7.1 Γ point . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+
+7.2 Basic characterisation and material parameters . . . . . . . . . . . . . . 26
+
+7.3 k · p Hamiltonian . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+
+7.4 Γ point wave functions and STM measurements . . . . . . . . . . . . . . 33
+
+8 The M point: spin–orbit splitting of the Van Hove singularity 34
+
+8.1 Basic characterisation and k · p Hamiltonian . . . . . . . . . . . . . . . 35
+
+9 Conclusions 38
+
+10 Acknowledgement 39
+
+Appendices 39
+
+1. Introduction
+
+Monolayers of transition metal dichalcogenides (TMDCs) [1, 2] are truly two-
+
+dimensional (2D) semiconductors [3, 4, 5, 6, 7, 8, 9, 10, 11], which hold great
+
+appeal for electronics and opto-electronics applications due to their direct band gap
+
+properties (which contrast the indirect band gaps of three-dimensional layered crystals of
+
+TMDCs). Monolayer TMDCs have already been implemented in field-effect transistors
+
+[12, 13, 14, 15, 16, 17, 18], logical devices [15, 19], and lateral and tunnelling
+
+optoelectronic structures [20, 21, 22, 23, 24].
+
+Like graphene, the group-IVB monolayer TMDCs of chemical composition MX2
+
+(where M=Mo or W and X=S, Se and Te) considered in this work have hexagonal lattice
+
+structures, and the extrema (valleys) in the dispersion relations of both the valence and
+
+conduction bands (VB and CB) can be found at the K and −K points of the hexagonal
+
+Brillouin zone (BZ). Unlike graphene, however, these 2D crystals do not have inversion
+
+symmetry. The minimalistic approach to the theoretical modelling of monolayer
+
+TMDCs is therefore based on mimicking them as graphene with a staggered sublattice
+
+potential that breaks inversion symmetry [25, 26]. This approach captures certain
+
+optical and transport effects related to the valley degree of freedom of the electrons
+
+[26, 27, 28, 29, 30, 31]. The staggered graphene analogue [26] has also been generalised
+
+
+
+k · p theory for 2D TMDCs 3
+
+to the tight-binding (TB) description of TMDCs [26, 32, 33, 34, 35, 36, 37, 38],
+
+but this approach suffers from the large number of atomic orbitals that have to be
+
+included on each site and the need for beyond-nearest-neighbour hopping to account
+
+for the variation of the weight of individual atomic orbitals in the band wave functions
+
+across the BZ, as revealed by detailed density functional theory (DFT) modelling (see,
+
+e.g., Figure 3). The accumulation of experimental data and the drive towards the
+
+implementation of monolayer TMDCs in practical devices call for theoretical models
+
+of their electronic properties that are both detailed and compact, containing a limited
+
+number of parameters while still offering an accurate description.
+
+In this Review, we describe two complementary theoretical approaches that have
+
+recently been used to achieve a detailed description of the electronic properties of
+
+these materials. One consists of ab initio DFT modelling of the band structure,
+
+which has the potential to be accurate. DFT can be combined with transport codes
+
+[17, 38, 39, 40, 41, 42, 43, 44] or used to calculate optical spectra [45, 46, 47, 48], but
+
+ab initio calculations are prohibitively expensive for many practical problems focused
+
+on modelling devices and studies of, e.g., quantum dots [49, 50]. Moreover, magnetic-
+
+field effects [32, 49, 51, 52, 53, 54] and certain questions regarding neutral and charged
+
+excitons [55] cannot easily be addressed by DFT-based techniques. The second approach
+
+uses the k·p methodology [56, 57, 58, 59], which exploits the symmetries of the system.
+
+This approach provides an accurate characterisation of the dispersion of the valence
+
+and conduction bands in the vicinity of, e.g., the K and −K points and other points of
+
+interest in the BZ in terms of a relatively small number of parameters [60]. Magnetic-
+
+field and spin-orbit coupling effects can also be taken into account in a straightforward
+
+way [49]. In contrast to DFT modelling, this method is only valid in the vicinity of
+
+certain high-symmetry k-space points; however, for those intervals, it enables one to
+
+quantify all the essential features of the electronic properties. One can also relate a k·p
+Hamiltonian to a particular TB model [26, 32, 34], although it is not necessary to set up
+
+a TB model in order to derive a k·p Hamiltonian. Here we present phenomenological
+
+k·p Hamiltonians derived for all extrema of the bands (at the K, Q, Γ, and M points of
+
+the BZ) using the symmetry properties of TMDC atomic crystals, with specific material
+
+parameters obtained by fitting them to the DFT band structures of MoS2, MoSe2,
+
+MoTe2, WS2, WSe2 and WTe2. ‡ The DFT calculations discussed in this Review were
+
+‡ Most of the recent theoretical and experimental work has focused on the properties of MoS2, MoSe2,
+
+WS2 and WSe2, while MoTe2 and WTe2 have received much less attention. Bulk MoTe2 with a
+
+trigonal prismatic coordination of the chalcogen atoms (see Figure 1(a)) exists below 815oC (known as
+
+α-MoTe2), whereas above 900oC the crystal structure is monoclinic and the material becomes metallic
+
+(β-MoTe2) [61, 62]. Monolayer samples using liquid exfoliation technique have been obtained from
+
+α-MoTe2 [63], and the optical properties of monolayer [192] the transport properties of few-layer α-
+
+MoTe2 [64, 191] have been investigated recently, giving a clear motivation to include this material in
+
+our review. Bulk WTe2 has an orthorhombic crystal structure, where eight tellurium atoms surround
+
+the tungsten atom in a distorted octahedral coordination [65, 66]. Nevertheless, one would expect
+
+that it may be possible to grow monolayer WTe2 with hexagonal prismatic coordination on a suitable
+
+substrate. For completeness, therefore, we include this material as well, assuming that its hexagonal
+
+
+
+k · p theory for 2D TMDCs 4
+
+performed using the vasp [67] and fleur [68] codes. The robustness of our results is well
+
+illustrated by the close agreement between the results obtained from these two different
+
+first-principles codes and through comparison to all available experimental results.
+
+Finally, we note that the field of TMDCs, akin to that of graphene [69, 70, 71, 72],
+
+has witnessed a large expansion over the last four years, encompassing both fundamental
+
+and more applications-oriented research directions. Here we focus on a particular topic
+
+that we think will be important for the further development of this field. To limit
+
+the length of this review, some fascinating topics related to, e.g., the valley-dependent
+
+optical selection rule or the exciton physics are not discussed in detail here. We refer
+
+the interested reader to complementary reviews [73, 74, 75, 76, 77, 78, 79, 80] instead.
+
+This Review is organised as follows. Section is devoted to the crystalline
+
+lattice parameters and vibrational properties of TMDCs. Sections and discuss spin-
+
+splitting due to spin–orbit coupling (SOC) and band width [relevant for angle-resolved
+
+photoemission spectroscopy (ARPES) studies of TMDCs]. Sections , , , and describe
+
+the structure and parametrisation of k·p Hamiltonians for K, Q, Γ, and M points of
+
+the BZ, respectively. Finally, we draw our conclusions in Section .
+
+2. Lattice parameters, band-structure calculations and vibrational
+
+properties
+
+The crystal structure of each MX2 monolayer considered in this work consists of
+
+three atomic layers, X–M–X. Within each layer the M or X atoms form a 2D hexagonal
+
+lattice: see Figure 1. The M atoms in the middle plane are surrounded by three nearest-
+
+neighbour X atoms in both the bottom and the top layer so that the crystal has D3h
+
+symmetry. The crystal structure is characterised by the in-plane lattice constant a0
+
+and the distance dX−X between the two chalcogen planes. It has already been noted
+
+[81] that certain details of the band structure obtained from DFT calculations depend
+
+rather sensitively on a0 and dX−X . Indeed, we have also found that agreement with the
+
+available experimental results regarding, e.g., the effective mass mvb
+Γ at the Γ point of
+
+the BZ or the energy difference EKΓ between the top of the VB at the K and Γ points
+
+can only be achieved if the values of a0 and dX−X fall in a rather narrow range.
+
+As a first step, we have used two approaches to calculate the basic lattice parameters
+
+a0 and dX−X . The first approach used vasp [67]. The vasp geometries were calculated
+
+using the Heyd–Scuseria–Ernzerhof 2006 (HSE06) exact-exchange density functional
+
+[82]. The plane-wave cutoff energy was set to 600 eV and the BZ was sampled by
+
+a 12 × 12 × 1 Monkhorst–Pack grid. The vertical separation between the layers was
+
+set to 20 Å to make the interaction between the repeated images of the layer in the
+
+three-dimensional cell negligible. Optimisation was carried out until atomic forces fell
+
+below 0.005 eV/Å. The second approach used the full-potential linearised augmented
+
+plane-wave (FLAPW) method as implemented in the fleur code [68]. The FLAPW
+
+method is an all-electron method within DFT. The fleur code allows 2D systems
+
+structure is stable.
+
+
+
+k · p theory for 2D TMDCs 5
+
+Figure 1. Crystal structure of monolayer MX2. a) Side view and b) top view. Metal
+
+atoms are cyan and chalcogens are yellow. The lattice vectors a1 and a2 are also
+
+shown.
+
+to be studied without constructing slabs in three-dimensionally periodic cells and the
+
+resulting electronic spectra are free of plane-wave continua. All our fleur calculations
+
+were carried out with a cut-off kmax of 10.6 eV−1 for the plane-wave basis set and 144
+
+k points corresponding to a 12× 12× 1 Monkhorst–Pack grid in the irreducible wedge
+
+of the BZ. Muffin-tin radii of 1.0, 1.21, 1.27, 1.27, and 1.27 Å were used for S, Se, Te,
+
+Mo, and W, respectively. We note that considering local orbitals for Mo (s, p), Se (s,
+
+p, d), and W (s, p, f) to improve the linearised augmented plane-wave basis proved to
+
+be crucial for a correct description of the excited states. We used the Perdew–Burke–
+
+Ernzerhof (PBE) generalised gradient approximation [83] to the exchange-correlation
+
+potential. The structures were relaxed (with the effects of SOC included) until the
+
+forces were less than 0.0005 eV/Å.
+
+The calculated values of a0 and dS−S for monolayer TMDCs are shown in Table
+
+1 and compared to measured values for the corresponding bulk materials. The lattice
+
+parameters obtained from the first of the DFT approaches described above are shown in
+
+the rows labelled by “(HSE)”, the ones from the second approach are in the rows labelled
+
+by “(PBE)”. “(Exp)” indicates experimental results found in the literature. Although
+
+there is some scatter in the experimental data, Table 1 suggests that using the HSE06
+
+functional to relax the monolayer crystal structure leads to a good agreement with the
+
+room-temperature empirical bulk a0 values. On the other hand, the PBE functional
+
+seems to slightly overestimates a0. However, the situation is less clear in the case of
+
+dX−X . We note that both the HSE06 and the PBE results are in good agreement with
+
+Reference [84].
+
+Recent experiments show that the energy of the photoluminescence peak is quite
+
+sensitive to the temperature [5, 85, 86], which can be understood in terms of the
+
+dependence of the band structure on a0 and dX−X . Indeed, a recent computational
+
+study [87] was able to qualitatively reproduce the redshift of the photoluminescence peak
+
+of MoS2 as a function of temperature by assuming a thermal expansion of the lattice.
+
+The good agreement between the calculated lattice parameters and the corresponding
+
+
+
+k · p theory for 2D TMDCs 6
+
+Table 1. Lattice vector a0 and chalcogen–chalcogen distance dX−X as obtained from
+
+DFT calculations. Experimental values for the corresponding bulk material are shown
+
+in rows labelled by “Exp”. For WTe2 experimental results are only available for the
+
+orthorhombic structure and are therefore not shown.
+
+MoS2 MoSe2 WS2 WSe2 MoTe2 WTe2
+
+a0 [Å] (HSE) 3.1565 3.289 3.16 3.291 3.516 3.521
+
+a0 [Å] (PBE) 3.1854 3.319 3.18 3.316 3.557 3.553
+
+a0 [Å] (Exp) 3.1604a 3.288a 3.154a,b 3.286a 3.519j –
+
+3.14c 3.299c 3.1532d 3.282c 3.522c,k –
+
+3.1602e 3.289e 3.282d 3.517a –
+
+3.1475f 3.290g –
+
+–
+
+dX−X [Å] (HSE) 3.0996 3.307 3.1176 3.327 3.5834 3.5999
+
+dX−X [Å] (PBE) 3.1246 3.4371 3.1529 3.471 3.6195 3.6394
+
+dX−X [Å] (Exp) 3.17e 3.335e 3.14d 3.34d 3.604k –
+
+a[88], b[89], c[90], d[91], e[92], g[93], j [94], k[62].
+f [95], measurement at 293 K.
+
+experimental ones suggests that, interestingly, the predictions based on our DFT results
+
+are expected to be most accurate at room temperature (except for the band gap, which
+
+is known to be underestimated by DFT). To our knowledge systematic measurements
+
+of the temperature-dependence of the lattice parameters of bulk MX2 have not been
+
+performed, except for MoS2 [95].
+
+As in the case of the lattice parameters, we have used both the vasp and the fleur
+
+codes to calculate the band structures of monolayer TMDCs. For the vasp calculations
+
+we used the HSE lattice parameters as input. The band structures were calculated in the
+
+local density approximation (LDA). SOC was taken into account in the non-collinear
+
+magnetic structure approach with the symmetry turned off. The charge density was
+
+obtained self-consistently using a 12 × 12 × 1 k-point grid and a 600 eV cutoff energy.
+
+The results obtained by this method are shown in rows denoted by “(HSE,LDA)” in
+
+Tables 2–10 below. For the fleur calculations the charge densities obtained from the
+
+geometry relaxation calculations (see Section ) were used for further calculation of the
+
+band structure and spin expectation values. SOC in fleur is included within the second
+
+variational method for the valence electrons, whereas the core electrons are treated fully
+
+relativistically. These results are in rows denoted by “(PBE,PBE)” in Tables 2–10
+
+below.
+
+One possibility, which we did not explore, is to use the HSE lattice parameters and
+
+the HSE06 functional for band-structure calculations, as in Reference [84]. We note that
+
+the results of Reference [84] seem to indicate that the HSE06 functional gives larger VB
+
+spin-splittings than found experimentally.
+
+In addition to the band structure of the TMDCs, which is our main focus in
+
+this work, electron–phonon coupling is also essential in order to understand transport
+
+[39, 40, 41] and relaxation [96] processes. For completeness, we give a brief review of the
+
+
+
+k · p theory for 2D TMDCs 7
+
+vibrational characteristics of monolayer TMDCs. Ab initio lattice-dynamics calculations
+
+indicate that single layers of the TMDCs MoS2, MoSe2, WS2, and WSe2 are dynamically
+
+stable [97, 98, 99], in agreement with experiments.
+
+A comprehensive group-theory analysis of the different polytypes and stacking
+
+arrangements of few-layer TMDCs is presented in Reference [100]. The symmetry of
+
+few-layer structures determines which phonon modes are Raman-active, and therefore
+
+provides an important means of characterising samples. As mentioned earlier, monolayer
+
+MX2 has D3h point-group symmetry (see Table 11 for the character table and irreducible
+
+representations). The six zone-centre optical phonon modes may be classified according
+
+to the irreducible representations under which their eigenvectors transform: in the
+
+twofold-degenerate E ′′ modes the metal atom remains stationary while the chalcogen
+
+atoms vibrate in opposite in-plane directions; in the twofold-degenerate E ′ modes the
+
+chalcogen atoms vibrate together in-plane in the opposite direction to the metal atom;
+
+in the non-degenerate A′1 mode the metal atom remains stationary while the chalcogen
+
+atoms vibrate in opposite out-of-plane directions; finally, in the non-degenerate A′′2 mode
+
+the chalcogen atoms vibrate together out-of-plane in the opposite direction to the metal
+
+atom. Of these vibrations, all but the A′′2 mode are Raman-active. Only the E ′ and A′′2
+modes are infrared-active.
+
+DFT-LDA and DFT-PBE results for the phonon frequencies are summarised in
+
+Table 1 of Reference [101]. There is a reasonable degree of agreement between the LDA
+
+and PBE results, suggesting that the DFT phonon frequencies are accurate. Subsequent
+
+theoretical studies [97, 98, 99] have reproduced the results of Reference [101] for the
+
+monolayer. Regarding WTe2, we note that our calculations give real phonon frequencies
+
+in the whole BZ, indicating that the assumed hexagonal structure may indeed be stable.
+
+In experimental studies of thin films of WS2, WSe2, and MoS2 it is found that modes
+
+that were Raman inactive in the bulk become active in thin films and that there are small
+
+shifts in the phonon frequencies on going from the bulk to a thin film [102, 103, 104].
+
+Where comparison is possible, the experimental Raman frequencies of thin films are in
+
+agreement with the DFT results.
+
+3. Band-edge energy differences and spin-splittings
+
+Detailed discussion of the conduction and valence band dispersions in the vicinity
+
+of the k-space points of interest (K, Q, Γ, and M) will be given in Sections , , , and
+
+. In this section we briefly introduce the various band-splittings and band-edge energy
+
+differences that we use to characterise the band structure. An overview of the band
+
+structure obtained from DFT calculations is shown in Figure 2. The direct band gap
+
+Ebg of monolayer TMDCs can be found at the K and −K points of the BZ. Due to
+
+the lack of inversion symmetry, all bands are split by the intrinsic SOC except at the
+
+time-reversal invariant points M and Γ. We denote by 2∆vb and 2∆cb the spin-splitting
+
+of the VB and CB, respectively. There are another six minima in the CB that might be
+
+important, e.g., for transport or relaxation processes in certain compounds. We denote
+
+these points by Qi, i = 1 . . . 6. They can be found roughly half way between the K (−K)
+
+
+
+k · p theory for 2D TMDCs 8
+
+2 Q
+
+EK
+
+-2
+
+-1
+
+0
+
+1
+
+2
+
+3
+
+Γ Q K M Γ
+
+E
+-E
+
+F
+[e
+
+V
+]
+
+a)
+
+cb2
+EKQ
+
+Dvb
+vb2
+
+-0.8 -0.4 0 0.4 0.8
+-0.8
+
+-0.4
+
+0
+
+0.4
+
+0.8
+
+-1.4
+
+-1.2
+
+-1
+
+-0.8
+
+-0.6
+
+-0.4
+
+-0.2
+
+0
+
+k  [2π/a  ]x 0 
+
+k
+  
+[2
+
+π
+/a
+
+  
+]
+
+y
+0
+
+ 
+
+K-K Γ
+
+M
+
+E
+-E
+
+F
+
+b)
+
+-0.8 -0.4 0 0.4 0.8
+-0.8
+
+-0.4
+
+0
+
+0.4
+
+0.8
+
+1.8
+
+2
+
+2.2
+
+2.4
+
+2.6
+
+2.8
+
+3
+
+3.2
+
+3.4
+
+k  [2π/a  ]x 0 
+
+k
+  
+[2
+
+π
+/a
+
+  
+]
+
+y
+0
+
+ 
+
+E
+-E
+
+F
+
+K-K Q1
+
+Q2Q3
+
+Q4
+
+Q5 Q6
+
+c)
+
+Figure 2. Overview of the band structure of monolayer TMDCs as obtained from
+
+DFT calculations. a) Dispersion along the Γ–K–M–Γ line in the BZ. SOC is taken into
+
+account. Various band-edge energy differences and spin-splittings are also indicated; for
+
+definitions see the main text. b) Dispersion of the VB as a function of the wavevector
+
+k in the whole BZ. The hexagonal BZ is denoted by thick black lines. c) The same as
+
+b) for the CB. In b) and c) SOC is neglected.
+
+and the Γ points. The spin-splitting of the CB at Qi given by 2∆Q. The importance
+
+of the Qi points depends, amongst other things, on the energy difference between the
+
+bottom of the CB at the K and Qi points. This energy difference is denoted by EKQ.
+
+Looking at the VB now, the energy difference between the top of the VB at K and Γ is
+
+denoted by EKΓ. Finally, since it is directly available in recent ARPES measurements
+
+[106, 107, 108], we also record the width of the VB, which we define as the energy
+
+difference between the maximum of the VB at K and the minimum that can be found
+
+on the Γ–K line.
+
+Certain properties of TMDCs are easier to understand if one considers which atomic
+
+orbitals contribute to a given band at a given k-space point. For example, as pointed
+
+out in, e.g., References [26, 36, 37, 109], the different atomic orbital composition can
+
+explain the difference in the spin-splitting magnitude of the CB and VB at the K point.
+
+Furthermore, the atomic orbital composition of the energy bands underlies the tight-
+
+
+
+k · p theory for 2D TMDCs 9
+
+-3
+
+-2
+
+-1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+Γ Q K M Γ
+
+E
+−
+E
+F
+
+[
+
+e
+
+V
+
+℄
+
+a) M: dz2
+M: dx2−y2 + dxy
+M: dxz + dyz
+
+-3
+
+-2
+
+-1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+Γ Q K M Γ
+
+E
+−
+E
+F
+
+[
+
+e
+
+V
+
+℄
+
+b) X: pz
+X: px + py
+
+Figure 3. Atomic orbital weights in the energy bands of MX2. a) d orbitals of
+
+the metal atom, and b) p orbitals of the chalcogen atoms. The size of each symbol
+
+is proportional to the weight of the atomic orbital. SOC was neglected in these
+
+calculations.
+
+binding modelling of TMDCs [26, 32, 33, 35] and was also important in developing the
+
+k · p model [49, 60]. The contribution of individual atomic orbitals to a given band
+
+is shown in Figure 3 for the d orbitals of the metal atoms and the p orbitals of the
+
+chalcogens (the weights of other atomic orbitals are much smaller). Comparing Figures
+
+3(a) and (b) we find that in general more than one type of atomic orbital contributes to
+
+both the CB and the VB and the weight of the atomic orbitals changes throughout the
+
+BZ. Setting up a consistent tight-binding model for TMDCs is therefore more difficult
+
+than is the case for, e.g., graphene.
+
+4. Valence band width Dvb
+
+An observable that can be directly compared to experimental ARPES
+
+measurements [106, 107, 108] is the width of the VB Dvb. In order to be able to
+
+compare the experimental and theoretical results, we define Dvb to be the difference
+
+between the top of the VB at the K point and the minimum, which lies between the Γ
+
+and K points: see Figure 2. (Note that the absolute minimum of the VB is not at this
+
+k-space point. However, Reference [107] shows the dispersion only between Γ and K;
+
+therefore we use the definition of Dvb given above.) Comparison between the calculated
+
+and experimental values is given in Table 2.
+
+In the case of MoS2, Reference [106] reported that the VB is narrower than the
+
+calculated one by ≈ 10%, whereas for MoSe2 [107] the opposite seems to be true.
+
+Reference [106] also provides a comparison between calculations and the ARPES band
+
+structures of bilayer, trilayer and bulk MoS2, showing a better agreement than is found
+
+
+
+k · p theory for 2D TMDCs 10
+
+Table 2. The width of the VB as obtained from DFT calculations. Experimental
+
+values are shown in the row denoted by “Exp”.
+
+Dvb [eV] MoS2 MoSe2 WS2 WSe2 MoTe2 WTe2
+
+(HSE,LDA) 0.911 0.84 1.215 1.132 0.657 0.933
+
+(PBE,PBE) 0.896 0.84 1.207 1.136 0.688 0.965
+
+Exp ≈ 0.8a, ≈ 1.0c
+
+≈ 0.9–1.0b
+
+a[106], exfoliated samples on a SiO substrate.
+b[108], samples grown by chemical vapour deposition on a highly oriented pyrolytic
+
+graphite (HOPG) substrate.
+c[107], samples grown by molecular beam epitaxy (MBE) on bilayer graphene on top
+
+of SiC (0001).
+
+for monolayer MoS2. Furthermore, a good agreement between DFT calculations and
+
+ARPES measurements for the VB was observed for bulk MoS2 and MoSe2 [62, 110] and
+
+for MoTe2 [62]. The orbital composition of the VB away from the K point is not purely
+
+of Mo d orbital type: p orbitals of X atoms are also admixed (see Figure 3); hence Dvb
+
+in monolayers can be sensitive to interactions with substrates, which are not considered
+
+in our calculations and which might explain some of the differences with respect to
+
+measurements.
+
+5. Effective model at the K and −K points
+
+5.1. K and −K points
+
+The physics around the K and −K points has attracted the most attention both
+
+experimentally and theoretically so far. This is mainly due to the exciting optical
+
+properties of these materials at the direct band gap, which can be found at the K
+
+and −K points. Moreover, it turns out that the effect of SOC is strong at this BZ
+
+point, leading to spin-split and spin-polarized bands. Since the K and −K points are
+
+connected by time-reversal symmetry, the polarization of the bands has to be opposite
+
+at K and −K, i.e., the spin and the valley degrees of freedom are coupled [26]. We
+
+start our discussion in Section with a basic characterization of the band structure in
+
+terms of effective masses and spin-splittings. Then, in Section , a detailed k · p theory
+
+is presented which captures the salient features of the DFT band structure and allows
+
+us to interpret the results of recent experiments [111, 112, 113, 114, 115].
+
+5.2. Basic characterization and material parameters
+
+The aim of this section is twofold. First, we want to point out that there is
+
+a difference between the MoX2 and WX2 materials regarding the sign of the SOC
+
+constant in the CB (for a microscopic explanation see References [34], [36] and [49]).
+
+This difference is important for the interpretation of experiments in which properties
+
+of A and B excitons [27, 30] are compared (for introduction to exciton physics see e.g.,
+
+[116]). Second, we report effective masses and spin-splittings extracted from our DFT
+
+calculations and compare them to experimental results, where available; see Tables 3
+
+
+
+k · p theory for 2D TMDCs 11
+
+and 4.
+
+One of the phenomena that first sparked strong interest in monolayer TMDCs was
+
+the pronounced effect of SOC on the VB around the K and −K points. SOC leads to
+
+the spin-splitting and spin-polarization of the VB and the energy scale associated with
+
+SOC is several hundreds of meVs: see Table 4. SOC in the VB was first studied using
+
+DFT calculations [109, 117, 118, 119], but it can be readily understood using, e.g, a
+
+tight-binding model and first-order perturbation theory [26, 36, 37]. An experimental
+
+signature of the spin-splitting of the VB is the energy difference of the A and B excitons
+
+[27, 30].
+
+SOC also affects the CB. This was initially neglected, mainly because in MoS2,
+
+which is the most widely studied of the TMDCs, it is indeed a small effect and it was
+
+assumed that the situation would be similar in other monolayer TMDCs. In general the
+
+magnitude of the spin-splitting of the CB is only 7–10% of that of the VB, with the
+
+exception of MoS2, where it is only ≈ 2%: see Table 3. However, in absolute terms it
+
+is an energy scale that can be important at low temperatures and in ballistic samples.
+
+Note that the SOC in the CB at the K point is a more subtle effect than in the VB. In
+
+the simplest theoretical approximation, which assumes that it is sufficient to consider
+
+only the dz2 atomic orbitals of the metal atoms, the SOC vanishes. DFT calculations,
+
+on the other hand, indicate that there is a finite spin-splitting in the CB at the K point
+
+[60, 109, 117, 118, 119].
+
+As it turns out, the SOC in the CB can be understood in terms of a competition
+
+between two contributions [34, 36, 49, 60, 120]: i) a first-order contribution from the
+
+chalcogen atoms, which have a small, but finite weight [34, 37] and ii) a second-order
+
+contribution due to the coupling to other bands [34, 36, 49, 60], where the dxz and
+
+dyz atomic orbitals have large weights; see Figure 3. Due to this competition the spin-
+
+polarisation of the spin-split CBs is different in MoX2 and WX2. Our latest results
+
+were obtained using the fleur code, which allows the explicit calculation of the spin
+
+expectation value 〈sz〉 in a given band. We find that the spin-split CB with 〈sz〉 > 0
+
+(〈sz〉 < 0) is higher (lower) in energy in MoX2, while the opposite is true for WX2: see
+
+Figures 4(a) and 4(b), in which the CBs of MoSe2 and WSe2 are shown, respectively. By
+
+contrast, as shown in Figures 4(c) and 4(d), in the VB the sign of 〈sz〉 is the same for both
+
+MoX2 and WX2. Furthermore, as can be seen in Figures 4(a) and 4(b), the band with
+
+the lighter effective mass is lower in energy for MoX2, leading to band crossing of the two
+
+spin-split bands in the vicinity of the K and −K points [34, 36, 49], whereas for WX2
+
+the lighter spin-split band is higher in energy and therefore there is no band crossing.
+
+(MoTe2 is somewhat special in that the crossing of the spin-split bands on the Γ–K line
+
+is absent. The other band crossing, on the K–M line, is present). These differences
+
+notwithstanding, there is a spin–valley coupling in the CB similar to the VB. In Figure
+
+4 we also introduce the notation K
+(1)
+vb (K
+
+(2)
+vb ) for the higher-in-energy (lower-in-energy)
+
+spin-split VB, and similarly for the CB. As a consequence of the spin polarisation of the
+
+bands in optical experiments the lowest-energy spin-allowed transition is K
+(1)
+vb → K
+
+(2)
+cb
+
+for MoX2 and K
+(1)
+vb → K
+
+(1)
+cb for WX2. We note that very recently the first spin-resolved
+
+
+
+k · p theory for 2D TMDCs 12
+
+1.3
+
+1.4
+
+1.5
+
+1.6
+
+1.7
+
+0.55 0.6 0.65 0.7 0.75 0.8
+
+E
+-E
+
+F
+[e
+
+V
+]
+
+kx [ 2π /a0 ]
+
+a)
+
+MΓ
+
+K(1)cb
+
+K(2)cb
+
+MoX2 1.25
+
+1.35
+
+1.45
+
+1.55
+
+1.65
+
+0.55 0.6 0.65 0.7 0.75 0.8
+
+E
+-E
+
+F
+[e
+
+V
+]
+
+kx [ 2π /a0 ]
+
+b)
+
+MΓ
+
+K(1)cb
+
+K(2)cb
+
+WX 2
+
+-0.4
+
+-0.3
+
+-0.2
+
+-0.1
+
+0
+
+0.55 0.6 0.65 0.7 0.75 0.8
+
+E
+-E
+
+F
+[e
+
+V
+]
+
+kx [ 2π /a0 ]
+
+c)
+
+MΓ
+
+K(1)vb
+
+K(2)vb
+MoX2 -0.75
+
+-0.65
+
+-0.55
+
+-0.45
+
+-0.35
+
+-0.25
+
+-0.15
+
+-0.05
+
+0.05
+
+0.55 0.6 0.65 0.7 0.75 0.8
+
+E
+-E
+
+F
+[e
+
+V
+]
+
+kx [ 2π /a0 ]
+
+d)
+
+MΓ
+
+K(1)vb
+
+K(2)vbWX 2
+
+Figure 4. Spin polarisation and dispersion of the spin-split CB and VB in the
+
+vicinity of the K point from DFT calculations. Arrows show the direction of the
+
+spin expectation values (red: spin-up, blue: spin-down). a) and c) results for MoX2;
+
+b) and d) results for WX2. Note that the order of spin-up and spin-down bands in
+
+the CB is different for MoX2 and WX2. The vertical dashed line shows the position of
+
+the K point. The actual calculations were performed for MoSe2 and WSe2 using the
+
+“(PBE,PBE)” approach.
+
+ARPES measurement on bulk WSe2 has appeared [121] and seems to indicate an out-of-
+
+plane spin polarisation of the spin-split VB around K and −K points. Assuming that
+
+the measurements predominantly probe the top layer [121], i.e., effectively a monolayer
+
+sample, they are in agreement with the DFT calculations presented here.
+
+The dispersion around the K and −K points is not simply parabolic [60], which
+
+has to be borne in mind when fitting the band structure to obtain the effective masses
+
+and other band parameters. This can already be appreciated in Figures 2(b) and (c),
+
+where a trigonal warping (TW) of the dispersion around the K and −K points can
+
+clearly be seen. The TW is more pronounced in the VB than in the CB. In the
+
+simplest approximation this can be taken into account by a cubic term in the dispersion.
+
+Therefore the dispersion of each spin-split band in the VB and the CB can be described
+
+by
+
+EK(q) =
+~2q2
+
+2meff
+
++ C3w|q|3 cos(3ϕq), (1)
+
+where the wavevector q = (qx, qy) is measured from the K point, ϕq =
+
+arctan(qy/qx), meff is the effective mass of the given band, and C3w is a parameter
+
+describing the TW. The derivation of EK(q) based on a multi-band k · p model is
+
+presented in Section and . We note that a similar model was recently used in Reference
+
+
+
+k · p theory for 2D TMDCs 13
+
+[122].
+
+The values of the meff and C3w that we have extracted from our DFT calculations
+
+for each band and material are given in Tables 3 and 4. We note that several works
+
+have already presented tables of, e.g., effective masses [43, 45, 81, 123, 124, 125, 126]
+
+for different monolayer TMDCs. However, the effects of SOC have often been neglected
+
+leading to, e.g., the conclusion that the effective masses of the spin-split VBs are the
+
+same. Recent experimental evidence shows that this is not the case [107, 193]. Moreover,
+
+due to the presence of the TW, some care has to be taken when defining the effective
+
+mass and, especially, when choosing the fitting range that is used to obtain it from a
+
+DFT band structure. All our DFT band-structure calculations were performed along
+
+the Γ–K–M line in the BZ. We first fitted meff , i.e., we set C3w = 0 in Equation (1).
+
+The fitting range corresponded to 5% of the Γ–K distance. The dispersion over such
+
+range was considered to be isotropic and the difference in the effective masses along
+
+K–Γ and K–M was neglected. Therefore the effective masses shown in Tables 3 and
+
+4 characterise, strictly speaking, a rather narrow vicinity of the band edge. The non-
+
+parabolicity of the band structure and the trigonal distortion of the constant energy
+
+contours, described by the second term in Equation (1), was taken into account in a
+
+second step, whereby Equation (1) was fitted over a wider range (typically ≈ 10% of
+
+the Γ–K distance), but meff , obtained in the previous step, was kept fixed. This two-
+
+step fitting was needed to obtain coherent parameter sets between the simple approach
+
+outlined here and a more accurate model presented in Section . Further details of the
+
+fitting procedure are discussed in . Looking at Tables 3 and 4 one can see that the
+
+effective masses and spin-splittings obtained from the two different DFT calculations
+
+are in almost perfect agreement, while there are some differences in the extracted values
+
+of C3w.
+
+Considering first the CB, the extracted band parameters and SOC splittings 2∆cb
+
+for different monolayer TMDCs are shown in Table 3. To our knowledge there are
+
+no direct measurements of ∆cb or mcb for any of these materials yet; therefore it is
+
+difficult to tell how reliable these DFT-based predictions are. In addition we show the
+
+charge density ncb at which the upper spin-split CB K
+(1)
+cb starts to be populated. This
+
+charge density is calculated using the effective mass of the K
+(2)
+cb band given in Table
+
+3 and assuming a simple parabolic dispersion (i.e., neglecting C3w), which is a good
+
+approximation in the CB. Note that typical charge densities achieved by gating in
+
+MoS2 are reported to be ∼ 4 · 1012 cm−2–3.6 · 1013 cm−2 [127], a few times 1012 cm−2 for
+
+monolayer samples [128] and few-layer samples [129]), and up to 1014 cm−2 in few-layer
+
+WS2 using ionic liquid gating [130].
+
+Turning now to the VB, the band parameters and SOC splitting 2∆vb obtained
+
+from our DFT calculations are shown in Table 4. In the case of MoSe2, very recent
+
+high-resolution ARPES measurements [107] allow for a direct comparison with the
+
+calculations, because the difference between the effective masses of K
+(1)
+vb and K
+
+(2)
+vb could
+
+be directly observed. We show two theoretical values for the effective masses in the
+
+VB of MoSe2. The first one is obtained using the fitting procedure described above,
+
+
+
+k · p theory for 2D TMDCs 14
+
+Table 3. Band dispersion parameters and spin-splittings at the K and −K points in
+
+the CB from DFT calculations. m
+(1)
+cb (m
+
+(2)
+cb ) is the effective mass of the K
+
+(1)
+cb (K
+
+(2)
+cb )
+
+band, and similarly for C
+(1)
+3w (C
+
+(2)
+3w ). me is the free electron mass. ncb is the electron
+
+density above which the upper spin-split CB starts to fill.
+
+MoS2 MoSe2 WS2 WSe2 MoTe2 WTe2
+
+m
+(1)
+cb /me (HSE,LDA) 0.46 0.56 0.26 0.28 0.62 0.26
+
+m
+(1)
+cb /me (PBE,PBE) 0.47 0.58 0.27 0.29 0.61 0.25
+
+m
+(2)
+cb /me (HSE,LDA) 0.43 0.49 0.35 0.39 0.53 0.39
+
+m
+(2)
+cb /me (PBE,PBE) 0.44 0.50 0.36 0.40 0.51 0.38
+
+C
+(1)
+3w [eVÅ3] (HSE,LDA) −3.36 −3.11 −2.8 −3.02 −3.85 −5.86
+
+C
+(1)
+3w [eVÅ3] (PBE,PBE) −3.57 −2.94 −1.8 −2.44 −3.95 −17.54
+
+C
+(2)
+3w [eVÅ3] (HSE,LDA) −3.34 −3.12 −3.14 −3.23 −3.86 −4.90
+
+C
+(2)
+3w [eVÅ3] (PBE,PBE) −3.49 −2.86 −2.54 −2.97 −4.04 −9.67
+
+2∆cb [meV] (HSE,LDA) 3 22 −32 −37 36 −52
+
+2∆cb [meV] (PBE,PBE) 3 20 −31 −37 32 −54
+
+ncb [1012 cm−2] (HSE,LDA) 0.54 4.5 4.68 6.03 7.97 8.48
+
+i.e., by averaging the values along the K–Γ and K–M directions. The second value,
+
+shown in parenthesis, is obtained by following the fitting procedure that was used for
+
+the experimental data [131]. This latter procedure involves fitting only along the K–Γ
+
+direction, and a fitting range of ≈ 13% of the K–Γ distance. One can see that the
+
+theoretical and experimental effective masses that were obtained using the same fitting
+
+range are in good agreement. Moreover, the calculated value of 2∆vb also corresponds
+
+rather well to the measured one. MoS2 is the only other monolayer TMDC for which
+
+ARPES measurements are available to extract the effective mass. However, the ARPES
+
+data of Reference [132] do not resolve K
+(1)
+vb and K
+
+(2)
+vb separately; therefore the reported
+
+effective mass is the average of m
+(1)
+vb and m
+
+(2)
+vb . Taking into account the experimental
+
+uncertainty, our results are in reasonable agreement with the measurements of Reference
+
+[132]. The available data for MoS2, MoSe2 and WSe2 suggest that DFT can capture
+
+the VB effective masses quite well even without GW corrections, such as those found in
+
+Reference [47]. For the other three monolayers, to our knowledge, no ARPES data are
+
+yet available.
+
+In optical experiments the difference of the A and B exciton energies are usually
+
+identified with 2∆vb providing the results shown in Table 4. We note that there are
+
+two assumptions behind the identification of the A and B exciton energy difference with
+
+2∆vb: i) that the spin-splitting in the CB is negligible and ii) that the binding energies of
+
+the A and B excitons are the same. Regarding i), one can see in Table 3 that ∆cb is small,
+
+but finite, and for quantitative comparisons between theory and experiment it should
+
+not be neglected. As for ii), we note that the binding energy of the A and B excitons
+
+depends on their reduced mass, which, according to Table 4, should be different for the
+
+
+
+k · p theory for 2D TMDCs 15
+
+Table 4. Effective masses and spin-splittings at the K point in the VB from DFT
+
+calculations. m
+(1)
+vb (m
+
+(2)
+vb ) is the effective mass of the K
+
+(1)
+vb (K
+
+(2)
+vb ) band, and similarly
+
+for C
+(1)
+3w (C
+
+(2)
+3w ). me is the free electron mass. The values in brackets were obtained
+
+using a slightly different fitting range, as explained in the text. Experimental values
+
+are shown in rows denoted by “Exp”.
+
+MoS2 MoSe2 WS2 WSe2 MoTe2 WTe2
+
+m
+(1)
+vb /me (HSE,LDA) −0.54 −0.59 (−0.64) −0.35 −0.36 −0.66 −0.34
+
+m
+(1)
+vb /me (PBE,PBE) −0.54 −0.60 (−0.60) −0.36 −0.36 −0.62 −0.32
+
+Exp −0.6± 0.08a −0.67± 0.4b −0.35± 0.01z
+
+m
+(2)
+vb /me (HSE,LDA) −0.61 −0.7 (−0.72) −0.49 −0.54 −0.82 −0.58
+
+m
+(2)
+vb /me (PBE,PBE) −0.61 −0.7 (−0.69) −0.50 −0.54 −0.77 −0.54
+
+Exp −0.6± 0.08a −0.75± 0.3b −0.49± 0.05z
+
+C
+(1)
+3w [eVÅ3] (HSE,LDA) 6.16 5.67 4.59 6.47 5.44 6.77
+
+C
+(1)
+3w [eVÅ3] (PBE,PBE) 6.08 5.21 6.07 5.79 5.46 17.61
+
+C
+(2)
+3w [eVÅ3] (HSE,LDA) 5.78 5.42 5.50 5.18 5.14 4.83
+
+C
+(2)
+3w [eVÅ3] (PBE,PBE) 5.71 5.064 5.04 4.78 5.09 9.08
+
+2∆vb [meV] (HSE,LDA) 148 186 429 466 219 484
+
+2∆vb [meV] (PBE,PBE) 148 184 425 462 213 480
+
+Exp [meV] ≈ 140c ≈ 180e ≈ 400g, ≈ 400g 250y
+
+≈ 150d ≈ 180f 380h & 460k
+
+160m ≈ 200m 410i 400l
+
+140n 400j 510m
+
+140p 400l ∼ 500q
+
+138r 202r 379r 404r
+
+391t 412t
+
+430x
+
+513z
+
+a[132], sodium intercalated sample and ARPES measurement.
+bPrivate communication by Yi Zhang based on ARPES measurements; see [107].
+c[27], f [133], i[134], j [135], l[136], r[137], from differential reflectance.
+e[107], from ARPES measurement.
+d[138], g[139], p[140], from photoluminescence.
+h[141], from differential transmission.
+k[23], from electroluminescence.
+m[142], from photocurrent spectroscopy of suspended samples.
+n[143], from absorbance measurement.
+q[121], from spin-resolved ARPES measurement.
+t[144], from reflectivity measurement.
+x[145], from linear absorption.
+y[192], from reflectance measurements.
+z[193], ARPES meauserement.
+
+different exciton species. With these caveats the agreement between the calculations
+
+and the experiments is qualitatively good, especially for MoS2 and MoSe2.
+
+
+
+k · p theory for 2D TMDCs 16
+
+Comparing the DFT-calculated effective masses in Tables 3 and 4 for the VBs and
+
+CBs that have the same spin-polarisation, one can observe that there is no electron–
+
+hole symmetry in the band structure. The first experimental evidence to support this
+
+observation, coming from magnetoluminescence experiments, has appeared very recently
+
+[112, 113, 114, 115, 195]. Regarding the experimental relevance of TW, it has been
+
+argued [111] that it leads to measurable effects in the polarisation of electroluminescence
+
+in p–n junctions. We note that due to the heavier effective mass in the VB and the
+
+larger values of C3w, the TW is more pronounced in our DFT calculations in the VB
+
+than in the CB. In the latter a simple parabolic approximation is often adequate.
+
+We finish Section with a brief discussion of the quasiparticle band gap Ebg,K, which
+
+we define as the difference between the maximum of the K
+(1)
+vb and K
+
+(2)
+cb bands at the K
+
+and −K points. DFT calculations for monolayer TMDCs underestimate the band gap
+
+(see Table 5) and its evaluation requires the use of GW methodology [45, 46, 47, 81, 117].
+
+Experimental evidence that supports the conclusions of the GW calculations is now also
+
+Table 5. Band gap Ebg,K at the K point from DFT calculations, from GW
+
+calculations, and from measurements. Ebg,K is defined as the energy difference between
+
+the bands K
+(1)
+vb and K
+
+(2)
+cb at K. The GW “flavour” used in the calculations is also
+
+shown. Experimental values are shown in rows denoted by “Exp”. All values are in
+
+eV.
+
+MoS2 MoSe2 WS2 WSe2 MoTe2 WTe2
+
+(HSE,LDA) 1.67 1.40 1.60 1.30 0.997 0.792
+
+(PBE,PBE) 1.59 1.34 1.58 1.27 0.947 0.765
+
+GW 2.84h 2.41l,m 2.88l,q 2.42l 1.77l 1.77q
+
+2.76j,q 2.26 (2.13)n 2.70p 2.38q 1.79m 1.79x
+
+2.80k 2.33q 3.11k 2.51x 1.82q
+
+2.82l 2.31x 2.91x 1.77x
+
+2.97m
+
+Exp 2.5a 2.18b 2.14c 2.51± 0.04r
+
+2.14± 0.08g 2.02s,2.22s 2.41d 2.0s,2.18s
+
+Exp (ARPES) 1.86e 1.58f
+
+a[142], photocurrent spectroscopy on suspended samples, lower bound.
+b[146], scanning-tunnelling experiments, on bilayer graphene substrate.
+c[24], transport measurements using ionic liquid gating.
+d[135], differential reflectance, on SiO2 substrate.
+e[132], f [107], from ARPES, heavily doped sample.
+g[151], s[152], scanning-tunnelling experiments, on graphite substrate.
+r[153], scanning-tunnelling experiments.
+h[47], G1W .
+j [117], quasiparticle self-consistent GW .
+k[81], self-consistent GW0.
+l[45], m[46], q[147], x[101], G0W0 method.
+n[146], G1W , without (with) substrate screening taken into account.
+p[134], G1W .
+
+
+
+k · p theory for 2D TMDCs 17
+
+emerging. Apart from its fundamental importance, the main reason for discussing Ebg,K
+
+and showing our DFT results is that Ebg,K enters into the fitting procedure that we use
+
+to obtain the parameters of the k · p Hamiltonian that describes the dispersion in the
+
+vicinity of the band edge. The details of the k · p model and the fitting procedure are
+
+given in Section and . As one can see, our DFT calculations significantly underestimate
+
+the experimental quasiparticle band gaps. We also note that in heavily doped samples,
+
+which were used in the ARPES measurements [107, 132], the observed band gap is
+
+reduced with respect to results obtained by other methods [24, 135, 142, 146], hinting
+
+at the crucial importance of screening in monolayer TMDCs.
+
+5.3. k · p Hamiltonian
+
+We now present a low-energy effective k ·p Hamiltonian that describes the coupled
+
+dynamics of the VB and CB. Part of the theory was previously discussed in References
+
+[60] and [49]; in the present work we both overview and extend these earlier results.
+
+To obtain a model that captures the most important features of the dispersion of the
+
+VB and CB one can start from a seven-band model, which was introduced in Reference
+
+[60, 49]; motivation and details of the model are given in . An effective low-energy
+
+Hamiltonian can be derived from the seven-band model by systematically eliminating
+
+all degrees of freedom other than the ones corresponding to the VB and CB using Löwdin
+
+partitioning [150]. We keep terms up to third order in the off-diagonal coupling elements
+
+of the original seven-band model and use the spinful basis {|Ψvb, s〉, |Ψcb, s〉}, where
+
+|Ψvb〉 (|Ψcb〉) are spinless Bloch wave functions in the VB (CB) and |Ψb, s〉 = |Ψb〉⊗ |s〉,
+with b = {cb, vb} and s = {↑, ↓} denoting the band spin degree of freedom, respectively.
+
+One finds that the low-energy effective Hamiltonian
+
+Hτ,s
+eff = H0 +Hτ,s
+
+k·p +Hτ,s
+so (2)
+
+is the sum of the following terms:
+
+i) The free-electron term H0 = ~2q2
+
+2me
+(12⊗sz), where 12 is a unit matrix in the electron–
+
+hole space, sz is a spin Pauli matrix, and me is the free electron mass. Here and
+
+in Equations (4b)–(4f) the wavevector q = (qx, qy) is measured from the K or −K
+points. We note that H0 is usually neglected in the GaAs literature on account of
+
+the light effective mass in this material, but here we want to keep it.
+
+ii) The SOC Hamiltonian Hτ,s
+so , which contains the diagonal and q-independent
+
+contributions of the SOC. It reads
+
+Hτ,s
+so =
+
+(
+τ∆vbsz 0
+
+0 τ∆cbsz
+
+)
+, (3)
+
+i.e., it is diagonal in spin space and is proportional to the Pauli matrix sz (for further
+
+details see ). Hτ,s
+so describes the spin-splittings of the CB and the VB, which are due
+
+to the absence of inversion symmetry in monolayer TMDCs. Since Hτ,s
+so is diagonal,
+
+
+
+k · p theory for 2D TMDCs 18
+
+one can also write it in terms of the eigenvalues s = ±1 of sz; we will use the two
+
+notations interchangeably. Moreover, the index τ = 1 (τ = −1) denotes the valley
+
+K (−K). Where it is more convenient, we will also use the matrix τz which acts in
+
+the valley space. In the VB, the parameter ∆vb that describes the strength of the
+
+SOC can always be taken to be positive. As explained in Section , the situation is
+
+more complicated in the CB [34, 49, 36], because DFT calculations show that, in
+
+the case of MoX2, the spin-split bands cross close to the K and −K points, while
+
+there is no such band crossing for WX2. This can be understood in terms of ∆cb
+
+having opposite signs in MoX2 and WX2.
+
+iii) Finally, the k · p Hamiltonian Hτ,s
+k·p in Equation (2) is given by
+
+Hτ,s
+k·p = Hτ,s
+
+D +Hτ,s
+as +Hτ,s
+
+3w +Hτ,s
+cub, (4a)
+
+where
+
+Hτ,s
+D =
+
+(
+εvb τ · γτ,sqτ−
+
+τ · γ∗τ,sqτ+ εcb
+
+)
+, (4b)
+
+Hτ,s
+as =
+
+(
+ατ,sq
+
+2 0
+
+0 βτ,sq
+2
+
+)
+, (4c)
+
+Hτ,s
+3w =
+
+(
+0 κτ,s(q
+
+τ
++)2
+
+κ∗τ,s(q
+τ
+−)2 0
+
+)
+, (4d)
+
+Hτ,s
+cub,1 = −τ 1
+
+2
+q2
+
+(
+0 ητ,sq
+
+τ
+−
+
+η∗τ,sq
+τ
++ 0
+
+)
+. (4e)
+
+Hτ,s
+cub,2 = −τ ωs
+
+2
+|q|3 cos(3ϕq)
+
+(
+1 0
+
+0 1
+
+)
+. (4f)
+
+Here qτ± is defined as qτ± = qx± iτqy, ϕq = arctan(qy/qx), εvb and εcb are band-edge
+
+energies, γτ,s, ατ,s, βτ,s, κτ,s, ητ,s, and ωs are material parameters discussed below.
+
+Hτ,s
+k·p is a generalisation of the results given in Reference [60] for the case in which
+
+the material parameters depend on the SOC.
+
+In general all off-diagonal material parameters appearing in Hτ,s
+k·p are complex
+
+numbers such that for τ = −1 (−K valley) they are the complex conjugate of the
+
+τ = 1 (K valley) values. Concrete values of the material parameters for each MX2
+
+material can be obtained by, e.g., fitting a DFT band structure, see Tables 6 and 7.
+
+Note however, that the fitting procedure (see ) yields real numbers for each parameter.
+
+We now briefly discuss each of the terms [Equations (4b)–(4f)].
+
+i) Terms up to linear order in q+ and q− can be found in Equation (4b). Hτ,s
+D is
+
+basically the massive Dirac fermion model introduced in Reference [26]. It describes
+
+an isotropic dispersion around the band edge and it does not break the electron–hole
+
+symmetry. The value of γs,τ also depends on the SOC, but the Löwdin-partitioning
+
+
+
+k · p theory for 2D TMDCs 19
+
+calculations suggest that this dependence should be weak. This is indeed what we
+
+have found from fits to the DFT band structure. Therefore in the following we
+
+suppress both the spin index s and, since γ is taken to be a real number, the valley
+
+index τ .
+
+ii) Diagonal terms quadratic in q+ and q− are given in Equation (4c). Hτ,s
+as breaks the
+
+electron–hole symmetry because in general ατ,s 6= βτ,s. The recent observation of
+
+photoluminescence peak splitting in magnetic fields [112, 114, 113, 115] suggests
+
+that electron–hole symmetry is indeed broken. Both ατ,s and βτ,s can be written
+
+as, e.g., ατ,s = α0 + τ · s · α̃ and hence ατ,s = α−τ,−s, βτ,s = β−τ,−s.
+
+iii) Off-diagonal terms quadratic in q+ and q− are given in Equation (4d). Hτ,s
+3w , in
+
+combination with Hτ,s
+D , leads to the TW of the energy contours that can be observed
+
+in Figures 2(b) and (c). [For further details see Equation (B.1) in ]. The TW is
+
+expected to play an important role in the explanation of recent electroluminescence
+
+experiments [111]. It may facilitate the generation of valley and spin currents that
+
+are second order in the applied bias [122]. Moreover, it was observed in ARPES
+
+measurements [108, 121].
+
+iv) Off-diagonal terms cubic in q+ and q− appear in Equation (4e). Hτ,s
+cub,1 is important
+
+for obtaining a good fit to the DFT band structure away from the K point in a
+
+two-band model that describes the coupled dynamics of the VB and CB. They
+
+also play role when one uses the eigenvalues of Hamiltonian (2) to fit the DFT
+
+band structure in order to extract material parameters (see Tables 6 and 7 below).
+
+In particular, combined with the off-diagonal first-order terms, they contribute in
+
+second order in the wavenumber to the eigenvalues (for details see ).
+
+v) Diagonal terms cubic in q+ and q−. In some cases it is more convenient to work
+
+with a model that gives the dispersions of the VB and CB separately. Cubic terms
+
+in q are needed to capture the non-parabolicity of the bands, and such a model is
+
+given by Equation (1). It can easily be obtained by applying Löwdin partitioning
+
+to Equation (2) and eliminating either the electron or the hole degrees of freedom.
+
+In this case, for consistency, the term Hτ,s
+cub,2 in Equation (4f) also has to be taken
+
+into account.
+
+We note that, starting from a TB Hamiltonian, a model containing the terms (4b)–(4d)
+
+and the VB spin-splitting was also obtained in Reference [32].
+
+In comparison to Equations (3) and (4b)–(4f), the widely used gapped Dirac
+
+Hamiltonian model introduced in Reference [26] contains only the terms linear in q
+
+and the spin-splitting in the VB. It can be written as
+
+H̃D = γ(τqxσx + qyσy) +
+Ebg
+
+2
+σz + ∆vbτsz
+
+σz − 1
+
+2
+. (5)
+
+Here the Pauli matrices σx,y,z act in the electron–hole space. This simple model
+
+correctly captures the large spin-splitting of the VB, that the dispersion in the close
+
+vicinity of the K valley is quadratic, and predicts the valley-dependent optical selection
+
+rule [26] in accordance with experiments [27, 28, 29]. However, the preceding discussion
+
+
+
+k · p theory for 2D TMDCs 20
+
+of the various terms in Equation (2) clearly indicates the limitations of Equation (5)
+
+in the interpretation of certain experimental results and DFT calculations: it cannot
+
+describe, for example, the spin-splitting of the CB, the electron–hole asymmetry and
+
+the trigonal warping of the spectrum.
+
+The eigenstates and eigenvalues of the k · p Hamiltonian (2) can also be used
+
+as a starting point for analytical calculation of the Berry curvature [148]. The Berry
+
+curvature is relevant for the quantum transport characteristics of TMDCs, such as the
+
+valley Hall effect [26] and weak localisation [154], while a related quantity, the spin Berry
+
+curvature [149], gives rise to a finite spin Hall conductivity for moderate hole doping.
+
+Finally, we show the k · p parameters obtained from fitting of the DFT band
+
+structure (see Tables 6 and 7) using the model that explicitly contains the coupling
+
+between the VB and the CB. In this case the diagonal cubic term [Equation (4f)]
+
+is not important for obtaining a good fit to the band structure and therefore the ωs
+parameter is not shown. Close to the band edge the k · p parameters given in Tables 6
+
+and 7 reproduce the effective masses shown in Tables 3 and 4. The details of the fitting
+
+procedure are given in . Since the effective masses and C3w parameters extracted from
+
+the (HSE,LDA) and (PBE,PBE) approaches are rather similar, we only show results
+
+that are based on (HSE,LDA) DFT band-structure calculations. Due to the SOC all
+
+parameters, with the exception of γ, are different for different spin indices s. Since
+
+the Hamiltonian of Equation (4a) is diagonal in the spin space, i.e., it describes the
+
+coupled dynamics of the VB and CB having the same spin, it is convenient to introduce
+
+the notation s =↑ (s =↓) for s = 1 (s = −1). Regarding the correspondence between
+
+the notation used in Section and here, note that the order of the bands with ↑ and ↓
+polarisation in the CB is different for MoX2 and WX2. Therefore in the VB the upper
+
+index (1) ((2)) is equivalent to ↓ (↑), but in the CB the relation depends on which
+
+material is considered. We note that the parameter γ can, in principle, also be obtained
+
+directly as a momentum matrix element between the Kohn–Sham wave functions of the
+
+VB and CB. For these calculations we used the castep code [155], where the necessary
+
+plane-wave coefficients of the wave functions at the band edges are readily accessible.
+
+These values are denoted by |γKS| in Tables 6 and 7. On the one hand, the good
+
+agreement between |γ| and |γKS| indicates the consistency of our fitting procedure. This
+
+is not trivial, because the fitting involves a non-linear function of the k · p parameters.
+
+On the other hand, one has to bear in mind that |γ| is obtained such that it would give
+
+the best fit to the DFT band structure over a certain range in the BZ. Therefore it may
+
+differ from the value of |γKS| that is calculated at a single point of the BZ. The valley
+
+index τ is suppressed in Tables 6 and 7 because, as mentioned above, from the fitting
+
+procedure we obtain real numbers for the off-diagonal terms.
+
+As explained in , our fitting procedure involves the quasiparticle band gap Ebg,K.
+
+For this reason two sets of k ·p parameters are reported in Tables 6 and 7: one in which
+
+we used Ebg,K values obtained from our DFT calculations and one in which we used
+
+Ebg,K values found in GW calculations; see Table 5. In the latter case we make the
+
+assumption that the bands above the Fermi energy are rigidly shifted upwards in energy
+
+
+
+k · p theory for 2D TMDCs 21
+
+Table 6. k · p parameters at the K point. In columns labelled by “DFT” the
+
+parameters obtained with the help of DFT band gap are shown, for the columns
+
+labelled by “GW” the band gap is taken from GW calculations.
+
+MoS2 MoSe2 WS2 WSe2
+
+DFT GW DFT GW DFT GW DFT GW
+
+Ebg,K [eV] 1.67 2.80 1.40 2.26 1.60 2.88 1.30 2.42
+
+|γKS| [eV·Å] (HSE,LDA) 3.00 – 2.52 – 3.85 – 3.31 –
+
+|γ| [eV·Å] (HSE,LDA) 2.76 2.22 2.53 2.20 3.34 2.59 3.17 2.60
+
+α↑ [eV·Å2] (HSE,LDA) −5.97 −6.21 −5.34 −5.76 −6.14 −6.56 −5.25 −5.97
+
+α↓ [eV·Å2] (HSE,LDA) −6.43 −6.65 −5.71 −6.20 −7.95 −7.96 −6.93 −7.58
+
+β↑ [eV·Å2] (HSE,LDA) 0.28 0.52 −0.95 −0.54 1.62 2.03 0.33 1.08
+
+β↓ [eV·Å2] (HSE,LDA) 0.54 0.76 −0.52 −0.03 4.00 4.00 2.35 3.0
+
+κ↑ [eV·Å2] (HSE,LDA) −1.48 −1.84 −1.31 −1.49 −1.24 −1.60 −1.11 −1.36
+
+κ↓ [eV·Å2] (HSE,LDA) −1.45 −1.80 −1.23 −1.40 −1.09 −1.41 −0.93 −1.14
+
+η↑ [eV·Å3] (HSE,LDA) 13.7 17.74 15.11 18.28 21.85 29.49 18.04 23.78
+
+η↓ [eV·Å3] (HSE,LDA) 21.1 26.95 17.10 20.93 31.73 40.94 26.17 34.49
+
+Table 7. k · p parameters at the K point. In columns labelled by “DFT” the
+
+parameters obtained with the help of DFT band gap are shown, for the columns
+
+labelled by “GW” the band gap is taken from GW calculations.
+
+MoTe2 WTe2
+
+DFT GW DFT GW
+
+Ebg,K [eV] 0.997 1.82 0.792 1.77
+
+|γKS| [eV·Å] (HSE,LDA) 2.12 – 2.84 –
+
+|γ| [eV·Å] (HSE,LDA) 2.33 2.16 3.04 2.79
+
+α↑ [eV·Å2] (HSE,LDA) −4.78 −5.31 −3.94 −5.02
+
+α↓ [eV·Å2] (HSE,LDA) −4.85 −5.78 −5.20 −7.31
+
+β↑ [eV·Å2] (HSE,LDA) −2.19 −1.66 −0.9 0.17
+
+β↓ [eV·Å2] (HSE,LDA) −1.78 −0.84 0.60 2.72
+
+κ↑ [eV·Å2] (HSE,LDA) −1.19 −1.28 −1.01 −1.10
+
+κ↓ [eV·Å2] (HSE,LDA) −1.01 −1.09 −0.96 −1.04
+
+η↑ [eV·Å3] (HSE,LDA) 13.26 15.18 14.72 17.61
+
+η↓ [eV·Å3] (HSE,LDA) 13.54 16.37 19.41 27.12
+
+such that the effective masses and the TW in the VB and CB remain the same. We
+
+believe that this is a reasonable assumption because the available experimental evidence
+
+(see Tables 4 and 10) suggests that, at least in the VB, the effective masses are captured
+
+
+
+k · p theory for 2D TMDCs 22
+
+quite well by the DFT calculations.
+
+6. Effective models at the Q (a.k.a. Λ) point
+
+6.1. Qi points
+
+In addition to the K and −K points, there are six other minima in the CB which
+
+may be important for, e.g., relaxation processes. We denote the BZ points where these
+
+minima are located by Qi, (i = 1 . . . 6); they are also known as Λ points [see Figures 2
+
+and 5(b)]. We note that phonon scattering between the K and −K points and Qi points
+
+is symmetry-allowed [96] and that, depending on the energy difference EKQ (see Figure
+
+2), the electron mobility may be significantly affected by these scattering processes
+
+[39, 40, 42]. However, as we will show, understanding the SOC at the Qi points is also
+
+important when considering the possible scattering processes, a fact which seems to
+
+have been overlooked in some recent publications. We start in Section with a basic
+
+characterisation of the band structure in terms of the effective masses and point out an
+
+important effect of SOC on the spin polarisation of the bands. A detailed k · p theory
+
+is given in Section .
+
+6.2. Basic characterisation and material parameters
+
+Let us consider the Q1 minimum, which can be found along the Γ–K direction [see
+
+Figure 2(c)]. We choose kx to be parallel to the Γ–K direction, while ky is perpendicular
+
+to it. Neglecting SOC for a moment, our DFT calculations show that, close to the Q1
+
+point, the energy contours are to a good approximation ellipses whose axes are parallel
+
+to kx and ky [see Figure 5(a)]. Therefore, to a first approximation the dispersion around
+
+-0.1
+
+-0.05
+
+ 0
+
+ 0.05
+
+ 0.1
+
+ 0.25  0.3  0.35  0.4
+
+k y
+ [ 
+
+2 
+π 
+
+/a
+0 
+
+]
+
+ kx [ 2 π /a0 ]
+
+a)
+
+1.3
+
+1.4
+
+1.5
+
+1.6
+
+1.7
+
+1.8
+
+1.9
+
+2
+
+2.1
+
+0.2 0.25 0.3 0.35 0.4 0.45 0.5
+
+E
+-E
+
+F
+[e
+
+V
+]
+
+kx [ 2π /a0 ]
+
+b)
+
+KΓ
+
+Q
+i
+
+(1)
+
+Q(2)
+i
+
+Figure 5. a) Energy contours at the Q point obtained from (HSE,LDA) DFT
+
+calculations for MoS2. SOC is not taken into account. The energy difference between
+
+the energy contours is 0.04 eV. b) Band structure of WSe2 along the Γ–K direction
+
+around the Q point with SOC (red and blue lines) and without SOC (green line). The
+
+bands without SOC are shifted in energy for clarity. Vertical bars indicate the kx
+values at which the corresponding curve has a minimum. The results were obtained
+
+from (PBE,PBE) DFT calculations.
+
+
+
+k · p theory for 2D TMDCs 23
+
+Q1 is quadratic with different effective masses m0
+Q,x and m0
+
+Q,y along kx and ky:
+
+EQ(q) =
+~2q2
+
+x
+
+2m0
+Q,x
+
++
+~2q2
+
+y
+
+2m0
+Q,y
+
+, (6)
+
+where the wavenumbers qx and qy are measured from the energy minimum of the
+
+dispersion (see Section for details). As one can see in Table 8, the ratio of the effective
+
+masses is m0
+Q,y/m
+
+0
+Q,x ≈ 2 for MoX2 and WTe2 and m0
+
+Q,y/m
+0
+Q,x ≈ 1.3–1.8 for WS2, WSe2.
+
+The SOC has two major effects [see Figure 5(b)]:
+
+i) it splits the spin-degenerate levels by an energy 2∆Q, and
+
+ii) the effective masses in the spin-split bands are different.
+
+Similarly to Section , we introduce the notation Q
+(1)
+i (Q
+
+(2)
+i ) for the higher-in-
+
+energy (lower-in-energy) spin-split CB at the Qi point [see Figure 5(b)]. The basic
+
+characterisation of these bands therefore requires two effective masses for each of the
+
+two spin-split bands and the spin-splitting energy 2∆Q. In addition, it is also important
+
+to know the energy difference EKQ between the band extrema of the Q
+(2)
+i and K
+
+(2)
+cb bands.
+
+These parameters, obtained by fitting to our DFT band structures, are shown in Table
+
+Table 8. Material parameters at the Q point. nQ is the electron density above which
+
+the carriers start to populate the Q valleys, assuming (HSE,LDA) values for EKQ.
+
+MoS2 MoSe2 WS2 WSe2 MoTe2 WTe2
+
+m
+(1)
+Q,x/me (HSE,LDA) 0.64 0.54 0.69 0.73 0.42 0.44
+
+m
+(1)
+Q,x/me (PBE,PBE) 0.66 0.58 0.86 0.71 0.36 0.44
+
+m
+(1)
+Q,y/me (V, HSE,LDA) 1.21 1.11 0.94 0.91 1.16 0.922
+
+m
+(1)
+Q,y/me (PBE,PBE) 1.31 1.18 0.95 0.93 1.18 0.94
+
+m
+(2)
+Q,x/me (HSE,LDA) 0.56 0.48 0.52 0.42 0.43 0.3
+
+m
+(2)
+Q,x/me (PBE,PBE) 0.61 0.51 0.54 0.45 0.44 0.29
+
+m
+(2)
+Q,y/me (HSE,LDA) 1.13 1.08 0.74 0.74 0.99 0.81
+
+m
+(2)
+Q,y/me (PBE,PBE) 1.21 1.15 0.74 0.75 1.22 0.8
+
+2∆Q [meV] (HSE,LDA) 70 21 264 218 22 192
+
+2∆Q [meV] (PBE,PBE) 75 26 262 221 13 201
+
+EKQ [meV] (HSE,LDA) 207 137 81 35 158 158
+
+EKQ [meV] (PBE,PBE) 246 163 58 32 173 140
+
+EKQ [meV] (Exp) & 60a 150± 30b ≈ 0b
+
+nQ [1012 cm−2] (HSE,LDA) 76.42 54.97 17.17 5.7 66.62 37.27
+
+a from ARPES; see [156].
+b[152], from scanning-tunnelling microscopy.
+
+8. The fitting range we used was ≈ ±7.5% of the Γ–K distance around the Q point in
+
+the kx direction and roughly half of that in the ky direction. Looking at Table 8 one can
+
+see that the effective masses obtained from the two DFT calculations are again in good
+
+
+
+k · p theory for 2D TMDCs 24
+
+agreement, while small differences can be seen in the results for 2∆Q. However, there
+
+are noticeable differences in the energy separation EKQ between the bottom of the CB
+
+at the Q and the K points, which we ascribe to the different lattice constants used in
+
+the two types of DFT calculations. There are no experimental results for EKQ to date,
+
+except for MoS2, where the data indicate that EKQ & 60 meV [132]. Note, however, that
+
+the ARPES measurements in Reference [132] were performed on potassium-intercalated
+
+samples, and the effects of the intercalation on the band structure of TMDCs have
+
+not yet been studied in detail. We also note that computationally EKQ, in contrast
+
+to the band gap Ebg, appears to be less sensitive to GW corrections [157] if the latter
+
+calculations are well converged. As already pointed out in Section , due to the lack of
+
+experimental evidence, it is currently difficult to tell how accurate these predictions for
+
+the effective masses and spin-splittings are.
+
+We have also calculated the carrier density nQ at which the Fermi energy, measured
+
+from the bottom of the K-point valley in the CB, reaches the bottom of the Q-point
+
+valley; see Table 8. We assumed a simple parabolic dispersion for the CB in the vicinity
+
+of K, where the effective masses of K
+(1)
+cb and K
+
+(2)
+cb are given in Table 3. Our results
+
+suggest that for MoX2 it would not be easy to achieve the doping levels needed to
+
+populate the Q
+(1)
+i valleys, but for WS2 and WSe2 the required doping levels appear to
+
+be attainable.
+
+As noted in Reference [37], the valley–spin coupling is present not only in the K and
+
+−K valleys, but also in the Qi valleys, and this may have experimental consequences.
+
+The calculated spin polarisation of the CB between the K and the Q1 point is shown
+
+in Figure 6 for MoSe2 and WSe2. One finds that despite the band crossing(s) between
+
+the K and Q1 points, for MoS2 and MoSe2 the spin-polarisation of the Q
+(2)
+1 band is the
+
+same as the spin polarisation of the K
+(2)
+cb band [see Figure 6(a)]. For WX2 and MoTe2,
+
+however, due to the band crossings, the spin-polarisation of K
+(2)
+cb is opposite to the spin
+
+polarisation of Q
+(2)
+1 [Figure 6(b)]. The spin polarisation of the Q
+
+(1)
+i and Q
+
+(2)
+i bands in
+
+other Qi valleys can be deduced by taking into account time-reversal symmetry and
+
+whether they are along the Γ–K or Γ–(−K) line. The spin-polarisation of bands at the
+
+Qi points determines which scattering processes are allowed or suppressed between the
+
+K (−K) and Qi valleys. This is illustrated in Figures 6(c) and 6(d). For example, in
+
+the case of MoS2 and MoSe2 [Figure 6(c)] scattering from K
+(2)
+cb to Q
+
+(2)
+1 , Q
+
+(2)
+3 , and Q
+
+(2)
+5
+
+is allowed, while scattering to Q
+(1)
+2 , Q
+
+(1)
+4 , and Q
+
+(1)
+6 is, strictly speaking, also allowed
+
+but should be suppressed with respect the former processes due to the relatively large
+
+spin-splitting 2∆Q.
+
+6.3. k · p Hamiltonian
+
+Due to the low symmetry of the Qi points in the BZ and because there are many
+
+nearby bands in energy, there is a large number of band-overlap parameters that would
+
+need to be taken into account in a detailed multi-band k · p model. Therefore it is
+
+more difficult to develop such a theory and it would offer less insight. Nevertheless,
+
+
+
+k · p theory for 2D TMDCs 25
+
+1.2
+
+1.3
+
+1.4
+
+1.5
+
+1.6
+
+1.7
+
+1.8
+
+1.9
+
+0.3 0.4 0.5 0.6 0.7 0.8
+
+E
+-E
+
+F
+[e
+
+V
+]
+
+kx [ 2π /a0 ]
+
+a)
+
+MKQΓ
+
+MoSe2MoS2 ,
+1.2
+
+1.3
+
+1.4
+
+1.5
+
+1.6
+
+1.7
+
+1.8
+
+1.9
+
+0.3 0.4 0.5 0.6 0.7 0.8
+
+E
+-E
+
+F
+[e
+
+V
+]
+
+kx [ 2π /a0 ]
+
+b)
+
+MKQΓ
+
+ WX2
+
+-K K
+
+Figure 6. a) and b): Dispersion of the CB between the K and Q1 points obtained
+
+from DFT calculations. Arrows show the direction of the spin expectation value (red:
+
+spin-up, blue: spin-down). a) Results for MoS2 and MoSe2; b) results for WX2.
+
+MoTe2, strictly speaking, is different from both a) and b). The actual calculations
+
+were performed for MoSe2 and WSe2 using the (PBE,PBE) approach. c) and d):
+
+schematic illustration of the lowest energy allowed scattering processes between the
+
+spin-split bands at the K (−K) and Qi points. The situation in MoTe2 corresponds
+
+to d).
+
+a low-energy effective k · p Hamiltonian can be derived with the help of the theory
+
+of invariants [57] (for a recent discussion see, e.g., References [158] and [159]). The
+
+pertinent symmetry group is C1h; for convenience, its character table is shown in Table
+
+9 [58].
+
+Table 9. Character table and invariants for the group C1h.
+
+C1h E σh
+A′ k2
+
+x, k2
+y, kxky sz, kx, ky 1 1
+
+A′′ z, sx, sy 1 −1
+
+As in the case of the K and −K valleys, the Qi-point minima are pairwise connected
+
+by time-reversal symmetry and to describe this one can introduce the matrix τz, whose
+
+eigenvalues, τ = ±1 label individual members of the pairs of valleys. As an example, let
+
+us consider the Q1 (τ = 1) and Q4 (τ = −1) minima, which can be found along the Γ–K
+
+and Γ–(−K) directions, respectively [see Figure 2(c)]. This direction is parallel to the
+
+kx component of k. Using Table 9, the most general Hamiltonian, up to second-order
+
+
+
+k · p theory for 2D TMDCs 26
+
+in k and taking SOC into account, reads:
+
+Hτ,s
+Q =
+
+~2k2
+x
+
+2mτ,s
+Q,x
+
++
+~2k2
+
+y
+
+2mτ,s
+Q,y
+
++
+~2kxky
+2mτ,s
+
+Q,xy
+
++ ∆Qszτz + a1kxsz + a2kysz
+
++ b1kxτz + b2kyτz + EQ, (7)
+
+1/mτ,s
+(Q,x,y,xy) are effective masses, s = ±1 are the eigenvalues of the spin Pauli
+
+matrix sz. Furthermore, EQ is the band-edge energy if SOC is neglected, ∆Q is the
+
+spin-splitting at Q, and a1,2 and b1,2 are material parameters to be discussed later.
+
+Since we are going to develop a theory in which the dispersion is parabolic, in contrast
+
+to Section , we will not keep track of the free-electron contribution explicitly.
+
+To simplify the discussion, let us first neglect the spin degree of freedom. Then
+
+∆Q = a1,2 = 0 and mτ,s
+(Q,x,y,xy) = m0
+
+(Q,x,y,xy). Since close to Q1 (Q4) the energy contours
+
+are, to a good approximation, ellipses whose axes are in the kx and ky directions [see
+
+Figure 5(a)], one finds that 1/m0
+(Q,xy) = 0. The effect of the terms ∼ b1, b2 in Equation
+
+(7) is to shift the minimum of the dispersion. Therefore introducing the wavenumbers
+
+qx and qy, which are measured from k = (τkQ, 0), i.e., from the Q1 (Q4) point, one can
+
+set b1 = b2 = 0 and write
+
+H0
+Q =
+
+~2q2
+x
+
+2m0
+Q,x
+
++
+~2q2
+
+y
+
+2m0
+Q,y
+
++ ẼKQ, (8)
+
+where ẼKQ measures the energy difference with respect to the K point in the
+
+absence of SOC. The effective masses m0
+Q,x and m0
+
+Q,y are in general different.
+
+Taking SOC into account, Hτ,s
+Q [Equation (7)] can be re-written in the following
+
+form:
+
+Hτ,s
+Q =
+
+~2(qx + sz · qQ,x)2
+
+2mτ,s
+Q,x
+
++
+~2(qy + sz · qQ,y)2
+
+2mτ,s
+Q,y
+
++ ∆Qszτz + EKQ, (9)
+
+where EKQ is defined in Figure 2. One can see that SOC has the following effects:
+
+i) it splits the bands and opens a gap ∆Q between the spin-up and spin-down bands;
+
+ii) it shifts the minima of the spin-split bands off from the k = (τkQ, 0) point by qQ,x
+and qQ,y;
+
+iii) it makes the effective masses of the spin-polarised bands different, so they are given
+
+by 1/mτ,s
+(Q,x,y) = 1/m0
+
+(Q,x,y) − τs/δm(Q,x,y).
+
+An illustration of i) and ii) is shown in Figure 5(b) taking WSe2 as an example, where
+
+these effects are most clearly seen. The material parameters mτ,s
+Q,x,y, qQ,x, qQ,y, ∆Q, and
+
+EKQ can be obtained from, e.g., DFT calculations; see Section . We find that qQ,y is
+
+zero within the precision of our calculations and qQ,x is always very small.
+
+
+
+k · p theory for 2D TMDCs 27
+
+7. Effective models at the Γ point
+
+7.1. Γ point
+
+Next we consider the band structure at the Γ point. There are three main
+
+motivations to include the Γ point in our work: i) there is a local maximum in the VB
+
+at the Γ point, which could be observed in recent ARPES measurement [106, 107] and
+
+therefore it is of interest to compare the experimental and calculated effective masses; ii)
+
+there are several experimental reports [137, 142, 143, 196] on optical transitions over a
+
+broad energy range showing peak(s) in the absorption of monolayer TMDCs at energies
+
+larger than the one corresponding to the fundamental gap at the K point. Theoretically,
+
+it was argued that in MoS2 excitons can also be formed in the vicinity of the Γ point
+
+[47] and that these “C-excitons” are qualitatively different from the ones at the K point
+
+because they arise from an effectively one-dimensional energy minimum in the “optical
+
+band structure” (for the exact definition see below); and iii) finally, understanding of
+
+the VB and CB behaviour at the Γ point is important in the interpretation of scanning
+
+tunnelling microscopy (STM) experiments [146, 151, 152, 153, 160, 161].
+
+7.2. Basic characterisation and material parameters
+
+We start the discussion with the VB maximum at the Γ point (VBMG). The spin-
+
+splitting is at Γ point is zero, and in the VB it remains negligible over a considerable
+
+region of k space [see Figure 2(a)]. Moreover, to a good approximation the dispersion
+
+around the VBMG is isotropic (see Figure 2(b) and Section ) and parabolic. Therefore
+
+it can be described by
+
+EΓ(k) = EKΓ +
+~2k2
+
+2mvb
+Γ
+
+, (10)
+
+which is characterised by a single effective mass mvb
+Γ and the energy EKΓ, which is
+
+the energy difference between the maximum of the K
+(1)
+vb band at the K point and the
+
+VBMG. The values of mvb
+Γ obtained from fitting the results of our DFT calculations
+
+are given in Table 10 and experimental results, where available, are also shown. The
+
+effective masses mvb
+Γ were obtain by fitting the band structure along the Γ–K direction
+
+in a range of ≈ 21% of the Γ–K distance. The calculated mvb
+Γ values are in reasonable
+
+agreement with the available experimental results. There are, however, noticeable
+
+differences between the theoretical and experimental EKG values, which we attribute
+
+to substrate effects. Note that the weight of the chalcogen p orbitals is substantial at
+
+the Γ point (see Figure 3 or Reference [35]) so that one can expect a stronger interaction
+
+between the substrate and the electronic states. Interestingly, the mvb
+Γ parameter does
+
+not seem to be affected as strongly as EKΓ by the substrate. Comparing Tables 4 and
+
+10, one would expect the VBMG to be the most important for the transport properties
+
+of MoS2 because it is probably quite close in energy to the maximum of the K
+(1)
+vb band
+
+(which we denote by VBMK1; we also introduce the label VBMK2 for the maximum of
+
+
+
+k · p theory for 2D TMDCs 28
+
+Table 10. Effective masses mvb
+Γ at the Γ point in the VB from DFT calculations. me
+
+is the free electron mass. The energy difference EKΓ between the VBMG and VBMK1
+
+is also given. nΓ is the hole density where the states at the Γ point start to fill with
+
+holes assuming the (HSE,LDA) values for EKΓ. Experimental values are shown in rows
+
+denoted by “Exp”.
+
+MoS2 MoSe2 WS2 WSe2 MoTe2 WTe2
+
+mvb
+Γ /me (HSE,LDA) −2.60 −3.94 −2.18 −2.87 −29 −5.19
+
+mvb
+Γ /me (PBE,PBE) −2.45 −3.49 −2.15 −2.70 −10.76 −4.18
+
+mvb
+Γ /me (Exp) −2.4± 0.3a −3.9± 0.3b
+
+EKΓ [meV] (HSE,LDA) −70 −342 −252 −496 −540 −630
+
+EKΓ [meV] (PBE,PBE) −46 −329 −269 −506 −526 −646
+
+EKΓ [meV] (Exp) ≈ −140a −380c −880e
+
+−370± 40d −590± 40d
+
+nΓ[1012cm−2](HSE,LDA) 15.8 130 36.86 81.4 259 124.92
+
+a[106], ARPES measurements, exfoliated samples on SiO2 substrate.
+bprivate communication by Yi Zhang, ARPES measurements, see [107].
+c[107], ARPES measurements, samples grown by MBE on bilayer graphene on top of
+
+SiC (0001).
+d[152], STM measurements, samples grown by MBE on HOPG.
+e[193], ARPES measurements, exfoliated samples on SiO2 substrate.
+
+the K
+(2)
+vb band), thus facilitating scattering processes in the VB that do not require spin-
+
+flips. Furthermore, according to our DFT calculations VBMG lies in between VBMK1
+
+and VBMK2 for MoS2 and WS2, while it lies below VBMK2 for MoSe2 and WSe2.
+
+Optical transitions at higher energies than the ones at the fundamental band gap
+
+have attracted considerable theoretical interest [47, 162, 163, 164] recently. To obtain
+
+an insight into the possible transitions, we plot the optical band structure for monolayer
+
+TMDCs in Figures 7-9 over the whole BZ. Here, following References [142] and [165],
+
+the optical band structure is defined as the difference between the dispersions of the
+
+CB and VB: Ecb(k)− Evb(k). For simplicity, SOC is neglected in these calculation. A
+
+clear “gear-shaped” minimum [142] is noted both for MoS2 and WS2 around the Γ point
+
+[Figures 7(a) and 8 (a)] and for each material one can also observe saddle point(s). Both
+
+minima and saddle points lead to Van Hove singularities in the optical density of states
+
+(see below) and can have an important effect on the interband optical transitions. For
+
+a more quantitative understanding of the interband transitions therefore one also needs
+
+to consider the optical density of states (optical DOS), which is defined as the density
+
+of states of the optical band structure (the terminology “joint density of states” is also
+
+used; see, e.g., [165]). For 2D systems it reads
+
+ρcv(E) =
+2
+
+(2π)2
+
+∫
+δ([Ecb(k)− Evb(k)]− E) d2k. (11)
+
+The calculated optical DOS for the monolayer TMDCs that we have considered are
+
+
+
+k · p theory for 2D TMDCs 29
+
+k  [2π/a  ]x 0 
+
+k
+  
+
+[2
+π
+
+/a
+  
+
+]
+y
+
+0
+ 
+
+-0.8 -0.4 0 0.4 0.8
+-0.8
+
+-0.4
+
+0
+
+0.4
+
+0.8
+
+1.6
+
+1.8
+
+2
+
+2.2
+
+2.4
+
+2.6
+
+2.8
+
+3
+
+3.2
+
+3.4
+
+a)
+
+C
+B
+
+-V
+B
+
+ [
+eV
+
+]
+
+k  [2π/a  ]x 0 
+
+k
+  
+
+[2
+π
+
+/a
+  
+
+]
+y
+
+0
+ 
+
+-0.8 -0.4 0 0.4 0.8
+-0.8
+
+-0.4
+
+0
+
+0.4
+
+0.8
+
+1.4
+
+1.6
+
+1.8
+
+2
+
+2.2
+
+2.4
+
+2.6
+
+2.8
+
+3
+
+3.2
+
+3.4
+
+b)
+
+C
+B
+
+-V
+B
+
+ [
+eV
+
+]
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+1.2
+
+1.4
+
+1.6
+
+1.5 2 2.5 3 3.5 4
+
+O
+p
+ti
+c
+a
+
+l 
+D
+
+O
+S
+
+ [
+1
+/e
+
+V
+]
+
+E [eV]
+
+c)
+
+MoS2
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+1.2
+
+1.4
+
+1.6
+
+1.5 2 2.5 3 3.5
+O
+
+p
+ti
+c
+a
+
+l 
+D
+
+O
+S
+
+ [
+1
+/e
+
+V
+]
+
+E [eV]
+
+d)
+
+MoSe2
+
+Figure 7. Optical band structures [a) and b)] and the corresponding optical densities
+
+of states [c) and d)] obtained from (HSE,LDA) DFT calculations in which SOC was
+
+neglected. In a) and c) data for MoS2 are shown; in b) and d) data for MoSe2 are
+
+shown. In a) a lighter colour “gear-shaped” region around the Γ point is clearly visible.
+
+shown in Figures 7–9. A peak in the optical DOS corresponding to the minimum in
+
+the optical band structure is present at ≈ 2.65 eV for MoS2 [Figure 7(c)] and ≈ 2.75
+
+eV for WS2 [Figure 8(c)]. However, other peak(s) and a wide shoulder extending into
+
+higher energies can also be seen in the optical DOS. We attribute these features to
+
+saddle points in the optical band structure, which can be observed, e.g., along the Γ–K
+
+line for WS2 and to the saddle points at the M point in the optical band structure of all
+
+four MX2 materials. These observations motivate us to have a closer look at the band
+
+structure at the M point as well, which is presented in Section .
+
+Finally, we emphasise that for a quantitative understanding of the optical band
+
+structure and the interband optical transitions the effects of SOC are also important.
+
+In general, they lead to spin-splitting of the bands (except along the Γ–M line), or
+
+splitting of the Van Hove singularity (see Section ). The energies of these splittings may
+
+be comparable to or larger than the linewidth of the optical transitions leading to, e.g.,
+
+the possibility of spin-polarised optical current injection [26, 164].
+
+7.3. k · p Hamiltonian
+
+As in previous sections, we use group theory to obtain effective k · p Hamiltonians
+
+for the VB and CB. Similarly to the K point, it is possible to set up a multi-band
+
+k · p model. We have found, however, that the number of necessary bands, even if one
+
+
+
+k · p theory for 2D TMDCs 30
+
+k  [2π/a  ]x 0 
+
+k
+  
+
+[2
+π
+
+/a
+  
+
+]
+y
+
+0
+ 
+
+-0.8 -0.4 0 0.4 0.8
+-0.8
+
+-0.4
+
+0
+
+0.4
+
+0.8
+
+1.8
+
+2
+
+2.2
+
+2.4
+
+2.6
+
+2.8
+
+3
+
+3.2
+
+3.4
+
+a)
+
+C
+B
+
+-V
+B
+
+ [
+eV
+
+]
+
+k  [2π/a  ]x 0 
+
+k
+  
+
+[2
+π
+
+/a
+  
+
+]
+y
+
+0
+ 
+
+-0.8 -0.4 0 0.4 0.8
+-0.8
+
+-0.4
+
+0
+
+0.4
+
+0.8
+
+1.6
+
+1.8
+
+2
+
+2.2
+
+2.4
+
+2.6
+
+2.8
+
+3
+
+3.2
+
+3.4
+
+b)
+
+C
+B
+
+-V
+B
+
+ [
+eV
+
+]
+
+0
+
+0.1
+
+0.2
+
+0.3
+
+0.4
+
+0.5
+
+0.6
+
+0.7
+
+0.8
+
+0.9
+
+2 2.5 3 3.5 4
+
+O
+p
+ti
+c
+a
+
+l 
+D
+
+O
+S
+
+ [
+1
+
+/e
+V
+
+]
+
+E [eV]
+
+c)
+
+  WS2
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+1.2
+
+1.4
+
+1.6
+
+1.5 2 2.5 3 3.5
+O
+
+p
+ti
+c
+a
+
+l 
+D
+
+O
+S
+
+ [
+1
+
+/e
+V
+
+]
+
+E [eV]
+
+d)
+
+WSe2
+
+Figure 8. Optical band structures [a) and b)] and the corresponding optical densities
+
+of states [c) and d)] obtained from (HSE,LDA) DFT calculations in which SOC was
+
+neglected. In a) and c) data for WS2 are shown; in b) and d) data for WSe2 are shown.
+
+neglects SOC, is quite large and, as will be shown later, terms up to fourth order in
+
+k need to be taken into account in order to capture the features of the band structure
+
+related to the C-exciton terms. Therefore we present here only a simplified discussion of
+
+the problem; a more complete theory is left for a future work. As we will show, important
+
+insight can be gained from the spinless case, i.e., in the discussion that follows we will
+
+neglect SOC.
+
+The bands of interest are the VB, the (doubly degenerate) CB [shown by green lines
+
+in Figure 10(a)] and the first (doubly degenerate) band above the CB, which we denote
+
+by CB+1 [black lines in Figure 10(a)]. We will rely on group-theoretical arguments,
+
+which are very convenient at the Γ point, where, as mentioned above, several atomic
+
+orbitals contribute with significant weight to each band. The pertinent symmetry group
+
+is D3h and the character table is shown in Table 11.
+
+Symmetry analysis of the contributing atomic orbitals implies (see, e.g., Table IV
+
+in Reference [60] and the discussion at the end of ) that the VB at the Γ point belongs to
+
+the A
+′
+1 irreducible representation of D3h. As already given in Equation (10), up to second
+
+order in q, the dispersion is parabolic and isotropic [see Figure 2(b)], characterised by a
+
+single effective mass mvb
+Γ . Values of mvb
+
+Γ obtained from fitting the DFT band structures
+
+are shown in Table 10. Along the Γ–K direction, the spin-splitting of the VB is small
+
+up to wavevectors corresponding to about half of the Γ–Q distance. This is due to
+
+
+
+k · p theory for 2D TMDCs 31
+
+k  [2 /a  ]x 0 
+
+k
+  
+
+[2
+/a
+
+  
+]
+
+y
+0
+
+ 
+
+C
+B
+
+-V
+B
+
+ [
+eV
+
+]
+
+-0.8 -0.4 0 0.4 0.8
+-0.8
+
+-0.4
+
+0
+
+0.4
+
+0.8
+
+1
+
+1.2
+
+1.4
+
+1.6
+
+1.8
+
+2
+
+2.2
+
+2.4
+
+2.6
+
+2.8
+
+3
+
+a)
+
+k  [2 /a  ]x 0 
+
+k
+  
+
+[2
+/a
+
+  
+]
+
+y
+0
+
+ 
+
+C
+B
+
+-V
+B
+
+ [
+eV
+
+]
+
+-0.8 -0.4 0 0.4 0.8
+-0.8
+
+-0.4
+
+0
+
+0.4
+
+0.8
+
+1
+
+1.2
+
+1.4
+
+1.6
+
+1.8
+
+2
+
+2.2
+
+2.4
+
+2.6
+
+2.8
+
+3
+
+b)
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+1.2
+
+1.4
+
+1.6
+
+1.8
+
+1 1.5 2 2.5 3 3.5
+
+O
+p
+ti
+c
+a
+
+l 
+D
+
+O
+S
+
+ [
+1
+
+/e
+V
+
+]
+
+E [eV]
+
+c)
+
+MoTe2
+
+0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1
+
+1.2
+
+1 1.5 2 2.5 3 3.5
+O
+
+p
+ti
+c
+a
+
+l 
+D
+
+O
+S
+
+ [
+1
+
+/e
+V
+
+]
+
+E [eV]
+
+d)
+
+WTe2
+
+Figure 9. Optical band structures [a) and b)] and the corresponding optical densities
+
+of states [c) and d)] obtained from (HSE,LDA) DFT calculations in which SOC was
+
+neglected. In a) and c) data for MoTe2 are shown; in b) and d) data for WTe2 are
+
+shown.
+
+Table 11. Character table of the point group D3h.
+
+D3h E σh 2C3 2S3 3C ′2 3σv
+A′1 1 1 1 1 1 1
+
+A′2 1 1 1 1 −1 −1
+
+A′′1 1 −1 1 −1 1 1
+
+A′′2 1 −1 1 −1 −1 −1
+
+E′ 2 2 −1 −1 0 0
+
+E′′ 2 −2 −1 1 0 0
+
+the fact that in the vicinity of Γ the dz2 atomic orbitals of the metal and the pz atomic
+
+orbitals of the chalcogen atoms contribute with large weight to the VB (see Figure 3 and
+
+[34, 35]). Along Γ–M all bands remain spin-degenerate due to symmetry; see Section .
+
+The spin-splitting of the VB is therefore suppressed around the Γ point.
+
+Turning now to the CB [shown by green lines in Figure 10(a)], at the Γ point it
+
+is doubly degenerate and antisymmetric with respect to the horizontal mirror plane σh
+of the crystal lattice. In group theoretical terms, it corresponds to the E ′′ irreducible
+
+representation (irrep) of D3h. Since the VB is symmetric with respect to σh, one can
+
+show using group-theoretical arguments that the optical matrix element between the
+
+VB, which has A′1 symmetry, and the CB, which has E ′′ symmetry, is zero at the Γ
+
+point.
+
+
+
+k · p theory for 2D TMDCs 32
+
+However, as shown in Figure 10, due to band crossings one of the degenerate CB+1
+
+bands becomes the CB at some distance from Γ. The doubly degenerate CB+1 band
+
+belongs to the 2D E ′ irreducible representation of D3h. This irrep is symmetric with
+
+respect to σh, and optical transitions between bands of A′1 and E ′ symmetries are
+
+allowed. Therefore as a starting point for studying the optical transitions in the vicinity
+
+of the Γ point one has to describe the CB+1 bands.
+
+E'
+
+E''
+
+no SOC2
+
+2.5
+
+3
+
+3.5
+
+0 0.05 0.1 0.15 0.2 0.25 0.3 0.35
+
+E
+-E
+
+F
+[e
+
+V
+]
+
+kx [ 2π /a0 ]
+
+a)
+
+SOC2
+
+2.5
+
+3
+
+3.5
+
+0 0.05 0.1 0.15 0.2 0.25 0.3 0.35
+
+E
+-E
+
+F
+[e
+
+V
+]
+
+kx [ 2π /a0 ]
+
+b)
+
+Figure 10. a) The dispersion of the CB and CB+1 bands along the Γ–K direction,
+
+without taking SOC into account. Black lines show the symmetric E′ bands and green
+
+lines the antisymmetric E′′ bands. b) The same as in a) but the SOC is taken into
+
+account. The actual DFT calculation were performed for MoS2 using the (HSE,LDA)
+
+approach; for other materials the results are qualitatively similar, except that the
+
+spin-splittings are larger.
+
+Up to second-order terms in the wavevector k, the effective Hamiltonian describing
+
+the E ′ bands in the vicinity of Γ reads:
+
+Hcb+1
+Γ,eff = H0 +H
+
+(2)
+d +H(2)
+
+wr , (12a)
+
+H
+(2)
+d = (εcb+1 + αk2) · 12, (12b)
+
+H(2)
+wr = −βk2
+
+(
+(1− cos(3φk)) 1
+
+2
+(ei6φk − 1)e−2iφk
+
+1
+2
+(e−i6φk − 1)e2iφk (1 + cos(3φk))
+
+)
+, (12c)
+
+where 12 is a 2 × 2 unit matrix, and φk is the argument of kx + iky (here the
+
+wavevector components kx and ky are measured from Γ). We also keep explicit the
+
+free-electron term H0 = ~2k2
+
+2me
+· 12. The term αk2 in H
+
+(2)
+d describes the coupling of the
+
+CB+1 bands to other remote bands with the same E ′ symmetry, while H
+(2)
+wr captures
+
+the coupling of the CB+1 bands to other remote bands with A′1 symmetry. In contrast
+
+to the VB, one can see that H
+(2)
+wr leads to a hexagonal distortion of the energy contours
+
+of the CB+1 bands already in second order of k. Looking at Equation (12c) one can
+
+also note that, e.g., along the Γ–K line the off-diagonal and one of the diagonal terms
+
+become zero. Therefore Equation (12c) alone would suggest that one of the E ′ bands is
+
+dispersionless. Since the dispersion of the higher-in-energy E ′ band is indeed very flat
+
+along Γ–K [see Figure 10(a)], we expect that H
+(2)
+d largely cancels H0.
+
+
+
+k · p theory for 2D TMDCs 33
+
+SOC, as illustrated in Figure 10(b), has two main effects:
+
+i) At the Γ point it leads to a splitting of the otherwise degenerate states. Therefore,
+
+instead of four-fold degeneracies, which would follow from taking into account the
+
+spin but not the SOC there are only two-fold degeneracies. [For the E ′ bands in
+
+MoS2 the splitting is too small to be seen on the scale of Figure 10(b)].
+
+ii) Close to the Γ point the band crossings between the E ′ and E ′′ bands are turned
+
+into avoided crossings.
+
+One can observe, however, that beyond these avoided crossings the dispersion of the
+
+spin-split CB follows that of the spinless CB quite closely. This is remarkable for
+
+the following reason: it has been argued [142] that the existence of the C-exciton is
+
+related to a minimum in the optical band structure. Looking along the Γ–K or Γ–
+
+M lines, the minimum in the optical band structure can be found for k values where
+
+the spinful CB closely follows the lower-in-energy E ′ band. We expect therefore that,
+
+theoretically, the starting point for describing the C-exciton physics in an effective-mass
+
+approximation would be to extend the model shown in Equations (10) and (12a) by terms
+
+that contain higher powers of k, especially for the E ′ bands, where these corrections
+
+become important closer to the Γ point than is the case in the VB. Neglecting the
+
+coupling between the two E ′ bands and considering only the one lower-in-energy band
+
+that becomes the CB, the terms up to fourth order in k that need to be added to the
+
+dispersion are
+
+H(3) +H(4) = C(3)|k|3(1 + cosφk) + |k|4[C
+(4)
+1 +C
+
+(4)
+2 (1 + cosφk) +C
+
+(4)
+3 (1 + cosφk)2], (13)
+
+where the constants C(3) and C
+(4)
+1,2,3 can be obtained from fitting the band structure.
+
+Looking at Figures 7 and 8, this approach appears to be most useful for MoS2 and
+
+WS2, where a clear minimum in the optical band structure in the vicinity of Γ can be
+
+seen. However, the exact location of the minimum in the optical band structure would
+
+also depend on the SOC, which was not taken into account in Figures 7 and 8 and this
+
+introduces additional complexity into the problem. A detailed discussion of the optical
+
+band structure based on k·p theory is therefore left for a future work. Numerically, using
+
+DFT calculations combined with maximally localised Wannier functions, the effects of
+
+SOC on the optical transitions have very recently been studied in Reference [164].
+
+7.4. Γ point wave functions and STM measurements
+
+The shape and extent of the VB and CB wave functions at the Γ point can also play
+
+an important role in the interpretation of STM measurements. Since there is a growing
+
+experimental interest [146, 151, 152, 153, 160, 161] in STM studies of monolayer TMDCs,
+
+we give a brief account of calculations that can be used to interpret STM measurements.
+
+We first focus on the STM maps that one can obtain using a tip with a curvature
+
+radius larger than atomic distances at scanning distances comparable to or larger than
+
+the lattice constant. In this case the current is dominated by electrons tunnelling from
+
+the metal with the largest kz momentum component at the energy given by the scanning
+
+
+
+k · p theory for 2D TMDCs 34
+
+voltage. Therefore the in-plane momentum components of the tunnelling electron can
+
+be neglected: kx,y → 0. On one hand, this implies that the real space 2D maps of the
+
+tunnelling current should reflect the vertical extent of the Γ-point wave functions in
+
+the CB and VB. On the other hand, electron tunnelling into the band edges, which
+
+are at the K and −K points, can take place as a two-step process: first, the electron
+
+tunnels into a virtual state close to the Γ point in the corresponding band, then it emits
+
+a BZ-corner phonon to scatter into the final state near the band edge. The expected
+
+I–V characteristic therefore should have a tunnelling gap in the current of magnitude
+
+of the phonon energy, counted from the Fermi level in a doped 2D semiconductor or the
+
+band edge in an undoped one.
+
+STM images of bulk MX2 can be simulated from first-principles. Since in STM
+
+measurements one detects the tail of either the VB or CB wave function, depending on
+
+whether electrons or holes are injected into the material, one has to determine the decay
+
+rate of the wave function of the relevant states in different parts of the unit cell. This
+
+can be achieved by numerical differentiation of the logarithm of the square modulus
+
+of the band-decomposed wave function along the z direction (i.e., perpendicular to the
+
+sheet). For this purpose we use a trilayer geometry to model the surface of the bulk
+
+material, since we do not expect the inter-layer interaction to affect the tail of the wave
+
+functions severely. In these calculations we used the optB88 van der Waals density
+
+functional [105]. This functional should provide a significantly better description of the
+
+interlayer interaction than the LDA or PBE functionals. Figure 11 illustrates the decay
+
+[Å]
+
+-2 -1 0 1 2
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+y
+
+x
+
+M
+X
+H
+
+Decay Rate (1/Å)
+
+1.4
+
+1.6
+
+1.8
+
+2
+
+2.2
+
+2.4
+
+2.6
+
+[Å]
+
+Figure 11. Decay rate in the unit cell of MoS2.
+
+rate of the VB of MoS2. Three points are highlighted: the position of the metal atom
+
+(M), the chalcogen atom (X), and the centre of the hexagon formed by three M and
+
+three X atoms on the surface (H). Large tunnelling currents occur when the decay rate
+
+is low. For example, in the case of the VB, the tunnelling current is dominated by the
+
+
+
+k · p theory for 2D TMDCs 35
+
+Table 12. Decay rate of monolayer MX2 at the Γ point in units of 1/Å.
+
+MoS2 MoSe2 MoTe2 WS2 WSe2 WTe2
+
+MV B 1.44 0.91 1.20 1.54 1.02 1.35
+
+XV B 2.31 2.19 3.18 2.33 2.10 3.07
+
+HV B 1.53 1.20 2.03 1.60 1.23 1.98
+
+MCB 5.10 3.50 5.44 3.50 3.28 5.37
+
+XCB 3.84 4.28 6.01 4.50 4.48 5.99
+
+HCB 5.01 3.89 5.50 6.40 3.96 5.49
+
+contribution of the sublattice where the metal atom is located in the VB. Note that
+
+the centre of the hexagon is also quite bright; this is due to constructive interference
+
+between the px and py orbitals of the chalcogen atoms. Table 12 summarises the decay
+
+rates at the three notable positions in the unit cell for the four MX2 materials studied
+
+in this work. It can be used to explain which sublattice is expected to dominate the
+
+tunnelling current in a particular MX2 material. A recent experiment [152] has shown
+
+a Γ-point decay rate of ≈ 0.9/Å in monolayer MoSe2 and ≈ 0.7/Å in monolayer WSe2
+
+on graphitic substrate. These values are in good agreement with our calculated result
+
+of 0.91 and 1.02 1/Å, respectively.
+
+One can also envisage an alternative STM arrangement where the tunnelling current
+
+is determined by coupling with a single atomic site at the end of the tip brought to
+
+atomic/subatomic distances from the 2D material. In this case, momentum transfer
+
+and momentum conservation are not problems for the tunnelling electron; hence, the
+
+tunnelling spectrum may reflect the structure of the electronic wave function at the
+
+band edges in the BZ corners. However, in this case, the actual current maps would be
+
+affected by the form of the atomic orbital of the last atom in the tip and analysis of
+
+such details lies outside the scope of this review.
+
+8. The M point: spin–orbit splitting of the Van Hove singularity
+
+In Section we have already shown that optical transitions in monolayer TMDCs
+
+are expected to occur not only at the K and −K points, but at other points in the
+
+BZ as well. Indeed, a strong light–matter interaction was observed in Reference [20]
+
+and attributed to Van Hove singularities in the electronic density of states. Moreover,
+
+strong absorption beyond the energy range of visible light has been found in MoS2 [143]
+
+and in WSe2 [196]. High-energy optical transitions (in the range of 1.5–9 eV) have also
+
+been studied using ellipsometry in Reference [140]. Very recently, it was argued that
+
+electron-phonon scattering processes involving the M point may help to explain the
+
+origin of certain peaks in the Raman spectrum of monolayer MoTe2 [194]. Motivated
+
+by these observations and by the fact that, according to Figures 7 and 8, the optical
+
+DOS is finite at energies that correspond to transitions at the M point of the BZ, we
+
+briefly discuss the dispersion of the VB and CB at the M point. Higher energy optical
+
+
+
+k · p theory for 2D TMDCs 36
+
+transitions in TMDCs were studied theoretically in Refs. [162, 164], and the effects
+
+of a saddle point in the dispersion have also been investigated recently in monolayer
+
+graphene [166].
+
+8.1. Basic characterisation and k · p Hamiltonian
+
+Figure 12 shows the band structure of a monolayer TMDC near the M point of the
+
+BZ. Looking at Figure 12(a) first, where the SOC is neglected, one can see that upon
+
+going from M towards K the energy difference between the VB and the CB decreases,
+
+whereas along the M–Γ direction it slightly increases. This leads to a saddle point in
+
+the optical band structure, as shown in Figures 7 and 8. It is important to point out
+
+-2
+
+-1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+E
+-E
+
+F
+[e
+
+V
+]
+
+K Γ
+
+a)
+
+M
+
+A1
+
+B2
+
+B2
+
+A1
+
+-2
+
+-1
+
+0
+
+1
+
+2
+
+3
+
+4
+
+E
+-E
+
+F
+[e
+
+V
+]
+
+K Γ
+
+b)
+
+M
+
+Figure 12. Band structure of a monolayer TMDC at the M point obtained from DFT
+
+calculations a) without taking SOC into account; and b) with SOC. In a) the labels
+
+above the bands denote the pertinent irreps of the group C2v. The actual calculations
+
+were performed for WS2 using the (PBE,PBE) approach.
+
+that for all the monolayer TMDCs considered here the energy difference between the CB
+
+and the CB+1 (VB and VB−1) bands is rather small compared to the band gap; the
+
+difference between the CB and CB+1 is around 0.5 eV and the difference between the
+
+VB and VB−1 is 0.15–0.3 eV. Therefore, regarding optical transitions, the situation at
+
+the M point is different from the K point, where the CB and the VB are well separated
+
+in energy from all other bands. It is also different from the situation encountered at
+
+the Γ point, where the CB was antisymmetric, while the VB and the CB+1 bands
+
+were symmetric with respect to the horizontal mirror plane. Here all four bands are
+
+symmetric and in-plane polarised electromagnetic radiation can, in principle, induce
+
+transitions between them.
+
+The discussion of the band dispersion at the M point is simplified if one introduces
+
+the local coordinate system shown in Figure 13. Here both qx and qy are measured from
+
+the M point, the former being parallel to the K–M direction, the latter to the Γ–M
+
+direction. Similarly to the Q point, we content ourselves with the construction of a k ·p
+Hamiltonian based on the theory of invariants. The six Mi points in the BZ are pairwise
+
+connected by time-reversal symmetry. To describe this one can introduce the matrix τz,
+
+whose eigenvalues, τ = ±1 label individual members of the pairs of M points. In the
+
+simplest approximation, the Hamiltonian of all four bands of interest is
+
+
+
+k · p theory for 2D TMDCs 37
+
+Figure 13. Local coordinate system at the M point of the BZ. The twofold rotation
+
+axis C2 is also shown.
+
+Hτ,s
+M =
+
+~2q2
+x
+
+2mτ,s
+M,x
+
++
+~2q2
+
+y
+
+2mM,y
+
++ τz∆Mqxsz. (14)
+
+One can see that the dispersion is parabolic and characterised by different effective
+
+masses mτ,s
+M,x and mM,y along the M–K and M–Γ directions, respectively. To understand
+
+the implications of Equation (14), let us first neglect the SOC, i.e., we set ∆M = 0 and
+
+mτ,s
+M,x = mM,x. Looking at Figure 12(a) one can notice that for the CB (denoted by B2)
+
+the effective masses mM,x and mM,y have the same sign. For the VB (denoted by A1),
+
+however, their sign is different. Similar conclusions hold for the CB+1 and the VB−1
+
+bands. Therefore in the optical band structure one has a saddle point in the dispersion
+
+and consequently a Van Hove singularity.
+
+SOC, as shown in Figure 12(b), has two main effects:
+
+i) It leads to a linear-in-qx splitting of the bands along M–K, while the bands remain
+
+spin-degenerate along M–Γ. This means that the saddle point in the optical DOS
+
+of any two bands will also be split along M–K. In addition, the effective mass mτ,s
+M,x
+
+becomes spin dependent.
+
+ii) It turns band crossings into avoided crossings.
+
+As shown in Figure 12(b), the linear-in-qx splitting of the bands is a rather good
+
+approximation close to M . However, the situation is complicated by the fact that the
+
+CB+1 (VB−1) band is quite close in energy to the CB (VB). SOC couples the CB and
+
+CB+1 (VB and VB−1) bands and leads to avoided crossings between them. Therefore
+
+a more complete description would require a model similar to the K point, where the
+
+coupling of nearby bands is explicitly taken into account. We leave the construction of
+
+such a model to a future work.
+
+The Hamiltonian of Equation (14) can be constructed using the theory of invariants.
+
+The symmetry group at the M point (and along Γ–M) is C2v, which includes the
+
+following symmetry operations: a twofold rotation C2 around the Γ–M direction, a
+
+reflection σv with respect to the qy–qz plane, and the reflection σh with respect to the
+
+qx–qy plane. The character table of C2v is shown in Table 13, where the relevant basis
+
+
+
+k · p theory for 2D TMDCs 38
+
+functions, in the chosen coordinate system, are also given. The Hamiltonian, which
+
+Table 13. Character table for the group C2v. Basis functions for a given irrep are
+
+also shown. Rx,y,z denotes the angular momentum components.
+
+D2v E C2 σv σh
+A1 q2
+
+x, q2
+y qy 1 1 1 1
+
+A2 Ry 1 1 −1 −1
+
+B1 Rx, qz 1 −1 1 −1
+
+B2 qxqy Rz, qx 1 −1 −1 1
+
+can be constructed with the help of Table 13 and which is at most second order in the
+
+wavenumbers qx and qy, is given in Equation (14). The symmetries of the individual
+
+bands at the M point, which can be deduced by, e.g., considering which atomic orbitals
+
+contribute to a certain band, are indicated in Figure 12(a).
+
+It is important to note that there is another possible optical transition, which may
+
+have a similar energy to the one between the VB and the CB at the M point. This
+
+Table 14. Higher-energy optical transitions in monolayer TMDCs based on DFT
+
+calculations. SOC is taken into account.
+
+MoS2 MoSe2 WS2 WSe2 MoTe2 WTe2
+
+EM,VB→CB [eV] (HSE,LDA) 2.93 2.52 3.60 3.03 1.67 2.04
+
+EM,VB→CB [eV] (PBE,PBE) 2.83 2.48 3.61 3.04 1.67 2.07
+
+EM,VB→CB [eV] (GW ) 3.87a
+
+EK,VB→CB+2 [eV] (HSE,LDA) 3.56 3.02 3.77 3.16 2.46 2.48
+
+EK,VB→CB+2 [eV] (PBE,PBE) 3.40 2.88 3.66 3.05 2.31 2.37
+
+a [47].
+
+transition can occur between the upper spin-split VB and the lower spin-split CB+2 (see
+
+Figure 14). Our DFT results shown in Table 14 suggest that for MoX2 the transition at
+
+the M point has lower energy, while for WX2 they are nearly degenerate. This prediction
+
+does not take into account excitonic effects, which are also expected to be important
+
+and may determine which transition actually has the lower energy, because the exciton
+
+binding energies at K and M may be different. We expect that, e.g., the polarisation of
+
+the photoluminescence can give important information about these transitions. If the
+
+incident light is circularly polarised, then the photoluminescence related to the transition
+
+VB→CB+2, which takes place at the K and −K points, should also be circularly
+
+polarised, as is the case for the well known fundamental VB→CB transition. Since the
+
+local symmetry at the M point is different, we do not expect that the photoluminescence
+
+due to the VB→CB transition at the M points is circularly polarised.
+
+9. Conclusions
+
+In this short review we have focused on the band structure of monolayer TMDCs.
+
+
+
+k · p theory for 2D TMDCs 39
+
+-1
+
+-0.5
+
+0
+
+0.5
+
+1
+
+1.5
+
+2
+
+2.5
+
+3
+
+3.5
+
+Γ Q K M Γ
+
+E
+-E
+
+F
+[e
+
+V
+]
+
+VB CB
+
+VB CB+2
+
+VB CB
+
+Figure 14. Optical transitions discussed in Sections and .
+
+Our aim has been to discuss all the details of the band structure that we believe are
+
+relevant for transport and relaxation processes and optical transitions. The two main
+
+tools that we used were the (local) symmetries of the BZ (an essential ingredient of the
+
+k · p expansion) and DFT calculations. The first of these tools allowed us to capture
+
+general features of the band structure. Material parameters, such as effective masses,
+
+spin-splittings, and band edge energy differences depend on the chemical composition
+
+of particular TMDCs and are important for quantitative predictions. For this reason we
+
+also performed extensive DFT calculations which can, in many cases, predict material
+
+parameters accurately. From a theoretical point of view, an important aspect of the
+
+approach used in this work is that it leads to explicit k · p Hamiltonians that can be
+
+used to address a variety of problems. In particular, they are expected to be accurate
+
+when external perturbations vary on length scales much larger than the interatomic
+
+distances. Therefore we believe our results will help to develop further (semi)analytical
+
+approaches to study, e.g., exciton physics [86, 167, 168, 169, 170, 171, 172], plasmons
+
+[173, 174], diffusive transport [175], spin [176, 177], noise [178], topological properties
+
+[179, 180], valley-currents [122, 181, 182], proximity effect [183, 184], electron–electron
+
+interaction [185], and quantum dots [49, 186]. On the other hand, TB-based methods
+
+are probably more appropriate for studying the effects of, e.g., point or line defects
+
+[38, 187] on transport.
+
+The picture that emerges from this study is that monolayer TMDCs in the ballistic
+
+limit should display a remarkable variety of optical and electronic properties, many of
+
+which are yet to be verified experimentally. Nevertheless, the recent reports of achieving
+
+high-transparency contacts to these materials [188, 189] are promising a further rapid
+
+development of this field.
+
+10. Acknowledgement
+
+Andor Kormányos acknowledges discussion with Yi Zhang, Philip King, Diana
+
+Qiu, and Timothy Berkelbach. We also acknowledge support by the DFG through
+
+
+
+k · p theory for 2D TMDCs 40
+
+the SFB 767 and SFB 689, the EU through the Marie Curie ITN S3NANO, EC
+
+Graphene Flagship Project CNECT-ICT-604391, ERC Synergy Grant Hetero2D, Royal
+
+Society Wolfson Research Merit Award, and EPSRC Science and Innovation Award
+
+EP/G035954.
+
+Appendix A. Seven-band k·p model at the K (−K) point
+
+In this section we give a brief account of the seven-band k·p model, which lies
+
+behind the effective Hamiltonian of Equation (2). The following discussion is based
+
+on our previous work published in References [49] and [60]; we believe it is helpful to
+
+present the main steps here again to make this work self-contained.
+
+Our seven-band model (without spin) contains every band between the
+
+third band below the VB (which we denote by VB−3) and the sec-
+
+ond band above the CB (denoted by CB+2), i.e., we take the basis
+
+{|Ψvb−3
+
+E
+′
+2
+
+, s〉, |Ψvb−2
+
+E
+′′
+1
+
+, s〉, |Ψvb−1
+
+E
+′′
+2
+
+, s〉, |Ψvb
+A′ , s〉, |Ψcb
+
+E
+′
+1
+
+, s〉, |Ψcb+1
+
+A′′ , s〉, |Ψcb+2
+
+E
+′
+1
+
+, s〉}. The upper in-
+
+dex b = {vb− 3, vb− 2, vb− 1, vb, cb, cb + 1, cb + 2} denotes the band, the lower index
+
+µ indicates the pertinent irreducible representation of the point group C3h, which gives
+
+the symmetry of the bands at the K point of the BZ (see Table A1 for the character table
+
+of C3h). The spinful symmetry basis functions are introduced by |Ψb
+µ, s〉 = |Ψb
+
+µ〉 ⊗ |s〉,
+where s = {↑, ↓} denotes the spin degree of freedom. An important symmetry of the
+
+system is that is has a horizontal mirror plane. As a consequence, the basis states can
+
+be grouped into two sets: the first one contains states whose orbital part is symmet-
+
+ric (even) with respect to the mirror operation σh: σh|Ψb
+µ〉 = |Ψb
+
+µ〉. This first group
+
+contains the following states: {|Ψvb
+A′ , s〉, |Ψcb
+
+E
+′
+1
+
+, s〉, |Ψvb−3
+
+E
+′
+2
+
+, s〉, |Ψcb+2
+
+E
+′
+1
+
+, s〉}. The second set
+
+contains antisymmetric (odd) states: σh|Ψb
+µ〉 = −|Ψb
+
+µ〉. The corresponding states are
+
+{|Ψvb−2
+
+E
+′′
+1
+
+, s〉, |Ψvb−1
+
+E
+′′
+2
+
+, s〉, |Ψcb+1
+
+A′′ , s〉}.
+
+Table A1. Character table for the group C3h (6). Here ω = e
+2iπ
+3 .
+
+C3h E C3 C2
+3 σh S3 σhC
+
+2
+3
+
+A′ 1 1 1 1 1 1
+
+A′′ 1 1 1 −1 −1 −1
+
+E′1 1 ω ω2 1 ω ω2
+
+E′2 1 ω2 ω 1 ω2 ω
+
+E′′1 1 ω ω2 −1 −ω −ω2
+
+E′′2 1 ω2 ω −1 −ω2 −ω
+
+Two important questions can be raised at this point:
+
+i) What is the motivation to include seven bands in the model and not more (or less)?
+
+ii) How can we identify the irreducible representation of C3h according to which a
+
+given band transforms?
+
+To answer i), we remind the reader that, as mentioned in Section , a strictly two-band
+
+model, such as the one introduced in Reference [26] (see Equation (5)) cannot describe,
+
+
+
+k · p theory for 2D TMDCs 41
+
+e.g., the TW of the bands or the details of the spin-splitting in the CB. In k · p theory
+
+these effects can be understood as arising from the coupling of the VB and CB to
+
+other energy bands. As a first step, let us neglect the SOC. The operator Hk·p which
+
+describes the interaction of various bands in k · p theory (see Equation (A.2) below) is
+
+symmetric with respect to σh: σ
+−1
+h Hk·pσh = Hk·p. Therefore, non-zero matrix elements
+
+〈Ψb
+µ, s|Hk·p|Ψb′
+
+µ′ , s〉 only exist between states |Ψb
+µ, s〉 and |Ψb′
+
+µ′ , s〉 whose orbital parts
+
+are either both even or both odd with respect to σh. A natural extension of a model
+
+containing only the VB and the CB is to include one more band, which, regarding its
+
+energy, is below the VB and one above the CB. The symmetry properties of individual
+
+bands can be extracted from DFT band-structure calculations. We found that, at the K
+
+and −K points, the first symmetric band below the VB is the VB−3 and the first even
+
+band above the CB is the CB+2 band. Thus we arrive at a four-band model containing
+
+{|Ψvb
+A′ , s〉, |Ψcb
+
+E
+′
+1
+
+, s〉, |Ψvb−3
+
+E
+′
+2
+
+, s〉, |Ψcb+2
+
+E
+′
+1
+
+, s〉}. This four-band model can already describe the
+
+electron–hole asymmetry and the TW of the spectrum [60]. The next step is to take
+
+into account the SOC. In the atomic approximation the corresponding Hamiltonian is
+
+given by Equation (A.3). This Hamiltonian can have non-zero matrix elements between
+
+even and odd states. Since our aim is, ultimately, to obtain an effective Hamiltonian
+
+describing the coupled dynamics of the VB and the CB, it is natural to enlarge our
+
+basis of four even states by those odd states which, regarding their energy, lie between
+
+VB−3 and CB+2: these are {|Ψvb−2
+
+E
+′′
+1
+
+, s〉, |Ψvb−1
+
+E
+′′
+2
+
+, s〉, |Ψcb+1
+
+A′′ , s〉}. In this way we set up a
+
+seven-band model, as indicated above.
+
+As for question ii), we next discuss how to find out the symmetries of the bands.
+
+Some DFT codes, such as WIEN2k [190], can directly provide this information. If this
+
+is not available, many DFT codes can calculate the projection of the Kohn–Sham wave
+
+functions of each energy band onto atomic orbitals Φη
+ν , where η = {M,X1,X2} denotes
+
+whether the given orbital is centred on the metal (M) or on one of the chalcogen (X1,
+
+X2) atoms in the unit cell, and the lower index ν = {s, px, py, pz, dz2 , dxy, dxz, dyz, dx2−y2}
+indicates the type of orbital. Such a calculation is also shown in Figure 3. To take into
+
+account the three-fold rotational symmetry of the system, we use linear combinations
+
+of these orbitals to form spherical harmonics Y m
+l . We then consider the transformation
+
+properties of the Bloch wave functions formed with these spherical harmonics:
+
+Ψη
+l,m(k, r) =
+
+1√
+N
+
+∑
+Rn
+
+eik·(Rn+tη) Y m
+l (r− [Rn + tη]). (A.1)
+
+Here the summation runs over all lattice vectors Rn, tM and tX1 = tX2 give the
+
+positions of the metal and chalcogen atoms in the 2D unit cell, and the wavevector k is
+
+measured from the Γ point of the BZ. By examination one can then find out how the
+
+Bloch wave functions Ψη
+l,m(k, r) transform at, e.g., the k = K point of the BZ when the
+
+reflection σh or the rotation by 2π/3 around an axis perpendicular to the plane of the
+
+monolayer (denoted by C3) is applied. Considering first σh, it is clear that the d orbitals
+
+of the M atoms are either even ({dz2 , dxy, dx2−y2}) or odd ({dxz, dyz}). Regarding the p
+
+
+
+k · p theory for 2D TMDCs 42
+
+orbitals of the X1 and X2 atoms, which are above and below the plane of the M atoms,
+
+one can also form linear combinations of ΨX1
+l,m(k, r) and ΨX2
+
+l,m(k, r) which are either even
+
+or odd (see Table A2).
+
+Table A2. Basis functions for the irreducible representations of the C3h group
+
+of the K point. The rightmost column shows the band to which a given basis
+
+function contribute. The basis functions for the K ′ point can be obtained by complex-
+
+conjugation.
+
+irrep basis functions band
+
+A′ ΨM
+2,−2, 1√
+
+2
+
+(
+ΨX1
+
+1,−1 + ΨX2
+1,−1
+
+)
+VB
+
+A′′ ΨM
+2,1, 1√
+
+2
+
+(
+ΨX1
+
+1,−1 −ΨX2
+1,−1
+
+)
+CB+1
+
+E′1 |ΨM
+2,0〉, 1√
+
+2
+
+(
+ΨX1
+
+1,1 + ΨX2
+1,1
+
+)
+CB
+
+E′2 ΨM
+2,2, 1√
+
+2
+
+(
+ΨX1
+
+1,0 − |ΨX2
+1,0
+
+)
+VB−3
+
+CB+2
+
+E′′1 |ΨM
+1,0〉, 1√
+
+2
+
+(
+ΨX1
+
+1,1 −ΨX2
+1,1
+
+)
+VB−2
+
+E′′2 ΨM
+2,−1, 1√
+
+2
+
+(
+ΨX1
+
+1,0 + ΨX2
+1,0
+
+)
+VB−1
+
+The Bloch wave functions of Equation (A.1) are also eigenstates of the rotation
+
+operation C3 with an eigenvalue ληl,m: C3Ψη
+l,m = ληl,mΨη
+
+l,m. At the k = K or −K points,
+
+ληl,m can take on one of the following three values: 1, ei
+2π
+3 , e−i
+
+2π
+3 (see Table A1). Note that
+
+C3 acts on both the spherical harmonics part Y m
+l (r) and on the plane-wave component
+
+eik·(Rn+tη) in Ψη
+l,m(k, r) [58], because in a rotated coordinate system the vectors tM
+
+and tX are also transformed. For this reason the eigenvalues ληl,m corresponding to
+
+Ψη
+l,m(k = ±K, r) depend on the choice of the unit cell, which determines the centre of
+
+rotation. In our case the unit cell is defined in Figure 1(b) and the centre of rotation
+
+is the centre of the hexagon formed by the M and X atoms. Other possible choices
+
+are, e.g., the position of the M or the X atoms (see, e.g., Table 2 in Reference [76]).
+
+Once the eigenvalues of Ψη
+l,m(k = ±K, r) under the action of σh and C3 are known, a
+
+symmetry label, e.g., A′ or E ′, of an irreducible representation can be assigned to each
+
+state. These are listed in Table A2. In the single-particle picture hybridisation between
+
+different Bloch wave functions should preserve symmetry properties; hence, e.g., the CB
+
+at the K point can be thought of as a linear combination of ΨM
+2,0 and 1√
+
+2
+
+(
+ΨX1
+
+1,1 + ΨX2
+1,1
+
+)
+(third row in Table A2). The corresponding Bloch wave functions at the −K point can
+
+be obtained by complex conjugation, because the K and −K points are connected by
+
+time-reversal.
+
+The above discussion illustrates how symmetries of each band at each high-
+
+symmetry point in the BZ can be found and used to construct effective Hamiltonians. It
+
+
+
+k · p theory for 2D TMDCs 43
+
+is important to point out the following: although, as mentioned above, the eigenvalues
+
+with respect to C3 and hence the assignment of irreducible representations may depend
+
+on the choice of the rotation centre, the form of the Hamiltonian (2), up to a unitary
+
+transformation, does not depend on such choices.
+
+Appendix A.1. k · p matrix elements
+
+The k ·p matrix elements, which characterise the coupling of the bands away from
+
+the K and −K points, are calculated using the Hamiltonian
+
+Hk·p =
+1
+
+2
+
+~
+me
+
+(q+p̂− + q−p̂+) = H−k·p +H+
+k·p, (A.2)
+
+where p̂± = p̂x ± ip̂y are momentum operators. As the operator (A.2) does not
+
+contain spin-operators, the matrix elements are diagonal in the spin-space. Furthermore,
+
+the matrix elements of Hk·p are constrained by the symmetries of the states with respect
+
+to C3. Namely, the relation 〈Ψvb
+A′ |p̂+|Ψcb+2
+
+E
+′
+2
+
+〉 = 〈Ψvb
+A′ |C†3C3 p̂+C
+
+†
+3C3|Ψcb+2
+
+E′
+2
+〉 should hold.
+
+Since 〈Ψvb
+A′ |C†3 = 〈Ψvb
+
+A′ |, C3p̂±C
+†
+3 = e∓i2π/3p̂± and C3|Ψcb+2
+
+E′
+2
+〉 = e−i2π/3|Ψcb+2
+
+E′
+2
+〉 one obtains
+
+that 〈Ψvb
+A′ |H+
+
+k·p|Ψcb+2
+E′
+
+2
+〉 = e−i4π/3〈Ψvb
+
+A′ |H+
+k·p|Ψcb+2
+
+E′
+2
+〉, which means that this matrix element
+
+must vanish. By contrast, 〈Ψvb
+A′ |H−k·p|Ψcb+2
+
+E′
+2
+〉 = γ4 is allowed to be finite.
+
+The matrix elements HK
+k·p calculated at the K point of the BZ are shown in Table
+
+A3, where the diagonal elements are the band-edge energies. The matrix elements at
+
+the −K point can be obtained with the substitutions γi → γ∗i and q± → −q∓.
+
+Table A3. Matrix elements of Hk·p at the K point.
+
+HK
+k·p |Ψvb
+
+A′ , s〉 |Ψcb
+E
+
+′
+1
+
+, s〉 |Ψvb−3
+
+E
+′
+2
+
+, s〉 |Ψcb+2
+
+E
+′
+2
+
+, s〉 |Ψvb−2
+
+E
+′′
+1
+
+, s〉 |Ψvb−1
+
+E
+′′
+2
+
+, s〉 |Ψcb+1
+
+A′′ , s〉
+
+|Ψvb
+A′ , s〉 εv γ3q− γ2q+ γ4q+ 0 0 0
+
+|Ψcb
+E
+
+′
+1
+
+, s〉 γ∗3q+ εc γ5q− γ6q− 0 0 0
+
+|Ψvb−3
+
+E
+′
+2
+
+, s〉 γ∗2q− γ∗5q+ εv−3 0 0 0 0
+
+|Ψcb+2
+
+E
+′
+2
+
+, s〉 γ∗4q− γ∗6q+ 0 εc+2 0 0 0
+
+|Ψvb−2
+
+E
+′′
+1
+
+, s〉 0 0 0 0 εv−2 γ8q− γ7q+
+
+|Ψvb−1
+
+E
+′′
+2
+
+, s〉 0 0 0 0 γ∗8q+ εv−1 γ∗9q−
+
+|Ψcb+1
+
+A′′ , s〉 0 0 0 0 γ∗7q− γ∗9q+ εc+1
+
+Concrete values for the parameters γi can be obtained for each material by, e.g.,
+
+directly evaluating the matrix elements 〈Ψb
+µ|p̂±|Ψb′
+
+µ′〉 using Kohn–Sham orbitals. We
+
+used this method to calculate the values denoted by γKS in Tables 6 and 7.
+
+
+
+k · p theory for 2D TMDCs 44
+
+Appendix A.2. Spin–orbit coupling
+
+In the atomic approximation the SOC is given by the Hamiltonian
+
+Hat
+so =
+
+~
+4m2
+
+ec
+2
+
+1
+
+r
+
+dV (r)
+
+dr
+L̂· Ŝ, (A.3)
+
+where V (r) is the spherically symmetric atomic potential, L̂ is the angular-
+
+momentum operator, and Ŝ = (sx, sy, sz) is a vector of spin Pauli matrices sx, sy, and
+
+sz (with eigenvalues ±1). Note that L̂· Ŝ = L̂zsz + L̂+s− + L̂−s+, where L̂± = L̂x ± iL̂y
+and s± = 1
+
+2
+(sx ± isy). The task is then to calculate the matrix elements of Equation
+
+(A.3) in the basis introduced earlier in this section.
+
+The non-zero matrix elements Hso can be obtained by considering the
+
+transformation properties of the basis states and angular-momentum operators with
+
+respect to the mirror operation σh and the rotation C3. Note that in contrast to the
+
+Hamiltonian in Table (A3), the SOC Hamiltonian shown in Table (A4) has non-zero
+
+matrix elements between symmetric and antisymmetric basis states as well. This is due
+
+to the fact that the L̂± operators are themselves antisymmetric with respect to σh. The
+
+full SOC Hamiltonian at K is shown in Table (A4).
+
+Table A4. Matrix elements of Hat
+so at the K point.
+
+HK
+so |Ψvb
+
+A′ , s〉 |Ψcb
+E
+
+′
+1
+
+, s〉 |Ψvb−3
+
+E
+′
+2
+
+, s〉 |Ψcb+2
+
+E
+′
+2
+
+, s〉 |Ψvb−2
+
+E
+′′
+1
+
+, s〉 |Ψvb−1
+
+E
+′′
+2
+
+, s〉 |Ψcb+1
+
+A′′ , s〉
+
+|Ψvb
+A′ , s〉 Sz∆v 0 0 0 S−∆v,v−2 S+∆v,v−1 0
+
+|Ψcb
+E
+
+′
+1
+
+, s〉 0 Sz∆c 0 0 0 S−∆c,v−1 S+∆c,c+1
+
+|Ψvb−3
+
+E
+′
+2
+
+, s〉 0 0 Sz∆v−3 Sz∆v−3,c+2 S+∆v−3,v−2 0 S−∆v−3,c+1
+
+|Ψcb+2
+
+E
+′
+2
+
+, s〉 0 0 Sz∆
+∗
+v−3,c+2 Sz∆c+2 S+∆c+2,v−2 0 S−∆c+2,c+1
+
+|Ψvb−2
+
+E
+′′
+1
+
+, s〉 S+∆∗v,v−2 0 S−∆∗v−3,v−2 S−∆∗c+2,v−2 Sz∆v−2 0 0
+
+|Ψvb−1
+
+E
+′′
+2
+
+, s〉 S−∆∗v,v−1 S+∆∗c,v−1 0 0 0 Sz∆v−1 0
+
+|Ψcb+1
+
+A′′ , s〉 0 S−∆∗c,c+1 S+∆∗v−3,c+1 S+∆∗c+2,c+1 0 0 Sz∆c+1
+
+The SOC Hamiltonian at −K can be obtained by making the following
+
+substitutions: |Ψvb−3
+
+E
+′
+2
+
+, s〉 → |Ψvb−3
+
+E
+′
+1
+
+, s〉, |Ψcb
+E
+
+′
+1
+
+, s〉 → |Ψcb
+E
+
+′
+2
+
+, s〉, |Ψvb−2
+
+E
+′′
+1
+
+, s〉 → |Ψvb−2
+
+E
+′′
+2
+
+, s〉,
+|Ψvb−1
+
+E
+′′
+2
+
+, s〉 → |Ψvb−1
+
+E
+′′
+1
+
+, s〉, ∆b,b′ → ∆∗b,b′ , S± → −S∓, Sz → −Sz. The change of the wave-
+
+function symmetry notation follows from the assumption that orbital wave functions at
+
+K and −K are connected by time-reversal symmetry, i.e., |Ψb
+µ(K)〉 = K̂0|Ψb
+
+µ′(−K)〉,
+where K̂0 denotes complex conjugation.
+
+
+
+k · p theory for 2D TMDCs 45
+
+Low-energy effective Hamiltonian
+
+The low-energy effective Hamiltonian of Equation (4a) can be obtained from
+
+H0 + Hk·p + Hso by means of Löwdin partitioning (see, e.g., Reference [150]) by
+
+considering terms up to third order in various off-diagonal couplings.
+
+Appendix B. Fitting procedure at the K point
+
+The aim of this section is to explain the fitting procedure that we used to extract
+
+the material parameters that appear in the Hamiltonians of Equations (4b)–(4e) from
+
+our DFT calculations (see Tables 6 and 7). In order that the parameter sets obtained
+
+can be compared to other works, we think that it is important to give some details of
+
+the fitting procedure.
+
+To simplify the notation, we consider the K point and suppress the τ index. The
+
+eigenvalues of the low-energy Hamiltonian of Equation (2) read
+
+E
+(s)
+± =
+
+ε̃vb + ε̃cb
+
+2
++
+
+(
+~2
+
+2me
+
++
+αs + βs
+
+2
+
+)
+q2 ±
+
+√(
+ε̃cb − ε̃vb
+
+2
++
+βs − αs
+
+2
+q2
+
+)2
+
++ f(q), (B.1)
+
+f(q) = |γ|2q2 + |q|3|γ||κs|2 cos(θκsγ + 3ϕq) + q4[|κs|2 − |γ||ηs| cos(θηsγ)] (B.2)
+
+where ε̃vb = εvb + τ s∆vb and similarly for ε̃cb, ϕq = arctan(qy/qx), θκsγ (θηsγ) are
+
+the relative phase of κs and γ (ηs and γ), and + (−) sign corresponds to the CB (VB).
+
+Since Equation (B.1) depends on the parameters γ, αs, βs, κs, and ηs in a non-linear
+
+way, some care has to be taken in the fitting procedure.
+
+First, one can determine |γ|, αs, and βs in the following way. For small enough q,
+
+the largest energy scale under the square root in Equation (B.1) is the band gap (for a
+
+given spin s) E
+(s)
+bg = ε̃cb − ε̃vb. Expanding the square root one finds
+
+E
+(s)
++ ≈ ε̃cb +
+
+(
+~2
+
+2me
+
++ βs +
+|γ|2
+
+E
+(s)
+bg
+
+)
+q2
+
+E
+(s)
+− ≈ ε̃vb +
+
+(
+~2
+
+2me
+
++ αs −
+|γ|2
+
+E
+(s)
+bg
+
+)
+q2. (B.3)
+
+In this approximation E
+(s)
+± is described by a simple parabolic dispersion where the
+
+effective masses are given by
+
+~2
+
+2m
+(s)
+cb
+
+=
+
+(
+~2
+
+2me
+
++ βs +
+|γ|2
+
+E
+(s)
+bg
+
+)
+(B.4)
+
+~2
+
+2m
+(s)
+vb
+
+=
+
+(
+~2
+
+2me
+
++ αs −
+|γ|2
+
+E
+(s)
+bg
+
+)
+(B.5)
+
+
+
+k · p theory for 2D TMDCs 46
+
+Since E
+(s)
+bg can be directly read off from the DFT calculations and 2m
+
+(s)
+cb and
+
+2m
+(s)
+vb can be obtained by fitting the CB and VB in the vicinity of the K point
+
+with a parabola, Equations (B.4)–(B.5) constitute four equations for five unknown
+
+parameters |γ|, αs, and βs. As explained in Section , the fitting around K was
+
+done in a range that corresponds to 5% of the Γ–K distance. The dispersion over
+
+this range can be considered to be isotropic and the difference in the effective masses
+
+along K–Γ and K–M can be neglected. Over the same range in q, one can also
+
+fit the function ε̃vb+ε̃cb
+2
+
++ c
+(s)
+1 q2 +
+
+√
+(E
+
+(s)
+bg )2/4 + c
+
+(s)
+2 q2 to the CB and the function
+
+ε̃vb+ε̃cb
+2
+
++ c
+(s)
+1 q2 −
+
+√
+(E
+
+(s)
+bg )2/4 + c
+
+(s)
+2 q2 to the VB such that the fitting parameters c
+
+(s)
+1
+
+and c
+(s)
+2 simultaneously give the best fit to the dispersion both in the CB and in the
+
+VB. Comparing to Equation (B.1), one can see that this corresponds to
+
+αs + βs
+2
+
+= c
+(s)
+1 −
+
+~2
+
+2me
+
+, (B.6)
+
+βs − αs
+2
+
++ |γ|2 =
+2 c
+
+(s)
+2
+
+E
+(s)
+bg
+
+, (B.7)
+
+i.e., we have obtained four more equations for |γ|, αs, and βs. Using Equations
+
+(B.4)–(B.7) one finds eight equations for the five unknown parameters |γ|, αs, and βs,
+
+which can be solved as a linear least-squares problem. The solution, however, depends
+
+on the value of the quasiparticle band gap E
+(s)
+bg /2 used in the least-squares problem. As
+
+shown in Table 5 this is significantly underestimated in DFT calculations. Therefore we
+
+have performed the fitting using both the DFT band gap and the GW gap. Note that
+
+in order to find E
+(s)
+bg one has to add to the Ebg values shown in Table 5 the relevant
+
+spin-splitting energies, which can be found in Tables 3 and 4. The two approach lead to
+
+two sets of parameters. In both cases the same effective masses m
+(s)
+cb and m
+
+(s)
+vb , obtained
+
+from our DFT calculations, were used. Since the available experimental results suggest
+
+that DFT can capture the effective masses quite well, at least in the VB (see Tables 4
+
+and 10), we think that this is a reasonable approach to take into account the results of
+
+GW calculations.
+
+Finally the four remaining parameters κs and ηs were determined in following way.
+
+Similarly to the previous step, a function of the form
+
+ε̃vb + ε̃cb
+
+2
++ c
+
+(s)
+1 q2 ±
+
+√
+(E
+
+(s)
+bg )2/4 + c
+
+(s)
+2 q2 + c
+
+(s)
+3 |q|3 cos 3φq + c
+
+(s)
+4 q4 (B.8)
+
+was fitted to the VB and CB. Here c
+(s)
+1 and c
+
+(s)
+2 were kept fixed at the values that
+
+were obtained at the previous step and the parameters c
+(s)
+3 and c
+
+(s)
+4 were required to
+
+give the best fit simultaneously to both the CB and the VB. The fitting was performed
+
+along the Γ–K–M directions around K and the fitting range corresponded to ≈ 16%
+
+of the Γ–K distance. Note, that cos 3φq = −1 (cos 3φq = 1) along Γ–K (K–M). Since
+
+
+
+k · p theory for 2D TMDCs 47
+
+|γ|, αs, and βs are already know by this step, κs and ηs is calculated as κs = c
+(s)
+3 /(2|γ|)
+
+and ηs = [(βs − αs)2/4− c(s)
+4 ]/|γ| [c.f., Equation (B.1)].
+
+References
+
+[1] Bromley R A, Murray R B, and Yoffe A D, 1972 J. Phys. C: Solid State Phys. 5, 759.
+
+[2] Mattheis L F, 1973 Phys. Rev. B 8, 3719.
+
+[3] Mak K F, Lee C, Hone J, Shan J, and Heinz T F, 2010 Phys. Rev. Lett. 105, 136805.
+
+[4] Splendiani A, Sun L, Zhang Y, Li T, Kim J, Chim Ch-Y, Galli G, and Wang F 2010 Nano Letters
+
+10, 1271.
+
+[5] Korn T, Heydrich S, Hirmer M, Schmutzler J, and Schüller C, 2011 Appl. Phys. Lett. 99, 102109.
+
+[6] Jones A M, Yu H, Ghimire N, Wu S, Aivazian G, Ross J S, Zhao B, Yan J, Mandrus D, Xiao D,
+
+Yao W, and Xu X, 2013 Nature Nanotechnology 8, 634.
+
+[7] Gan X, Gao Y, Mak K F, Yao X, Shiue R-J, van der Zande A, Trusheim M E, Hatami F, Heinz
+
+T F, Hone J, and Englund D, 2013 Applied Physics Letters 103, 181119.
+
+[8] Wu S, Buckley S, Jones A M, Ross J S, Ghimire N J, Yan J, Mandrus D G, Yao W, Hatami
+
+F, Vučković J, Majumdar A, and Xu X, 2014 2D Materials 1, 011001. doi:10.1088/2053-
+
+1583/1/1/011001
+
+[9] Liu X, Galfsky T, Sun Zh, Xia F, Lin E, Lee Y-H, Kéna-Cohen S, and Menon V M, 2015 Nature
+
+Photonics 9, 30.
+
+[10] Sie E J, McIver J W, Lee Y-H, Frenzel A J, Fu L, Kong J, and Gedik N, 2014 Nature Materials,
+
+Advanced online publication (http://dx.doi.org/10.1038/nmat4156).
+
+[11] Wang G, Marie X, Gerber I, Amand T, Lagarde D, Bouet L, Vidal M, Balocchi A, and Urbaszek
+
+B, 2015 Phys. Rev. Lett. 114, 097403.
+
+[12] Radisavljević B, Radenović A, Brivio J, Giacometti V, Kis, A, 2011 Nature Nanotechnology 6,
+
+147.
+
+[13] Lembke D and Kis A, 2012 ACS Nano 6, 10070.
+
+[14] Fang H, Chuang S, Chang T C, Takei K, Takahashi T, and Javey A, 2012 Nano Letters 12, 3788.
+
+[15] Wang H, Yu L, Lee Y H, Shi Y, Hsu A, Chin M, Li L J, Dubey M, Kong J, and Palacios T, 2012
+
+Nano Letters 12, 4674.
+
+[16] Liu W, Kang J, Sarkar D, Khatami Y, Jena D, and Banerjee K, 2013 Nano Letters 13, 1983.
+
+[17] Kang J, Liu W, and Banerjee K, 2014 Appl. Phys. Lett. 104, 093106.
+
+[18] Das S, Gulotty R, Sumant A V, and Roelofs A, 2014 Nano Letters 14, 2861.
+
+[19] Radisavljević B, Whitwick M B, and Kis A, 2011 ACS Nano, 5, 9934.
+
+[20] Britnell L, Ribeiro R M, Eckmann A, Jalil R, Belle B D, Mishchenko A, Kim Y-J, Gorbachev R
+
+V, Georgiou T, Morozov S V, Grigorenko A N, Geim A K, Casiraghi C, Castro Neto A H, and
+
+Novoselov K S, 2013 Science 340, 1311.
+
+[21] Pospischil A, Furchi M M, and Mueller T, 2014 Nature Nanotechnology 9, 257.
+
+[22] Ross J S, Klement Ph, Jones A M, Ghimire N J, Yan J, Mandrus D G, Taniguchi T, Watanabe
+
+K, Kitamura K, Yao W, Cobden D H, and Xu X, 2014 Nature Nanotechnology 9, 268.
+
+[23] Baugher B W H, Churchill H O H, Yang Y, and Jarillo-Herrero P, 2014 Nature Nanotechnology
+
+9, 262.
+
+[24] Jo S, Ubrig N, Berger H, Kuzmenko A B, and Morpurgo A F, 2014 Nano Letters 14, 2019.
+
+[25] Yao W, Xiao D, and Niu Q, 2008 Phys. Rev. B 77, 235406.
+
+[26] Xiao D, Liu G B, Feng W, Xu X, and Yao W, 2012 Phys. Rev. Lett. 108, 196802.
+
+[27] Mak K F, He K, Shan J, and Heinz T F, 2012 Nature Nanotechnology 7, 494.
+
+[28] Zeng H, Dai J, Yao W, Xiao D, and Cui X, 2012 Nature Nanotechnology 7, 490.
+
+[29] Cao T, Wang G, Han W, Ye H, Zhu Ch, Shi J, Niu Q, Tan P, Wang E, Liu B, and Feng J, 2012
+
+Nature Communications 3, 887.
+
+[30] Sallen G, Bouet L, Marie X, Wang G, Zhu C R, Han W P, Lu Y, Tan P H, Amand T, Liu B L,
+
+and Urbaszek B, 2012 Phys. Rev. B 86, 081301.
+
+[31] Kioseoglou G, Hanbicki A T, Currie M, Friedman A L, Gunlycke D, and Jonker B T, 2012 Appl.
+
+http://dx.doi.org/10.1038/nmat4156
+
+
+k · p theory for 2D TMDCs 48
+
+Phys. Lett. 101, 221907.
+
+[32] Rostami H, Moghaddam A G, and Asgari R, 2013 Phys. Rev. B 88, 085440.
+
+[33] Zahid F, Liu L, Zhu Y, Wang J, and Guo H, 2013 AIP Advances 3, 052111.
+
+[34] Liu G B, Shan W Y, Yao Y, Yao W, and Xiao D, 2013 Phys. Rev. B 88, 085433.
+
+[35] Cappelluti E, Roldán R, Silva-Guillén J A, Ordejón P, and Guinea F, 2013 Phys. Rev. B 88,
+
+075409.
+
+[36] Kośmider K, González J W, and Fernández-Rossier J, Phys. Rev. B 88, 245436 (2013).
+
+[37] Roldán R, López-Sancho M R, Cappelluti E, Silva-Guillén J A, Ordejón P, and Guinea F, 2014
+
+2D Materials 1, 034003.
+
+[38] Ghorbani-Asl M, Enyashin A N, Kuc A, Seifert G, and Heine T, 2013 Phys. Rev. B 88, 245440.
+
+[39] Kaasbjerg K, Thygesen K S, and Jacobsen K W, 2012 Phys. Rev. B 85, 115317.
+
+[40] Li X, Mullen J T, Jin Z, Borysenko K M, Nardelli M B, and Kim K W, 2013 Phys. Rev. B 87,
+
+115418.
+
+[41] Kaasbjerg K, Thygesen K S, and Jauho A-P, 2013 Phys. Rev. B 87, 235312.
+
+[42] Ge Y, Wan W, Feng W, Xiao D, and Yao Y 2014 Phys. Rev. B 90, 035414.
+
+[43] Chang J, Register L F, and Banerjee S K, 2014 Journal of Applied Physics, 115, 084506.
+
+[44] Gong K, Zhang L, Liu D, Liu L, Zhu Y, Zhao Y, and Guo H, 2014 Nanotechnology 25, 435201.
+
+[45] Ramasubramaniam A, 2012 Phys. Rev. B 86, 115409.
+
+[46] Komsa H P and Krasheninnikov A V, 2012 Phys. Rev. B 86, 241201(R).
+
+[47] Qiu D Y, da Jornada F H, and Louie S G, 2013 Phys. Rev. Lett. 111, 216805.
+
+[48] Molina-Sánchez A, Sangalli D, Hummer K, Marini A, and Wirtz L, 2013 Phys. Rev. B 88, 045412.
+
+[49] Kormányos A, Zólyomi V, Drummond N D, and Burkard G, 2014 Phys. Rev. X 4, 011034.
+
+[50] Liu G-B, Pang H, Yao Y, and Yao W, 2014 New Journal of Physics 16, 105011.
+
+[51] Li X, Zhang F, and Niu Q, 2013 Phys. Rev. Lett. 110, 066803.
+
+[52] Rose F, Goerbig M O, and Piéchon F, 2013 Phys. Rev. B, 88 125438.
+
+[53] Ho Y H, Wang Y H, and Chen H Y, 2014 Phys. Rev. B 89, 155316.
+
+[54] Chu R L, Li X, Wu S, Niu Q, Xu X, and Zhang Ch 2014 Phys. Rev. B 90, 045427.
+
+[55] Ganchev B, Drummond N D, Aleiner I, and Fal’ko V, 2015 Phys. Rev. Lett. 114, 107401.
+
+[56] Luttinger J M and Kohn W, 1955 Phys. Rev. 97, 869.
+
+[57] Bir G and Pikus G, 1974 Symmetry and Strain-Induced Effects in Semiconductors (Wiley, New
+
+York)
+
+[58] Dresselhaus M S, Dresselhaus G, and Jorio A, 2008 Group Theory (Application to the Physics of
+
+Condensed Matter), (Springer-Verlag Berlin Heidelberg).
+
+[59] Lew Yan Voon L C and Willatzen M, 2009 The k·p Method (Springer-Verlag Berlin Heidelberg).
+
+[60] Kormányos A, Zólyomi V, Drummond N D, Rakyta P, Burkard G, and Fal’ko V I, 2013 Phys.
+
+Rev. B 88, 045416.
+
+[61] Dawson W G and Bullett D W, 1987 J. Phys. C: Solid State Phys 20, 6159.
+
+[62] Böker Th, Severin R, Müller A, Janowitz C, Manzke R, Voß D, Krüger P, Mazur A, and Pollmann
+
+J, 2001 Phys. Rev. B 64 235305.
+
+[63] Coleman J N, Lotya M, O’Neill A, Bergin Sh D, King P J, Khan U, Young K, Gaucher A, De
+
+S, Smith R J, Shvets I V, Arora S K, Stanton G, Kim H-K, Lee K, Kim G T, Duesberg G S,
+
+Hallam T, Boland J J, Wang J J, Donegan J F, Grunlan J C, Moriarty G, Shmeliov A, Nicholls
+
+R J, Perkins J M, Grieveson E M, Theuwissen K, McComb D W, Nellist P D, and Nicolosi V,
+
+2011 Science 331, 568.
+
+[64] Lezama I G, Ubaldini A, Longobardi M, Giannini E, Renner Ch, Kuzmenko A B, and Morpurgo
+
+A F, 2014 2D Materials 1, 021002.
+
+[65] Brown B E, 1966 Acta Cryst. 20, 268.
+
+[66] Augustin J, Eyert V, Böker Th, Frentrup W, Dwelk H, Janowitz C, and Manzke R, 2000 Phys.
+
+Rev. B 62, 10812.
+
+[67] Kresse G and Furthmüller J, 1996 Phys. Rev. B 54, 11169.
+
+[68] See http://www.flapw.de/
+
+http://www.flapw.de/
+
+
+k · p theory for 2D TMDCs 49
+
+[69] Geim A K and Novoselov K S, 2007 Nature Materials 6, 183.
+
+[70] Castro Neto A H, Guinea F, Peres N M R, Novoselov K S, and Geim A K, 2009 Rev. Mod. Phys.
+
+81, 109.
+
+[71] Bonaccorso F, Sun Z, Hasan T Ferrari A C, 2010 Nature Photonics 4, 611.
+
+[72] Han W, Kawakami R K, Gmitra M, and Fabian J, 2014 Nature Nanotechnology 9, 794.
+
+[73] Wang Q H, Kalantar-Zadeh K, Kis A, Coleman J N, and Strano M S, 2012 Nature Nanotechnology
+
+7, 699.
+
+[74] Xu X, Yao W, Xiao D, and Heinz T F, 2014 Nature Physics 10, 343.
+
+[75] Yazyev O V and Kis A, 2014 Materials Today, 18, 20. (http://dx.doi.org/10.1016/j.mattod.
+
+2014.07.005)
+
+[76] Liu G-B, Xiao D, Yao Y, Xu X, and Yao W, 2015 Chem. Soc. Rev., Advance Article (http:
+
+//dx.doi.org/10.1039/C4CS00301B).
+
+[77] Jariwala D, Sangwan V K, Lauhon L J, Marks T J, and Hersam M C, 2014 ACS Nano 8, 1102.
+
+[78] Ganatra R and Zhang Q, 2014 ACS Nano 8, 4074.
+
+[79] Roldán R, Silva-Guillén J A, López-Sancho M P, Guinea F, Cappelluti E, Ordejón P, 2014 Ann.
+
+Phys. (Berlin) 526, 347.
+
+[80] Zibouche N, Kuc A, Musfeldt J, and Heine T, 2014 Ann. Phys. (Berlin) 526, 395.
+
+[81] Shi H, Pan H, Yong-Wei Zhang Y W, and Yakobson B I, 2013 Phys. Rev. B 87, 155304.
+
+[82] Heyd J, Scuseria G E, and Ernzerhof M, 2006 J. Chem. Phys. 124, 219906.
+
+[83] Perdew J P, Burke K, and Ernzerhof M, 1996 Phys. Rev. Lett. 77, 3865.
+
+[84] Kang J, Tongay S, Zhou J, Li J, and Wu J, 2013 Appl. Phys. Lett. 102, 012111.
+
+[85] Lagarde D, Bouet L, Marie X, Zhu C R, Liu B L, Amand T, Tan P H, and Urbaszek B, 2014
+
+Phys. Rev. Lett. 112, 047401.
+
+[86] Zhang C, Wang H, Chan W, Manolatou C, and Rana F, 2014 Phys. Rev. B 89, 205436.
+
+[87] Soklaski R, Liang Y, and Yang L, 2014 Appl. Phys. Lett. 104, 193110.
+
+[88] Wilson J A and Yoffe A D, 1969 Advances in Physics, 18:73, 193.
+
+[89] Yang D and Frindt R F, 1995 J. Phys. Chem. Solids 57, 1113.
+
+[90] Al-Hilli A A and Evans B L, 1972 Journal of Crystal Growth 15, 93.
+
+[91] Schutte W J, de Boer J L, and Jellinek F, 1987 Journal of Solid State Chemistry 70, 207.
+
+[92] Bronsema K D, de Boer J L, and Jellinek F, 1986 Z. Anorg. Allg. Chem. 540, 15.
+
+[93] Evans B L and Hazelwood R A, 1971 Phys. Stat. Sol. (a) 4, 181.
+
+[94] Poutinen D and Newnham R E, 1961 Acta Crystallographica 14, 691.
+
+[95] Young P A, 1968 Brit. J. Appl. Phys. (J. Phys. D), 1, 932.
+
+[96] Song Y and Dery H, 2013 Phys. Rev. Lett. 111, 026601.
+
+[97] Molina-Sánchez A and Wirtz L, 2011 Phys. Rev. B 84 155413.
+
+[98] Horzum S, Sahin H, Cahangirov S, Cudazzo P, Rubio A, Serin T, and Peeters F M, 2013 Phys.
+
+Rev. B 87, 125415.
+
+[99] Sahin H, Tongay S, Horzum S, Fan W, Zhou J, Li J, Wu J, and Peeters F M, 2013 Phys. Rev. B
+
+87, 165409.
+
+[100] Ribeiro-Soares J, Almeida R M, Barros E B, Araujo P T, Dresselhaus M S, Cançado L G, and
+
+Jorio A, 2014 Phys. Rev. B 90, 115438.
+
+[101] Ding Y, Wang Y, Ni J, Shi L, Shi S, and Tang W, 2011 Physica B 406, 2254.
+
+[102] Luo X, Zhao Y Y, Zhang J, Toh M L, Kloc C, Xiong Q H, and Quek S Y, 2013 Phys. Rev. B 88,
+
+195313.
+
+[103] Zhao W J, Ghorannevis Z, Amara K K, Pang J R, Toh M, Zhang X, Kloc C, Tan P H, and Eda
+
+G, 2013 Nanoscale 5, 9677.
+
+[104] Li H, Zhang Q, Yap C C R, Tay B K, Edwin T H T, Olivier A, and Baillargeat D, 2012 Adv.
+
+Func. Materials 22, 1385.
+
+[105] Klimeš J, Bowler D R, and Michaelides A, 2010 J. Phys.: Cond. Matt. 22, 022201.
+
+[106] Jin W, Yeh P-CH, Zaki N, Zhang D, Sadowski J T, Al-Mahboob A, van der Zande A M, Chenet
+
+D A, Dadap J I, Herman I P, Sutter P, Hone J, and Osgood, R M Jr., 2013 Phys. Rev. Lett.
+
+http://dx.doi.org/10.1016/j.mattod.2014.07.005
+http://dx.doi.org/10.1016/j.mattod.2014.07.005
+http://dx.doi.org/10.1039/C4CS00301B
+http://dx.doi.org/10.1039/C4CS00301B
+
+
+k · p theory for 2D TMDCs 50
+
+111, 106801.
+
+[107] Zhang Y, Chang T-R, Zhou B, Cui Y-T, Yan H, Liu Z, Schmitt F, Lee J, Moore R, Chen Y,
+
+Lin H, Jeng H-T, Mo S-K, Hussain Z, Bansil A, and Shen Z-X, 2014 Nature Nanotechnology
+
+9, 111.
+
+[108] Alidoust N, Bian G, Xu S Y, Sankar R, Neupane M, Liu C, Belopolski I, Qu D-X, Denlinger J
+
+D, Chou F-C, and Hasan M Z, 2014 Nature Communications 5, 4673.
+
+[109] Zhu Z Y, Cheng Y C, and Schwingenschlögl U, 2011 Phys. Rev. B 84, 153402.
+
+[110] Mahatha S K, Patel K D, and Menon K S R, 2012 J. Phys.: Condens. Matter 24 475504.
+
+[111] Zhang Y J, Oka T, Suzuki R, Ye J T, and Iwasa Y, 2014 Science 344, 725.
+
+[112] MacNeill D, Heikes C, Anderson Z, Mak K F, Ralph D C, Kormányos A, Zólyomi V, and Park
+
+J, 2015 Phys. Rev. Lett. 114, 037401.
+
+[113] Srivastava A, Sidler M, Allain A A, Lembke D S, Kis A, and Imamoğlu A, 2015 Nature Physics
+
+11, 141.
+
+[114] Aivazian G, Gong Z, Jones A M, Chu R-L, Yan J, Mandrus D G, Zhang Ch, Cobden D, Yao W,
+
+and Xu X, 2015 Nature Physics 11, 148.
+
+[115] Li Y, Ludwig J, Low T, Chernikov A, Cui X, Arefe Gh, Kim Y D, van der Zande A M, Rigosi
+
+A, Hill H M, Kim S H, Hone J, Li Zh, Smirnov D, and Heinz T F, 2014 Phys. Rev. Lett. 113,
+
+266804.
+
+[116] Ivchenko E L and Pikus G E, 1995 Superlattices and Other Heterostructures (Symmetry and
+
+Optical Phenomena) (Springer-Verlag Berlin Heidelberg).
+
+[117] Cheiwchanchamnangij T and Lambrecht W R L, 2012 Phys. Rev. B 85, 205302.
+
+[118] Kadantsev E S and Hawrylak P, 2012 Solid State Commun. 152, 909.
+
+[119] Kośmider K and Fernández-Rossier J, 2013 Phys. Rev. B 87, 075451.
+
+[120] Ochoa H and Roldán R, 2013 Phys. Rev. B 87, 245421.
+
+[121] Riley J M, Mazzola F, Dendzik M, Michiardi M, Takayama T, Bawden L, Granerød C,
+
+Leandersson M, Balasubramanian T, Hoesch M, Kim T K, Takagi H, Meevasana W, Hofmann
+
+Ph, Bahramy M S, Wells J W, and King P D C, 2014 Nature Physics 10, 835.
+
+[122] Yu H, Wu Y, Liu G-B, Xu X, Yao W, 2014 Phys. Rev. Lett. 113, 156603.
+
+[123] Peelaers H and Van de Walle C G, 2012 Phys. Rev. B 86, 241401(R).
+
+[124] Wickramaratne D, Lake R K, and Zahid F, 2014 J. Chem. Phys. 140, 124710.
+
+[125] Zibouche N, Philipsen P, Heine T, and Kuc A, Phys. Chem. Chem. Phys. 16, 11251.
+
+[126] Zhang W, Huang Zh, and Zhang W, 2014 Nano Research 7, 1731.
+
+[127] Radisavljević B and Kis A, 2013 Nature Materials 12, 815.
+
+[128] Baugher B W H, Churchill H O H, Yang Y, and Jarillo-Herrero P, 2013 Nano Letters 13, 4212.
+
+[129] Larentis S, Tolsma J S, Fallahazad B, Dillen D C, Kim K, MacDonald A H, and Tutuc E, 2014
+
+Nano Letters 14, 2039.
+
+[130] Braga D, Lezama I G, Berger H, and Morpurgo A F, 2012 Nano Letters 12, 5218.
+
+[131] The fit results based on the ARPES measurements of Reference [107] were communicated to us
+
+by Yi Zhang.
+
+[132] Eknapaku T, King P D C, Asakawa M, Buaphet P, He R H, Mo S K, Takagi H, Shen K M,
+
+Baumberger F, Sasagawa T, Jungthawan S, and Meevasana W, 2014 Nano Letters 14, 1312.
+
+[133] Ross J S, Wu S, Yu H, Ghimire N J, Jones A M, Aivazian G, Yan J, Mandrus D G, Xiao D, Yao
+
+W, and Xu X, 2013 Nature Communications 4 1474.
+
+[134] Ye Z, Cao T, O’Brien K, Zhu H, Yin X, Wang Y, Louie S G, and Zhang X, 2014 Nature 513,
+
+214.
+
+[135] Chernikov A, Berkelbach T C, Hill H M, Rigosi A, Li Y, Aslan Ö B, Reichman D R, Hybertsen
+
+M S, and Heinz T F, Phys. Rev. Lett. 113, 076802.
+
+[136] Zhao W, Ghorannevis Z, Chu L, Toh M, Kloc C, Tan P H, and Eda G, 2013 ACS Nano 7, 791.
+
+[137] Kozawa D, Kumar R, Carvalho A, Kumar A K, Zhao W, Wang Sh, Toh M, Ribeiro R R, Castro
+
+Neto A H, Matsuda K, Eda G, 2014 Nature Communications 5, 4543.
+
+[138] Sundaram R S, Engel M, Lombardo A, Krupke R, Ferrari A C, Avouris Ph, and Steiner M, 2013
+
+
+
+k · p theory for 2D TMDCs 51
+
+Nano Letters 13, 1416. doi: 10.1021/nl400516a
+
+[139] Zeng H, Liu G B, Dai J, Yan Y, Zhu B, He R, Xie L, Xu Sh, Chen X, Yao W, and Cui X, 2013
+
+Scientific Reports 3, 1608. doi:10.1038/srep01608
+
+[140] Li W, Birdwell A G, Amani M, Burke R A, Ling X, Lee Y-H, Liang X, Peng L, Richter C A,
+
+Kong J, Gundlach J D, and Nguyen N V, 2014 Phys. Rev. B 90, 195434.
+
+[141] Zhu B, Chen X, and Cui X, 2015 Scientific Reports 5, 9218. doi:10.1038/srep09218
+
+[142] Klots A R, Newaz A K M, Wang B, Prasai D, Krzyzanowska H, Caudel D, Ghimire N J, Yan J,
+
+Ivanov B L, Velizhanin K A, Burger A, Mandrus D G, Tolk N H, Pantelides S T, and Bolotin
+
+K I, 2014 Scientific Reports 4, 6608.
+
+[143] Dumcenco D, Ovchinnikov D, Marinov K, Lopez-Sanchez O, Krasnozhon D, Chen M-W, Gillet
+
+Ph, Fontcuberta i Morral A, Radenović A, and Kis A, 2014 Preprint arXiv:1405.0129.
+
+[144] Hanbicki A T, Currie M, Kioseoglou G, Friedman A L, Jonker B T, 2015 Solid State
+
+Communications 203 16.
+
+[145] He K, Kumar N, Zhao L, Wang Z, Mak K F, Zhao H, and Shan J, 2014 Phys. Rev. Lett. 113
+
+026803.
+
+[146] Ugeda M M, Bradley A J, Shi S-F, da Jornada F H, Zhang Y, Qiu D Y, Mo S-K, Hussain Z,
+
+Shen Z-X, Feng W, Louie S G, and Crommie M F, 2014 Nature Materials 13 1091.
+
+[147] Liang Y, Huang Sh, Soklaski R, and Yang L, 2013 Appl. Phys. Lett. 103, 042106.
+
+[148] Xiao D, Chang M-C, and Niu Q, 2010 Rev. Mod. Phys. 82, 1959.
+
+[149] Feng W, Yao Y, Zhu W, Zhou J, Yao W, and Xiao D, 2012 Phys. Rev. B 86, 165108.
+
+[150] Winkler R, 2003 Spin–Orbit Coupling Effects in Two-Dimensional Electron and Hole Systems,
+
+(Springer-Verlag Berlin Heidelberg).
+
+[151] Zhang Ch, Johnson A, Hsu Ch-L, Li L-J, and Shih Ch-K, 2014 Nano Letters 14, 2443.
+
+[152] Zhang Ch, Chen Y, Johnson A, Li M-Y, Huang J-K, Li L-J, and Shih Ch-K, 2014 Preprint
+
+arXiv:1412.8487.
+
+[153] Chiu M-H, Zhang Ch, Shiu H W, Chuu Ch-P, Chen Ch-H, Chang Ch-Y S, Chen Ch-H, Chou
+
+M-Y, Shih Ch-K, and Li L-J, 2014 Preprint arXiv:1406.5137.
+
+[154] Ochoa H, Finocchiaro F, Guinea F, and Fal’ko V I, 2014 Phys. Rev. B 90, 235429.
+
+[155] Clark S J, Segall M D, Pickard C J, Hasnip P J, Probert M I J, Refson K, and Payne M C, 2005
+
+Z. Kristallogr. 220, 567.
+
+[156] Private communication by Philip King, based on the results in Reference [132].
+
+[157] Private communication by Diana Qiu; see calculations in Reference [47].
+
+[158] Winkler R and Zülicke U, 2010 Phys. Rev. B 82, 245313.
+
+[159] Geissler F, Budich J C, Trauzettel B, 2013 New J. Phys. 15, 085030.
+
+[160] Lu Ch-P, Li G, Mao J, Wang L-M, and Andrei E Y 2014 Nano Letters 14, 4628.
+
+[161] Liu H, Jiao L, Yang F, Cai Y, Wu X, Ho W, Gao Ch, Jia J, Wang N, Fan H, Yao W, and Xie
+
+M, 2014 Phys. Rev. Lett. 113, 066105.
+
+[162] Carvalho A, Ribeiro R M, and Castro Neto A H, 2013 Phys. Rev. B 88, 115205.
+
+[163] Steinhoff A, Rösner M, Jahnke F, Wehling T O, and Gies C, 2014 Nano Letters 14, 3743.
+
+[164] Gibertini M, Pellegrino F M D, Marzari N, and Polini M, 2014 Phys. Rev. B 90, 245411.
+
+[165] Dresselhaus G, 1956 Journal of Physics and Chemistry of Solids 1, 14.
+
+[166] Mak K F, da Jornada F H, He K, Deslippe J, Petrone N, Hone J, Shan J, Louie S G, and Heinz
+
+T F, 2014 Phys. Rev. Lett. 112 207401.
+
+[167] Berkelbach T C, Hybertsen M C, and Reichman D R, 2013 Phys. Rev. B 88, 045318.
+
+[168] Berghäuser G and Malic E, 2014 Phys. Rev. B 89, 125309.
+
+[169] Glazov M M, Amand T, Marie X, Lagarde D, Bouet L, and Urbaszek B, 2014 Phys. Rev. B 89
+
+201302(R).
+
+[170] Yu T and Wu M W, 2014 Phys. Rev. B 89, 205303.
+
+[171] Fogler M M, Butov L V, and Novoselov K S, 2014 Nature Communications 5, 4555.
+
+[172] Thilagam A, 2014 Journal of Applied Physics 116, 053523.
+
+[173] Scholz A, Stauber T, and Schliemann J, 2013 Phys. Rev. B 88, 035135.
+
+
+
+k · p theory for 2D TMDCs 52
+
+[174] Kechedzhi K and Abergel D S L, 2014 Phys. Rev. B 89, 235420.
+
+[175] Ochoa H, Guinea F, and Fal’ko V I, 2013 Phys. Rev. B 88 195417.
+
+[176] Wang L and Wu M W, 2014 Phys. Rev. B 89, 115302; Wang L and Wu M W, 2014 Phys. Rev.
+
+B 89, 205401.
+
+[177] Hatami H, Kernreiter T, and Zülicke U, 2014 Phys. Rev. B 90, 045412.
+
+[178] Tse W-K, Saxena A, Smith D L, and Sinitsyn N A, 2014 Phys. Rev. Lett. 113, 046602.
+
+[179] Cazalilla M A, Ochoa H, and Guinea F, 2014 Phys. Rev. Lett. 113, 077201.
+
+[180] Yuan N F Q, Mak K F, and Law K T, 2014 Phys. Rev. Lett. 113, 097001.
+
+[181] Abergel D S L, Edge J M, Balatsky A V, 2014 New J. Phys. 16, 065012.
+
+[182] Mak K F, McGill K L, Park J, and McEuen P L, 2014 Science 344, 1489.
+
+[183] Majidi L, Rostami H, and Asgari R, 2014 Phys. Rev. B 89, 045413.
+
+[184] Rameshti B R, Moghaddam A G, and Zareyan M, 2014 EPL 108 37002.
+
+[185] Ferreiros Y and Cortijo A, 2014 Phys. Rev. B 90 195426.
+
+[186] Klinovaja J and Loss D 2013 Phys. Rev. B 88, 075404.
+
+[187] Yuan S, Roldán R, Katsnelson M I, and Guinea F, 2014 Phys. Rev. B 90, 041402.
+
+[188] Cui X, Lee G-H, Kim Y D, Arefe G, Huang P Y, Lee Ch-H, Chenet D A, Zhang X, Wang L,
+
+Ye F, Pizzocchero F, Jessen B S, Watanabe K, Taniguchi T, Muller D A, Low T, Kim P, and
+
+Hone J, 2014 Preprint Arxiv:1412.5977.
+
+[189] Liu Y , Wu H, Cheng H Ch , Yang S, Zhu E, He Q, Ding M, Li D, Guo J, Weiss N O, Huang Y,
+
+and Duan X, 2014 Preprint Arxiv:1412.7718.
+
+[190] Blaha P, Schwarz K, Madsen G K H, Kvasnicka D, and Luitz J, WIEN2k, An Augmented Plane
+
+Wave + Local Orbitals Program for Calculating Crystal Properties (Karlheinz Schwarz, Techn.
+
+Universität Wien, Austria), 2001. ISBN 3-9501031-1-2.
+
+[191] Pradhan N R, Rhodes D, Feng S, Xin Y, Memaran Sh, Moon B-H, Terrones H, Terrones M, and
+
+Balicas L, (2014) ACS Nano 8 5911.
+
+[192] Ruppert C, Aslan O B, and Heinz T F, (2014) Nano Letters 14, 6231.
+
+[193] Le D, Barinov A, Preciado E, Isarraraz M, Tanabe I, Komesu T, Troha C, Bartels L, Rahman T
+
+S, and Dowben P A, (2015) at press in J. Phys. C: Condens. Matter.
+
+[194] Guo H, Yang T, Yamamoto M, Zhou L, Ishikawa R, Ueno K, Tsukagoshi K, Zhang Zh, Dresselhaus
+
+M S, and Saito R, (2015) Preprint arXiv:1501.07078.
+
+[195] Wang G, Bouet L, Glazov M M, Amand T, Ivchenko E L, Palleau E, Marie X, and Urbaszek B,
+
+(2015) Preprint arXiv:1503.04105.
+
+[196] Arora A, Koperski M, Nogajewski K, Marcus J, Faugeras C, and Potemski M, (2015) Preprint
+
+arXiv:1503.01682.
+
+
+	Introduction
+	Lattice parameters, band-structure calculations and vibrational properties
+	Band-edge energy differences and spin-splittings
+	Valence band width Dvb
+	Effective model at the K and -K points
+	K and -K points
+	Basic characterization and material parameters
+	kp Hamiltonian
+
+	Effective models at the Q (a.k.a. ) point
+	Qi points
+	Basic characterisation and material parameters
+	kp Hamiltonian
+
+	Effective models at the  point
+	 point
+	Basic characterisation and material parameters
+	kp Hamiltonian
+	 point wave functions and STM measurements
+
+	The M point: spin–orbit splitting of the Van Hove singularity
+	Basic characterisation and kp Hamiltonian 
+
+	Conclusions
+	Acknowledgement
+	Appendices
+	Seven-band kp model at the K (-K) point
+	kp matrix elements
+	Spin–orbit coupling
+
+	Fitting procedure at the K point
+
